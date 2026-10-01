@@ -4432,10 +4432,10 @@
   },
   "tobi/disktree": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-30",
-    "times_seen": 4,
+    "last_seen": "2026-10-01",
+    "times_seen": 5,
     "stars_first": 1351,
-    "stars_last": 1933
+    "stars_last": 2042
   },
   "yetone/magpie": {
     "first_seen": "2026-09-27",
@@ -4460,10 +4460,10 @@
   },
   "mexicat/pdoom-video": {
     "first_seen": "2026-09-28",
-    "last_seen": "2026-09-30",
-    "times_seen": 3,
+    "last_seen": "2026-10-01",
+    "times_seen": 4,
     "stars_first": 1350,
-    "stars_last": 2011
+    "stars_last": 2138
   },
   "kryvora-network/kryvora-node": {
     "first_seen": "2026-09-28",
@@ -4474,24 +4474,24 @@
   },
   "KKKKhazix/AIHOT": {
     "first_seen": "2026-09-29",
-    "last_seen": "2026-09-30",
-    "times_seen": 2,
+    "last_seen": "2026-10-01",
+    "times_seen": 3,
     "stars_first": 1675,
-    "stars_last": 3551
+    "stars_last": 4206
   },
   "dzhng/jevgrep": {
     "first_seen": "2026-09-29",
-    "last_seen": "2026-09-30",
-    "times_seen": 2,
+    "last_seen": "2026-10-01",
+    "times_seen": 3,
     "stars_first": 1522,
-    "stars_last": 1805
+    "stars_last": 1922
   },
   "Niko1221/Strata": {
     "first_seen": "2026-09-29",
-    "last_seen": "2026-09-30",
-    "times_seen": 2,
+    "last_seen": "2026-10-01",
+    "times_seen": 3,
     "stars_first": 1208,
-    "stars_last": 1968
+    "stars_last": 3389
   },
   "852wa/JIZURA": {
     "first_seen": "2026-09-30",
@@ -4502,9 +4502,37 @@
   },
   "shihabal3amri/DiPlay": {
     "first_seen": "2026-09-30",
-    "last_seen": "2026-09-30",
-    "times_seen": 1,
+    "last_seen": "2026-10-01",
+    "times_seen": 2,
     "stars_first": 1109,
-    "stars_last": 1109
+    "stars_last": 1687
+  },
+  "feder-cr/dots": {
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "stars_first": 1954,
+    "stars_last": 1954
+  },
+  "Louis-CFM/coucou": {
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "stars_first": 1725,
+    "stars_last": 1725
+  },
+  "firelex/jeff": {
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "stars_first": 1211,
+    "stars_last": 1211
+  },
+  "kaankiziltug/logo-design-skill": {
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "stars_first": 1179,
+    "stars_last": 1179
   }
 }

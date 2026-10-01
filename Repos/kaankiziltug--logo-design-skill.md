@@ -1,63 +1,68 @@
 ---
-repo: mexicat/pdoom-video
-url: https://github.com/mexicat/pdoom-video
-owner: mexicat
+repo: kaankiziltug/logo-design-skill
+url: https://github.com/kaankiziltug/logo-design-skill
+owner: kaankiziltug
 owner_type: User
-language: TypeScript
+language: HTML
 license: MIT
-description: "Code-rendered music video for \"I'm Upping My P(doom)\""
+description: "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library."
 homepage: ""
-stars: 2138
-stars_per_day: 356
-forks: 224
-open_issues: 0
-created: 2026-09-24
-pushed_at: 2026-09-28
-first_seen: 2026-09-28
+stars: 1179
+stars_per_day: 295
+forks: 64
+open_issues: 1
+created: 2026-09-26
+pushed_at: 2026-09-30
+first_seen: 2026-10-01
 week: "2026-W40"
-month: "2026-09"
+month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.4.3"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-28
+last_reviewed: 2026-10-01
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-10-04"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: 33
-repo_size_kb: 17678
-readme_length: 7289
+contributor_count: 2
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 6973
+readme_length: 9746
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 4
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-28"
-star_history: "2026-09-28:1350,2026-09-29:1830,2026-09-30:2011,2026-10-01:2138"
+ring_history: "assess@2026-10-01"
+star_history: "2026-10-01:1179"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/html"
+  - "topic/agent_skills"
+  - "topic/branding"
+  - "topic/claude"
+  - "topic/claude_skills"
+  - "topic/codex"
 aliases:
-  - "pdoom-video"
-  - "mexicat/pdoom-video"
+  - "logo-design-skill"
+  - "kaankiziltug/logo-design-skill"
 ---
 
-# pdoom-video
+# logo-design-skill
 
-**1.4k** stars · **450** stars/天 · 建立 3 天前 · TypeScript · MIT
+**1.2k** stars · **295** stars/天 · 建立 4 天前 · HTML · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/mexicat--pdoom-video");
+const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v1.4.3`
+
+`agent-skills` `branding` `claude` `claude-skills` `codex` `gemini-cli` `logo-design` `svg`
 
 > [!summary] 一句話摘要
-> Code-rendered music video for "I'm Upping My P(doom)"
+> A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.
 
 ## 專案簡介
 
-Code-rendered music video for "I'm Upping My P(doom)"
+A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,139 +149,192 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 138 |
-| Open Issues | 2 |
-| Issue 解決率 | 33% (1 closed) |
-| 最後推送 | 2026-09-27 |
-| 建立日期 | 2026-09-24 |
-| Repo 大小 | 17.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mexicat/pdoom-video) |
+| Forks | 64 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-09-30 |
+| 建立日期 | 2026-09-26 |
+| Repo 大小 | 6.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kaankiziltug/logo-design-skill) |
+| Topics | `agent-skills` `branding` `claude` `claude-skills` `codex` `gemini-cli` `logo-design` `svg` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 94
->     "Python" : 6
+>     "HTML" : 77
+>     "Python" : 23
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@mexicat](https://github.com/mexicat) | 8 |
+> | [@kaankiziltug](https://github.com/kaankiziltug) | 22 |
+> | [@RossWarner21](https://github.com/RossWarner21) | 1 |
+
+**最新版本**：v1.4.3 (2026-09-27)
+
+> [!info]- Release Notes
+> **Reliable rendering on Windows, automated tests, and install guides for other agents.**
+> 
+> - **Windows fix:** web-icon export (`export_variants.py --web-icons`) could stop without writing `favicon.ico` and the app icons, because Windows keeps Chrome's helper processes and files locked for a moment after a screenshot. `render_png.py` now stops the whole browser process tree, cleans up temporary folders without failing, and retries a failed browser render once. The export now names the icon that failed instead of saying no renderer is available.
+> - **Automated tests:** every push and pull request runs all the skill's scripts end to end on Windows, macOS and Linux (Python 3.9 and latest 3.x) with `tools/smoke_test.py`.
+> - **Other agents:** the README explains how to install the skill in Gemini CLI, Codex CLI and other agents that support Agent Skills, and SKILL.md no longer assumes Claude Code when locating its scripts.
+> 
+> Update in Claude Code: `/plugin marketplace update logo-design-skill`
+> Claude.ai / Desktop: download `logo-design.zip` (or `logo-design-lite.zip`) and re-upload it under Settings → Capabilities → Skills.
+> Gemini CLI, Codex CLI and others: copy `skills/logo-design/` into your agent's skills folder (see the README).
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-27）
-> **活躍天數** 4 天 · **最新 commit** README: note the YouTube upload is an older render
+> [!abstract] 最近 10 次 commit（2026-09-27 ~ 2026-09-30）
+> **活躍天數** 4 天 · **最新 commit** README: move Install above Examples
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#5](https://github.com/kaankiziltug/logo-design-skill/issues/5) | Дизайн | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # I'm Upping My P(doom) — music video
+> # Logo Design Skill for Claude & AI Agents
 > 
-> A generative, code-rendered music video with word-synced karaoke typography. Every frame is a deterministic function of song time, so the live preview in the browser and the offline 1080p60 (or 4K60) export are identical.
+> [](https://github.com/kaankiziltug/logo-design-skill/actions/workflows/test.yml) [](#)
 > 
-> **Watch it in 4K on YouTube:** https://www.youtube.com/watch?v=5EoO5413dBY
+> A comprehensive **logo-design skill** that turns Claude — or any agent that supports Agent Skills, such as Gemini
+> CLI, Codex CLI, Cursor or GitHub Copilot — into a disciplined identity designer, from the first brief to
+> production-ready SVG files and brand guidelines.
 > 
-> The YouTube upload is an earlier render: it averages only 4 sub-frames per frame for motion blur, so fast motion shows stepped copies, and YouTube's compression smears the film grain. For the best version, render it locally (see [Render the video](#render-the-video)): the current code picks up to 324 sub-frames per frame where the motion needs them.
+> - **Principles & process** — discovery and briefs, word mapping, choosing the right mark type, concepting,
+>   geometric construction, optical corrections (overshoot, bone effect, irradiation…), colour, typography, lockups,
+>   testing, presentation, delivery, redesigns and identity systems.
+> - **A reference library of 1,400+ real-world SVG logos**, each visually classified by mark type, technique,
+>   geometry, subject, typography, mood and industry — searchable from the command line and browsable in a local
+>   gallery. Used to study construction, map category conventions and avoid look-alikes (never to copy).
+> - **Dependency-free Python tools** — audit an SVG against logo principles, build concept overview sheets and test
+>   sheets (16 px pixel test, one-colour, reversed, squint, mirror, contexts, competitor shelf test), create client
+>   presentation boards with industry-specific mockups, render PNGs, and export a complete favicon / app-icon /
+>   web-manifest set.
 > 
-> The video was made with Claude (Opus 5.5) in Claude Code: the concept and treatment, the lyric alignment and audio analysis, the renderer, every scene and the renders were all worked out in conversation with Claude.
+> **Contents:** [How it works](#how-it-works) · [Install](#install) · [Examples](#examples) ·
+> [Tests](#what-the-tests-catch) · [Use](#use) · [What's inside](#whats-inside) · [Library](#library-at-a-glance)
 > 
-> The song is not ours: see [Credits](#credits) for who wrote and made it.
+> ---
 > 
-> The concept, style bible and plate-by-plate treatment are in [`docs/TREATMENT.md`](docs/TREATMENT.md). The engine and scene API are documented in [`docs/ENGINE.md`](docs/ENGINE.md).
 > 
-> ## Layout
+> ## Install
 > 
-> - `audio/pdoom.mp3` — the song (the Claude-Pop version, see Credits).
-> - `lyrics/lyrics.src.js` — the original line-level lyrics (approximate timings).
-> - `analysis/` — Python (uv) tools that produced the timing data: Demucs stem separation, CTC forced alignment cross-checked with Whisper, beat/downbeat/onset analysis. See `analysis/align.py` and `analysis/analyze.py`.
-> - `data/lyrics.json` — word-level (and some syllable-level) lyric timings.
-> - `data/audio.json` — tempo (132.007 BPM), beats, downbeats, sections, drum/vocal onsets and loudness envelopes.
-> - `app/` — the renderer: TypeScript + three.js, bun + Vite.
->   - `src/engine/` — renderer core: timeline playback, post-processing (bloom, halation, grain), typography (Archivo, IBM Plex Mono, Cormorant Garamond, single-stroke plotter fonts), GPU line batches, HUD.
->   - `src/scenes/` — one module per plate (`open`, `loss`, `prompt`, `hook`, `room`, `shoggoth`, `spacetime`, `ascent`, `bureau`, `leftturn`, `paperclips`, `fuse`, `stack`, `dense`, `loom`, `ilya`, `outro`) plus shared motifs.
->   - `src/timeline.ts` — the edit: scene windows anchored to lyric lines and snapped to the beat grid.
->   - `scripts/render.ts` — offline renderer (headless Chrome → raw frames over WebSocket → ffmpeg).
-> - `out/` — renders (not in the repo).
 > 
-> ## Requirements
+> ## Examples
 > 
-> [bun](https://bun.sh), Google Chrome (the offline renderer drives it headless through playwright-core) and ffmpeg with libx264. The analysis tools need [uv](https://docs.astral.sh/uv/); the renderer doesn't.
+> Twenty-eight fictional briefs, from quiet luxury and neon festivals to B2B SaaS, fintech and health — each run end to
+> end with the skill. For every brand you see exactly what the skill shows at the checkpoint (greyscale concepts with
+> true 64/32/16 px sizes and a recommendation), followed by a colour preview of the chosen direction on mockups picked
+> for that industry. Later batches deliberately push **vivid, saturated palettes** while still passing the one-colour
+> and 3 : 1 contrast checks. The newest batch takes on three crowded categories: **SaaS** (no chat bubbles, charts or
+> padlocks), **finance** (no coins, piggy banks or bank blue) and **health** (no crosses, pills or heartbeat lines).
+> The latest ten add another ten sectors. In four of them the client picked a different concept at the checkpoint than
+> the one the skill recommended, and the skill refined that choice before colouring it: exactly what the checkpoint is
+> for.
 > 
-> ## Preview
+> | Brand | Sector | Style | Chosen mark |
+> |---|---|---|---|
+> |  [Kiln](#kiln--specialty-coffee-roaster) | Specialty coffee | Warm, crafted, modern | Letterform + custom wordmark |
+> |  [Zestly](#zestly--food-delivery-app) | Food delivery | Juicy, cheeky, tomato & lime | Mascot |
+> |  [Maison Orvelle](#maison-orvelle--luxury-fashion-atelier) | Luxury fashion | High-contrast Didone | Monogram |
+> |  [Pulsewave](#pulsewave--music--arts-festival) | Music festival | Neon on night, kinetic | Abstract letterform |
+> |  [Tinkertrail](#tinkertrail--kids-stem-workshops) | Kids' STEM education | Playful, rounded, multi-colour | Letterform |
+> |  [Ralli](#ralli--padel--tennis-app) | Sports app | Dynamic italic, electric coral | Letterform |
+> |  [Alderpeak](#alderpeak--outdoor-gear) | Outdoor gear | Rugged, slab, earthy | Pictorial symbol |
+> |  [Driftwell](#driftwell--surf-hostel--café) | Hospitality | Azulejo tile, coastal brights | Emblem + symbol |
+> |  [Calmera](#calmera--physiotherapy-clinic) | Physiotherapy | Soft, organic, calm | Pictorial symbol |
+> |  [Bramble Vet](#bramble-vet--veterinary-clinic) | Veterinary | Friendly character, sunny | Mascot |
+> |  [Voltra](#voltra--solar-energy) | Clean energy | Geometric, volt orange | Abstract symbol |
+> |  [Keyfort](#keyfort--password-manager) | Security SaaS | Strict grid, electric indigo & mint | Abstract symbol |
+> |  [Relaydesk](#relaydesk--customer-support-saas) | Support SaaS | Rounded, violet & coral | Abstract symbol |
+> |  [Tracelane](#tracelane--product-analytics) | Developer analytics | Technical, acid & pink on carbon | Letterform |
+> |  [Tallybook](#tallybook--invoicing--bookkeeping) | Small-business finance | Friendly, tangerine & teal | Letterform |
+> |  [Northvault](#northvault--digital-bank-for-freelancers) | Digital banking | Bold tile, hot magenta | Letterform |
+> |  [Mediora](#mediora--telehealth-app) | Telehealth | Soft, coral face on teal | Mascot |
+> |  [Brightdose](#brightdose--online-pharmacy) | Online pharmacy | Sunny yellow & cobalt | Letterform |
+> |  [Hearsay](#hearsay--podcast-network) | Podcast network | Bold pink, conversational | Letterform (client's pick) |
+> |  [Norrvik](#norrvik--architecture-studio) | Architecture | Restrained, spruce green | Abstract symbol |
+> |  [Brawnhall](#brawnhall--boxing-club) | Boxing gym | Heavy, hi-vis orange | Letterform (client's pick) |
+> |  [Solenne](#solenne--skincare) | Skincare | Daylight blue & gold | Pictorial (client's pick) |
+> |  [Mothlight](#mothlight--indie-game-studio) | Indie games | Ultraviolet & lamplight | Negative space |
+> |  [Loafwright](#loafwright--sourdough-bakery) | Bakery | Warm marigold | Mascot |
+> |  [Stillbrook](#stillbrook--craft-brewery) | Craft brewery | Turquoise & forge orange | Letterform |
+> |  [Marlow & Finch](#marlow--finch--estate-agency) | Real estate | Finch orange & ink | Pictorial ampersand |
+> |  [Kitewire](#kitewire--ai-agent-platform) | AI dev tools | Kite red & updraft yellow | Letterform |
+> |  [Roamwheel](#roamwheel--e-bike-subscription) | Urban mobility | Go lime & ink | Mascot (client's pick) |
 > 
-> ```sh
-> cd app
-> bun install
-> bunx vite
+> 
+> ## How it works
+> 
+> ```mermaid
+> flowchart LR
+>     A[Briefquestions or stated assumptions] --> B[Researchcategory conventions in the library]
+>     B --> C[Concepts8–12 one-liners → build 3 in SVG]
+>     C --> D[Test & refineaudit · 16 px · one-colour · shelf test]
+>     D --> E{{Checkpointshow concepts, recommend, stop}}
+>     E -- "you pick a directionand ask for the kit" --> F[Kitcolour · lockups · board · icons · guidelines]
+>     E -- "you want changes" --> C
 > ```
 > 
-> Open http://localhost:5173 and use the keys below. `?t=23` starts at a given time.
+> The skill always **stops at the checkpoint**: it shows the concepts as one overview image with a recommendation and
+> offers the full kit. Nothing else is produced until you choose a direction — the kit is most of the work and only
+> makes sense for an approved idea.
 > 
-> | Key | Action |
-> |---|---|
-> | space | play / pause |
-> | ← / → | seek ±1 s (±5 s with shift) |
-> | `,` / `.` | step one frame |
-> | `[` / `]` | previous / next scene |
-> | `l` | loop the current scene |
-> | `h` | hide the UI |
+> ---
 > 
-> The preview renders in real time on a recent Mac. The export is not real time and is heavier.
 > 
-> ## Render the video
-> 
-> ```sh
-> cd app
-> bun scripts/render.ts video --samples auto --shutter 0.2 --out ../out/pdoom.mp4
+> ### Claude Code — plugin marketplace (recommended)
+> ```
+> /plugin marketplace add kaankiziltug/logo-design-skill
+> /plugin install logo-design@logo-design-skill
 > ```
 > 
-> - **Output:** 1920×1080 at 60 fps, x264 CRF 16, AAC audio.
-> - **Motion blur:** every frame is the average of many sub-frames spread over a short shutter (`--shutter 0.2`, a fifth of the frame time), so fast motion leaves a continuous streak instead of a few stepped copies. `--samples auto` picks the count per frame: 12 for a still frame, 36 for ordinary camera motion, 108 or 324 for whips, slams and fast zooms. It stops once more sub-frames would no longer change the image by more than `--tol` levels of 255 (default 3). `--samples N` takes a fixed N instead (`--samples 4` makes a quick draft). How it works: "Motion blur and sampling" in [`docs/ENGINE.md`](docs/ENGINE.md).
-> - **Other modes:** `stills`, `sheet` (contact sheets, `--cuts` for every scene boundary), `perf`, and `plates` (regenerates `public/plates/`, the stills used by the outro's rewind montage; rerun it after changing a scene).
 > 
-> ### 4K
+> ### Claude Code — manual
+> Copy the skill folder into your personal (all projects) or project skills directory:
+> ```bash
+> git clone https://github.com/kaankiziltug/logo-design-skill.git
+> cp -r logo-design-skill/skills/logo-design ~/.claude/skills/logo-design          # personal
 > 
-> ```sh
-> cd app
-> bun scripts/render.ts video --scale 2 --samples auto --shutter 0.2 --x264 aq-mode=3:rc-lookahead=30 --out ../out/pdoom-4k.mp4
+> # or: cp -r logo-design-skill/skills/logo-design .claude/skills/logo-design     # per project
 > ```
 > 
-> - **Output:** a true 3840×2160 render (not an upscale): every layer, line and shader is rendered at the physical resolution. Scenes are laid out in 1920×1080 logical pixels, so the 4K frame looks like the 1080p one, only sharper.
-> - **Cost:** GPU-bound. A frame takes from about 40 ms (a still frame) to over 10 s (the ray-marched rooms at 108–324 sub-frames). The whole song took about 2.5 hours on an M5 Pro, rendered as segments in two parallel pipelines (`--from`/`--to`, then a lossless concat). Each pipeline uses about 5 GB for headless Chrome plus about 4 GB for ffmpeg; the shorter x264 lookahead above keeps ffmpeg's memory down.
-> - **Encoding:** the film grain is rendered per 4K pixel, which is expensive to encode: at the default CRF 16 the file runs at about 670 Mbit/s (13 GB for the song, 8× the 1080p file), `--crf 18` gives about 450 Mbit/s and `--crf 20` about 230 Mbit/s.
-> - `--scale 2` works with every mode. `stills` then saves full-resolution PNGs, and `perf` measures 4K frame times. In the browser preview, add `&scale=2` to the URL.
 > 
-> ## Regenerate the timing data
+> ### Claude.ai / Claude Desktop
+> Download `logo-design.zip` from the [Releases](https://github.com/kaankiziltug/logo-design-skill/releases) page (or run
+> `python3 tools/package_skill.py`) and upload it under **Settings → Capabilities → Skills**. If your upload has a size
+> limit, use `logo-design-lite.zip` (everything except the SVG files themselves).
 > 
-> The committed `data/*.json` files are all the renderer needs. Regenerating them needs the stems and intermediates, which are not in the repo:
 > 
-> - **Stems:** Demucs `htdemucs_ft` into `analysis/stems/htdemucs_ft/pdoom/` (`uv run python -m demucs -n htdemucs_ft -o stems ../audio/pdoom.mp3`), plus the lead vocal from a mel-band-roformer karaoke model (audio-separator) in `analysis/stems/karaoke/lead.wav`.
-> - **Intermediates:** `ctc_emissions.py`, `whisper_run.py` and `vocal_feats.py` write them to `analysis/work/`. The pipeline is described at the top of `analysis/align.py`.
-> 
-> ```sh
-> cd analysis
-> uv run python align.py      # data/lyrics.json
-> uv run python analyze.py    # data/audio.json
+> ### Gemini CLI, Codex CLI and other agents
+> The skill uses the open **Agent Skills** format (a folder with a `SKILL.md`), so it works in any agent that supports
+> skills — the instructions are plain Markdown and the tools are plain Python. Clone once, then copy the folder into
+> your agent's skills directory:
+> ```bash
+> git clone https://github.com/kaankiziltug/logo-design-skill.git
 > ```
 > 
-> The models download about 4 GB of weights into `analysis/.cache/`; delete that folder afterwards.
+> | Agent | Personal (all projects) | Per project |
+> |---|---|---|
+> | Gemini CLI | `~/.gemini/skills/logo-design` (or `~/.agents/skills/`) | `.gemini/skills/logo-design` |
+> | Codex CLI | `~/.codex/skills/logo-design` | `.codex/skills/logo-design` |
+> | Cursor, GitHub Copilot, OpenCode, others | see your agent's skills docs | usually a `skills/` folder in the project |
 > 
-> ## Credits
-> 
-> - **Song:** "I'm Upping My P(doom)". The lyrics are by [osmarks](https://docs.osmarks.net/hypha/p%28doom%29_song_objectively_correct_interpretation), built on an opening verse and chorus by [MusicPerson](https://www.udio.com/creators/MusicPerson), with lines suggested on the EleutherAI Discord and help from Claude on the outro and final chorus. The original was generated with Udio and released in November 2024 ([YouTube](https://www.youtube.com/watch?v=uEB5E67vcPA)). This video uses the "Claude-Pop" version made with Suno, posted by [deckard (@slimer48484)](https://x.com/slimer48484/status/2097752569212756134) in September 2026.
-> - **Fonts:** Archivo, IBM Plex Mono and Cormorant Garamond (SIL Open Font License). Single-stroke EMS and Hershey fonts via the `hersheytext` package (OFL / public domain).
-> 
-> ## License
-> 
-> The code is released under the [MIT License](LICENSE). The fonts in `app/public/fonts/` keep their own licenses (see Credits), and the song and lyrics (`audio/`, `lyrics/`, `data/lyrics.json`) are not covered by it: they belong to their authors (see Credits).
+> ```bash
+> cp -r logo-design-skill/skil
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/mexicat/pdoom-video)
+[GitHub](https://github.com/kaankiziltug/logo-design-skill)
 
 ## 相關收錄
 
@@ -282,7 +342,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "mexicat--pdoom-video"
+> WHERE category = "Other" AND file.name != "kaankiziltug--logo-design-skill"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +351,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "mexicat--pdoom-video" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "kaankiziltug--logo-design-skill" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +360,18 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "mexicat--pdoom-video"
+> WHERE week = "2026-W40" AND file.name != "kaankiziltug--logo-design-skill"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "mexicat--pdoom-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "kaankiziltug--logo-design-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +387,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "mexicat" AND file.name != "mexicat--pdoom-video"
+> WHERE owner = "kaankiziltug" AND file.name != "kaankiziltug--logo-design-skill"
 > SORT stars DESC
 > ```
 
@@ -335,7 +395,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +412,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +445,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +469,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +506,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +589,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-28** — 首次收錄
+> **2026-10-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,7 +605,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-01|2026-10-01]] — 再次上榜，2.1k stars
-- [[2026-09-30|2026-09-30]] — 再次上榜，2.0k stars
-- [[2026-09-29|2026-09-29]] — 再次上榜，1.8k stars
-- [[2026-09-28|2026-09-28]] — 首次收錄，1.4k stars
+- [[2026-10-01|2026-10-01]] — 首次收錄，1.2k stars

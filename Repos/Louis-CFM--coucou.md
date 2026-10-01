@@ -1,63 +1,68 @@
 ---
-repo: mexicat/pdoom-video
-url: https://github.com/mexicat/pdoom-video
-owner: mexicat
+repo: Louis-CFM/coucou
+url: https://github.com/Louis-CFM/coucou
+owner: Louis-CFM
 owner_type: User
-language: TypeScript
+language: Swift
 license: MIT
-description: "Code-rendered music video for \"I'm Upping My P(doom)\""
-homepage: ""
-stars: 2138
-stars_per_day: 356
-forks: 224
-open_issues: 0
-created: 2026-09-24
-pushed_at: 2026-09-28
-first_seen: 2026-09-28
+description: "A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows) and keeps an eye on your Claude Code sessions."
+homepage: "https://louis-cfm.github.io/coucou/"
+stars: 1725
+stars_per_day: 575
+forks: 219
+open_issues: 29
+created: 2026-09-27
+pushed_at: 2026-10-01
+first_seen: 2026-10-01
 week: "2026-W40"
-month: "2026-09"
+month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-28
+last_reviewed: 2026-10-01
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-10-04"
-contributor_count: 1
+contributor_count: 2
 engagement: "medium"
-issue_close_rate: 33
-repo_size_kb: 17678
-readme_length: 7289
+issue_close_rate: 0
+repo_size_kb: 11447
+readme_length: 6760
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 4
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-28"
-star_history: "2026-09-28:1350,2026-09-29:1830,2026-09-30:2011,2026-10-01:2138"
+ring_history: "assess@2026-10-01"
+star_history: "2026-10-01:1725"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/swift"
+  - "topic/ai_agents"
+  - "topic/anthropic"
+  - "topic/claude"
+  - "topic/claude_code"
+  - "topic/dynamic_island"
 aliases:
-  - "pdoom-video"
-  - "mexicat/pdoom-video"
+  - "coucou"
+  - "Louis-CFM/coucou"
 ---
 
-# pdoom-video
+# coucou
 
-**1.4k** stars · **450** stars/天 · 建立 3 天前 · TypeScript · MIT
+**1.7k** stars · **575** stars/天 · 建立 3 天前 · Swift · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/mexicat--pdoom-video");
+const me = dv.page("Repos/Louis-CFM--coucou");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.1.0`
+
+`ai-agents` `anthropic` `claude` `claude-code` `dynamic-island` `macos` `macos-app` `menubar-app` `notch` `open-source` `swift` `swiftui`
 
 > [!summary] 一句話摘要
-> Code-rendered music video for "I'm Upping My P(doom)"
+> A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows) and keeps an eye on your Claude Code sessions.
 
 ## 專案簡介
 
-Code-rendered music video for "I'm Upping My P(doom)"
+A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows) and keeps an eye on your Claude Code sessions.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/Louis-CFM--coucou");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/Louis-CFM--coucou");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,139 +149,216 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 138 |
-| Open Issues | 2 |
-| Issue 解決率 | 33% (1 closed) |
-| 最後推送 | 2026-09-27 |
-| 建立日期 | 2026-09-24 |
-| Repo 大小 | 17.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mexicat/pdoom-video) |
+| Forks | 219 |
+| Open Issues | 29 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-10-01 |
+| 建立日期 | 2026-09-27 |
+| 官方網站 | [Link](https://louis-cfm.github.io/coucou/) |
+| Repo 大小 | 11.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Louis-CFM/coucou) |
+| Topics | `ai-agents` `anthropic` `claude` `claude-code` `dynamic-island` `macos` `macos-app` `menubar-app` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 94
->     "Python" : 6
+>     "Swift" : 53
+>     "TypeScript" : 28
+>     "Rust" : 14
+>     "CSS" : 3
+>     "JavaScript" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@mexicat](https://github.com/mexicat) | 8 |
+> | [@Louis-CFM](https://github.com/Louis-CFM) | 37 |
+> | [@Kamasoutra](https://github.com/Kamasoutra) | 1 |
+
+**最新版本**：v0.1.0 — Coucou 0.1.0 (2026-09-27)
+
+> [!info]- Release Notes
+> ## What's in this release
+> 
+> - Mochi lives in your notch — breathing, blinking, eyes that follow your cursor
+> - Claude Code sessions: live steps, approve permissions, answer questions, jump to terminal
+> - Built-in Claude chat from the notch
+> - Drop a file on the notch → ask a question or send it by email
+> - Drag Mochi onto any window to attach it as context
+> - Integrations: Stripe, n8n, GitHub, Vercel, Resend, Notion, Cal.com
+> - 28 handcrafted sounds
+> - Hides when idle, peeks when you hover
+> 
+> ## First launch
+> 
+> macOS will say it can't verify Coucou (free side project, not notarized).
+> 
+> Open **System Settings → Privacy & Security** and click **Open Anyway**, or run in Terminal:
+> 
+> ```
+> xattr -dr com.apple.quarantine /Applications/Coucou.app
+> ```
+> 
+> ## Build from source
+> 
+> ```bash
+> brew install xcodegen
+> git clone https://github.com/Louis-CFM/coucou.git
+> cd coucou/NotchBuddy && xcodegen && open NotchBuddy.xcodeproj
+> ```
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-27）
-> **活躍天數** 4 天 · **最新 commit** README: note the YouTube upload is an older render
+> [!abstract] 最近 10 次 commit（2026-09-30 ~ 2026-10-01）
+> **活躍天數** 2 天 · **最新 commit** docs: refine no-notch FAQ and README (lid closed on external display)
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#8](https://github.com/Louis-CFM/coucou/issues/8) | Create a Linux version `enhancement` | 10 | 7 |
+> | [#13](https://github.com/Louis-CFM/coucou/issues/13) | Codex support on macOS (implementation + verified event surf | 5 | 0 |
+> | [#9](https://github.com/Louis-CFM/coucou/issues/9) | Support for other agents, like Oh-my-pi `enhancement` | 5 | 2 |
+> | [#39](https://github.com/Louis-CFM/coucou/issues/39) | Overlapping Text on Windows `bug` | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # I'm Upping My P(doom) — music video
+> # Coucou
 > 
-> A generative, code-rendered music video with word-synced karaoke typography. Every frame is a deterministic function of song time, so the live preview in the browser and the offline 1080p60 (or 4K60) export are identical.
+> **A tiny friend that lives in your Mac's notch — or at the top of your screen on Windows — and keeps an eye on your Claude Code sessions.**
 > 
-> **Watch it in 4K on YouTube:** https://www.youtube.com/watch?v=5EoO5413dBY
+> Approve permissions, watch your agents work, drop a file, chat with Claude — all without leaving what you're doing.
 > 
-> The YouTube upload is an earlier render: it averages only 4 sub-frames per frame for motion blur, so fast motion shows stepped copies, and YouTube's compression smears the film grain. For the best version, render it locally (see [Render the video](#render-the-video)): the current code picks up to 324 sub-frames per frame where the motion needs them.
+> ---
 > 
-> The video was made with Claude (Opus 5.5) in Claude Code: the concept and treatment, the lyric alignment and audio analysis, the renderer, every scene and the renders were all worked out in conversation with Claude.
+> ## Why
 > 
-> The song is not ours: see [Credits](#credits) for who wrote and made it.
+> Some studios showed off gorgeous notch companions… and never let anyone use them.
+> **Coucou is the open version.** Every line of code, every animation, every sound — free to use, read, fork and remix.
 > 
-> The concept, style bible and plate-by-plate treatment are in [`docs/TREATMENT.md`](docs/TREATMENT.md). The engine and scene API are documented in [`docs/ENGINE.md`](docs/ENGINE.md).
+> Meet **Mochi**: a soft little squircle with big eyes that pops out of your notch, waves hello, follows your cursor with its eyes, gets annoyed when you poke it (and dizzy if you insist), and tells you the moment Claude Code needs you.
 > 
-> ## Layout
+> ## Features
 > 
-> - `audio/pdoom.mp3` — the song (the Claude-Pop version, see Credits).
-> - `lyrics/lyrics.src.js` — the original line-level lyrics (approximate timings).
-> - `analysis/` — Python (uv) tools that produced the timing data: Demucs stem separation, CTC forced alignment cross-checked with Whisper, beat/downbeat/onset analysis. See `analysis/align.py` and `analysis/analyze.py`.
-> - `data/lyrics.json` — word-level (and some syllable-level) lyric timings.
-> - `data/audio.json` — tempo (132.007 BPM), beats, downbeats, sections, drum/vocal onsets and loudness envelopes.
-> - `app/` — the renderer: TypeScript + three.js, bun + Vite.
->   - `src/engine/` — renderer core: timeline playback, post-processing (bloom, halation, grain), typography (Archivo, IBM Plex Mono, Cormorant Garamond, single-stroke plotter fonts), GPU line batches, HUD.
->   - `src/scenes/` — one module per plate (`open`, `loss`, `prompt`, `hook`, `room`, `shoggoth`, `spacetime`, `ascent`, `bureau`, `leftturn`, `paperclips`, `fuse`, `stack`, `dense`, `loom`, `ilya`, `outro`) plus shared motifs.
->   - `src/timeline.ts` — the edit: scene windows anchored to lyric lines and snapped to the beat grid.
->   - `scripts/render.ts` — offline renderer (headless Chrome → raw frames over WebSocket → ffmpeg).
-> - `out/` — renders (not in the repo).
+> - 🤖 **Claude Code, live** — see every session in your notch: what it reads, edits and runs, step by step. Finished? Mochi does a happy little jump.
+> - ✅ **Approve from the notch** — Claude Code permission requests show up with **Allow / Deny**. One click, back to work.
+> - 🧑‍💻 **Jump to the right terminal** — open the exact terminal window of a session *(macOS)*.
+> - 💬 **Ask Claude anything** — built-in chat, straight from the notch.
+> - 📎 **Drop a file on the notch** — Mochi turns into a box and swallows it, then ask a question about it or send it by email *(email: macOS, Mail.app)*.
+> - 🪟 **Drag Mochi onto any window** — attach that window as context for Claude *(macOS)*.
+> - 🔌 **Integrations** — Stripe payments, n8n workflows, GitHub, Vercel deployments, Resend emails, Notion, Cal.com. Each one gets its own little colored Mochi.
+> - 🎭 **A real character** — idle breathing, blinks, eyes on a sphere that follow your mouse, emotes, 28 handcrafted sounds, a greeting on launch.
+> - 🫥 **Invisible when idle** — hides away when nothing is running, peeks out when you hover the notch (the top edge of the screen on Windows).
+> - 🖥️ **Any Mac, notch or not** — on an iMac, a Mac mini, or a MacBook with its lid closed on an external display, Mochi sits in a small bar at the top of the screen.
+> - 🔒 **Private by design** — no telemetry, no account. Keys live in your macOS Keychain or Windows Credential Manager. The app only talks to the services you plug in.
 > 
-> ## Requirements
+> ## Install
 > 
-> [bun](https://bun.sh), Google Chrome (the offline renderer drives it headless through playwright-core) and ffmpeg with libx264. The analysis tools need [uv](https://docs.astral.sh/uv/); the renderer doesn't.
+> ### Download for macOS
 > 
-> ## Preview
+> 1. Grab the latest `Coucou.zip` from [Releases](https://github.com/Louis-CFM/coucou/releases).
+> 2. Unzip and move **Coucou.app** to `/Applications`.
+> 3. Launch. This build isn't notarized by Apple yet, so the first time macOS says it can't verify the developer: open **System Settings → Privacy & Security**, scroll down and click **Open Anyway** (only once).
 > 
-> ```sh
-> cd app
-> bun install
-> bunx vite
+> ### Windows
+> 
+> The Windows installer is **temporarily unavailable**. Microsoft Defender wrongly
+> flags the unsigned installer as malware; a false-positive report is under review
+> at Microsoft and the installer will come back once it is cleared and signed.
+> Until then you can [build it from source](#build-from-source).
+> 
+> There is no notch on a PC, so the island slides out of the top edge of the screen
+> instead of hiding inside one. See [`windows/README.md`](windows/README.md) for the
+> rest of the differences.
+> 
+> ### Build from source
+> 
+> **macOS** — requirements: macOS 15+, Xcode 16+, [XcodeGen](https://github.com/yonaskolb/XcodeGen).
+> 
+> ```bash
+> brew install xcodegen
+> git clone https://github.com/Louis-CFM/coucou.git
+> cd coucou/NotchBuddy
+> xcodegen
+> open NotchBuddy.xcodeproj   # then ⌘R
 > ```
 > 
-> Open http://localhost:5173 and use the keys below. `?t=23` starts at a given time.
+> **Windows** — requirements: [Rust](https://rustup.rs), Node 20+, MSVC build tools.
 > 
-> | Key | Action |
+> ```powershell
+> git clone https://github.com/Louis-CFM/coucou.git
+> cd coucou/windows
+> npm install
+> npm run pack                # installer lands in windows/release/
+> ```
+> 
+> ## Setup
+> 
+> Click the Coucou icon in the menu bar (macOS) or in the system tray (Windows) → **Settings…**
+> 
+> | What | Why | Where the key goes |
+> |---|---|---|
+> | **Claude Code hooks** | live sessions and approvals | **Install hooks** — Coucou backs up `~/.claude/settings.json`, merges its hooks and shows you the diff before writing anything |
+> | **Anthropic API key** | chat and questions about files | Keychain / Windows Credential Manager |
+> | Stripe, n8n, GitHub, Vercel, Resend, Notion, Cal.com | the integration pills | Keychain / Windows Credential Manager, all optional |
+> 
+> If Coucou isn't running, the hook exits immediately: **Claude Code is never blocked.**
+> 
+> ## Things to try
+> 
+> | Do this | Mochi does that |
 > |---|---|
-> | space | play / pause |
-> | ← / → | seek ±1 s (±5 s with shift) |
-> | `,` / `.` | step one frame |
-> | `[` / `]` | previous / next scene |
-> | `l` | loop the current scene |
-> | `h` | hide the UI |
+> | Hover the notch (top edge on Windows) | peeks out and says hi 👋 |
+> | Click it | opens |
+> | Hover Mochi | blinks, eyes grow |
+> | Click Mochi | squish + annoyed |
+> | Click 3 times fast | 😵‍💫 dizzy for a few seconds |
+> | Drag a file onto the island | turns into a box and swallows it |
+> | Drag Mochi onto a window *(macOS)* | attaches it as context |
 > 
-> The preview renders in real time on a recent Mac. The export is not real time and is heavier.
+> ## How it works
 > 
-> ## Render the video
+> **macOS**
 > 
-> ```sh
-> cd app
-> bun scripts/render.ts video --samples auto --shutter 0.2 --out ../out/pdoom.mp4
-> ```
+> - **Island**: a borderless `NSPanel` hugging the notch, driven by a small state machine (`hidden → petit → home`).
+> - **Character**: drawn in SwiftUI `Canvas` + `TimelineView` at 60 fps — squircle body, eyes projected on a sphere, spring animations. No Rive, no Lottie, no images.
+> - **Claude Code**: a tiny `nb-hook` script receives hook events and forwards them over a Unix socket to the app. For approvals it waits for your click, then answers the hook.
+> - **Integrations**: lightweight pollers, paused when nothing is watching.
+> - **Sounds**: 28 short WAVs played through preloaded `AVAudioPlayer`s.
 > 
-> - **Output:** 1920×1080 at 60 fps, x264 CRF 16, AAC audio.
-> - **Motion blur:** every frame is the average of many sub-frames spread over a short shutter (`--shutter 0.2`, a fifth of the frame time), so fast motion leaves a continuous streak instead of a few stepped copies. `--samples auto` picks the count per frame: 12 for a still frame, 36 for ordinary camera motion, 108 or 324 for whips, slams and fast zooms. It stops once more sub-frames would no longer change the image by more than `--tol` levels of 255 (default 3). `--samples N` takes a fixed N instead (`--samples 4` makes a quick draft). How it works: "Motion blur and sampling" in [`docs/ENGINE.md`](docs/ENGINE.md).
-> - **Other modes:** `stills`, `sheet` (contact sheets, `--cuts` for every scene boundary), `perf`, and `plates` (regenerates `public/plates/`, the stills used by the outro's rewind montage; rerun it after changing a scene).
+> The macOS app is native Swift 6 / SwiftUI / AppKit with **zero third-party dependencies**.
 > 
-> ### 4K
+> **Windows**
 > 
-> ```sh
-> cd app
-> bun scripts/render.ts video --scale 2 --samples auto --shutter 0.2 --x264 aq-mode=3:rc-lookahead=30 --out ../out/pdoom-4k.mp4
-> ```
+> - A [Tauri 2](https://tauri.app) app (Rust + TypeScript): the island is a transparent, always-on-top window that never steals focus, Mochi is drawn in Canvas 2D with the same shapes, timings and sounds as on the Mac.
+> - Claude Code hooks go through a tiny `coucou-hook.exe` and a named pipe; keys live in Windows Credential Manager.
+> - Details and differences in [`windows/README.md`](windows/README.md).
 > 
-> - **Output:** a true 3840×2160 render (not an upscale): every layer, line and shader is rendered at the physical resolution. Scenes are laid out in 1920×1080 logical pixels, so the 4K frame looks like the 1080p one, only sharper.
-> - **Cost:** GPU-bound. A frame takes from about 40 ms (a still frame) to over 10 s (the ray-marched rooms at 108–324 sub-frames). The whole song took about 2.5 hours on an M5 Pro, rendered as segments in two parallel pipelines (`--from`/`--to`, then a lossless concat). Each pipeline uses about 5 GB for headless Chrome plus about 4 GB for ffmpeg; the shorter x264 lookahead above keeps ffmpeg's memory down.
-> - **Encoding:** the film grain is rendered per 4K pixel, which is expensive to encode: at the default CRF 16 the file runs at about 670 Mbit/s (13 GB for the song, 8× the 1080p file), `--crf 18` gives about 450 Mbit/s and `--crf 20` about 230 Mbit/s.
-> - `--scale 2` works with every mode. `stills` then saves full-resolution PNGs, and `perf` measures 4K frame times. In the browser preview, add `&scale=2` to the URL.
+> ## Contributing
 > 
-> ## Regenerate the timing data
-> 
-> The committed `data/*.json` files are all the renderer needs. Regenerating them needs the stems and intermediates, which are not in the repo:
-> 
-> - **Stems:** Demucs `htdemucs_ft` into `analysis/stems/htdemucs_ft/pdoom/` (`uv run python -m demucs -n htdemucs_ft -o stems ../audio/pdoom.mp3`), plus the lead vocal from a mel-band-roformer karaoke model (audio-separator) in `analysis/stems/karaoke/lead.wav`.
-> - **Intermediates:** `ctc_emissions.py`, `whisper_run.py` and `vocal_feats.py` write them to `analysis/work/`. The pipeline is described at the top of `analysis/align.py`.
-> 
-> ```sh
-> cd analysis
-> uv run python align.py      # data/lyrics.json
-> uv run python analyze.py    # data/audio.json
-> ```
-> 
-> The models download about 4 GB of weights into `analysis/.cache/`; delete that folder afterwards.
+> Issues and PRs are very welcome — new integrations, new emotes, new sounds, bug fixes. See [CONTRIBUTING.md](CONTRIBUTING.md).
 > 
 > ## Credits
 > 
-> - **Song:** "I'm Upping My P(doom)". The lyrics are by [osmarks](https://docs.osmarks.net/hypha/p%28doom%29_song_objectively_correct_interpretation), built on an opening verse and chorus by [MusicPerson](https://www.udio.com/creators/MusicPerson), with lines suggested on the EleutherAI Discord and help from Claude on the outro and final chorus. The original was generated with Udio and released in November 2024 ([YouTube](https://www.youtube.com/watch?v=uEB5E67vcPA)). This video uses the "Claude-Pop" version made with Suno, posted by [deckard (@slimer48484)](https://x.com/slimer48484/status/2097752569212756134) in September 2026.
-> - **Fonts:** Archivo, IBM Plex Mono and Cormorant Garamond (SIL Open Font License). Single-stroke EMS and Hershey fonts via the `hersheytext` package (OFL / public domain).
+> Built by [Louis Raillé](https://louisraille.fr) with Claude Code.
+> Inspired by the notch-companion concepts shared by design studios — this project is independent and not affiliated with any of them.
 > 
 > ## License
 > 
-> The code is released under the [MIT License](LICENSE). The fonts in `app/public/fonts/` keep their own licenses (see Credits), and the song and lyrics (`audio/`, `lyrics/`, `data/lyrics.json`) are not covered by it: they belong to their authors (see Credits).
+> - **Code:** [MIT](LICENSE) — use it, fork it, learn from it, just keep the copyright notice.
+> - **Name, Mochi character, icon, sounds and media:** © Louis Raillé, all rights reserved — see [LICENSE-ASSETS.md](LICENSE-ASSETS.md). Shipping your own fork? Give it your own name and character.
+> 
+> **If Mochi made you smile, a ⭐ helps a lot.**
+> 
+> [Website](https://louis-cfm.github.io/coucou/) · [Privacy](https://louis-cfm.github.io/coucou/privacy.html) · [Terms](https://louis-cfm.github.io/coucou/terms.html) · [Support](https://louis-cfm.github.io/coucou/support.html)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/mexicat/pdoom-video)
+[GitHub](https://github.com/Louis-CFM/coucou) · [官方網站](https://louis-cfm.github.io/coucou/)
 
 ## 相關收錄
 
@@ -282,7 +366,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "mexicat--pdoom-video"
+> WHERE category = "Other" AND file.name != "Louis-CFM--coucou"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +375,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "mexicat--pdoom-video" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "Louis-CFM--coucou" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +384,18 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "mexicat--pdoom-video"
+> WHERE week = "2026-W40" AND file.name != "Louis-CFM--coucou"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/Louis-CFM--coucou");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "mexicat--pdoom-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Louis-CFM--coucou" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +411,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "mexicat" AND file.name != "mexicat--pdoom-video"
+> WHERE owner = "Louis-CFM" AND file.name != "Louis-CFM--coucou"
 > SORT stars DESC
 > ```
 
@@ -335,7 +419,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/Louis-CFM--coucou");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +436,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/Louis-CFM--coucou");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +469,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/Louis-CFM--coucou");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +493,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/Louis-CFM--coucou");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +530,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/Louis-CFM--coucou");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +613,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-28** — 首次收錄
+> **2026-10-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,7 +629,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-01|2026-10-01]] — 再次上榜，2.1k stars
-- [[2026-09-30|2026-09-30]] — 再次上榜，2.0k stars
-- [[2026-09-29|2026-09-29]] — 再次上榜，1.8k stars
-- [[2026-09-28|2026-09-28]] — 首次收錄，1.4k stars
+- [[2026-10-01|2026-10-01]] — 首次收錄，1.7k stars

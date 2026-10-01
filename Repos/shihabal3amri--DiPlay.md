@@ -7,12 +7,12 @@ language: Kotlin
 license: GPL-3.0
 description: "Independent CarPlay receiver for compatible Android head units. Wired and wireless public preview."
 homepage: "https://shihabal3amri.github.io/DiPlay/"
-stars: 1109
-stars_per_day: 222
-forks: 180
-open_issues: 39
+stars: 1687
+stars_per_day: 281
+forks: 239
+open_issues: 45
 created: 2026-09-24
-pushed_at: 2026-09-29
+pushed_at: 2026-09-30
 first_seen: 2026-09-30
 week: "2026-W40"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-03"
+appearances: 2
+next_review: "2026-10-04"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-30"
-star_history: "2026-09-30:1109"
+star_history: "2026-09-30:1109,2026-10-01:1687"
 tags:
   - github
   - "category/other"
@@ -540,4 +540,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-01|2026-10-01]] — 再次上榜，1.7k stars
 - [[2026-09-30|2026-09-30]] — 首次收錄，1.1k stars

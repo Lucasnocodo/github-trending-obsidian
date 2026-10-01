@@ -1,63 +1,63 @@
 ---
-repo: mexicat/pdoom-video
-url: https://github.com/mexicat/pdoom-video
-owner: mexicat
+repo: firelex/jeff
+url: https://github.com/firelex/jeff
+owner: firelex
 owner_type: User
-language: TypeScript
+language: Python
 license: MIT
-description: "Code-rendered music video for \"I'm Upping My P(doom)\""
+description: "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification"
 homepage: ""
-stars: 2138
-stars_per_day: 356
-forks: 224
-open_issues: 0
-created: 2026-09-24
-pushed_at: 2026-09-28
-first_seen: 2026-09-28
+stars: 1211
+stars_per_day: 606
+forks: 52
+open_issues: 1
+created: 2026-09-28
+pushed_at: 2026-09-29
+first_seen: 2026-10-01
 week: "2026-W40"
-month: "2026-09"
+month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-28
+last_reviewed: 2026-10-01
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-10-04"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: 33
-repo_size_kb: 17678
-readme_length: 7289
+contributor_count: 2
+engagement: "low"
+issue_close_rate: 67
+repo_size_kb: 76947
+readme_length: 9660
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-28"
-star_history: "2026-09-28:1350,2026-09-29:1830,2026-09-30:2011,2026-10-01:2138"
+ring_history: "assess@2026-10-01"
+star_history: "2026-10-01:1211"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/python"
 aliases:
-  - "pdoom-video"
-  - "mexicat/pdoom-video"
+  - "jeff"
+  - "firelex/jeff"
 ---
 
-# pdoom-video
+# jeff
 
-**1.4k** stars · **450** stars/天 · 建立 3 天前 · TypeScript · MIT
+**1.2k** stars · **606** stars/天 · 建立 2 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/mexicat--pdoom-video");
+const me = dv.page("Repos/firelex--jeff");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v1.1`
 
 > [!summary] 一句話摘要
-> Code-rendered music video for "I'm Upping My P(doom)"
+> Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification
 
 ## 專案簡介
 
-Code-rendered music video for "I'm Upping My P(doom)"
+Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/firelex--jeff");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/firelex--jeff");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,139 +142,194 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 138 |
-| Open Issues | 2 |
-| Issue 解決率 | 33% (1 closed) |
-| 最後推送 | 2026-09-27 |
-| 建立日期 | 2026-09-24 |
-| Repo 大小 | 17.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mexicat/pdoom-video) |
+| Forks | 52 |
+| Open Issues | 1 |
+| Issue 解決率 | 67% (2 closed) |
+| 最後推送 | 2026-09-29 |
+| 建立日期 | 2026-09-28 |
+| Repo 大小 | 75.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/firelex/jeff) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 94
->     "Python" : 6
+>     "Python" : 91
+>     "HTML" : 8
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@mexicat](https://github.com/mexicat) | 8 |
+> | [@firelex](https://github.com/firelex) | 11 |
+> | [@mikeatlas](https://github.com/mikeatlas) | 1 |
+
+**最新版本**：v1.1 — v1.1: up to 254 options (2026-09-29)
+
+> [!info]- Release Notes
+> **Jeff-Qwen3.5-0.8B and Jeff-Qwen3.5-2B v1.1** accept up to 254 options per question (v1.0: 26).
+> 
+> - **Long lists:** 32,000 new training questions with 20 to 254 options (code-built lists, and the MASSIVE and CLINC150 training splits). Long-list test: 0.8B 40.3% → 94.7%; 2B 95.2%. Thanks to @puhuk for the report (#1).
+> - **Final checkpoint:** v1.1 publishes the end-of-epoch checkpoint; development-loss selection had picked an early, less settled checkpoint.
+> - **Calibration:** error 0.049 → 0.021 (0.8B), 0.028 → 0.026 (2B). JevBench hard tier: 46.7% (0.8B), 57.1% (2B, up from 53.3%).
+> - **Benchmarks:** 0.8B unchanged at 79.1%; 2B 83.1% → 82.0%, mostly JudgeBench (64.6% → 59.4%), which sits near chance at this size.
+> - **Serving-only install:** `uv sync --no-default-groups` (#2, thanks to @WavesMan).
+> - **New base option:** Phi-4-mini-instruct can now be fine-tuned (#4, thanks to @mikeatlas).
+> - MASSIVE and CLINC150 results are no longer zero-shot. Jeff-Gemma4-E2B stays at v1.0.
+> 
+> Weights: [Jeff-Qwen3.5-0.8B](https://huggingface.co/mstrasser/Jeff-Qwen3.5-0.8B) · [Jeff-Qwen3.5-2B](https://huggingface.co/mstrasser/Jeff-Qwen3.5-2B). v1.0 stays available on Hugging Face as revision `v1.0`.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-27）
-> **活躍天數** 4 天 · **最新 commit** README: note the YouTube upload is an older render
+> [!abstract] 最近 10 次 commit（2026-09-28 ~ 2026-09-29）
+> **活躍天數** 2 天 · **最新 commit** Add Phi-4-mini-instruct as a generic decoder base (#4)
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#5](https://github.com/firelex/jeff/issues/5) | jeff? | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # I'm Upping My P(doom) — music video
+> # Jeff
 > 
-> A generative, code-rendered music video with word-synced karaoke typography. Every frame is a deterministic function of song time, so the live preview in the browser and the offline 1080p60 (or 4K60) export are identical.
+> > **New: v1.1 (29 September 2026).** Jeff-Qwen3.5-0.8B and Jeff-Qwen3.5-2B now choose among up to **254 options**
+> > (v1.0: 26), with better calibration. On our long-list test the 0.8B goes from 40% to 95%. The 2B's benchmark score
+> > dips from 83.1% to 82.0%. Details in the [changelog](#changelog); v1.0 stays available on Hugging Face as
+> > revision `v1.0`.
 > 
-> **Watch it in 4K on YouTube:** https://www.youtube.com/watch?v=5EoO5413dBY
+> **Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification: small, fast decision models you slot into your
+> code, with the same request format as Jev.** You describe a situation and list the options in plain words; Jeff returns a
+> calibrated probability for each option from a single forward pass. No generated text, no parsing: about **22 ms** per
+> decision on an RTX PRO 6000 and **28 ms** on an Apple M4 Max (MLX).
 > 
-> The YouTube upload is an earlier render: it averages only 4 sub-frames per frame for motion blur, so fast motion shows stepped copies, and YouTube's compression smears the film grain. For the best version, render it locally (see [Render the video](#render-the-video)): the current code picks up to 324 sub-frames per frame where the motion needs them.
+> Zero-shot means the options can be anything: support queues, user intents, moderation labels, voice commands, game
+> moves. Your categories don't need to appear in the training data; you describe them, and Jeff picks.
 > 
-> The video was made with Claude (Opus 5.5) in Claude Code: the concept and treatment, the lyric alignment and audio analysis, the renderer, every scene and the renders were all worked out in conversation with Claude.
+> **What it is, and what it isn't.** These are very small models. They make extremely fast, well-calibrated judgement
+> calls between options, and they slot easily into your local code. On benchmarks they approach, and sometimes beat, Jev;
+> but at this size their reasoning won't match Jev's, which runs on a much larger model. If zero-shot accuracy isn't
+> good enough for your purposes, a short fine-tune on your own examples takes you much further: our
+> voice-navigation fine-tune moved held-out accuracy from 31.7% to 95.8% in under half an hour on one GPU.
 > 
-> The song is not ours: see [Credits](#credits) for who wrote and made it.
+> **Built entirely on local hardware.** Training on one RTX PRO 6000 workstation GPU (the 0.8B trains in about 2 hours,
+> the 2B in about 3.5), all synthetic training data written by an open model (Qwen3.8-Flash-Next) on two DGX Sparks,
+> testing on a MacBook. No cloud GPUs, and no closed-model output in the training data; a closed model was used only to
+> spot-check the quality of a sample of the synthetic data.
 > 
-> The concept, style bible and plate-by-plate treatment are in [`docs/TREATMENT.md`](docs/TREATMENT.md). The engine and scene API are documented in [`docs/ENGINE.md`](docs/ENGINE.md).
+> **Independent project.** Jeff uses the same request format as Jev, but it is not affiliated with or endorsed by TypeSafe, the
+> makers of Jev. Our training code starts from the open-source [AutoJev](https://github.com/denis-pplx/autojev) recipe.
 > 
-> ## Layout
+> **Models on Hugging Face:** [Jeff-Qwen3.5-0.8B](https://huggingface.co/mstrasser/Jeff-Qwen3.5-0.8B) · [Jeff-Qwen3.5-2B](https://huggingface.co/mstrasser/Jeff-Qwen3.5-2B) · [Jeff-Gemma4-E2B](https://huggingface.co/mstrasser/Jeff-Gemma4-E2B) · chess fine-tune: [Jeff-Qwen3.5-0.8B-Chess](https://huggingface.co/mstrasser/Jeff-Qwen3.5-0.8B-Chess)
 > 
-> - `audio/pdoom.mp3` — the song (the Claude-Pop version, see Credits).
-> - `lyrics/lyrics.src.js` — the original line-level lyrics (approximate timings).
-> - `analysis/` — Python (uv) tools that produced the timing data: Demucs stem separation, CTC forced alignment cross-checked with Whisper, beat/downbeat/onset analysis. See `analysis/align.py` and `analysis/analyze.py`.
-> - `data/lyrics.json` — word-level (and some syllable-level) lyric timings.
-> - `data/audio.json` — tempo (132.007 BPM), beats, downbeats, sections, drum/vocal onsets and loudness envelopes.
-> - `app/` — the renderer: TypeScript + three.js, bun + Vite.
->   - `src/engine/` — renderer core: timeline playback, post-processing (bloom, halation, grain), typography (Archivo, IBM Plex Mono, Cormorant Garamond, single-stroke plotter fonts), GPU line batches, HUD.
->   - `src/scenes/` — one module per plate (`open`, `loss`, `prompt`, `hook`, `room`, `shoggoth`, `spacetime`, `ascent`, `bureau`, `leftturn`, `paperclips`, `fuse`, `stack`, `dense`, `loom`, `ilya`, `outro`) plus shared motifs.
->   - `src/timeline.ts` — the edit: scene windows anchored to lyric lines and snapped to the beat grid.
->   - `scripts/render.ts` — offline renderer (headless Chrome → raw frames over WebSocket → ffmpeg).
-> - `out/` — renders (not in the repo).
 > 
-> ## Requirements
+> ## Quick start
 > 
-> [bun](https://bun.sh), Google Chrome (the offline renderer drives it headless through playwright-core) and ffmpeg with libx264. The analysis tools need [uv](https://docs.astral.sh/uv/); the renderer doesn't.
+> To serve a model you only need the serving install (`--no-default-groups` leaves out the training, data and
+> evaluation packages; plain `uv sync` installs everything):
 > 
-> ## Preview
+> ```bash
+> uv sync --no-default-groups                 # CPU
+> uv sync --no-default-groups --extra cuda    # NVIDIA GPU: adds the fast kernels (much slower without them)
+> uv sync --no-default-groups --extra mac     # Apple silicon: adds MLX
+> uv run --no-default-groups hf download mstrasser/Jeff-Qwen3.5-0.8B --local-dir checkpoints/jeff-0.8b
 > 
-> ```sh
-> cd app
-> bun install
-> bunx vite
-> ```
 > 
-> Open http://localhost:5173 and use the keys below. `?t=23` starts at a given time.
+> ## Fine-tuning example: chess
 > 
-> | Key | Action |
+> When zero-shot isn't enough, fine-tune. As a worked example we trained Jeff-Qwen3.5-0.8B on 600,000 Lichess positions,
+> labelled by Stockfish, in about 3½ hours on one GPU. On 1,000 held-out chess puzzles:
+> 
+> | Model | Puzzles solved |
 > |---|---|
-> | space | play / pause |
-> | ← / → | seek ±1 s (±5 s with shift) |
-> | `,` / `.` | step one frame |
-> | `[` / `]` | previous / next scene |
-> | `l` | loop the current scene |
-> | `h` | hide the UI |
+> | Qwen3.5-0.8B, untrained | 6.2% |
+> | Jeff-Qwen3.5-0.8B, zero-shot (no chess training) | 15.5% |
+> | **[Jeff-Qwen3.5-0.8B-Chess](https://huggingface.co/mstrasser/Jeff-Qwen3.5-0.8B-Chess)** | **55.8%** |
 > 
-> The preview renders in real time on a recent Mac. The export is not real time and is heavier.
+> It is not a strong player: about 1,000 Elo with no search, and it loses to Stockfish's weakest setting. The point is
+> speed. Each move is one forward pass in tens of milliseconds, so one GPU keeps up with about 600 human blitz games at
+> once.
 > 
-> ## Render the video
+> 100 games at once in real time; the featured game is its one win of the 100, a nine-move checkmate. The full video,
+> results and training details are on the [model card](https://huggingface.co/mstrasser/Jeff-Qwen3.5-0.8B-Chess). The code to
+> reproduce it, step by step, is in [examples/chess](examples/chess).
 > 
-> ```sh
-> cd app
-> bun scripts/render.ts video --samples auto --shutter 0.2 --out ../out/pdoom.mp4
+> 
+> ## Benchmarks
+> 
+> 4,599 questions from five public benchmarks, plus JevBench's public hard tier (105 items, scored separately):
+> 
+> | Benchmark | Qwen3.5-0.8B untrained | Jeff-Qwen3.5-0.8B | Qwen3.5-2B untrained | Jeff-Qwen3.5-2B | Gemma 4 E2B untrained | Jeff-Gemma4-E2B | Jev (published) | AutoJev-27B (published) |
+> |---|---|---|---|---|---|---|---|---|
+> | **Overall (5 benchmarks)** | 45.3 | 79.1 | 46.5 | 82.0 | 62.5 | 81.6 | **83.0** | ***84.9*** |
+> | BBH | 39.5 | 64.9 | 46.0 | 68.7 | 51.3 | 66.4 | **94.3** | 82.8 |
+> | Financial PhraseBank | 36.0 | **95.7** | 53.4 | **94.7** | 86.0 | **96.1** | 77.0 | 84.2 |
+> | JudgeBench | 56.6 | 63.1 | 57.4 | 59.4 | 46.9 | 60.6 | **78.6** | ***78.9*** |
+> | RAGTruth | 49.1 | **85.6** | 35.9 | **87.7** | 63.8 | **87.4** | 77.3 | ***88.9*** |
+> | WinoGrande | 49.2 | 69.0 | 52.2 | 78.8 | 51.0 | 77.4 | **90.7** | 83.3 |
+> | JevBench hard (separate) | 36.2 | 46.7 | 45.7 | 57.1 | 41.0 | 48.6 | **73.3** | 70.3 |
+> 
+> **Bold:** the winner of Jeff against Jev in each row. ***Bold italic:*** AutoJev-27B where it is the best of all models
+> in the row; it is shown for reference, since the head-to-head comparison is
+> with Jev. The Qwen columns are v1.1; Jeff-Gemma4-E2B is v1.0. The published Jev and AutoJev figures were measured on a different sample of the same benchmarks. Jeff's
+> overall score comes from classification and grounding, where it matches or beats the large models; on the
+> reasoning-heavy benchmarks (BBH, JudgeBench, JevBench) it stays well below them, as you would expect at this size.
+> 
+> 
+> # NVIDIA GPU or CPU (PyTorch)
+> JEFF_CHECKPOINT=checkpoints/jeff-0.8b PORT=8765 uv run --no-default-groups jeff-serve
+> 
+> # Apple silicon (MLX, much faster on a Mac; Qwen models only)
+> JEFF_BACKEND=mlx JEFF_CHECKPOINT=checkpoints/jeff-0.8b PORT=8765 uv run --no-default-groups --extra mac jeff-serve
 > ```
 > 
-> - **Output:** 1920×1080 at 60 fps, x264 CRF 16, AAC audio.
-> - **Motion blur:** every frame is the average of many sub-frames spread over a short shutter (`--shutter 0.2`, a fifth of the frame time), so fast motion leaves a continuous streak instead of a few stepped copies. `--samples auto` picks the count per frame: 12 for a still frame, 36 for ordinary camera motion, 108 or 324 for whips, slams and fast zooms. It stops once more sub-frames would no longer change the image by more than `--tol` levels of 255 (default 3). `--samples N` takes a fixed N instead (`--samples 4` makes a quick draft). How it works: "Motion blur and sampling" in [`docs/ENGINE.md`](docs/ENGINE.md).
-> - **Other modes:** `stills`, `sheet` (contact sheets, `--cuts` for every scene boundary), `perf`, and `plates` (regenerates `public/plates/`, the stills used by the outro's rewind montage; rerun it after changing a scene).
-> 
-> ### 4K
-> 
-> ```sh
-> cd app
-> bun scripts/render.ts video --scale 2 --samples auto --shutter 0.2 --x264 aq-mode=3:rc-lookahead=30 --out ../out/pdoom-4k.mp4
+> ```bash
+> curl -s localhost:8765/v1/systemone -H 'content-type: application/json' -d '{
+>   "model": "jeff-latest",
+>   "state": "Refund request: the customer says the parcel arrived crushed and wants their money back.",
+>   "questions": {
+>     "route": {"type": "choice", "instructions": "Which team should handle this?",
+>               "criteria": {"1": "Refunds and payments", "2": "Damaged or lost parcels", "3": "Account and login problems"}},
+>     "angry": {"type": "noul", "instructions": "Is the customer angry?"}
+>   }
+> }'
 > ```
 > 
-> - **Output:** a true 3840×2160 render (not an upscale): every layer, line and shader is rendered at the physical resolution. Scenes are laid out in 1920×1080 logical pixels, so the 4K frame looks like the 1080p one, only sharper.
-> - **Cost:** GPU-bound. A frame takes from about 40 ms (a still frame) to over 10 s (the ray-marched rooms at 108–324 sub-frames). The whole song took about 2.5 hours on an M5 Pro, rendered as segments in two parallel pipelines (`--from`/`--to`, then a lossless concat). Each pipeline uses about 5 GB for headless Chrome plus about 4 GB for ffmpeg; the shorter x264 lookahead above keeps ffmpeg's memory down.
-> - **Encoding:** the film grain is rendered per 4K pixel, which is expensive to encode: at the default CRF 16 the file runs at about 670 Mbit/s (13 GB for the song, 8× the 1080p file), `--crf 18` gives about 450 Mbit/s and `--crf 20` about 230 Mbit/s.
-> - `--scale 2` works with every mode. `stills` then saves full-resolution PNGs, and `perf` measures 4K frame times. In the browser preview, add `&scale=2` to the URL.
+> Each answer has a probability per option, the chosen option and a confidence. Three question types: `choice` (pick one
+> of up to 254 options with the v1.1 Qwen models, 26 with Jeff-Gemma4-E2B), `noul` (yes/no, returned as a probability) and `score` (a point on a scale you describe).
+> Several independent questions in one request are answered together.
 > 
-> ## Regenerate the timing data
 > 
-> The committed `data/*.json` files are all the renderer needs. Regenerating them needs the stems and intermediates, which are not in the repo:
+> ## Speed and size
 > 
-> - **Stems:** Demucs `htdemucs_ft` into `analysis/stems/htdemucs_ft/pdoom/` (`uv run python -m demucs -n htdemucs_ft -o stems ../audio/pdoom.mp3`), plus the lead vocal from a mel-band-roformer karaoke model (audio-separator) in `analysis/stems/karaoke/lead.wav`.
-> - **Intermediates:** `ctc_emissions.py`, `whisper_run.py` and `vocal_feats.py` write them to `analysis/work/`. The pipeline is described at the top of `analysis/align.py`.
+> Median time per decision over the same 200 benchmark questions (about 200 input tokens each), one question at a time,
+> from raw text to probabilities:
 > 
-> ```sh
-> cd analysis
-> uv run python align.py      # data/lyrics.json
-> uv run python analyze.py    # data/audio.json
-> ```
+> | Model | Parameters | Weights (16-bit) | NVIDIA RTX PRO 6000 | Apple M4 Max (MLX) | CPU (32 threads) |
+> |---|---|---|---|---|---|
+> | **Jeff-Qwen3.5-0.8B** | 0.8B | 1.7 GB | **22 ms** | **28 ms** | 463 ms |
+> | Jeff-Qwen3.5-2B | 2B | 4.2 GB | 24 ms | 60 ms | 708 ms |
+> | Jeff-Gemma4-E2B | 2B effective (4.6B stored) | 9.3 GB | 29 ms | — (MLX runs Qwen only) | 1.0 s |
+> | AutoJev-27B | 27B | ~54 GB | not published | — | — |
+> | Jev | not disclosed | API only | 114–212 ms per call in published Doom runs, including the network | | |
 > 
-> The models download about 4 GB of weights into `analysis/.cache/`; delete that folder afterwards.
 > 
-> ## Credits
+> ## Using it well
 > 
-> - **Song:** "I'm Upping My P(doom)". The lyrics are by [osmarks](https://docs.osmarks.net/hypha/p%28doom%29_song_objectively_correct_interpretation), built on an opening verse and chorus by [MusicPerson](https://www.udio.com/creators/MusicPerson), with lines suggested on the EleutherAI Discord and help from Claude on the outro and final chorus. The original was generated with Udio and released in November 2024 ([YouTube](https://www.youtube.com/watch?v=uEB5E67vcPA)). This video uses the "Claude-Pop" version made with Suno, posted by [deckard (@slimer48484)](https://x.com/slimer48484/status/2097752569212756134) in September 2026.
-> - **Fonts:** Archivo, IBM Plex Mono and Cormorant Garamond (SIL Open Font License). Single-stroke EMS and Hershey fonts via the `hersheytext` package (OFL / public domain).
-> 
-> ## License
-> 
-> The code is released under the [MIT License](LICENSE). The fonts in `app/public/fonts/` keep their own licenses (see Credits), and the song and lyrics (`audio/`, `lyrics/`, `data/lyrics.json`) are not covered by it: they belong to their authors (see Credits).
+> - **Reason in code, decide with Jeff.** It's a classifier, not a planner. State what each option leads to ("this move
+>   gets you hit by a car"); asked to forecast ("a car arrives in 2 turns"), it does no better than random.
+> - **Wording matters enormously.** Describe options consistently: giving Frogger's goal option the same words as every
+>   other forward option took one episode from 15 crossings to 23.
+> - **Use short option keys and descriptive text:** `{"1": "Engageme
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/mexicat/pdoom-video)
+[GitHub](https://github.com/firelex/jeff)
 
 ## 相關收錄
 
@@ -282,7 +337,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "mexicat--pdoom-video"
+> WHERE category = "Other" AND file.name != "firelex--jeff"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +346,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "mexicat--pdoom-video" AND status != "archived"
+> WHERE language = "Python" AND file.name != "firelex--jeff" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +355,18 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "mexicat--pdoom-video"
+> WHERE week = "2026-W40" AND file.name != "firelex--jeff"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/firelex--jeff");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "mexicat--pdoom-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "firelex--jeff" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +382,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "mexicat" AND file.name != "mexicat--pdoom-video"
+> WHERE owner = "firelex" AND file.name != "firelex--jeff"
 > SORT stars DESC
 > ```
 
@@ -335,7 +390,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/firelex--jeff");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +407,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/firelex--jeff");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +440,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/firelex--jeff");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +464,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/firelex--jeff");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +501,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/firelex--jeff");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +584,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-28** — 首次收錄
+> **2026-10-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,7 +600,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-01|2026-10-01]] — 再次上榜，2.1k stars
-- [[2026-09-30|2026-09-30]] — 再次上榜，2.0k stars
-- [[2026-09-29|2026-09-29]] — 再次上榜，1.8k stars
-- [[2026-09-28|2026-09-28]] — 首次收錄，1.4k stars
+- [[2026-10-01|2026-10-01]] — 首次收錄，1.2k stars

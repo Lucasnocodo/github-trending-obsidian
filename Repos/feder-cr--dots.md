@@ -1,21 +1,21 @@
 ---
-repo: mexicat/pdoom-video
-url: https://github.com/mexicat/pdoom-video
-owner: mexicat
+repo: feder-cr/dots
+url: https://github.com/feder-cr/dots
+owner: feder-cr
 owner_type: User
-language: TypeScript
+language: Python
 license: MIT
-description: "Code-rendered music video for \"I'm Upping My P(doom)\""
+description: "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
 homepage: ""
-stars: 2138
-stars_per_day: 356
-forks: 224
+stars: 1954
+stars_per_day: 1954
+forks: 321
 open_issues: 0
-created: 2026-09-24
-pushed_at: 2026-09-28
-first_seen: 2026-09-28
+created: 2026-09-29
+pushed_at: 2026-09-29
+first_seen: 2026-10-01
 week: "2026-W40"
-month: "2026-09"
+month: "2026-10"
 category: "Other"
 subcategory: ""
 release_tag: ""
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-28
+last_reviewed: 2026-10-01
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-10-04"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 33
-repo_size_kb: 17678
-readme_length: 7289
+issue_close_rate: -1
+repo_size_kb: 10
+readme_length: 2340
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-28"
-star_history: "2026-09-28:1350,2026-09-29:1830,2026-09-30:2011,2026-10-01:2138"
+ring_history: "assess@2026-10-01"
+star_history: "2026-10-01:1954"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/python"
+  - "topic/ai_agent"
+  - "topic/ai_agents"
+  - "topic/ai_browser"
+  - "topic/anti_detect_browser"
+  - "topic/browser_agent"
 aliases:
-  - "pdoom-video"
-  - "mexicat/pdoom-video"
+  - "dots"
+  - "feder-cr/dots"
 ---
 
-# pdoom-video
+# dots
 
-**1.4k** stars · **450** stars/天 · 建立 3 天前 · TypeScript · MIT
+**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/mexicat--pdoom-video");
+const me = dv.page("Repos/feder-cr--dots");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,18 +77,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
+`ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` `dots` `firefox` `llm-agent` `mcp` `open-source-alternative` `openai` `openai-dots` `openrouter` `playwright` `stealth-browser` `web-agent` `web-automation`
+
 > [!summary] 一句話摘要
-> Code-rendered music video for "I'm Upping My P(doom)"
+> Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
 
 ## 專案簡介
 
-Code-rendered music video for "I'm Upping My P(doom)"
+Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/feder-cr--dots");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/feder-cr--dots");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,139 +149,103 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 138 |
-| Open Issues | 2 |
-| Issue 解決率 | 33% (1 closed) |
-| 最後推送 | 2026-09-27 |
-| 建立日期 | 2026-09-24 |
-| Repo 大小 | 17.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mexicat/pdoom-video) |
+| Forks | 321 |
+| Open Issues | 0 |
+| 最後推送 | 2026-09-29 |
+| 建立日期 | 2026-09-29 |
+| Repo 大小 | 10 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/feder-cr/dots) |
+| Topics | `ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 94
->     "Python" : 6
+>     "Python" : 58
+>     "Shell" : 42
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@mexicat](https://github.com/mexicat) | 8 |
+> | [@feder-cr](https://github.com/feder-cr) | 4 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-27）
-> **活躍天數** 4 天 · **最新 commit** README: note the YouTube upload is an older render
+> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-09-29）
+> **活躍天數** 1 天 · **最新 commit** README: the title as the first element, so nothing pushes it down
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # I'm Upping My P(doom) — music video
+> dots
 > 
-> A generative, code-rendered music video with word-synced karaoke typography. Every frame is a deterministic function of song time, so the live preview in the browser and the offline 1080p60 (or 4K60) export are identical.
+> Every AI agent is a model and a browser.You can swap the model with one flag. The browser is what the website sees.
 > 
-> **Watch it in 4K on YouTube:** https://www.youtube.com/watch?v=5EoO5413dBY
+> ---
 > 
-> The YouTube upload is an earlier render: it averages only 4 sub-frames per frame for motion blur, so fast motion shows stepped copies, and YouTube's compression smears the film grain. For the best version, render it locally (see [Render the video](#render-the-video)): the current code picks up to 324 sub-frames per frame where the motion needs them.
+> Windows, in PowerShell:
 > 
-> The video was made with Claude (Opus 5.5) in Claude Code: the concept and treatment, the lyric alignment and audio analysis, the renderer, every scene and the renders were all worked out in conversation with Claude.
-> 
-> The song is not ours: see [Credits](#credits) for who wrote and made it.
-> 
-> The concept, style bible and plate-by-plate treatment are in [`docs/TREATMENT.md`](docs/TREATMENT.md). The engine and scene API are documented in [`docs/ENGINE.md`](docs/ENGINE.md).
-> 
-> ## Layout
-> 
-> - `audio/pdoom.mp3` — the song (the Claude-Pop version, see Credits).
-> - `lyrics/lyrics.src.js` — the original line-level lyrics (approximate timings).
-> - `analysis/` — Python (uv) tools that produced the timing data: Demucs stem separation, CTC forced alignment cross-checked with Whisper, beat/downbeat/onset analysis. See `analysis/align.py` and `analysis/analyze.py`.
-> - `data/lyrics.json` — word-level (and some syllable-level) lyric timings.
-> - `data/audio.json` — tempo (132.007 BPM), beats, downbeats, sections, drum/vocal onsets and loudness envelopes.
-> - `app/` — the renderer: TypeScript + three.js, bun + Vite.
->   - `src/engine/` — renderer core: timeline playback, post-processing (bloom, halation, grain), typography (Archivo, IBM Plex Mono, Cormorant Garamond, single-stroke plotter fonts), GPU line batches, HUD.
->   - `src/scenes/` — one module per plate (`open`, `loss`, `prompt`, `hook`, `room`, `shoggoth`, `spacetime`, `ascent`, `bureau`, `leftturn`, `paperclips`, `fuse`, `stack`, `dense`, `loom`, `ilya`, `outro`) plus shared motifs.
->   - `src/timeline.ts` — the edit: scene windows anchored to lyric lines and snapped to the beat grid.
->   - `scripts/render.ts` — offline renderer (headless Chrome → raw frames over WebSocket → ffmpeg).
-> - `out/` — renders (not in the repo).
-> 
-> ## Requirements
-> 
-> [bun](https://bun.sh), Google Chrome (the offline renderer drives it headless through playwright-core) and ffmpeg with libx264. The analysis tools need [uv](https://docs.astral.sh/uv/); the renderer doesn't.
-> 
-> ## Preview
-> 
-> ```sh
-> cd app
-> bun install
-> bunx vite
+> ```powershell
+> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+> $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
+> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
 > ```
 > 
-> Open http://localhost:5173 and use the keys below. `?t=23` starts at a given time.
+> Linux:
 > 
-> | Key | Action |
-> |---|---|
-> | space | play / pause |
-> | ← / → | seek ±1 s (±5 s with shift) |
-> | `,` / `.` | step one frame |
-> | `[` / `]` | previous / next scene |
-> | `l` | loop the current scene |
-> | `h` | hide the UI |
-> 
-> The preview renders in real time on a recent Mac. The export is not real time and is heavier.
-> 
-> ## Render the video
-> 
-> ```sh
-> cd app
-> bun scripts/render.ts video --samples auto --shutter 0.2 --out ../out/pdoom.mp4
+> ```bash
+> curl -LsSf https://astral.sh/uv/install.sh | sh
+> source $HOME/.local/bin/env
+> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
 > ```
 > 
-> - **Output:** 1920×1080 at 60 fps, x264 CRF 16, AAC audio.
-> - **Motion blur:** every frame is the average of many sub-frames spread over a short shutter (`--shutter 0.2`, a fifth of the frame time), so fast motion leaves a continuous streak instead of a few stepped copies. `--samples auto` picks the count per frame: 12 for a still frame, 36 for ordinary camera motion, 108 or 324 for whips, slams and fast zooms. It stops once more sub-frames would no longer change the image by more than `--tol` levels of 255 (default 3). `--samples N` takes a fixed N instead (`--samples 4` makes a quick draft). How it works: "Motion blur and sampling" in [`docs/ENGINE.md`](docs/ENGINE.md).
-> - **Other modes:** `stills`, `sheet` (contact sheets, `--cuts` for every scene boundary), `perf`, and `plates` (regenerates `public/plates/`, the stills used by the outro's rewind montage; rerun it after changing a scene).
+> Then open **http://127.0.0.1:8765**. The conversation on the left, the browser on the right, live.
 > 
-> ### 4K
+> ## It all comes down to the browser
 > 
-> ```sh
-> cd app
-> bun scripts/render.ts video --scale 2 --samples auto --shutter 0.2 --x264 aq-mode=3:rc-lookahead=30 --out ../out/pdoom-4k.mp4
-> ```
+> When a web agent fails, the model is rarely why. The page never loaded, a
+> challenge appeared, the login expired, the click did not land. All of that
+> happens in the browser, before the model gets to think.
 > 
-> - **Output:** a true 3840×2160 render (not an upscale): every layer, line and shader is rendered at the physical resolution. Scenes are laid out in 1920×1080 logical pixels, so the 4K frame looks like the 1080p one, only sharper.
-> - **Cost:** GPU-bound. A frame takes from about 40 ms (a still frame) to over 10 s (the ray-marched rooms at 108–324 sub-frames). The whole song took about 2.5 hours on an M5 Pro, rendered as segments in two parallel pipelines (`--from`/`--to`, then a lossless concat). Each pipeline uses about 5 GB for headless Chrome plus about 4 GB for ffmpeg; the shorter x264 lookahead above keeps ffmpeg's memory down.
-> - **Encoding:** the film grain is rendered per 4K pixel, which is expensive to encode: at the default CRF 16 the file runs at about 670 Mbit/s (13 GB for the song, 8× the 1080p file), `--crf 18` gives about 450 Mbit/s and `--crf 20` about 230 Mbit/s.
-> - `--scale 2` works with every mode. `stills` then saves full-resolution PNGs, and `perf` measures 4K frame times. In the browser preview, add `&scale=2` to the URL.
+> So dots is built around one:
 > 
-> ## Regenerate the timing data
+> - **A real Firefox engine, patched in C++.** The fingerprint is decided inside
+>   the engine, not painted over with JavaScript that a page can inspect.
+> - **One identity per seed.** Screen, fonts, GPU, timezone and language agree
+>   with each other, and `--seed` gives back the same person on every run.
+> - **Nothing for a page to find.** No WebDriver flag, no DevTools protocol, no
+>   automation globals in the page.
+> - **A person's hands.** The pointer travels to what it clicks and keys are
+>   pressed one at a time, so every event the page receives is a trusted one.
+> - **A browser that remembers.** `--profile-dir` keeps logins and cookies from
+>   one run to the next.
+> - **Where it connects from is who it is.** With `--proxy`, the timezone and the
+>   language follow the exit.
 > 
-> The committed `data/*.json` files are all the renderer needs. Regenerating them needs the stems and intermediates, which are not in the repo:
+> The model is any model on OpenRouter, and `--model` changes it.
 > 
-> - **Stems:** Demucs `htdemucs_ft` into `analysis/stems/htdemucs_ft/pdoom/` (`uv run python -m demucs -n htdemucs_ft -o stems ../audio/pdoom.mp3`), plus the lead vocal from a mel-band-roformer karaoke model (audio-separator) in `analysis/stems/karaoke/lead.wav`.
-> - **Intermediates:** `ctc_emissions.py`, `whisper_run.py` and `vocal_feats.py` write them to `analysis/work/`. The pipeline is described at the top of `analysis/align.py`.
+> ## What to ask it
 > 
-> ```sh
-> cd analysis
-> uv run python align.py      # data/lyrics.json
-> uv run python analyze.py    # data/audio.json
-> ```
+> > Go to ``. One way, Milan to Lisbon, economy, one adult. Check
+> > every date from the 12th to the 16th of next month and read the cheapest fare
+> > for each day. If a date has no availability, say so. Do not guess a number.
 > 
-> The models download about 4 GB of weights into `analysis/.cache/`; delete that folder afterwards.
+> ## The same browser, in your own assistant
 > 
-> ## Credits
+> Claude Code, Codex, Gemini CLI or any MCP client:
+> [invisible_playwright_mcp](https://github.com/feder-cr/invisible_playwright_mcp)
+> gives them this browser as a server. `dots` is its interface, and `dots --help`
+> lists every option.
 > 
-> - **Song:** "I'm Upping My P(doom)". The lyrics are by [osmarks](https://docs.osmarks.net/hypha/p%28doom%29_song_objectively_correct_interpretation), built on an opening verse and chorus by [MusicPerson](https://www.udio.com/creators/MusicPerson), with lines suggested on the EleutherAI Discord and help from Claude on the outro and final chorus. The original was generated with Udio and released in November 2024 ([YouTube](https://www.youtube.com/watch?v=uEB5E67vcPA)). This video uses the "Claude-Pop" version made with Suno, posted by [deckard (@slimer48484)](https://x.com/slimer48484/status/2097752569212756134) in September 2026.
-> - **Fonts:** Archivo, IBM Plex Mono and Cormorant Garamond (SIL Open Font License). Single-stroke EMS and Hershey fonts via the `hersheytext` package (OFL / public domain).
+> ---
 > 
-> ## License
-> 
-> The code is released under the [MIT License](LICENSE). The fonts in `app/public/fonts/` keep their own licenses (see Credits), and the song and lyrics (`audio/`, `lyrics/`, `data/lyrics.json`) are not covered by it: they belong to their authors (see Credits).
+> Not affiliated with OpenAI. MIT licensed.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/mexicat/pdoom-video)
+[GitHub](https://github.com/feder-cr/dots)
 
 ## 相關收錄
 
@@ -282,7 +253,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "mexicat--pdoom-video"
+> WHERE category = "Other" AND file.name != "feder-cr--dots"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +262,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "mexicat--pdoom-video" AND status != "archived"
+> WHERE language = "Python" AND file.name != "feder-cr--dots" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +271,18 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "mexicat--pdoom-video"
+> WHERE week = "2026-W40" AND file.name != "feder-cr--dots"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/feder-cr--dots");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "mexicat--pdoom-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "feder-cr--dots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +298,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "mexicat" AND file.name != "mexicat--pdoom-video"
+> WHERE owner = "feder-cr" AND file.name != "feder-cr--dots"
 > SORT stars DESC
 > ```
 
@@ -335,7 +306,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/feder-cr--dots");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +323,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/feder-cr--dots");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +356,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/feder-cr--dots");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +380,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/feder-cr--dots");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +417,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/mexicat--pdoom-video");
+> const me = dv.page("Repos/feder-cr--dots");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +500,7 @@ Code-rendered music video for "I'm Upping My P(doom)"
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-28** — 首次收錄
+> **2026-10-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,7 +516,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-01|2026-10-01]] — 再次上榜，2.1k stars
-- [[2026-09-30|2026-09-30]] — 再次上榜，2.0k stars
-- [[2026-09-29|2026-09-29]] — 再次上榜，1.8k stars
-- [[2026-09-28|2026-09-28]] — 首次收錄，1.4k stars
+- [[2026-10-01|2026-10-01]] — 首次收錄，2.0k stars
