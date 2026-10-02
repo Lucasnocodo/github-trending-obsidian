@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context."
 homepage: ""
-stars: 1922
-stars_per_day: 384
-forks: 128
-open_issues: 26
+stars: 2015
+stars_per_day: 336
+forks: 132
+open_issues: 25
 created: 2026-09-26
-pushed_at: 2026-10-01
+pushed_at: 2026-10-02
 first_seen: 2026-09-29
 week: "2026-W40"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-04"
+appearances: 4
+next_review: "2026-10-05"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 22
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-29"
-star_history: "2026-09-29:1522,2026-09-30:1805,2026-10-01:1922"
+star_history: "2026-09-29:1522,2026-09-30:1805,2026-10-01:1922,2026-10-02:2015"
 tags:
   - github
   - "category/other"
@@ -664,6 +664,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-02|2026-10-02]] — 再次上榜，2.0k stars
 - [[2026-10-01|2026-10-01]] — 再次上榜，1.9k stars
 - [[2026-09-30|2026-09-30]] — 再次上榜，1.8k stars
 - [[2026-09-29|2026-09-29]] — 首次收錄，1.5k stars

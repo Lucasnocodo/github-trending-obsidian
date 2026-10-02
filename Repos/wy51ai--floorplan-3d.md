@@ -1,68 +1,63 @@
 ---
-repo: kaankiziltug/logo-design-skill
-url: https://github.com/kaankiziltug/logo-design-skill
-owner: kaankiziltug
+repo: wy51ai/floorplan-3d
+url: https://github.com/wy51ai/floorplan-3d
+owner: wy51ai
 owner_type: User
 language: HTML
 license: MIT
-description: "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library."
+description: ""
 homepage: ""
-stars: 1382
-stars_per_day: 276
-forks: 77
-open_issues: 1
-created: 2026-09-26
-pushed_at: 2026-09-30
-first_seen: 2026-10-01
+stars: 1203
+stars_per_day: 401
+forks: 251
+open_issues: 5
+created: 2026-09-29
+pushed_at: 2026-10-02
+first_seen: 2026-10-02
 week: "2026-W40"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: "v1.4.3"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-01
+last_reviewed: 2026-10-02
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-10-05"
 contributor_count: 2
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 6973
-readme_length: 9746
+engagement: "medium"
+issue_close_rate: 17
+repo_size_kb: 18
+readme_length: 1764
 bus_factor: 1
-last_release_days: 4
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1179,2026-10-02:1382"
+ring_history: "assess@2026-10-02"
+star_history: "2026-10-02:1203"
 tags:
   - github
   - "category/other"
   - "lang/html"
-  - "topic/agent_skills"
-  - "topic/branding"
-  - "topic/claude"
-  - "topic/claude_skills"
-  - "topic/codex"
 aliases:
-  - "logo-design-skill"
-  - "kaankiziltug/logo-design-skill"
+  - "floorplan-3d"
+  - "wy51ai/floorplan-3d"
 ---
 
-# logo-design-skill
+# floorplan-3d
 
-**1.2k** stars · **295** stars/天 · 建立 4 天前 · HTML · MIT
+**1.2k** stars · **401** stars/天 · 建立 3 天前 · HTML · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+const me = dv.page("Repos/wy51ai--floorplan-3d");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.4.3`
-
-`agent-skills` `branding` `claude` `claude-skills` `codex` `gemini-cli` `logo-design` `svg`
-
 > [!summary] 一句話摘要
-> A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.
+> No description
 
 ## 專案簡介
 
-A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/wy51ai--floorplan-3d");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +116,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/wy51ai--floorplan-3d");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,192 +140,133 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 64 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-30 |
-| 建立日期 | 2026-09-26 |
-| Repo 大小 | 6.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kaankiziltug/logo-design-skill) |
-| Topics | `agent-skills` `branding` `claude` `claude-skills` `codex` `gemini-cli` `logo-design` `svg` |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "HTML" : 77
->     "Python" : 23
-> ```
+| Forks | 251 |
+| Open Issues | 5 |
+| Issue 解決率 | 17% (1 closed) |
+| 最後推送 | 2026-10-02 |
+| 建立日期 | 2026-09-29 |
+| Repo 大小 | 18 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/wy51ai/floorplan-3d) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@kaankiziltug](https://github.com/kaankiziltug) | 22 |
-> | [@RossWarner21](https://github.com/RossWarner21) | 1 |
-
-**最新版本**：v1.4.3 (2026-09-27)
-
-> [!info]- Release Notes
-> **Reliable rendering on Windows, automated tests, and install guides for other agents.**
-> 
-> - **Windows fix:** web-icon export (`export_variants.py --web-icons`) could stop without writing `favicon.ico` and the app icons, because Windows keeps Chrome's helper processes and files locked for a moment after a screenshot. `render_png.py` now stops the whole browser process tree, cleans up temporary folders without failing, and retries a failed browser render once. The export now names the icon that failed instead of saying no renderer is available.
-> - **Automated tests:** every push and pull request runs all the skill's scripts end to end on Windows, macOS and Linux (Python 3.9 and latest 3.x) with `tools/smoke_test.py`.
-> - **Other agents:** the README explains how to install the skill in Gemini CLI, Codex CLI and other agents that support Agent Skills, and SKILL.md no longer assumes Claude Code when locating its scripts.
-> 
-> Update in Claude Code: `/plugin marketplace update logo-design-skill`
-> Claude.ai / Desktop: download `logo-design.zip` (or `logo-design-lite.zip`) and re-upload it under Settings → Capabilities → Skills.
-> Gemini CLI, Codex CLI and others: copy `skills/logo-design/` into your agent's skills folder (see the README).
+> | [@wuyi51](https://github.com/wuyi51) | 7 |
+> | [@wy51ai](https://github.com/wy51ai) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-27 ~ 2026-09-30）
-> **活躍天數** 4 天 · **最新 commit** README: move Install above Examples
+> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-10-02）
+> **活躍天數** 3 天 · **最新 commit** update
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/kaankiziltug/logo-design-skill/issues/5) | Дизайн | 0 | 0 |
+> | [#2](https://github.com/wy51ai/floorplan-3d/issues/2) | 好兄弟，怎么改户型？ | 1 | 2 |
+> | [#5](https://github.com/wy51ai/floorplan-3d/issues/5) | 坐标轴方向说明 | 0 | 0 |
+> | [#3](https://github.com/wy51ai/floorplan-3d/issues/3) | 建议加个通过图片导入户型功能 | 0 | 2 |
+> | [#1](https://github.com/wy51ai/floorplan-3d/issues/1) | Some suggestions | 0 | 3 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Logo Design Skill for Claude & AI Agents
+> # 户型装修设计
 > 
-> [](https://github.com/kaankiziltug/logo-design-skill/actions/workflows/test.yml) [](#)
+> 中文 | [English](README.en.md)
 > 
-> A comprehensive **logo-design skill** that turns Claude — or any agent that supports Agent Skills, such as Gemini
-> CLI, Codex CLI, Cursor or GitHub Copilot — into a disciplined identity designer, from the first brief to
-> production-ready SVG files and brand guidelines.
+> 纯前端的户型装修设计工具：在 2D 平面图上摆放家具、拆改墙体、测量尺寸，一键切换到 Three.js 3D 场景，可以鸟瞰，也可以第一人称漫游。整个应用就是一个 `index.html`，无需构建，打开即用。
 > 
-> - **Principles & process** — discovery and briefs, word mapping, choosing the right mark type, concepting,
->   geometric construction, optical corrections (overshoot, bone effect, irradiation…), colour, typography, lockups,
->   testing, presentation, delivery, redesigns and identity systems.
-> - **A reference library of 1,400+ real-world SVG logos**, each visually classified by mark type, technique,
->   geometry, subject, typography, mood and industry — searchable from the command line and browsable in a local
->   gallery. Used to study construction, map category conventions and avoid look-alikes (never to copy).
-> - **Dependency-free Python tools** — audit an SVG against logo principles, build concept overview sheets and test
->   sheets (16 px pixel test, one-colour, reversed, squint, mirror, contexts, competitor shelf test), create client
->   presentation boards with industry-specific mockups, render PNGs, and export a complete favicon / app-icon /
->   web-manifest set.
+> ## 功能
 > 
-> **Contents:** [How it works](#how-it-works) · [Install](#install) · [Examples](#examples) ·
-> [Tests](#what-the-tests-catch) · [Use](#use) · [What's inside](#whats-inside) · [Library](#library-at-a-glance)
+> **2D 平面布置**
+> - 按原始户型 1:60 / 1:100 比例显示，尺寸单位 mm
+> - 从左侧家具库拖入 60 余种家具家电（卧室、客厅、餐厨、卫浴、家电、书房休闲）
+> - 拖动移动、旋转（Shift 自由角度）、调整尺寸，贴墙自动吸附
+> - 测量工具（靠近墙面自动吸附，Shift 锁定水平 / 垂直）
+> - 拆改非承重墙，承重墙单独标示
+> - 图层开关：尺寸标注、房间名、家具、网格、承重墙
 > 
-> ---
+> **3D 场景**
+> - 鸟瞰、斜视、俯视多种视角，点击房间列表可飞到对应房间
+> - 漫游模式：桌面端 WASD + 鼠标，触屏设备用虚拟摇杆，可以点门开关
+> - 全高墙 / 剖切墙切换，日照时间滑块，夜景灯光
+> - 精细家具模型：柜门分缝与拉手、软包床头、带环境反射的金属与陶瓷材质等
+> - 在 3D 中也能选中、拖动家具，与 2D 方案实时同步
 > 
+> **方案与统计**
+> - 房间面积与套内使用面积自动统计
+> - 为每个房间更换地面材料（木地板、地砖、大理石、水磨石、地毯等），按面积加 5% 损耗估算造价
+> - 撤销 / 重做，方案自动保存在浏览器本地
+> - 中文 / English 界面切换（顶栏右侧按钮，默认中文，选择会记住）
+> - 导出 PNG 图片，导出 / 导入方案 JSON
 > 
-> ## Install
-> 
-> 
-> ## Examples
-> 
-> Twenty-eight fictional briefs, from quiet luxury and neon festivals to B2B SaaS, fintech and health — each run end to
-> end with the skill. For every brand you see exactly what the skill shows at the checkpoint (greyscale concepts with
-> true 64/32/16 px sizes and a recommendation), followed by a colour preview of the chosen direction on mockups picked
-> for that industry. Later batches deliberately push **vivid, saturated palettes** while still passing the one-colour
-> and 3 : 1 contrast checks. The newest batch takes on three crowded categories: **SaaS** (no chat bubbles, charts or
-> padlocks), **finance** (no coins, piggy banks or bank blue) and **health** (no crosses, pills or heartbeat lines).
-> The latest ten add another ten sectors. In four of them the client picked a different concept at the checkpoint than
-> the one the skill recommended, and the skill refined that choice before colouring it: exactly what the checkpoint is
-> for.
-> 
-> | Brand | Sector | Style | Chosen mark |
-> |---|---|---|---|
-> |  [Kiln](#kiln--specialty-coffee-roaster) | Specialty coffee | Warm, crafted, modern | Letterform + custom wordmark |
-> |  [Zestly](#zestly--food-delivery-app) | Food delivery | Juicy, cheeky, tomato & lime | Mascot |
-> |  [Maison Orvelle](#maison-orvelle--luxury-fashion-atelier) | Luxury fashion | High-contrast Didone | Monogram |
-> |  [Pulsewave](#pulsewave--music--arts-festival) | Music festival | Neon on night, kinetic | Abstract letterform |
-> |  [Tinkertrail](#tinkertrail--kids-stem-workshops) | Kids' STEM education | Playful, rounded, multi-colour | Letterform |
-> |  [Ralli](#ralli--padel--tennis-app) | Sports app | Dynamic italic, electric coral | Letterform |
-> |  [Alderpeak](#alderpeak--outdoor-gear) | Outdoor gear | Rugged, slab, earthy | Pictorial symbol |
-> |  [Driftwell](#driftwell--surf-hostel--café) | Hospitality | Azulejo tile, coastal brights | Emblem + symbol |
-> |  [Calmera](#calmera--physiotherapy-clinic) | Physiotherapy | Soft, organic, calm | Pictorial symbol |
-> |  [Bramble Vet](#bramble-vet--veterinary-clinic) | Veterinary | Friendly character, sunny | Mascot |
-> |  [Voltra](#voltra--solar-energy) | Clean energy | Geometric, volt orange | Abstract symbol |
-> |  [Keyfort](#keyfort--password-manager) | Security SaaS | Strict grid, electric indigo & mint | Abstract symbol |
-> |  [Relaydesk](#relaydesk--customer-support-saas) | Support SaaS | Rounded, violet & coral | Abstract symbol |
-> |  [Tracelane](#tracelane--product-analytics) | Developer analytics | Technical, acid & pink on carbon | Letterform |
-> |  [Tallybook](#tallybook--invoicing--bookkeeping) | Small-business finance | Friendly, tangerine & teal | Letterform |
-> |  [Northvault](#northvault--digital-bank-for-freelancers) | Digital banking | Bold tile, hot magenta | Letterform |
-> |  [Mediora](#mediora--telehealth-app) | Telehealth | Soft, coral face on teal | Mascot |
-> |  [Brightdose](#brightdose--online-pharmacy) | Online pharmacy | Sunny yellow & cobalt | Letterform |
-> |  [Hearsay](#hearsay--podcast-network) | Podcast network | Bold pink, conversational | Letterform (client's pick) |
-> |  [Norrvik](#norrvik--architecture-studio) | Architecture | Restrained, spruce green | Abstract symbol |
-> |  [Brawnhall](#brawnhall--boxing-club) | Boxing gym | Heavy, hi-vis orange | Letterform (client's pick) |
-> |  [Solenne](#solenne--skincare) | Skincare | Daylight blue & gold | Pictorial (client's pick) |
-> |  [Mothlight](#mothlight--indie-game-studio) | Indie games | Ultraviolet & lamplight | Negative space |
-> |  [Loafwright](#loafwright--sourdough-bakery) | Bakery | Warm marigold | Mascot |
-> |  [Stillbrook](#stillbrook--craft-brewery) | Craft brewery | Turquoise & forge orange | Letterform |
-> |  [Marlow & Finch](#marlow--finch--estate-agency) | Real estate | Finch orange & ink | Pictorial ampersand |
-> |  [Kitewire](#kitewire--ai-agent-platform) | AI dev tools | Kite red & updraft yellow | Letterform |
-> |  [Roamwheel](#roamwheel--e-bike-subscription) | Urban mobility | Go lime & ink | Mascot (client's pick) |
-> 
-> 
-> ## How it works
-> 
-> ```mermaid
-> flowchart LR
->     A[Briefquestions or stated assumptions] --> B[Researchcategory conventions in the library]
->     B --> C[Concepts8–12 one-liners → build 3 in SVG]
->     C --> D[Test & refineaudit · 16 px · one-colour · shelf test]
->     D --> E{{Checkpointshow concepts, recommend, stop}}
->     E -- "you pick a directionand ask for the kit" --> F[Kitcolour · lockups · board · icons · guidelines]
->     E -- "you want changes" --> C
-> ```
-> 
-> The skill always **stops at the checkpoint**: it shows the concepts as one overview image with a recommendation and
-> offers the full kit. Nothing else is produced until you choose a direction — the kit is most of the work and only
-> makes sense for an approved idea.
-> 
-> ---
-> 
-> 
-> ### Claude Code — plugin marketplace (recommended)
-> ```
-> /plugin marketplace add kaankiziltug/logo-design-skill
-> /plugin install logo-design@logo-design-skill
-> ```
-> 
-> 
-> ### Claude Code — manual
-> Copy the skill folder into your personal (all projects) or project skills directory:
-> ```bash
-> git clone https://github.com/kaankiziltug/logo-design-skill.git
-> cp -r logo-design-skill/skills/logo-design ~/.claude/skills/logo-design          # personal
-> 
-> # or: cp -r logo-design-skill/skills/logo-design .claude/skills/logo-design     # per project
-> ```
-> 
-> 
-> ### Claude.ai / Claude Desktop
-> Download `logo-design.zip` from the [Releases](https://github.com/kaankiziltug/logo-design-skill/releases) page (or run
-> `python3 tools/package_skill.py`) and upload it under **Settings → Capabilities → Skills**. If your upload has a size
-> limit, use `logo-design-lite.zip` (everything except the SVG files themselves).
-> 
-> 
-> ### Gemini CLI, Codex CLI and other agents
-> The skill uses the open **Agent Skills** format (a folder with a `SKILL.md`), so it works in any agent that supports
-> skills — the instructions are plain Markdown and the tools are plain Python. Clone once, then copy the folder into
-> your agent's skills directory:
-> ```bash
-> git clone https://github.com/kaankiziltug/logo-design-skill.git
-> ```
-> 
-> | Agent | Personal (all projects) | Per project |
-> |---|---|---|
-> | Gemini CLI | `~/.gemini/skills/logo-design` (or `~/.agents/skills/`) | `.gemini/skills/logo-design` |
-> | Codex CLI | `~/.codex/skills/logo-design` | `.codex/skills/logo-design` |
-> | Cursor, GitHub Copilot, OpenCode, others | see your agent's skills docs | usually a `skills/` folder in the project |
+> ## 快速开始
 > 
 > ```bash
-> cp -r logo-design-skill/skil
+> git clone 
+> cd 
+> ```
+> 
+> 然后直接用浏览器打开 `index.html`。也可以起一个本地静态服务器：
+> 
+> ```bash
+> python3 -m http.server 8000
+> # 访问 http://localhost:8000
+> ```
+> 
+> > Three.js 通过 jsDelivr CDN 加载，首次打开 3D 场景需要联网。
+> 
+> ## 快捷键
+> 
+> | 按键 | 作用 |
+> | --- | --- |
+> | `T` | 切换 2D / 3D |
+> | `V` / `M` / `X` | 选择 / 测量 / 拆改墙体 |
+> | `R` / `Shift+R` | 选中家具顺时针 / 逆时针旋转 90° |
+> | `Delete` / `Backspace` | 删除选中家具 |
+> | `Ctrl/⌘ + D` | 复制选中家具 |
+> | `Ctrl/⌘ + Z`，`Ctrl/⌘ + Shift + Z` | 撤销，重做 |
+> | `F` | 适应窗口 |
+> | `+` / `-` | 放大 / 缩小 |
+> | `[` / `]` | 展开 / 收起左侧家具库、右侧面板 |
+> | `Shift + F` | 全屏 |
+> | `Esc` | 取消当前操作 |
+> | 漫游：`WASD` / 方向键，`Shift`，`E` | 移动，快走，开关门 |
+> 
+> ## 技术栈
+> 
+> - 原生 HTML / CSS / JavaScript，无框架、无构建步骤
+> - 2D 平面图用 SVG 绘制
+> - 3D 场景用 [Three.js](https://threejs.org/) r160（OrbitControls、PointerLockControls、RoundedBoxGeometry、RoomEnvironment、CSS2DRenderer）
+> - 数据保存在 `localStorage`
+> 
+> ## 自定义户型
+> 
+> 户型数据写在 `index.html` 里：
+> 
+> - `ROOMS`：房间多边形、名称、默认地面材料
+> - `WALLS` / `WINS`：墙体与窗洞
+> - `MATS`：地面材料名称与单价
+> - `LIB`：家具库（类型、名称、默认尺寸、颜色）
+> - `buildFurniture()`：各类家具的 3D 模型
+> 
+> 改这些数据就能换成自己的户型。
+> 
+> ## 社交媒体
+> 
+> - X（Twitter）：[@akokoi1](https://x.com/akokoi1)
+> 
+> ## 许可协议
+> 
+> [MIT](LICENSE)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/kaankiziltug/logo-design-skill)
+[GitHub](https://github.com/wy51ai/floorplan-3d)
 
 ## 相關收錄
 
@@ -342,7 +274,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "kaankiziltug--logo-design-skill"
+> WHERE category = "Other" AND file.name != "wy51ai--floorplan-3d"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -351,7 +283,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "kaankiziltug--logo-design-skill" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "wy51ai--floorplan-3d" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -360,18 +292,18 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "kaankiziltug--logo-design-skill"
+> WHERE week = "2026-W40" AND file.name != "wy51ai--floorplan-3d"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/wy51ai--floorplan-3d");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "kaankiziltug--logo-design-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "wy51ai--floorplan-3d" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -387,7 +319,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "kaankiziltug" AND file.name != "kaankiziltug--logo-design-skill"
+> WHERE owner = "wy51ai" AND file.name != "wy51ai--floorplan-3d"
 > SORT stars DESC
 > ```
 
@@ -395,7 +327,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/wy51ai--floorplan-3d");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -412,7 +344,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/wy51ai--floorplan-3d");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -445,7 +377,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/wy51ai--floorplan-3d");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -469,7 +401,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/wy51ai--floorplan-3d");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -506,7 +438,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/wy51ai--floorplan-3d");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -589,7 +521,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-01** — 首次收錄
+> **2026-10-02** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -605,5 +537,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-02|2026-10-02]] — 再次上榜，1.4k stars
-- [[2026-10-01|2026-10-01]] — 首次收錄，1.2k stars
+- [[2026-10-02|2026-10-02]] — 首次收錄，1.2k stars

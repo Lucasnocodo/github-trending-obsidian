@@ -4474,17 +4474,17 @@
   },
   "KKKKhazix/AIHOT": {
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-01",
-    "times_seen": 3,
+    "last_seen": "2026-10-02",
+    "times_seen": 4,
     "stars_first": 1675,
-    "stars_last": 4206
+    "stars_last": 4768
   },
   "dzhng/jevgrep": {
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-01",
-    "times_seen": 3,
+    "last_seen": "2026-10-02",
+    "times_seen": 4,
     "stars_first": 1522,
-    "stars_last": 1922
+    "stars_last": 2015
   },
   "Niko1221/Strata": {
     "first_seen": "2026-09-29",
@@ -4509,30 +4509,58 @@
   },
   "feder-cr/dots": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-01",
-    "times_seen": 1,
+    "last_seen": "2026-10-02",
+    "times_seen": 2,
     "stars_first": 1954,
-    "stars_last": 1954
+    "stars_last": 2403
   },
   "Louis-CFM/coucou": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-01",
-    "times_seen": 1,
+    "last_seen": "2026-10-02",
+    "times_seen": 2,
     "stars_first": 1725,
-    "stars_last": 1725
+    "stars_last": 2572
   },
   "firelex/jeff": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-01",
-    "times_seen": 1,
+    "last_seen": "2026-10-02",
+    "times_seen": 2,
     "stars_first": 1211,
-    "stars_last": 1211
+    "stars_last": 1284
   },
   "kaankiziltug/logo-design-skill": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-01",
-    "times_seen": 1,
+    "last_seen": "2026-10-02",
+    "times_seen": 2,
     "stars_first": 1179,
-    "stars_last": 1179
+    "stars_last": 1382
+  },
+  "rehan-remade/universal-modder": {
+    "first_seen": "2026-10-02",
+    "last_seen": "2026-10-02",
+    "times_seen": 1,
+    "stars_first": 1662,
+    "stars_last": 1662
+  },
+  "yihui-dev/awesome-opus5-5-videos": {
+    "first_seen": "2026-10-02",
+    "last_seen": "2026-10-02",
+    "times_seen": 1,
+    "stars_first": 1300,
+    "stars_last": 1300
+  },
+  "wy51ai/floorplan-3d": {
+    "first_seen": "2026-10-02",
+    "last_seen": "2026-10-02",
+    "times_seen": 1,
+    "stars_first": 1203,
+    "stars_last": 1203
+  },
+  "feitangyuan/onetake": {
+    "first_seen": "2026-10-02",
+    "last_seen": "2026-10-02",
+    "times_seen": 1,
+    "stars_first": 1172,
+    "stars_last": 1172
   }
 }

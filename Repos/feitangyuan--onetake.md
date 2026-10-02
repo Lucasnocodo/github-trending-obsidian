@@ -1,68 +1,68 @@
 ---
-repo: kaankiziltug/logo-design-skill
-url: https://github.com/kaankiziltug/logo-design-skill
-owner: kaankiziltug
+repo: feitangyuan/onetake
+url: https://github.com/feitangyuan/onetake
+owner: feitangyuan
 owner_type: User
-language: HTML
-license: MIT
-description: "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library."
+language: Python
+license: NOASSERTION
+description: "Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. A Claude Agent Skill for product launch films and feature demos."
 homepage: ""
-stars: 1382
-stars_per_day: 276
-forks: 77
-open_issues: 1
+stars: 1172
+stars_per_day: 195
+forks: 74
+open_issues: 3
 created: 2026-09-26
-pushed_at: 2026-09-30
-first_seen: 2026-10-01
+pushed_at: 2026-09-29
+first_seen: 2026-10-02
 week: "2026-W40"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: "v1.4.3"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-01
+last_reviewed: 2026-10-02
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-05"
-contributor_count: 2
+appearances: 1
+next_review: "2026-10-09"
+contributor_count: 0
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 6973
-readme_length: 9746
-bus_factor: 1
-last_release_days: 4
-release_cadence: "weekly"
+repo_size_kb: 77318
+readme_length: 9061
+bus_factor: 0
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1179,2026-10-02:1382"
+ring_history: "assess@2026-10-02"
+star_history: "2026-10-02:1172"
 tags:
   - github
   - "category/other"
-  - "lang/html"
-  - "topic/agent_skills"
-  - "topic/branding"
-  - "topic/claude"
-  - "topic/claude_skills"
-  - "topic/codex"
+  - "lang/python"
+  - "topic/agent_skill"
+  - "topic/animation"
+  - "topic/canvas"
+  - "topic/claude_skill"
+  - "topic/launch_video"
 aliases:
-  - "logo-design-skill"
-  - "kaankiziltug/logo-design-skill"
+  - "onetake"
+  - "feitangyuan/onetake"
 ---
 
-# logo-design-skill
+# onetake
 
-**1.2k** stars · **295** stars/天 · 建立 4 天前 · HTML · MIT
+**1.2k** stars · **195** stars/天 · 建立 6 天前 · Python · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+const me = dv.page("Repos/feitangyuan--onetake");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.4.3`
-
-`agent-skills` `branding` `claude` `claude-skills` `codex` `gemini-cli` `logo-design` `svg`
+`agent-skill` `animation` `canvas` `claude-skill` `launch-video` `motion-graphics` `video`
 
 > [!summary] 一句話摘要
-> A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.
+> Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. A Claude Agent Skill for product launch films and feature demos.
 
 ## 專案簡介
 
-A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.
+Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. A Claude Agent Skill for product launch films and feature demos.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/feitangyuan--onetake");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +123,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/feitangyuan--onetake");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,192 +147,230 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 64 |
-| Open Issues | 1 |
+| Forks | 74 |
+| Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-30 |
+| 最後推送 | 2026-09-29 |
 | 建立日期 | 2026-09-26 |
-| Repo 大小 | 6.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kaankiziltug/logo-design-skill) |
-| Topics | `agent-skills` `branding` `claude` `claude-skills` `codex` `gemini-cli` `logo-design` `svg` |
+| Repo 大小 | 75.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/feitangyuan/onetake) |
+| Topics | `agent-skill` `animation` `canvas` `claude-skill` `launch-video` `motion-graphics` `video` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "HTML" : 77
->     "Python" : 23
+>     "Python" : 53
+>     "JavaScript" : 24
+>     "HTML" : 24
 > ```
-
-> [!info]- 主要貢獻者
-> | 貢獻者 | Commits |
-> | --- | --- |
-> | [@kaankiziltug](https://github.com/kaankiziltug) | 22 |
-> | [@RossWarner21](https://github.com/RossWarner21) | 1 |
-
-**最新版本**：v1.4.3 (2026-09-27)
-
-> [!info]- Release Notes
-> **Reliable rendering on Windows, automated tests, and install guides for other agents.**
-> 
-> - **Windows fix:** web-icon export (`export_variants.py --web-icons`) could stop without writing `favicon.ico` and the app icons, because Windows keeps Chrome's helper processes and files locked for a moment after a screenshot. `render_png.py` now stops the whole browser process tree, cleans up temporary folders without failing, and retries a failed browser render once. The export now names the icon that failed instead of saying no renderer is available.
-> - **Automated tests:** every push and pull request runs all the skill's scripts end to end on Windows, macOS and Linux (Python 3.9 and latest 3.x) with `tools/smoke_test.py`.
-> - **Other agents:** the README explains how to install the skill in Gemini CLI, Codex CLI and other agents that support Agent Skills, and SKILL.md no longer assumes Claude Code when locating its scripts.
-> 
-> Update in Claude Code: `/plugin marketplace update logo-design-skill`
-> Claude.ai / Desktop: download `logo-design.zip` (or `logo-design-lite.zip`) and re-upload it under Settings → Capabilities → Skills.
-> Gemini CLI, Codex CLI and others: copy `skills/logo-design/` into your agent's skills folder (see the README).
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-27 ~ 2026-09-30）
-> **活躍天數** 4 天 · **最新 commit** README: move Install above Examples
+> [!abstract] 最近 10 次 commit（2026-09-26 ~ 2026-09-29）
+> **活躍天數** 2 天 · **最新 commit** docs: show the onetake icon above the wordmark
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/kaankiziltug/logo-design-skill/issues/5) | Дизайн | 0 | 0 |
+> | [#3](https://github.com/feitangyuan/onetake/issues/3) | Commercial license inquiry | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Logo Design Skill for Claude & AI Agents
+> > **Motion films that never cut to the next slide.** A Claude Agent Skill that makes product launch films, teasers and feature demos where every beat grows out of the one before — one continuous take, not a stack of scenes.
+> > **一镜到底的连贯动效。** 做产品发布片、预告片、功能演示：每一个画面都从上一个画面里长出来，是一整条连续的镜头，而不是一张张轮流出场的"PPT"。
 > 
-> [](https://github.com/kaankiziltug/logo-design-skill/actions/workflows/test.yml) [](#)
+> [](LICENSE)
+> [](SKILL.md)
+> [](cases/)
+> [](scripts/verify_promo.py)
 > 
-> A comprehensive **logo-design skill** that turns Claude — or any agent that supports Agent Skills, such as Gemini
-> CLI, Codex CLI, Cursor or GitHub Copilot — into a disciplined identity designer, from the first brief to
-> production-ready SVG files and brand guidelines.
-> 
-> - **Principles & process** — discovery and briefs, word mapping, choosing the right mark type, concepting,
->   geometric construction, optical corrections (overshoot, bone effect, irradiation…), colour, typography, lockups,
->   testing, presentation, delivery, redesigns and identity systems.
-> - **A reference library of 1,400+ real-world SVG logos**, each visually classified by mark type, technique,
->   geometry, subject, typography, mood and industry — searchable from the command line and browsable in a local
->   gallery. Used to study construction, map category conventions and avoid look-alikes (never to copy).
-> - **Dependency-free Python tools** — audit an SVG against logo principles, build concept overview sheets and test
->   sheets (16 px pixel test, one-colour, reversed, squint, mirror, contexts, competitor shelf test), create client
->   presentation boards with industry-specific mockups, render PNGs, and export a complete favicon / app-icon /
->   web-manifest set.
-> 
-> **Contents:** [How it works](#how-it-works) · [Install](#install) · [Examples](#examples) ·
-> [Tests](#what-the-tests-catch) · [Use](#use) · [What's inside](#whats-inside) · [Library](#library-at-a-glance)
+> From onetake's own launch film. A prompt bar opens into the ad it asked for; the next prompt collapses into a line that shoots across the desk and opens into a festival screen. No cut. [Full film with sound →](cases/onetake-launch-30s/onetake-launch.mp4)
 > 
 > ---
 > 
-> 
-> ## Install
-> 
-> 
-> ## Examples
-> 
-> Twenty-eight fictional briefs, from quiet luxury and neon festivals to B2B SaaS, fintech and health — each run end to
-> end with the skill. For every brand you see exactly what the skill shows at the checkpoint (greyscale concepts with
-> true 64/32/16 px sizes and a recommendation), followed by a colour preview of the chosen direction on mockups picked
-> for that industry. Later batches deliberately push **vivid, saturated palettes** while still passing the one-colour
-> and 3 : 1 contrast checks. The newest batch takes on three crowded categories: **SaaS** (no chat bubbles, charts or
-> padlocks), **finance** (no coins, piggy banks or bank blue) and **health** (no crosses, pills or heartbeat lines).
-> The latest ten add another ten sectors. In four of them the client picked a different concept at the checkpoint than
-> the one the skill recommended, and the skill refined that choice before colouring it: exactly what the checkpoint is
-> for.
-> 
-> | Brand | Sector | Style | Chosen mark |
-> |---|---|---|---|
-> |  [Kiln](#kiln--specialty-coffee-roaster) | Specialty coffee | Warm, crafted, modern | Letterform + custom wordmark |
-> |  [Zestly](#zestly--food-delivery-app) | Food delivery | Juicy, cheeky, tomato & lime | Mascot |
-> |  [Maison Orvelle](#maison-orvelle--luxury-fashion-atelier) | Luxury fashion | High-contrast Didone | Monogram |
-> |  [Pulsewave](#pulsewave--music--arts-festival) | Music festival | Neon on night, kinetic | Abstract letterform |
-> |  [Tinkertrail](#tinkertrail--kids-stem-workshops) | Kids' STEM education | Playful, rounded, multi-colour | Letterform |
-> |  [Ralli](#ralli--padel--tennis-app) | Sports app | Dynamic italic, electric coral | Letterform |
-> |  [Alderpeak](#alderpeak--outdoor-gear) | Outdoor gear | Rugged, slab, earthy | Pictorial symbol |
-> |  [Driftwell](#driftwell--surf-hostel--café) | Hospitality | Azulejo tile, coastal brights | Emblem + symbol |
-> |  [Calmera](#calmera--physiotherapy-clinic) | Physiotherapy | Soft, organic, calm | Pictorial symbol |
-> |  [Bramble Vet](#bramble-vet--veterinary-clinic) | Veterinary | Friendly character, sunny | Mascot |
-> |  [Voltra](#voltra--solar-energy) | Clean energy | Geometric, volt orange | Abstract symbol |
-> |  [Keyfort](#keyfort--password-manager) | Security SaaS | Strict grid, electric indigo & mint | Abstract symbol |
-> |  [Relaydesk](#relaydesk--customer-support-saas) | Support SaaS | Rounded, violet & coral | Abstract symbol |
-> |  [Tracelane](#tracelane--product-analytics) | Developer analytics | Technical, acid & pink on carbon | Letterform |
-> |  [Tallybook](#tallybook--invoicing--bookkeeping) | Small-business finance | Friendly, tangerine & teal | Letterform |
-> |  [Northvault](#northvault--digital-bank-for-freelancers) | Digital banking | Bold tile, hot magenta | Letterform |
-> |  [Mediora](#mediora--telehealth-app) | Telehealth | Soft, coral face on teal | Mascot |
-> |  [Brightdose](#brightdose--online-pharmacy) | Online pharmacy | Sunny yellow & cobalt | Letterform |
-> |  [Hearsay](#hearsay--podcast-network) | Podcast network | Bold pink, conversational | Letterform (client's pick) |
-> |  [Norrvik](#norrvik--architecture-studio) | Architecture | Restrained, spruce green | Abstract symbol |
-> |  [Brawnhall](#brawnhall--boxing-club) | Boxing gym | Heavy, hi-vis orange | Letterform (client's pick) |
-> |  [Solenne](#solenne--skincare) | Skincare | Daylight blue & gold | Pictorial (client's pick) |
-> |  [Mothlight](#mothlight--indie-game-studio) | Indie games | Ultraviolet & lamplight | Negative space |
-> |  [Loafwright](#loafwright--sourdough-bakery) | Bakery | Warm marigold | Mascot |
-> |  [Stillbrook](#stillbrook--craft-brewery) | Craft brewery | Turquoise & forge orange | Letterform |
-> |  [Marlow & Finch](#marlow--finch--estate-agency) | Real estate | Finch orange & ink | Pictorial ampersand |
-> |  [Kitewire](#kitewire--ai-agent-platform) | AI dev tools | Kite red & updraft yellow | Letterform |
-> |  [Roamwheel](#roamwheel--e-bike-subscription) | Urban mobility | Go lime & ink | Mascot (client's pick) |
-> 
-> 
-> ## How it works
-> 
-> ```mermaid
-> flowchart LR
->     A[Briefquestions or stated assumptions] --> B[Researchcategory conventions in the library]
->     B --> C[Concepts8–12 one-liners → build 3 in SVG]
->     C --> D[Test & refineaudit · 16 px · one-colour · shelf test]
->     D --> E{{Checkpointshow concepts, recommend, stop}}
->     E -- "you pick a directionand ask for the kit" --> F[Kitcolour · lockups · board · icons · guidelines]
->     E -- "you want changes" --> C
-> ```
-> 
-> The skill always **stops at the checkpoint**: it shows the concepts as one overview image with a recommendation and
-> offers the full kit. Nothing else is produced until you choose a direction — the kit is most of the work and only
-> makes sense for an approved idea.
+> [English](#english) | [中文说明](#chinese)
 > 
 > ---
 > 
+> ## English
 > 
-> ### Claude Code — plugin marketplace (recommended)
-> ```
-> /plugin marketplace add kaankiziltug/logo-design-skill
-> /plugin install logo-design@logo-design-skill
-> ```
+> ### The problem: motion that falls apart
 > 
+> Most motion videos an AI makes today — and most template tools — come out **loose**. Title card, fade, UI shot, fade,
+> feature card, fade, logo. Each shot can look fine and the whole still reads like a slideshow, because nothing
+> connects one beat to the next: scenes *replace* each other.
 > 
-> ### Claude Code — manual
-> Copy the skill folder into your personal (all projects) or project skills directory:
-> ```bash
-> git clone https://github.com/kaankiziltug/logo-design-skill.git
-> cp -r logo-design-skill/skills/logo-design ~/.claude/skills/logo-design          # personal
+> ### What onetake does differently: every beat is carried
 > 
-> # or: cp -r logo-design-skill/skills/logo-design .claude/skills/logo-design     # per project
-> ```
+> onetake treats the boundary between two beats as the thing to design. At every boundary, **something on screen
+> survives and visibly becomes the next beat**:
 > 
+> - the prompt bar **opens into** the app window; the window **reflows into** the phone;
+> - a bar **collapses into a line**, the line **shoots across** the desk and **becomes the first grid line** of the next film;
+> - a card **grows into** the page; a stage **opens from** the character; the camera **pushes through** a card until it *is* the next scene;
+> - at the end, the cast **folds into** the lockup — in the launch film, the block cursor **writes the name** in one stroke.
 > 
-> ### Claude.ai / Claude Desktop
-> Download `logo-design.zip` from the [Releases](https://github.com/kaankiziltug/logo-design-skill/releases) page (or run
-> `python3 tools/package_skill.py`) and upload it under **Settings → Capabilities → Skills**. If your upload has a size
-> limit, use `logo-design-lite.zip` (everything except the SVG files themselves).
+> And **one camera holds it all together**. It never cuts: it follows the subject a beat ahead, whips to where the next
+> thing will land, floats like a hand-held operator and shakes when something hits — then holds dead still, because rests
+> are what make the moves land.
 > 
+> ### Continuity is measured, not hoped for
 > 
-> ### Gemini CLI, Codex CLI and other agents
-> The skill uses the open **Agent Skills** format (a folder with a `SKILL.md`), so it works in any agent that supports
-> skills — the instructions are plain Markdown and the tools are plain Python. Clone once, then copy the folder into
-> your agent's skills directory:
-> ```bash
-> git clone https://github.com/kaankiziltug/logo-design-skill.git
-> ```
+> Every film is checked by an oracle before a human watches it. `probe.py` records what is on screen in every frame, finds
+> each boundary, and asks what carried across it. A film whose beats replace each other fails.
 > 
-> | Agent | Personal (all projects) | Per project |
+> | film | verdict | continuity (carry score) |
 > |---|---|---|
-> | Gemini CLI | `~/.gemini/skills/logo-design` (or `~/.agents/skills/`) | `.gemini/skills/logo-design` |
-> | Codex CLI | `~/.codex/skills/logo-design` | `.codex/skills/logo-design` |
-> | Cursor, GitHub Copilot, OpenCode, others | see your agent's skills docs | usually a `skills/` folder in the project |
+> | an earlier launch film, v1 — perfect rhythm, still a slideshow | rejected | **0.00** |
+> | the same film, v2 | rejected | **0.40** |
+> | the same film, v3 — every beat grows out of the last | accepted | **0.75** |
+> | onetake launch film | accepted | **0.83** |
+> 
+> The same oracle fails uniform cadence (shots all the same length), no stillness, clipped audio, fast moves without
+> motion blur, and a subject that leaves the frame.
+> 
+> ### What makes it look finished
+> 
+> - **Real UI, rebuilt.** The product's interface is rebuilt in HTML from screenshots and sits on the camera's plane, so the camera can fly into it at any zoom. No screen recording.
+> - **Measured moves.** ~38 moves (springs, entrances, carries, contact, sims, camera, fluid grounds), each a pure function of time with its speed curve measured — never a hand-rolled ease.
+> - **Real motion blur.** Every moving frame is several captures across an open 180° shutter, averaged in linear light. Fast moves smear instead of strobing.
+> - **Sound in one room.** Foley and synthesis placed from the film's own events, in one reverb, ducking the music under the hits.
+> - **Deterministic.** Seek to any time, get the same frame. Drafts at 1080p30, finals at 4K60.
+> 
+> ### 🌟 Films made with it
+> 
+> Every case ships the finished film and a breakdown (concept, beat sheet, numbers, what was rejected and why). The
+> films' source code is not included.
+> 
+>   
+>     onetake launch
+>       Three prompts, three films, one take — each prompt visibly becomes its film
+>       ▶ Film | 📖 Breakdown
+>     one-dot
+>       One dot is the whole film: caret → menu → loading ring → spring curve → the dot on the i
+>       ▶ Film | 📖 Breakdown
+>   
+>   
+>     knockon
+>       A chain reaction: every beat is the collision that starts the next
+>       ▶ Film | 📖 Breakdown
+>     clearing
+>       One zoom from a year to a free half hour — 1× to 300× and back, never a cut
+>       ▶ Film | 📖 Breakdown
+>   
+>   
+>     pith
+>       The window grows out of one phosphor pixel: 440× → 0.52× in one move
+>       ▶ Film | 📖 Breakdown
+>     ebb
+>       A field of light carries the take through five places; each flood drains onto the next
+>       ▶ Film | 📖 Breakdown
+>   
+>   
+>     overlap
+>       Two print passes slide into register — and an & appears that was hidden in both
+>       ▶ Film | 📖 Breakdown
+>     unbroken
+>       One ink stroke that is never lifted: procedural brush, no textures
+>       ▶ Film | 📖 Breakdown
+>   
+>   
+>     motion-web
+>       Where the rhythm rules came from: small UI, big ground, rests, then a burst
+>       ▶ Film | 📖 Breakdown
+>     skill-demo
+>       An operation demo from nothing: the chosen menu row flies into the input as a chip, and on from there
+>       ▶ Film | 📖 Breakdown
+>   
+> 
+> > one-dot and skill-demo were made when the skill was still called *ohmymotion*; the films show that name.
+> 
+> ### How a film is made
+> 
+> 1. **Deconstruct the reference in numbers:** how much of it is still, where it cuts, how its moves ease.
+> 2. **Three concepts, pick one.** Each is one sentence about the *picture* — "one dot becomes everything", "one zoom through scale" — not three stories told with the same cards.
+> 3. **A beat sheet for rhythm *and* carry.** Shot lengths vary by ≥ 4×, and every boundary names what survives it.
+> 4. **Compose** one HTML file on the move library. **Render** with motion blur. **Score** the sound from the film's events.
+> 5. **Verify**, then show a human.
+> 
+> ### 📦 Installation
 > 
 > ```bash
-> cp -r logo-design-skill/skil
+> # Claude Code
+> git clone https://github.com/feitangyuan/onetake.git ~/.claude/skills/onetake
+> # Codex / other agents that read skills
+> git clone https://github.com/feitangyuan/onetake.git ~/.agents/skills/onetake
+> ```
+> 
+> Then ask: *"Make a 15 s launch video for my app"*, *"a feature demo rebuilt from these screenshots, no screen
+> recording"*, *"my motion video feels like a slideshow — fix it"*.
+> 
+> **Requires** python3 with `playwright` (chromium), `numpy`, `scipy`, `Pillow`, `matplotlib` (`opencv-python` for
+> reference analysis), `ffmpeg`, `node`. Narration adds `faster-whisper` and Kokoro TTS. Music is royalty-free by default.
+> 
+> | | |
+> |---|---|
+> | `SKILL.md` | the protocol and the hard rules each rejected cut taught |
+> | `lib/motion.js` · `lib/ui_kit.js` | the move library; the UI-rebuild kit |
+> | `scripts/` | render (motion blur, 4K60), verify (the oracle), probe, stills, reference analysis, footage, narration, sound |
+> | `gallery/` | one live demo and one six-frame sheet per move |
+> | `references/` | rhythm, carry, composition, camera, sound, product demos — the method with its numbers |
+> 
+> ### License
+> 
+> [PolyForm Noncommercial 1.0.0](LICENSE): free for personal, educational, research and other noncommercial use.
+> **Commercial use is not permitted.**
+> 
+> ---
+> 
+> ## 中文说明
+> 
+> ### 问题：动效是散的
+> 
+> 现在大多数 AI 做出来的动效视频，还有大多数模板工具做出来的，都是**散的**。
+> 标题卡、淡出、界面镜头、淡出、功能卡片、淡出、Logo。每一镜单看也许都不错，合起来还是像在翻 PPT。
+> 原因是画面和画面之间没有任何联系，后一个场景只是把前一个**替换**掉了。
+> 
+> ### onetake 不一样：每个画面都被"接住"
+> 
+> onetake 把两个画面之间的交接处当成设计的重点。每一个交接处，**都有一个东西活下来，并且看得见地变成下一个画面**：
+> 
+> - 输入框**展开成** App 窗口，窗口再**重排成**手机界面；
+> - 输入框**压成一条线**，这条线**划过桌面**，**变成**下一条片子的第一根网格线；
+> - 卡片**长成**整个页面；舞台从角色身上**打开**；镜头**穿过**一张卡片，穿过去就是下一个场景；
+> - 结尾，所有元素**收拢成**标志。在 onetake 自己的发布片里，是光标一笔**写出**名字。
+> 
+> **把这一切串起来的是同一个镜头。** 它从不剪断：提前半拍跟着主体走，抢在下一个东西落地前甩过去，像手持一样轻微浮动，东西撞上来时跟着一震；
+> 该停的时候又能完全静止，因为有停顿，动作才落得下来。
+> 
+> ### 连贯是量出来的，不是靠感觉
+> 
+> 每条片子给人看之前，先过一遍自动验收。`probe.py` 记录每一帧画面上有什么，找出每一个交接处，再判断有没有东西从这边带到那边。
+> 画面互相替换的片子，直接判不合格。
+> 
+> | 片子 | 结果 | 连贯度（carry score） |
+> |---|---|---|
+> | 更早的一条发布片 v1：节奏完美，仍然像 PPT | 被否 | **0.00** |
+> | the same film, v2 | 被否 | **0.40** |
+> | 同一条片子 v3：每个画面从上一个里长出来 | 通过 | **0.75** |
+> | onetake 发布片 | 通过 | **0.83** |
+> 
+> 同一套验收还会判掉这些问题：镜头长度全都一样、没有静止段落、音频爆音、快动作没有运动模糊、主体出画。
+> 
+> ### 为什么看起来像成品
+> 
+> - **复刻的真实界面**：按截图用 HTML 重建产品界面，放在镜头所在的平面上，推到多近都清楚，不需要录屏。
+> - **实测过的动作**：约 38 个动作（弹簧、入场、衔接、碰撞、物理模拟、镜头、流体光场），每个都是时间的纯函数，速度曲线都实测过，不用随手写的缓动。
+> - **真实运动
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/kaankiziltug/logo-design-skill)
+[GitHub](https://github.com/feitangyuan/onetake)
 
 ## 相關收錄
 
@@ -342,7 +378,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "kaankiziltug--logo-design-skill"
+> WHERE category = "Other" AND file.name != "feitangyuan--onetake"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -351,7 +387,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "kaankiziltug--logo-design-skill" AND status != "archived"
+> WHERE language = "Python" AND file.name != "feitangyuan--onetake" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -360,18 +396,18 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "kaankiziltug--logo-design-skill"
+> WHERE week = "2026-W40" AND file.name != "feitangyuan--onetake"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/feitangyuan--onetake");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "kaankiziltug--logo-design-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "feitangyuan--onetake" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -387,7 +423,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "kaankiziltug" AND file.name != "kaankiziltug--logo-design-skill"
+> WHERE owner = "feitangyuan" AND file.name != "feitangyuan--onetake"
 > SORT stars DESC
 > ```
 
@@ -395,7 +431,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/feitangyuan--onetake");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -412,7 +448,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/feitangyuan--onetake");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -445,7 +481,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/feitangyuan--onetake");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -469,7 +505,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/feitangyuan--onetake");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -506,7 +542,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/kaankiziltug--logo-design-skill");
+> const me = dv.page("Repos/feitangyuan--onetake");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -589,7 +625,7 @@ A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI age
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-01** — 首次收錄
+> **2026-10-02** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -605,5 +641,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-02|2026-10-02]] — 再次上榜，1.4k stars
-- [[2026-10-01|2026-10-01]] — 首次收錄，1.2k stars
+- [[2026-10-02|2026-10-02]] — 首次收錄，1.2k stars
