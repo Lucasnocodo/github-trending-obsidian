@@ -4474,17 +4474,17 @@
   },
   "KKKKhazix/AIHOT": {
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-02",
-    "times_seen": 4,
+    "last_seen": "2026-10-03",
+    "times_seen": 5,
     "stars_first": 1675,
-    "stars_last": 4768
+    "stars_last": 5014
   },
   "dzhng/jevgrep": {
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-02",
-    "times_seen": 4,
+    "last_seen": "2026-10-03",
+    "times_seen": 5,
     "stars_first": 1522,
-    "stars_last": 2015
+    "stars_last": 2075
   },
   "Niko1221/Strata": {
     "first_seen": "2026-09-29",
@@ -4509,45 +4509,45 @@
   },
   "feder-cr/dots": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-02",
-    "times_seen": 2,
+    "last_seen": "2026-10-03",
+    "times_seen": 3,
     "stars_first": 1954,
-    "stars_last": 2403
+    "stars_last": 2546
   },
   "Louis-CFM/coucou": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-02",
-    "times_seen": 2,
+    "last_seen": "2026-10-03",
+    "times_seen": 3,
     "stars_first": 1725,
-    "stars_last": 2572
+    "stars_last": 3034
   },
   "firelex/jeff": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-02",
-    "times_seen": 2,
+    "last_seen": "2026-10-03",
+    "times_seen": 3,
     "stars_first": 1211,
-    "stars_last": 1284
+    "stars_last": 1331
   },
   "kaankiziltug/logo-design-skill": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-02",
-    "times_seen": 2,
+    "last_seen": "2026-10-03",
+    "times_seen": 3,
     "stars_first": 1179,
-    "stars_last": 1382
+    "stars_last": 1561
   },
   "rehan-remade/universal-modder": {
     "first_seen": "2026-10-02",
-    "last_seen": "2026-10-02",
-    "times_seen": 1,
+    "last_seen": "2026-10-03",
+    "times_seen": 2,
     "stars_first": 1662,
-    "stars_last": 1662
+    "stars_last": 2238
   },
   "yihui-dev/awesome-opus5-5-videos": {
     "first_seen": "2026-10-02",
-    "last_seen": "2026-10-02",
-    "times_seen": 1,
+    "last_seen": "2026-10-03",
+    "times_seen": 2,
     "stars_first": 1300,
-    "stars_last": 1300
+    "stars_last": 1460
   },
   "wy51ai/floorplan-3d": {
     "first_seen": "2026-10-02",
@@ -4558,9 +4558,16 @@
   },
   "feitangyuan/onetake": {
     "first_seen": "2026-10-02",
-    "last_seen": "2026-10-02",
-    "times_seen": 1,
+    "last_seen": "2026-10-03",
+    "times_seen": 2,
     "stars_first": 1172,
-    "stars_last": 1172
+    "stars_last": 1363
+  },
+  "CopilotKit/OpenDots": {
+    "first_seen": "2026-10-03",
+    "last_seen": "2026-10-03",
+    "times_seen": 1,
+    "stars_first": 1627,
+    "stars_last": 1627
   }
 }

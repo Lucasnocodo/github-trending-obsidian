@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them. Watch each original next to a live remake on Skillry. Updated regularly."
 homepage: "https://skillry.dev/ai-videos/opus-5-5"
-stars: 1300
-stars_per_day: 260
-forks: 139
+stars: 1460
+stars_per_day: 292
+forks: 154
 open_issues: 0
 created: 2026-09-27
 pushed_at: 2026-09-30
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-05"
+appearances: 2
+next_review: "2026-10-06"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-02"
-star_history: "2026-10-02:1300"
+star_history: "2026-10-02:1300,2026-10-03:1460"
 tags:
   - github
   - "category/other"
@@ -529,4 +529,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-03|2026-10-03]] — 再次上榜，1.5k stars
 - [[2026-10-02|2026-10-02]] — 首次收錄，1.3k stars

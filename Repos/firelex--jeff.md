@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification"
 homepage: ""
-stars: 1284
-stars_per_day: 428
-forks: 57
-open_issues: 1
+stars: 1331
+stars_per_day: 333
+forks: 62
+open_issues: 4
 created: 2026-09-28
 pushed_at: 2026-10-01
 first_seen: 2026-10-01
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-05"
+appearances: 3
+next_review: "2026-10-06"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1211,2026-10-02:1284"
+star_history: "2026-10-01:1211,2026-10-02:1284,2026-10-03:1331"
 tags:
   - github
   - "category/other"
@@ -600,5 +600,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-03|2026-10-03]] — 再次上榜，1.3k stars
 - [[2026-10-02|2026-10-02]] — 再次上榜，1.3k stars
 - [[2026-10-01|2026-10-01]] — 首次收錄，1.2k stars

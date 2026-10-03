@@ -1,19 +1,19 @@
 ---
-repo: rehan-remade/universal-modder
-url: https://github.com/rehan-remade/universal-modder
-owner: rehan-remade
-owner_type: User
-language: Python
+repo: CopilotKit/OpenDots
+url: https://github.com/CopilotKit/OpenDots
+owner: CopilotKit
+owner_type: Organization
+language: TypeScript
 license: MIT
-description: "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos."
-homepage: ""
-stars: 2238
-stars_per_day: 746
-forks: 174
-open_issues: 11
-created: 2026-09-30
-pushed_at: 2026-09-30
-first_seen: 2026-10-02
+description: "Your always-on AI coworkers that move between text, calls, and Slack."
+homepage: "https://www.copilotkit.ai/opendots"
+stars: 1627
+stars_per_day: 542
+forks: 199
+open_issues: 17
+created: 2026-09-29
+pushed_at: 2026-10-02
+first_seen: 2026-10-03
 week: "2026-W40"
 month: "2026-10"
 category: "Other"
@@ -25,44 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-02
+last_reviewed: 2026-10-03
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-10-06"
-contributor_count: 2
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 22342
-readme_length: 9574
+contributor_count: 3
+engagement: "medium"
+issue_close_rate: 37
+repo_size_kb: 19342
+readme_length: 9775
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-02"
-star_history: "2026-10-02:1662,2026-10-03:2238"
+ring_history: "assess@2026-10-03"
+star_history: "2026-10-03:1627"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/age_of_empires"
-  - "topic/claude_code"
-  - "topic/claude_code_plugin"
-  - "topic/fal"
-  - "topic/game_assets"
+  - "lang/typescript"
+  - org
 aliases:
-  - "universal-modder"
-  - "rehan-remade/universal-modder"
+  - "OpenDots"
+  - "CopilotKit/OpenDots"
 ---
 
-# universal-modder
+# OpenDots
 
-**1.7k** stars · **831** stars/天 · 建立 2 天前 · Python · MIT
+**1.6k** stars · **542** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/rehan-remade--universal-modder");
+const me = dv.page("Repos/CopilotKit--OpenDots");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`age-of-empires` `claude-code` `claude-code-plugin` `fal` `game-assets` `game-modding` `mcp` `modding` `reverse-engineering` `tmodloader`
+`ORG`
 
 > [!summary] 一句話摘要
-> Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.
+> Your always-on AI coworkers that move between text, calls, and Slack.
 
 ## 專案簡介
 
-Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.
+Your always-on AI coworkers that move between text, calls, and Slack.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/rehan-remade--universal-modder");
+> const me = dv.page("Repos/CopilotKit--OpenDots");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +119,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/rehan-remade--universal-modder");
+> const me = dv.page("Repos/CopilotKit--OpenDots");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,184 +143,145 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 123 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-30 |
-| 建立日期 | 2026-09-30 |
-| Repo 大小 | 21.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/rehan-remade/universal-modder) |
-| Topics | `age-of-empires` `claude-code` `claude-code-plugin` `fal` `game-assets` `game-modding` `mcp` `modding` |
+| Forks | 199 |
+| Open Issues | 17 |
+| Issue 解決率 | 37% (10 closed) |
+| 最後推送 | 2026-10-02 |
+| 建立日期 | 2026-09-29 |
+| 官方網站 | [Link](https://www.copilotkit.ai/opendots) |
+| Repo 大小 | 18.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/CopilotKit/OpenDots) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@ag-ui/client` `@ag-ui/core` `@copilotkit/channels` `@copilotkit/core` `@copilotkit/react-core` `@copilotkit/runtime` `@hono/node-server` `@modelcontextprotocol/sdk` `@tanstack/ai` `@tanstack/ai-openai` `@tiptap/core` `@tiptap/extension-placeholder` `@tiptap/extension-table` `@tiptap/extension-task-item` `@tiptap/extension-task-list`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 89
->     "PowerShell" : 10
->     "Shell" : 1
+>     "TypeScript" : 83
+>     "CSS" : 16
+>     "JavaScript" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@rehan-remade](https://github.com/rehan-remade) | 3 |
-> | [@Bortlesboat](https://github.com/Bortlesboat) | 1 |
+> | [@jerelvelarde](https://github.com/jerelvelarde) | 16 |
+> | [@AlemTuzlak](https://github.com/AlemTuzlak) | 1 |
+> | [@RowanAldean](https://github.com/RowanAldean) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-30 ~ 2026-09-30）
-> **活躍天數** 1 天 · **最新 commit** v0.2: any agent, a shared knowledge base, and the Minecraft x GTA V example
+> [!abstract] 最近 10 次 commit（2026-10-01 ~ 2026-10-02）
+> **活躍天數** 2 天 · **最新 commit** feat: add Parallel search and extraction to research (#15)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#4](https://github.com/rehan-remade/universal-modder/issues/4) | add verity ai to it | 0 | 0 |
+> | [#38](https://github.com/CopilotKit/OpenDots/issues/38) | Control-poll failure ends a call immediately, even if the pe | 0 | 0 |
+> | [#37](https://github.com/CopilotKit/OpenDots/issues/37) | Composer: avoid submitting Enter while IME composition is ac | 0 | 0 |
+> | [#34](https://github.com/CopilotKit/OpenDots/issues/34) | Fresh Windows clone: npm run dev and npm run check-format fa | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Skills, tools and a shared knowledge base that let any AI coding agent mod almost any PC game you own.
->   Works with Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, OpenCode, or anything that reads AGENTS.md.
->   The agent finds the game, works out the engine and the route, reads the real code, builds the mod, makes art, 3D and sound
->   with fal, tests it in the running game, cuts the video, and writes down what it learned for the next agent.
+> # OpenDots
 > 
->   
->   
->   
->   
 > 
->   
+> ## Overview
 > 
-> ## Install
+> OpenDots is a starting point for building your own agent workspace. Clone it, define your Dots, connect your services, and adapt the interface and tools to your needs.
 > 
-> Pick your agent. Each gets the same skills (Agent Skills format), the fal MCP server, and the `um` CLI.
+> **A template, not a hosted product.** You run the application and configure its infrastructure. The template is in early development; the Features section below describes what's included and distinguishes local verification from connected-service testing.
 > 
-> | Agent | Install |
-> |---|---|
-> | **Claude Code** | `/plugin marketplace add rehan-remade/universal-modder`, then `/plugin install universal-modder@universal-modder` |
-> | **Codex** | `codex plugin marketplace add rehan-remade/universal-modder`, then `codex plugin add universal-modder@universal-modder` |
-> | **Gemini CLI** | `gemini extensions install https://github.com/rehan-remade/universal-modder` |
-> | **VS Code / Copilot** | Enable `chat.plugins.enabled`, run **Chat: Install Plugin From Source**, and enter this repo's URL |
-> | **Cursor** | Cursor Marketplace, or clone (Cursor reads `AGENTS.md` and `.cursor/mcp.json`) |
-> | **Skills only** (any agent) | `npx skills add https://github.com/rehan-remade/universal-modder` |
-> | **Anything else** | `git clone https://github.com/rehan-remade/universal-modder` and start your agent inside it |
 > 
-> Inside a clone, each agent finds the skills where it looks for them: `.agents/skills` (Codex and friends),
-> `.claude/skills`, `.gemini/skills` and `.github/skills` all link to `skills/`. Instructions are in
-> `AGENTS.md`, which `CLAUDE.md` and `GEMINI.md` point to. MCP config is in `.mcp.json`, `.codex/config.toml`,
-> `.cursor/mcp.json` and `.vscode/mcp.json`.
+> ## Features
 > 
-> **The `um` CLI.** Plugin installs and clones put it on PATH. Anywhere else:
-> ```bash
-> uv tool install git+https://github.com/rehan-remade/universal-modder     # or: pipx install git+...
-> ```
-> **For assets,** get a [fal API key](https://fal.ai/dashboard/keys). It powers both the fal MCP server and
-> `um fal`:
-> ```bash
-> export FAL_KEY=...
-> ```
-> You also need Python 3.10+ and ffmpeg. `uv` is recommended. Blender is needed for 3D → sprite renders.
-> Windows games are driven natively or from WSL.
+> | Area                       | Included                                                                                                                                |
+> | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+> | Spaces and Specialist Dots | Saved names, role instructions, and per-Dot research and memory permissions                                                             |
+> | Pages                      | Searchable library, visual editor, slash commands, autosave, and revision checks                                                        |
+> | Conversations              | React SDK chat and Threads integration, page-specific conversations, and source links                                                   |
+> | Slack                      | Managed Channels SDK declaration with workspace and user allowlists                                                                     |
+> | Calls                      | WebRTC speech, delegated compute, bounded sessions, hangup, and timeline receipts                                                       |
+> | Background work            | Scheduled server-side turns in their original conversation, with pause and retry controls                                               |
+> | Browser                    | Separate read-only public-page service with page capture and navigation limits                                                          |
+> | Dot computers              | Per-Dot browser profiles, files, shell, takeover, permissions, and action records through OpenBot                                       |
+> | Memory                     | User-managed preferences that permitted Dots can use                                                                                    |
+> | Automatic Learning         | Per-Dot Learning containers, conversation evidence routing, and published-skill delivery; see [setup](docs/SETUP.md#automatic-learning) |
+> | Deployment                 | Local Node setup and separate application/browser containers                                                                            |
 > 
-> ## Try it
-> > Mod Terraria: add a homing missile launcher and a tactical nuke that craters the world. Make the sprites with fal.
+> Local checks cover setup, persistence, permissions, SDK failure handling, and browser isolation. Automated tests use service fixtures. **Live Intelligence, model responses, and page-context chat were verified on September 29, 2026.** Live OpenBot computer browsing, file creation, shell verification, and file persistence across stop/start were also verified locally. Live Realtime speech, call controls, and receipt persistence were verified locally on September 30, 2026. Slack and spoken compute delegation still need connected-service verification. See [recording notes](docs/demos/README.md) for the demonstrated flows and limits.
 > 
-> > Make a new civilization for Age of Empires II with a unique unit rendered from 3D.
+> Automatic Learning routing and skill delivery are configured locally. Cloud schedules, eligible-thread counts, and published-skill delivery still need connected-service verification. Skills require review and publication in Intelligence; existing conversations without a container are not enrolled retroactively.
 > 
-> > Put real Minecraft inside GTA V story mode. Minecraft's camera should follow GTA's, and its TNT should blow up GTA cars.
+> This is a single-owner starting point. Shared editing, invitations, file uploads, and interactive page embeds are not included. Schedules are recurring instructions, not a complete goal or event-trigger system. Specialist Dots have separate roles and conversations; multi-Dot group conversations and automatic delegation are further work.
 > 
-> > What engine is `C:\Games\Foo`, and has anyone modded it before?
 > 
-> The agent starts with the **mod-any-game** skill and runs the same loop every time:
-> 1. search the knowledge base;
-> 2. recon, then pick a route;
-> 3. set up a safe lab (saves backed up);
-> 4. read the actual code;
-> 5. build one working slice;
-> 6. generate assets;
-> 7. verify in the real game;
-> 8. record;
-> 9. package;
-> 10. write a field note for the next agent.
+> ### Always-on AI coworkers that move between text, calls, and Slack.
 > 
-> ## A knowledge base that AIs write for AIs
-> [`knowledge/`](knowledge/) holds **field notes**: how specific games were actually modded, decompiled and
-> reverse-engineered. Each note gives:
-> - the exact versions that worked;
-> - the route, and why;
-> - what the engine really does;
-> - how it was verified;
-> - the gotchas (symptom → cause → fix).
+> **An open-source template for persistent AI agents, each with its own computer. Available on Web and Mobile.**
 > 
-> **Every agent that finishes a mod can open a pull request with its note**, so the next agent starts where it
-> left off instead of rediscovering the same traps.
+> Built with [CopilotKit](https://github.com/CopilotKit/CopilotKit) and [AG-UI](https://docs.ag-ui.com/introduction). · [Get started](#get-started) · [Overview](#overview) · [Architecture](#architecture) · [Features](#features) · [Contributing](CONTRIBUTING.md)
 > 
-> ```bash
-> um kb search "grand theft auto"                 # before you start: prior art (works outside the repo too)
-> um kb new --game "Hades II" --title "A new boon god" --from-scan hades --agent "Codex (gpt-6)"
-> um kb check knowledge/games/hades-ii/a-new-boon-god.md
-> um kb pr knowledge/games/hades-ii/a-new-boon-god.md --yes    # after your human says OK: branch, push, PR
-> ```
-> Browse [`knowledge/INDEX.md`](knowledge/INDEX.md). Contribution rules, for humans and AIs, are in
-> [`CONTRIBUTING.md`](CONTRIBUTING.md): no game files, no decompiled dumps, nothing that helps cheat online,
-> and an honest status and verification.
+> [](https://github.com/CopilotKit/OpenDots/actions/workflows/ci.yml)
+> [](./LICENSE)
 > 
-> ## What's inside
+> Fully self-hostable. Clone this template and customize it however you want.
 > 
-> **Skills** (`skills/`, Agent Skills format)
+> [**Building on OpenDots? Meet with the CopilotKit team →**](https://www.copilotkit.ai/talk-to-an-engineer?ref=opendots_readme)
 > 
-> | Skill | What it does |
-> |---|---|
-> | `mod-any-game` | The whole loop, hard safety rules, and **12 engine playbooks**: Unity, Unreal, .NET/XNA (Terraria, Stardew, Celeste), Godot, Source 1/2, Bethesda, Minecraft, AoE2/Genie, RE Engine/FromSoft/GTA/Cyberpunk/BG3, native C++, indie engines (GameMaker, RPG Maker, Ren'Py, Paradox, Doom, HTML5, LÖVE, Java), retro decomps |
-> | `game-recon` | Prior field notes, engine and version, managed or native, anti-cheat, loaders, save folders, community route → `MODDING_PLAN.md` |
-> | `reverse-engineering` | ILSpy / Cpp2IL / Vineflower / Ghidra and IDA over MCP / Cheat Engine / Frida / RenderDoc; reverse-engineer a file format and prove it with a round trip |
-> | `fal-assets` | Sprites with real transparency, consistent variants, pixel art, seamless textures, PBR maps, image-to-3D, auto-rigging, SFX, music, voice, cutscene video |
-> | `asset-pipeline` | Art → engine-exact frames: cutout, nearest-neighbour fit, palettes, sheets, team-colour masks, 3D → 8/16-heading sprites |
-> | `game-automation` | Launch, screenshot (GPU-safe), click/type safely, windowed mode, crash-reporter cleanup, in-game agent bridges |
-> | `showcase-video` | Record the window with only the game's audio, pick moments, cut a styled video from an EDL |
-> | `mashup-mods` | Game inside a game: content ports, passthrough mods (worked example: Minecraft × GTA V), decomps as libraries, reimplementations |
-> | `publish-mod` | Lint, package per platform, credits, the post |
-> | `share-field-notes` | Search the knowledge base, write your own note, open the PR |
+> ---
 > 
-> **The `um` CLI** (Python). Every command has `--help` with examples.
+> https://github.com/user-attachments/assets/4c74fe7d-ecdd-42dd-95da-5d34f9b9576e
 > 
-> | | |
-> |---|---|
-> | `um scan` | Find Steam/Epic/Xbox installs; fingerprint engine and version, .NET vs native, anti-cheat, installed loaders, save folders, ranked routes |
-> | `um fal` | `sprite`, `image`, `edit`, `rmbg`, `pixelate`, `upscale`, `texture`, `pbr`, `model3d`, `rig`, `sfx`, `music`, `voice`, `video`, `run`, `search`, `schema`, `price`. Plain REST, with a manifest of every generation |
-> | `um sprite` | `cutout`, `fit`, `pixelate`, `palette`, `sheet`, `slice`, `frames`, `team-mask`, `seamless`, `preview` |
-> | `um render3d` | GLB → sprite frames from the game's camera (`aoe2`, `iso8`, `trueiso`, `topdown`, `side`, `turntable`) with Blender |
-> | `um win` | `shot`, `record` (gfxcapture + process-loopback audio), `drive` (input that only reaches the game), `ps`, `kill`, `launch`, `reg` |
-> | `um video` | `contact` sheets, `compile` (EDL → titled, beat-cut video with music), `mux`, `beats`, `first-frame` |
-> | `um backup` | Snapshot, diff and restore save folders |
-> | `um publish check` | Blocks shipping game files, decompiled code and leaked keys |
-> | `um kb` | The knowledge base: `search`, `show`, `new`, `check`, `index`, `sync`, `pr` |
+> _Ask → browse → approve → save. A live computer view and a human review card appear right in chat, then the approved draft becomes an editable Space page. Enlarged for readability; idle time is trimmed and playback is accelerated._
 > 
-> Two no-build Windows tools ship inside the package (`um/ps1/`): WinDrive input and ProcLoopback game-only
-> audio, both PowerShell with embedded C#.
 > 
-> ## Built with it
-> - **[examples/terraria-tmodloader](examples/terraria-tmodloader)**: *Fal Arsenal* for tModLoader.
->   - Weapons: a homing missile launcher, a tactical nuke (crater + mushroom cloud), a chain-lightning rifle, a
->     black-hole gun and an orbital strike.
->   - Three new enemies and a two-phase Drone Mothership boss.
->   - Every sprite came from fal.
-> - **[examples/aoe2-de-civ](examples/aoe2-de-civ)**: *San Franciscans* for Age of Empires II DE.
->   - A new civilization with a Robotaxi unique unit and Delivery Drones, rendered from fal image-to-3D models
->     at AoE2's camera angle.
->   - A Transamerica Pyramid wonder.
->   - A reverse-engineered `.sld` sprite writer.
-> - **[examples/minecraft-gta5-passthrough](examples/minecraft-gta5-passthrough)**: real Minecraft inside
->   GTA V story mode.
->   - A Fabric mod and a ScriptHookV + ReShade add-on exchange
+> ### Spaces
+> 
+> A Space is a home for working documents. Dots appear separately in navigation and can be granted access to multiple Spaces in their settings. Each Dot has a default destination for saved pages; existing installations retain their original Space access. Browse pages in a searchable library, switch between grid and list views, and organize documents as nested subpages. Open a page in a focused visual editor with formatting, slash commands, and undo/redo. Write directly, save a conversation as a page, or ask a specialist to create and revise content.
+> 
+> Pages stay in the local workspace database. Their conversations use CopilotKit Threads, with a separate conversation for each page and specialist. Page links connect the document workspace to Dot chat. Manual editing works before you configure conversation services. Autosave reports its progress, failed saves retain your draft, and revision checks prevent stale edits from overwriting newer content. Markdown source mode remains available.
+> 
+> https://github.com/user-attachments/assets/d20c3405-4339-49e7-a799-43298728015c
+> 
+> _Open a Space, navigate to its launch brief, ask Scout about the saved page, and continue in Dot chat. This recording uses live page chat and example launch content._
+> 
+> 
+> ### Specialist Dots
+> 
+> Give each Dot a name, role, instructions, and permitted tools. A researcher can investigate a topic; a writer can turn findings into a draft. Inspect their work and control what they can do.
+> 
+> 
+> ### Dot computers
+> 
+> Each Dot can have its own computer, using [OpenBot](https://github.com/CopilotKit/OpenBot)'s container supervisor and computer service. Its browser profile and workspace files persist across stop/start. The Computer panel exposes browser control, human takeover, files, terminal output, and activity, with browser, file, and shell permissions set per Dot. The application keeps service credentials on the server and derives a different computer credential for each Dot.
+> 
+> See [Computer setup](docs/COMPUTERS.md) to build the pinned services and connect your deployment. Computer tools require those services; an unconfigured template does not execute commands on your host.
+> 
+> https://github.com/user-attachments/assets/30b691c3-0f66-4964-9fdb-67d4feab5568
+> 
+> _Ask Scout to open a website, summarize it, save notes, and verify the file. Every computer action in this demo is requested through chat; CopilotKit tool renderers show the live browser, saved file, and terminal output inline._
+> 
+> 
+> ### Review before saving
+> 
+> Ask a Dot to show a draft before saving it. A CopilotKit human-in-the-loop card pauses the conversation for **Approve & save** or **Decline**. Approval creates the page in an authorized Space and returns a link; retries recover the same saved page. The agent continues after your decision.
+> 
+> 
+> ### Text and calls
+> 
+> A continuous conversation keeps the Dot's avatar and status above the messages, with text and call controls close at hand. Work updates, source links, and call receipts appear 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/rehan-remade/universal-modder)
+[GitHub](https://github.com/CopilotKit/OpenDots) · [官方網站](https://www.copilotkit.ai/opendots)
 
 ## 相關收錄
 
@@ -332,7 +289,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "rehan-remade--universal-modder"
+> WHERE category = "Other" AND file.name != "CopilotKit--OpenDots"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -341,7 +298,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "rehan-remade--universal-modder" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "CopilotKit--OpenDots" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -350,18 +307,18 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "rehan-remade--universal-modder"
+> WHERE week = "2026-W40" AND file.name != "CopilotKit--OpenDots"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/rehan-remade--universal-modder");
+> const me = dv.page("Repos/CopilotKit--OpenDots");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "rehan-remade--universal-modder" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "CopilotKit--OpenDots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -377,7 +334,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "rehan-remade" AND file.name != "rehan-remade--universal-modder"
+> WHERE owner = "CopilotKit" AND file.name != "CopilotKit--OpenDots"
 > SORT stars DESC
 > ```
 
@@ -385,7 +342,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/rehan-remade--universal-modder");
+> const me = dv.page("Repos/CopilotKit--OpenDots");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -402,7 +359,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/rehan-remade--universal-modder");
+> const me = dv.page("Repos/CopilotKit--OpenDots");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -435,7 +392,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/rehan-remade--universal-modder");
+> const me = dv.page("Repos/CopilotKit--OpenDots");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -459,7 +416,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/rehan-remade--universal-modder");
+> const me = dv.page("Repos/CopilotKit--OpenDots");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -496,7 +453,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/rehan-remade--universal-modder");
+> const me = dv.page("Repos/CopilotKit--OpenDots");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -579,7 +536,7 @@ Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-02** — 首次收錄
+> **2026-10-03** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -595,5 +552,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-03|2026-10-03]] — 再次上榜，2.2k stars
-- [[2026-10-02|2026-10-02]] — 首次收錄，1.7k stars
+- [[2026-10-03|2026-10-03]] — 首次收錄，1.6k stars

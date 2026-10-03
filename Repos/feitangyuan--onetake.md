@@ -7,9 +7,9 @@ language: Python
 license: NOASSERTION
 description: "Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. A Claude Agent Skill for product launch films and feature demos."
 homepage: ""
-stars: 1172
+stars: 1363
 stars_per_day: 195
-forks: 74
+forks: 84
 open_issues: 3
 created: 2026-09-26
 pushed_at: 2026-09-29
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-09"
+appearances: 2
+next_review: "2026-10-10"
 contributor_count: 0
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-02"
-star_history: "2026-10-02:1172"
+star_history: "2026-10-02:1172,2026-10-03:1363"
 tags:
   - github
   - "category/other"
@@ -641,4 +641,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-03|2026-10-03]] — 再次上榜，1.4k stars
 - [[2026-10-02|2026-10-02]] — 首次收錄，1.2k stars
