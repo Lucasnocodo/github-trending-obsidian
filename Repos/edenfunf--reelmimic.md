@@ -1,20 +1,20 @@
 ---
-repo: CopilotKit/OpenDots
-url: https://github.com/CopilotKit/OpenDots
-owner: CopilotKit
-owner_type: Organization
-language: TypeScript
+repo: edenfunf/reelmimic
+url: https://github.com/edenfunf/reelmimic
+owner: edenfunf
+owner_type: User
+language: JavaScript
 license: MIT
-description: "Your always-on AI coworkers that move between text, calls, and Slack."
-homepage: "https://www.copilotkit.ai/opendots"
-stars: 2699
-stars_per_day: 675
-forks: 336
-open_issues: 31
-created: 2026-09-29
+description: "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you."
+homepage: ""
+stars: 1154
+stars_per_day: 231
+forks: 151
+open_issues: 34
+created: 2026-09-28
 pushed_at: 2026-10-02
-first_seen: 2026-10-03
-week: "2026-W40"
+first_seen: 2026-10-04
+week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
@@ -25,40 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-03
+last_reviewed: 2026-10-04
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-10-07"
-contributor_count: 3
+contributor_count: 2
 engagement: "medium"
-issue_close_rate: 37
-repo_size_kb: 19342
-readme_length: 9775
+issue_close_rate: 17
+repo_size_kb: 43419
+readme_length: 6788
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-03"
-star_history: "2026-10-03:1627,2026-10-04:2699"
+ring_history: "assess@2026-10-04"
+star_history: "2026-10-04:1154"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - org
+  - "lang/javascript"
+  - "topic/2d_animation"
+  - "topic/ai_agents"
+  - "topic/ai_video"
+  - "topic/animation"
+  - "topic/claude_code"
 aliases:
-  - "OpenDots"
-  - "CopilotKit/OpenDots"
+  - "reelmimic"
+  - "edenfunf/reelmimic"
 ---
 
-# OpenDots
+# reelmimic
 
-**1.6k** stars · **542** stars/天 · 建立 3 天前 · TypeScript · MIT
+**1.2k** stars · **231** stars/天 · 建立 5 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/CopilotKit--OpenDots");
+const me = dv.page("Repos/edenfunf--reelmimic");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +75,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`2d-animation` `ai-agents` `ai-video` `animation` `claude-code` `codex` `multi-agent` `style-transfer` `video-generation`
 
 > [!summary] 一句話摘要
-> Your always-on AI coworkers that move between text, calls, and Slack.
+> Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.
 
 ## 專案簡介
 
-Your always-on AI coworkers that move between text, calls, and Slack.
+Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/CopilotKit--OpenDots");
+> const me = dv.page("Repos/edenfunf--reelmimic");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +123,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/CopilotKit--OpenDots");
+> const me = dv.page("Repos/edenfunf--reelmimic");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,145 +147,189 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 199 |
-| Open Issues | 17 |
-| Issue 解決率 | 37% (10 closed) |
+| Forks | 151 |
+| Open Issues | 34 |
+| Issue 解決率 | 17% (7 closed) |
 | 最後推送 | 2026-10-02 |
-| 建立日期 | 2026-09-29 |
-| 官方網站 | [Link](https://www.copilotkit.ai/opendots) |
-| Repo 大小 | 18.9 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/CopilotKit/OpenDots) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@ag-ui/client` `@ag-ui/core` `@copilotkit/channels` `@copilotkit/core` `@copilotkit/react-core` `@copilotkit/runtime` `@hono/node-server` `@modelcontextprotocol/sdk` `@tanstack/ai` `@tanstack/ai-openai` `@tiptap/core` `@tiptap/extension-placeholder` `@tiptap/extension-table` `@tiptap/extension-task-item` `@tiptap/extension-task-list`
+| 建立日期 | 2026-09-28 |
+| Repo 大小 | 42.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/edenfunf/reelmimic) |
+| Topics | `2d-animation` `ai-agents` `ai-video` `animation` `claude-code` `codex` `multi-agent` `style-transfer` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 83
->     "CSS" : 16
->     "JavaScript" : 1
+>     "JavaScript" : 51
+>     "TypeScript" : 28
+>     "Python" : 13
+>     "CSS" : 6
+>     "Shell" : 1
+>     "HTML" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@jerelvelarde](https://github.com/jerelvelarde) | 16 |
-> | [@AlemTuzlak](https://github.com/AlemTuzlak) | 1 |
-> | [@RowanAldean](https://github.com/RowanAldean) | 1 |
+> | [@edenfunf](https://github.com/edenfunf) | 43 |
+> | [@revaldianggara](https://github.com/revaldianggara) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-01 ~ 2026-10-02）
-> **活躍天數** 2 天 · **最新 commit** feat: add Parallel search and extraction to research (#15)
+> [!abstract] 最近 10 次 commit（2026-09-30 ~ 2026-10-02）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #34 from edenfunf/fix/no-cast-setup
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#38](https://github.com/CopilotKit/OpenDots/issues/38) | Control-poll failure ends a call immediately, even if the pe | 0 | 0 |
-> | [#37](https://github.com/CopilotKit/OpenDots/issues/37) | Composer: avoid submitting Enter while IME composition is ac | 0 | 0 |
-> | [#34](https://github.com/CopilotKit/OpenDots/issues/34) | Fresh Windows clone: npm run dev and npm run check-format fa | 0 | 0 |
+> | [#51](https://github.com/edenfunf/reelmimic/issues/51) | Scrubbing the final video re-fetches it | 0 | 0 |
+> | [#49](https://github.com/edenfunf/reelmimic/issues/49) | SSE stream has no replay, so a reconnect drops history | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # OpenDots
+> # ReelMimic
 > 
+> **Show it a video you love. Get a new video in the same style.**
 > 
-> ## Overview
+> [](LICENSE)
+> [](https://docs.anthropic.com/en/docs/claude-code)
+> [](https://github.com/openai/codex)
 > 
-> OpenDots is a starting point for building your own agent workspace. Clone it, define your Dots, connect your services, and adapt the interface and tools to your needs.
+> **English** · [繁體中文](README.zh-TW.md) · [简体中文](README.zh-CN.md)
 > 
-> **A template, not a hosted product.** You run the application and configure its infrastructure. The template is in early development; the Features section below describes what's included and distinguishes local verification from connected-service testing.
+>   
+>     
+>     
+>     
+>   
+>   
+>     Sugar Rushmusic video · hand-painted · 58 s
+>     Sunshine Boymusic video · hand-painted · 63 s
+>     Bath Timenarrated comic · 30 s
+>   
 > 
+> Each one made with ReelMimic from a reference video and a one-line brief. Previews are silent, with the lyrics cropped out.
 > 
-> ## Features
+> ## What is this?
 > 
-> | Area                       | Included                                                                                                                                |
-> | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-> | Spaces and Specialist Dots | Saved names, role instructions, and per-Dot research and memory permissions                                                             |
-> | Pages                      | Searchable library, visual editor, slash commands, autosave, and revision checks                                                        |
-> | Conversations              | React SDK chat and Threads integration, page-specific conversations, and source links                                                   |
-> | Slack                      | Managed Channels SDK declaration with workspace and user allowlists                                                                     |
-> | Calls                      | WebRTC speech, delegated compute, bounded sessions, hangup, and timeline receipts                                                       |
-> | Background work            | Scheduled server-side turns in their original conversation, with pause and retry controls                                               |
-> | Browser                    | Separate read-only public-page service with page capture and navigation limits                                                          |
-> | Dot computers              | Per-Dot browser profiles, files, shell, takeover, permissions, and action records through OpenBot                                       |
-> | Memory                     | User-managed preferences that permitted Dots can use                                                                                    |
-> | Automatic Learning         | Per-Dot Learning containers, conversation evidence routing, and published-skill delivery; see [setup](docs/SETUP.md#automatic-learning) |
-> | Deployment                 | Local Node setup and separate application/browser containers                                                                            |
+> Ever watched a video and thought "I want one in that style, but completely my own"?
 > 
-> Local checks cover setup, persistence, permissions, SDK failure handling, and browser isolation. Automated tests use service fixtures. **Live Intelligence, model responses, and page-context chat were verified on September 29, 2026.** Live OpenBot computer browsing, file creation, shell verification, and file persistence across stop/start were also verified locally. Live Realtime speech, call controls, and receipt persistence were verified locally on September 30, 2026. Slack and spoken compute delegation still need connected-service verification. See [recording notes](docs/demos/README.md) for the demonstrated flows and limits.
+> Just drop it into ReelMimic. A file, a phone recording or a YouTube link all work. Then tell it what you want to make.
 > 
-> Automatic Learning routing and skill delivery are configured locally. Cloud schedules, eligible-thread counts, and published-skill delivery still need connected-service verification. Skills require review and publication in Intelligence; existing conversations without a container are not enrolled retroactively.
+> First it takes the reference apart: editing rhythm, shot lengths, transitions, framing, colors and camera moves. Then
+> it puts together a plan for you to check. You can chat right next to it, change settings or add assets, and start
+> when you're happy.
 > 
-> This is a single-owner starting point. Shared editing, invitations, file uploads, and interactive page embeds are not included. Schedules are recurring instructions, not a complete goal or event-trigger system. Specialist Dots have separate roles and conversations; multi-Dot group conversations and automatic delegation are further work.
+> Once production starts, the work is split across several AI agents. Different parts of the video are made at the same
+> time, and every shot is handed to a different agent to check. If something's wrong it goes back to be fixed, so it's
+> not a one-shot generate-and-done.
 > 
+> ReelMimic learns how the reference was made. It doesn't carry over the original footage, characters or assets.
 > 
-> ### Always-on AI coworkers that move between text, calls, and Slack.
+> The whole thing runs on your own computer, with your own Claude Code or Codex.
 > 
-> **An open-source template for persistent AI agents, each with its own computer. Available on Web and Mobile.**
+>   
+>   
 > 
-> Built with [CopilotKit](https://github.com/CopilotKit/CopilotKit) and [AG-UI](https://docs.ag-ui.com/introduction). · [Get started](#get-started) · [Overview](#overview) · [Architecture](#architecture) · [Features](#features) · [Contributing](CONTRIBUTING.md)
+>   
+>   
 > 
-> [](https://github.com/CopilotKit/OpenDots/actions/workflows/ci.yml)
-> [](./LICENSE)
+> ## What it does
 > 
-> Fully self-hostable. Clone this template and customize it however you want.
+> - **Breaks down the reference.** Shot count, shot lengths, BPM, transitions, colors, framing and camera moves.
+> - **Shows you the plan first.** Storyboard, characters, assets and a few style frames. Chat about it until you like it, then approve.
+> - **Several AI agents share the work.** Up to 6 work on different parts of the video. Each finished shot goes to a new agent for review, so nobody grades their own work.
+> - **Fixes need proof.** Every fix comes with before and after screenshots, and the reviewer checks them.
+> - **You can see what it's doing.** What each agent is thinking, what it ran, which frames it looked at. The full log is there too.
+> - **Comment right on the video.** When it's done, scrub to any second and type a note. Send them all at once.
+> - **New styles are just Markdown.** One file per style, no code.
+> - **Three languages.** 繁體中文, English and 简体中文, switch in the top right.
 > 
-> [**Building on OpenDots? Meet with the CopilotKit team →**](https://www.copilotkit.ai/talk-to-an-engineer?ref=opendots_readme)
+> ## Good to know
 > 
-> ---
+> - **2D only, seven drawing engines:** vector / motion graphics (built on
+>   [HyperFrames](https://github.com/heygen-com/hyperframes)), hand-painted watercolor (built on
+>   [painted-animation](https://github.com/tuzhechen2005/painted-animation)), crayon picture book, pixel art, paper
+>   cut-out stop-motion, whiteboard doodle, and anime cel. The newer five are young and have had less real-world use than
+>   the first two. When a reference doesn't match a known style, it uses the closest engine and writes up a proposal
+>   for a new style.
+> - **It takes a while.** A 30–60 second video usually takes 1–3.5 hours after you approve the plan, depending on the
+>   length and the look. Watercolor and crayon are the slowest, because every frame is painted with brushes.
+> - **It uses your AI plan.** All the work runs through your Claude Code or Codex account, so it counts toward that
+>   account's usage. If you hit a limit, the job pauses and can pick up where it stopped.
+> - **Tested mostly on Windows.** macOS and Linux should work, but they've had less testing. Issues are welcome.
+> - **No real people.** It makes animation, not live-action footage of real people.
 > 
-> https://github.com/user-attachments/assets/4c74fe7d-ecdd-42dd-95da-5d34f9b9576e
+> ## Roadmap
 > 
-> _Ask → browse → approve → save. A live computer view and a human review card appear right in chat, then the approved draft becomes an editable Space page. Enlarged for readability; idle time is trimmed and playback is accelerated._
+> - More built-in characters and styles for each engine
+> - Save a newly discovered style from the web app, so the next similar reference matches it directly
+> - Faster watercolor rendering
 > 
+> ## Getting started
 > 
-> ### Spaces
+> You'll need Node.js 22.18+, Python 3.10+, FFmpeg, Chrome, and either
+> [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [Codex CLI](https://github.com/openai/codex) (logged in).
 > 
-> A Space is a home for working documents. Dots appear separately in navigation and can be granted access to multiple Spaces in their settings. Each Dot has a default destination for saved pages; existing installations retain their original Space access. Browse pages in a searchable library, switch between grid and list views, and organize documents as nested subpages. Open a page in a focused visual editor with formatting, slash commands, and undo/redo. Write directly, save a conversation as a page, or ask a specialist to create and revise content.
+> ```bash
+> git clone https://github.com/edenfunf/reelmimic.git && cd reelmimic
+> ./install.sh      # on Windows, double-click install.bat
+> ./start.sh        # on Windows, double-click start.bat
+> ```
 > 
-> Pages stay in the local workspace database. Their conversations use CopilotKit Threads, with a separate conversation for each page and specialist. Page links connect the document workspace to Dot chat. Manual editing works before you configure conversation services. Autosave reports its progress, failed saves retain your draft, and revision checks prevent stale edits from overwriting newer content. Markdown source mode remains available.
+> Then open . The install script checks your setup and tells you if anything's missing. You can run
+> the check again any time with `cd app && npm run doctor`. Claude Code picks up the skills in this repo on its own, and
+> Codex reads `AGENTS.md`, so there's nothing else to set up.
 > 
-> https://github.com/user-attachments/assets/d20c3405-4339-49e7-a799-43298728015c
+> ### Your first video
 > 
-> _Open a Space, navigate to its launch brief, ask Scout about the saved page, and continue in Dot chat. This recording uses live page chat and example launch content._
+> 1. On the home page, drop in a reference video or paste a link, say what you want, and pick Claude Code or Codex.
+> 2. Wait for the breakdown and the plan. If you want changes, say so in the chat on the right. Screenshots work too.
+> 3. If the plan asks you for something (lyrics, say), add it or skip it, then hit **Approve and start**.
+> 4. The **Production line** tab shows where each character and each part of the video is, with the review screenshots.
+> 5. When it's done, leave a note at whatever second looks off.
 > 
+> ## Settings
 > 
-> ### Specialist Dots
+> API keys and a few paths go in `~/.reelmimic/secrets.json`. That file lives outside the repo, so it never gets
+> committed. See [`secrets.example.json`](secrets.example.json) for the format.
 > 
-> Give each Dot a name, role, instructions, and permitted tools. A researcher can investigate a topic; a writer can turn findings into a draft. Inspect their work and control what they can do.
+> | Key | What it's for |
+> |---|---|
+> | `YATING_KEY` | Yating's Taiwanese Mandarin voices, for narration |
+> | `PIXABAY_KEY`, `FREESOUND_KEY` | More images, music and sound effects you're allowed to use (optional, Openverse works without a key) |
+> | `FFMPEG_DIR`, `CHROME_PATH`, `CODEX_BIN`, `PYTHON` | Where to find these tools if they're not on your PATH |
+> | `CODEX_SANDBOX` | Codex sandbox mode (default `danger-full-access`, like Claude Code with Bash allowed; `workspace-write` blocks the Chrome renderer) |
+> | `BUILDERS`, `MAX_AGENTS` | How many agents work on one video at once (default 6), and the limit across all projects (default 12) |
+> | `PORT` | Web port (default 4318) |
 > 
+> ## Docs
 > 
-> ### Dot computers
+> - [Architecture](docs/ARCHITECTURE.md): how the whole thing runs, where files go, how the AI plugs in
+> - [Extending](docs/EXTENDING.md): adding styles, rendering engines, or another AI
+> - [Contributing](CONTRIBUTING.md)
 > 
-> Each Dot can have its own computer, using [OpenBot](https://github.com/CopilotKit/OpenBot)'s container supervisor and computer service. Its browser profile and workspace files persist across stop/start. The Computer panel exposes browser control, human takeover, files, terminal output, and activity, with browser, file, and shell permissions set per Dot. The application keeps service credentials on the server and derives a different computer credential for each Dot.
+> ## Ground rules
 > 
-> See [Computer setup](docs/COMPUTERS.md) to build the pinned services and connect your deployment. Computer tools require those services; an unconfigured template does not execute commands on your host.
+> - It learns technique from the reference (pacing, framing, transitions, how the jokes land). It never reuses the
+>   footage, characters, logos or assets.
+> - Characters are original unless you bring your own designs, in which case it follows yours.
+> - Anything it finds online gets logged with its source, author and license. Unclear licenses are flagged.
+> - Lyrics only come from text you give it. It won't download commercial songs.
+> - What you do with the videos is up to you, so make sure you have the rights.
 > 
-> https://github.com/user-attachments/assets/30b691c3-0f66-4964-9fdb-67d4feab5568
+> ## License
 > 
-> _Ask Scout to open a website, summarize it, save notes, and verify the file. Every computer action in this demo is requested through chat; CopilotKit tool renderers show the live browser, saved file, and terminal output inline._
-> 
-> 
-> ### Review before saving
-> 
-> Ask a Dot to show a draft before saving it. A CopilotKit human-in-the-loop card pauses the conversation for **Approve & save** or **Decline**. Approval creates the page in an authorized Space and returns a link; retries recover the same saved page. The agent continues after your decision.
-> 
-> 
-> ### Text and calls
-> 
-> A continuous conversation keeps the Dot's avatar and status above the messages, with text and call controls close at hand. Work updates, source links, and call receipts appear 
+> The code is [MIT](LICENSE). Third-party skills and assets bundled here keep their own licenses, listed in
+> [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/CopilotKit/OpenDots) · [官方網站](https://www.copilotkit.ai/opendots)
+[GitHub](https://github.com/edenfunf/reelmimic)
 
 ## 相關收錄
 
@@ -289,7 +337,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "CopilotKit--OpenDots"
+> WHERE category = "Other" AND file.name != "edenfunf--reelmimic"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -298,7 +346,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "CopilotKit--OpenDots" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "edenfunf--reelmimic" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -307,18 +355,18 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "CopilotKit--OpenDots"
+> WHERE week = "2026-W41" AND file.name != "edenfunf--reelmimic"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/CopilotKit--OpenDots");
+> const me = dv.page("Repos/edenfunf--reelmimic");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "CopilotKit--OpenDots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "edenfunf--reelmimic" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -334,7 +382,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "CopilotKit" AND file.name != "CopilotKit--OpenDots"
+> WHERE owner = "edenfunf" AND file.name != "edenfunf--reelmimic"
 > SORT stars DESC
 > ```
 
@@ -342,7 +390,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/CopilotKit--OpenDots");
+> const me = dv.page("Repos/edenfunf--reelmimic");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -359,7 +407,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/CopilotKit--OpenDots");
+> const me = dv.page("Repos/edenfunf--reelmimic");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -392,7 +440,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/CopilotKit--OpenDots");
+> const me = dv.page("Repos/edenfunf--reelmimic");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -416,7 +464,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/CopilotKit--OpenDots");
+> const me = dv.page("Repos/edenfunf--reelmimic");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -453,7 +501,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/CopilotKit--OpenDots");
+> const me = dv.page("Repos/edenfunf--reelmimic");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -536,7 +584,7 @@ Your always-on AI coworkers that move between text, calls, and Slack.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-03** — 首次收錄
+> **2026-10-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -552,5 +600,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-04|2026-10-04]] — 再次上榜，2.7k stars
-- [[2026-10-03|2026-10-03]] — 首次收錄，1.6k stars
+- [[2026-10-04|2026-10-04]] — 首次收錄，1.2k stars

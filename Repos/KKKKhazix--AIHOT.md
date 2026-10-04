@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。"
 homepage: "https://aihot.news"
-stars: 5014
-stars_per_day: 1254
-forks: 1366
-open_issues: 14
+stars: 5526
+stars_per_day: 1105
+forks: 1444
+open_issues: 21
 created: 2026-09-28
-pushed_at: 2026-10-02
+pushed_at: 2026-10-03
 first_seen: 2026-09-29
 week: "2026-W40"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-10-06"
+appearances: 6
+next_review: "2026-10-07"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-29"
-star_history: "2026-09-29:1675,2026-09-30:3551,2026-10-01:4206,2026-10-02:4768,2026-10-03:5014"
+star_history: "2026-09-29:1675,2026-09-30:3551,2026-10-01:4206,2026-10-02:4768,2026-10-03:5014,2026-10-04:5526"
 tags:
   - github
   - "category/other"
@@ -604,6 +604,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-04|2026-10-04]] — 再次上榜，5.5k stars
 - [[2026-10-03|2026-10-03]] — 再次上榜，5.0k stars
 - [[2026-10-02|2026-10-02]] — 再次上榜，4.8k stars
 - [[2026-10-01|2026-10-01]] — 再次上榜，4.2k stars

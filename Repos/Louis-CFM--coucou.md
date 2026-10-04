@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: "A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows) and keeps an eye on your Claude Code sessions."
 homepage: "https://louis-cfm.github.io/coucou/"
-stars: 3034
-stars_per_day: 607
-forks: 466
-open_issues: 108
+stars: 3268
+stars_per_day: 545
+forks: 507
+open_issues: 124
 created: 2026-09-27
-pushed_at: 2026-10-03
+pushed_at: 2026-10-04
 first_seen: 2026-10-01
 week: "2026-W40"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-06"
+appearances: 4
+next_review: "2026-10-07"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1725,2026-10-02:2572,2026-10-03:3034"
+star_history: "2026-10-01:1725,2026-10-02:2572,2026-10-03:3034,2026-10-04:3268"
 tags:
   - github
   - "category/other"
@@ -629,6 +629,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-04|2026-10-04]] — 再次上榜，3.3k stars
 - [[2026-10-03|2026-10-03]] — 再次上榜，3.0k stars
 - [[2026-10-02|2026-10-02]] — 再次上榜，2.6k stars
 - [[2026-10-01|2026-10-01]] — 首次收錄，1.7k stars
