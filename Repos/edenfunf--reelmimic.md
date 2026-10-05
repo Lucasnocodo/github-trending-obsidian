@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you."
 homepage: ""
-stars: 1154
-stars_per_day: 231
-forks: 151
-open_issues: 34
+stars: 1278
+stars_per_day: 213
+forks: 156
+open_issues: 28
 created: 2026-09-28
-pushed_at: 2026-10-02
+pushed_at: 2026-10-04
 first_seen: 2026-10-04
 week: "2026-W41"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-07"
+appearances: 2
+next_review: "2026-10-08"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-04"
-star_history: "2026-10-04:1154"
+star_history: "2026-10-04:1154,2026-10-05:1278"
 tags:
   - github
   - "category/other"
@@ -600,4 +600,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-05|2026-10-05]] — 再次上榜，1.3k stars
 - [[2026-10-04|2026-10-04]] — 首次收錄，1.2k stars

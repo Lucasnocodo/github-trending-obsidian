@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese"
 homepage: ""
-stars: 1342
-stars_per_day: 447
-forks: 29
-open_issues: 0
+stars: 1431
+stars_per_day: 358
+forks: 32
+open_issues: 2
 created: 2026-09-30
 pushed_at: 2026-10-04
 first_seen: 2026-10-04
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-07"
+appearances: 2
+next_review: "2026-10-08"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-04"
-star_history: "2026-10-04:1342"
+star_history: "2026-10-04:1342,2026-10-05:1431"
 tags:
   - github
   - "category/other"
@@ -780,4 +780,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-05|2026-10-05]] — 再次上榜，1.4k stars
 - [[2026-10-04|2026-10-04]] — 首次收錄，1.3k stars

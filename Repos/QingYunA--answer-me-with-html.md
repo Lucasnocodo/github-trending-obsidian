@@ -1,68 +1,68 @@
 ---
-repo: feder-cr/dots
-url: https://github.com/feder-cr/dots
-owner: feder-cr
+repo: QingYunA/answer-me-with-html
+url: https://github.com/QingYunA/answer-me-with-html
+owner: QingYunA
 owner_type: User
-language: Python
+language: JavaScript
 license: MIT
-description: "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
+description: "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。"
 homepage: ""
-stars: 2606
-stars_per_day: 521
-forks: 437
-open_issues: 1
-created: 2026-09-29
-pushed_at: 2026-10-03
-first_seen: 2026-10-01
-week: "2026-W40"
+stars: 1169
+stars_per_day: 585
+forks: 81
+open_issues: 12
+created: 2026-10-02
+pushed_at: 2026-10-05
+first_seen: 2026-10-05
+week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.4.8"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-01
+last_reviewed: 2026-10-05
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-10-08"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 10
-readme_length: 2340
+contributor_count: 5
+engagement: "low"
+issue_close_rate: 50
+repo_size_kb: 21793
+readme_length: 9913
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 0
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1954,2026-10-02:2403,2026-10-03:2546,2026-10-04:2580,2026-10-05:2606"
+ring_history: "assess@2026-10-05"
+star_history: "2026-10-05:1169"
 tags:
   - github
   - "category/other"
-  - "lang/python"
+  - "lang/javascript"
+  - "topic/agent_skill"
   - "topic/ai_agent"
-  - "topic/ai_agents"
-  - "topic/ai_browser"
-  - "topic/anti_detect_browser"
-  - "topic/browser_agent"
+  - "topic/claude_code"
+  - "topic/cli"
+  - "topic/diagram"
 aliases:
-  - "dots"
-  - "feder-cr/dots"
+  - "answer-me-with-html"
+  - "QingYunA/answer-me-with-html"
 ---
 
-# dots
+# answer-me-with-html
 
-**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Python · MIT
+**1.2k** stars · **585** stars/天 · 建立 2 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/feder-cr--dots");
+const me = dv.page("Repos/QingYunA--answer-me-with-html");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.4.8`
 
-`ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` `dots` `firefox` `llm-agent` `mcp` `open-source-alternative` `openai` `openai-dots` `openrouter` `playwright` `stealth-browser` `web-agent` `web-automation`
+`agent-skill` `ai-agent` `claude-code` `cli` `diagram` `explainer` `html` `llm` `ste100`
 
 > [!summary] 一句話摘要
-> Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+> Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。
 
 ## 專案簡介
 
-Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/QingYunA--answer-me-with-html");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/QingYunA--answer-me-with-html");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,103 +149,251 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 321 |
-| Open Issues | 0 |
-| 最後推送 | 2026-09-29 |
-| 建立日期 | 2026-09-29 |
-| Repo 大小 | 10 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/feder-cr/dots) |
-| Topics | `ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` |
+| Forks | 81 |
+| Open Issues | 12 |
+| Issue 解決率 | 50% (12 closed) |
+| 最後推送 | 2026-10-05 |
+| 建立日期 | 2026-10-02 |
+| Repo 大小 | 21.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/QingYunA/answer-me-with-html) |
+| Topics | `agent-skill` `ai-agent` `claude-code` `cli` `diagram` `explainer` `html` `llm` |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@dagrejs/dagre` `marked` `esbuild` `yaml`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "Shell" : 42
+>     "JavaScript" : 96
+>     "CSS" : 4
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@feder-cr](https://github.com/feder-cr) | 4 |
+> | [@QingYunA](https://github.com/QingYunA) | 56 |
+> | [@xianull](https://github.com/xianull) | 4 |
+> | [@zhaidewei](https://github.com/zhaidewei) | 3 |
+> | [@takaburi](https://github.com/takaburi) | 2 |
+> | [@21tesla](https://github.com/21tesla) | 1 |
+
+**最新版本**：v0.4.8 (2026-10-05)
+
+> [!info]- Release Notes
+> ## Highlights
+> 
+> - **English throughout the repository** (#46, spec #39). CLI output, errors, help, notices, writing-check messages, the skill instructions, slash commands, comments and test names are now English. Pages and the video player still switch between Chinese, English and Japanese by the draft's language, and the agent still replies in your language. A language-check test keeps it that way.
+> - **`--voice local`** (#37, thanks @chnln): narrate videos with a self-hosted OpenAI-compatible `/v1/audio/speech` server such as Qwen3-TTS via mlx-audio. Runaway or truncated clips are regenerated automatically. `AM_TTS_API_KEY` is supported, and `am patch` keeps a video's voice.
+> - **Wider tables and diagrams on sheet pages** (#38): tables with 4+ columns and wide diagrams get more width automatically and scroll on phones.
+> 
+> ## Also
+> 
+> - Issue forms and a pull request template (#34).
+> - CONTRIBUTING.md, `npm run snapshot` and `npm run release` for maintainers (#33).
+> - More tests for `am clean` (#30).
+> 
+> ## Note
+> 
+> CLI text the agent reads is now English (for example `STE 2 warnings`, `! Cleanup hint`). Update the skill and the CLI together, as the update commands below do.
+> 
+> ## Update
+> 
+> - Plugin: `claude plugin update answer-me-with-html@answer-me-with-html`
+> - Skill: `npx skills update answer-me-with-html -y`
+> 
+> **Full changelog:** https://github.com/QingYunA/answer-me-with-html/compare/v0.4.7...v0.4.8
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-09-29）
-> **活躍天數** 1 天 · **最新 commit** README: the title as the first element, so nothing pushes it down
+> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-05）
+> **活躍天數** 1 天 · **最新 commit** feat(video): update ElevenLabs defaults, add ELEVENLABS_MODEL_ID and a setup guide (#48)
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#47](https://github.com/QingYunA/answer-me-with-html/issues/47) | Page aria-labels are always Chinese (flow, sequence, doc tab `bug` | 1 | 0 |
+> | [#19](https://github.com/QingYunA/answer-me-with-html/issues/19) | 感觉功能还能继续拓展下，图片有时候会比文字和图表箭线图还更好理解 | 1 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> dots
+> Answer me with HTML
 > 
-> Every AI agent is a model and a browser.You can swap the model with one flag. The browser is what the website sees.
+>   An agent skill. Ask a hard question, get a page you can actually read instead of a wall of text.The model writes about 1/7 of the tokens it would need to hand-write the HTML.
 > 
-> ---
+>   
+>   
+>   
 > 
-> Windows, in PowerShell:
+>   English · 简体中文
 > 
-> ```powershell
-> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-> $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
+> Once installed, ask questions the way you always do:
+> 
+> ```
+> > Explain the TCP three-way handshake
+> > Map out how the modules in this repo fit together
+> > Redis or Memcached for our cache?
 > ```
 > 
-> Linux:
+> The agent writes a short Markdown draft and hands it to the CLI that ships with the skill. About 50 ms later you have a page:
+> 
+> https://github.com/user-attachments/assets/d3063a28-5dfd-4c44-a562-be901c49b249
+> 
+> 24-second demo. Turn the sound on for the music.
+> 
+> 
+> ## Install
+> 
+> You need [Node.js](https://nodejs.org/) 20 or newer. There is no `npm install` step. The CLI is bundled inside the skill.
+> 
+> 
+> ### Let your agent install it (recommended)
+> 
+> Paste this into Claude Code, Codex, Cursor, OpenCode or any other agent:
+> 
+> > Install the Answer me with HTML skill: run `npx -y skills add QingYunA/answer-me-with-html -g -y`, and pass `-a` with your own agent name (for Claude Code, `-a claude-code`). Then read its SKILL.md and use it to make a page that explains the TCP three-way handshake, so we know it works.
+> 
+> 
+> ## Features
+> 
+> - **Fewer tokens, less waiting:** The model writes a short draft, about 900 output tokens, instead of 7,000 tokens of HTML, CSS and SVG. See the [benchmark](bench/README.md).
+> - **Layout by code:** Panel placement and diagram coordinates are computed, not guessed. Labels don't get cut off, and there are no gaps in the grid.
+> - **Fixes its own mistakes:** When a draft has an error, the CLI returns the line number, the component and a correct example. The agent fixes it in one try.
+> - **Two themes:** `blueprint` looks like an engineering drawing. `shadcn` uses clean cards. Both have light and dark modes.
+> - **One file, no dependencies:** Each page is a single `.html` with no CDN links or web fonts. It opens offline and is easy to share.
+> - **Writing check:** Drafts are checked against rules adapted from ASD-STE100: long sentences, wordy phrases, passive voice. It only warns unless you ask for strict mode.
+> - **Keeps its source:** Every page embeds the Markdown that made it. Click "Copy source" to get it back.
+> 
+>   
+>     
+>     
+>   
+>   
+>     Blueprint theme (examples/ste100.md)
+>     shadcn theme, dark mode
+>   
+> 
+> 
+> ## Always-on mode (optional)
+> 
+> By default, the agent makes a page only for questions that need one. If you want **a page with every conclusion**, turn on always-on mode.
+> 
+> The agent then gets a short reminder each turn (about 90 tokens). Whenever it gives a conclusion, summary, plan or comparison, even a short one, it adds a small page with 2 to 4 panels and puts the path at the end of the reply. These pages never pop open, so they don't interrupt you. Casual chat and replies with no conclusion stay as they are. Claude Code makes no pages in plan mode.
+> 
+> **Claude Code:** install one more plugin.
+> 
+> ```
+> /plugin marketplace add QingYunA/answer-me-with-html
+> /plugin install answer-me-with-html-always@answer-me-with-html
+> ```
+> 
+> Pause it with `/answer-me-with-html:config always off`. You don't need to uninstall.
+> 
+> **Other agents:** paste this to your agent so it writes the rule into its own rules file, such as `AGENTS.md`:
+> 
+> > Turn on always-on mode for Answer me with HTML: add a global rule — "[answer-me-with-html always-on] Whenever a reply gives a conclusion, summary, plan, comparison, review or explanation, even a short one, also make a page with the answer-me-with-html skill (2 to 4 panels for routine answers), render it with --no-open, and end the reply with the page path. Skip casual chat, one- or two-sentence replies with no conclusion, pure command output, and requests for plain text."
+> 
+> 
+> ## Why not just ask for HTML?
+> 
+> You can. Models write decent HTML now. The problem is the bill you pay in output tokens: the model has to type every line of CSS, every wrapper `div` and every SVG coordinate. Output tokens are also what you sit and wait for.
+> 
+> With this skill, the model writes only the content. We asked the same questions with the same model both ways (3 topics × 3 runs, medians, Claude Sonnet 5.5):
+> 
+> | | Ask for HTML directly | Answer me with HTML | |
+> | :--- | ---: | ---: | :--- |
+> | Output tokens | 6,873 | **923** | **7.4× fewer** |
+> | Time | 46 s | **13 s** | **3.6× faster** |
+> | Cost per answer | $0.22 | $0.26 | about the same |
+> 
+>   
+> 
+> One run from the benchmark: same prompt, same model, and both pages are usable. This run took 9,351 output tokens for the plain page and 899 with the skill. The table above shows the medians.
+> 
+> Why the cost doesn't drop too: the skill adds two short turns (load the skill, run the CLI), and every turn re-reads the conversation context. You save the waiting, not the bill. Per-topic numbers and the script to reproduce them are in [bench/](bench/README.md).
+> 
+> 
+> ### Claude Code plugin
+> 
+> Run this inside Claude Code:
+> 
+> ```
+> /plugin marketplace add QingYunA/answer-me-with-html
+> /plugin install answer-me-with-html@answer-me-with-html
+> ```
+> 
+> 
+> ### One command
 > 
 > ```bash
-> curl -LsSf https://astral.sh/uv/install.sh | sh
-> source $HOME/.local/bin/env
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
+> npx skills add QingYunA/answer-me-with-html
 > ```
 > 
-> Then open **http://127.0.0.1:8765**. The conversation on the left, the browser on the right, live.
+> It asks which agents to install into. The installer, [vercel-labs/skills](https://github.com/vercel-labs/skills), supports more than 70 agents.
 > 
-> ## It all comes down to the browser
+> Manual install
 > 
-> When a web agent fails, the model is rarely why. The page never loaded, a
-> challenge appeared, the login expired, the click did not land. All of that
-> happens in the browser, before the model gets to think.
+> Copy the `skills/answer-me-with-html` folder into your agent's skill folder. For Claude Code:
 > 
-> So dots is built around one:
+> ```bash
+> git clone --depth 1 https://github.com/QingYunA/answer-me-with-html.git /tmp/answer-me-with-html
+> cp -R /tmp/answer-me-with-html/skills/answer-me-with-html ~/.claude/skills/answer-me-with-html
+> ```
 > 
-> - **A real Firefox engine, patched in C++.** The fingerprint is decided inside
->   the engine, not painted over with JavaScript that a page can inspect.
-> - **One identity per seed.** Screen, fonts, GPU, timezone and language agree
->   with each other, and `--seed` gives back the same person on every run.
-> - **Nothing for a page to find.** No WebDriver flag, no DevTools protocol, no
->   automation globals in the page.
-> - **A person's hands.** The pointer travels to what it clicks and keys are
->   pressed one at a time, so every event the page receives is a trusted one.
-> - **A browser that remembers.** `--profile-dir` keeps logins and cookies from
->   one run to the next.
-> - **Where it connects from is who it is.** With `--proxy`, the timezone and the
->   language follow the exit.
+> Skill folders for other agents: Codex `~/.codex/skills/`, Cursor `~/.cursor/skills/`, OpenCode `~/.config/opencode/skill/`.
 > 
-> The model is any model on OpenRouter, and `--model` changes it.
+> No setup is needed after install.
 > 
-> ## What to ask it
 > 
-> > Go to ``. One way, Milan to Lisbon, economy, one adult. Check
-> > every date from the 12th to the 16th of next month and read the cheapest fare
-> > for each day. If a date has no availability, say so. Do not guess a number.
+> ## What you ask, what you get
 > 
-> ## The same browser, in your own assistant
+> | You ask | You get |
+> | :--- | :--- |
+> | "Explain the TCP three-way handshake" | A sequence diagram, a state diagram and a flag table |
+> | "How are the modules in this repo organized?" | A folder tree plus a call graph |
+> | "Redis or Memcached?" | A comparison table with ✓ and ✗, then a verdict |
+> | "What's wrong with this paragraph?" | Each sentence annotated, with the problem words and fixes |
+> | "How did Kubernetes come about?" | A timeline with the key moments highlighted |
+> | "How do I show hidden files with `ls`?" | No page. A one-line question gets a one-line answer |
 > 
-> Claude Code, Codex, Gemini CLI or any MCP client:
-> [invisible_playwright_mcp](https://github.com/feder-cr/invisible_playwright_mcp)
-> gives them this browser as a server. `dots` is its interface, and `dots --help`
-> lists every option.
+> The agent decides when a page is worth it: related concepts, multi-step flows, multi-way comparisons. You can also just say "explain it in HTML".
 > 
-> ---
+> Pages are saved in `~/.answer-me-with-html/pages/`. The buttons in the top-right corner switch the theme and light/dark mode, and copy the Markdown that produced the page.
 > 
-> Not affiliated with OpenAI. MIT licensed.
+> 
+> ## Explainer videos (3Blue1Brown style)
+> 
+> Karpathy's ladder for understanding LLM output ends with explainer videos. Ask for one: "make a 3b1b-style video on the TCP handshake".
+> 
+> The agent writes the same kind of draft as for a page, plus one line of narration per beat. Nothing else:
+> 
+> ````markdown
+> 
+> ## Both sides wait
+> ```sequence
+> Client -> Server: SYN
+> Server -> Client: SYN-ACK
+> ```
+> > The client sends a SYN to ask for a connection.
+> > The [Server] answers with a SYN-ACK.
+> ````
+> 
+> `am video` turns it into a player page:
+> 
+> - **Built step by step.** When the Nth line of narration plays, the Nth step of the diagram appears. Arrows draw themselves. If there are more lines than steps, the extra lines at the start act as an intro.
+> - **Spoken narration.** The agent writes narration the way a person explains things out loud, not like a manual.
+> - **Camera focus.** `[Server]` in the narration pushes the camera toward that node and highlights it. The diagram never leaves the frame.
+> - **Objects carry over.** A node with the same name in the next scene glides to its new place instead of cutting.
+> - **Narration.** It uses ElevenLabs if `ELEVENLABS_API_KEY` is set (optional; [setup guide](docs/elevenlabs.md)), the system voice otherwise (macOS `say`: Tingting for Chinese, Samantha for English, Kyoko for Japanese), and captions only if neith
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/feder-cr/dots)
+[GitHub](https://github.com/QingYunA/answer-me-with-html)
 
 ## 相關收錄
 
@@ -253,7 +401,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "feder-cr--dots"
+> WHERE category = "Other" AND file.name != "QingYunA--answer-me-with-html"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +410,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "feder-cr--dots" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "QingYunA--answer-me-with-html" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +419,18 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "feder-cr--dots"
+> WHERE week = "2026-W41" AND file.name != "QingYunA--answer-me-with-html"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/QingYunA--answer-me-with-html");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "feder-cr--dots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "QingYunA--answer-me-with-html" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +446,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "feder-cr" AND file.name != "feder-cr--dots"
+> WHERE owner = "QingYunA" AND file.name != "QingYunA--answer-me-with-html"
 > SORT stars DESC
 > ```
 
@@ -306,7 +454,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/QingYunA--answer-me-with-html");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +471,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/QingYunA--answer-me-with-html");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +504,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/QingYunA--answer-me-with-html");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +528,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/QingYunA--answer-me-with-html");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +565,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/QingYunA--answer-me-with-html");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +648,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-01** — 首次收錄
+> **2026-10-05** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,8 +664,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-05|2026-10-05]] — 再次上榜，2.6k stars
-- [[2026-10-04|2026-10-04]] — 再次上榜，2.6k stars
-- [[2026-10-03|2026-10-03]] — 再次上榜，2.5k stars
-- [[2026-10-02|2026-10-02]] — 再次上榜，2.4k stars
-- [[2026-10-01|2026-10-01]] — 首次收錄，2.0k stars
+- [[2026-10-05|2026-10-05]] — 首次收錄，1.2k stars

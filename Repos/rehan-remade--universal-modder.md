@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos."
 homepage: ""
-stars: 2711
-stars_per_day: 678
-forks: 239
-open_issues: 13
+stars: 3362
+stars_per_day: 672
+forks: 292
+open_issues: 11
 created: 2026-09-30
-pushed_at: 2026-10-04
+pushed_at: 2026-10-05
 first_seen: 2026-10-02
 week: "2026-W40"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-07"
+appearances: 4
+next_review: "2026-10-08"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-02"
-star_history: "2026-10-02:1662,2026-10-03:2238,2026-10-04:2711"
+star_history: "2026-10-02:1662,2026-10-03:2238,2026-10-04:2711,2026-10-05:3362"
 tags:
   - github
   - "category/other"
@@ -595,6 +595,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-05|2026-10-05]] — 再次上榜，3.4k stars
 - [[2026-10-04|2026-10-04]] — 再次上榜，2.7k stars
 - [[2026-10-03|2026-10-03]] — 再次上榜，2.2k stars
 - [[2026-10-02|2026-10-02]] — 首次收錄，1.7k stars

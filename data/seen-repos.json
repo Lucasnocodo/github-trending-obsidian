@@ -4474,10 +4474,10 @@
   },
   "KKKKhazix/AIHOT": {
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-04",
-    "times_seen": 6,
+    "last_seen": "2026-10-05",
+    "times_seen": 7,
     "stars_first": 1675,
-    "stars_last": 5526
+    "stars_last": 5846
   },
   "dzhng/jevgrep": {
     "first_seen": "2026-09-29",
@@ -4509,10 +4509,10 @@
   },
   "feder-cr/dots": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-04",
-    "times_seen": 4,
+    "last_seen": "2026-10-05",
+    "times_seen": 5,
     "stars_first": 1954,
-    "stars_last": 2580
+    "stars_last": 2606
   },
   "Louis-CFM/coucou": {
     "first_seen": "2026-10-01",
@@ -4523,10 +4523,10 @@
   },
   "firelex/jeff": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-04",
-    "times_seen": 4,
+    "last_seen": "2026-10-05",
+    "times_seen": 5,
     "stars_first": 1211,
-    "stars_last": 1352
+    "stars_last": 1374
   },
   "kaankiziltug/logo-design-skill": {
     "first_seen": "2026-10-01",
@@ -4537,10 +4537,10 @@
   },
   "rehan-remade/universal-modder": {
     "first_seen": "2026-10-02",
-    "last_seen": "2026-10-04",
-    "times_seen": 3,
+    "last_seen": "2026-10-05",
+    "times_seen": 4,
     "stars_first": 1662,
-    "stars_last": 2711
+    "stars_last": 3362
   },
   "yihui-dev/awesome-opus5-5-videos": {
     "first_seen": "2026-10-02",
@@ -4551,10 +4551,10 @@
   },
   "wy51ai/floorplan-3d": {
     "first_seen": "2026-10-02",
-    "last_seen": "2026-10-04",
-    "times_seen": 2,
+    "last_seen": "2026-10-05",
+    "times_seen": 3,
     "stars_first": 1203,
-    "stars_last": 1368
+    "stars_last": 1401
   },
   "feitangyuan/onetake": {
     "first_seen": "2026-10-02",
@@ -4565,23 +4565,37 @@
   },
   "CopilotKit/OpenDots": {
     "first_seen": "2026-10-03",
-    "last_seen": "2026-10-04",
-    "times_seen": 2,
+    "last_seen": "2026-10-05",
+    "times_seen": 3,
     "stars_first": 1627,
-    "stars_last": 2699
+    "stars_last": 3290
   },
   "nanaism/yomiyasu": {
     "first_seen": "2026-10-04",
-    "last_seen": "2026-10-04",
-    "times_seen": 1,
+    "last_seen": "2026-10-05",
+    "times_seen": 2,
     "stars_first": 1342,
-    "stars_last": 1342
+    "stars_last": 1431
   },
   "edenfunf/reelmimic": {
     "first_seen": "2026-10-04",
-    "last_seen": "2026-10-04",
-    "times_seen": 1,
+    "last_seen": "2026-10-05",
+    "times_seen": 2,
     "stars_first": 1154,
-    "stars_last": 1154
+    "stars_last": 1278
+  },
+  "facebookincubator/muse-gadget-sdk": {
+    "first_seen": "2026-10-05",
+    "last_seen": "2026-10-05",
+    "times_seen": 1,
+    "stars_first": 1265,
+    "stars_last": 1265
+  },
+  "QingYunA/answer-me-with-html": {
+    "first_seen": "2026-10-05",
+    "last_seen": "2026-10-05",
+    "times_seen": 1,
+    "stars_first": 1169,
+    "stars_last": 1169
   }
 }

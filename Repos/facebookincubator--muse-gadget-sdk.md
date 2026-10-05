@@ -1,20 +1,20 @@
 ---
-repo: feder-cr/dots
-url: https://github.com/feder-cr/dots
-owner: feder-cr
-owner_type: User
-language: Python
-license: MIT
-description: "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
-homepage: ""
-stars: 2606
-stars_per_day: 521
-forks: 437
-open_issues: 1
-created: 2026-09-29
-pushed_at: 2026-10-03
-first_seen: 2026-10-01
-week: "2026-W40"
+repo: facebookincubator/muse-gadget-sdk
+url: https://github.com/facebookincubator/muse-gadget-sdk
+owner: facebookincubator
+owner_type: Organization
+language: C
+license: Apache-2.0
+description: "Open source SDK to build Muse gadgets"
+homepage: "gadgets.muse.ai"
+stars: 1265
+stars_per_day: 633
+forks: 234
+open_issues: 40
+created: 2026-10-02
+pushed_at: 2026-10-05
+first_seen: 2026-10-05
+week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
@@ -25,44 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-01
+last_reviewed: 2026-10-05
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-10-08"
-contributor_count: 1
+contributor_count: 5
 engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 10
-readme_length: 2340
-bus_factor: 1
+issue_close_rate: 18
+repo_size_kb: 3848
+readme_length: 2471
+bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1954,2026-10-02:2403,2026-10-03:2546,2026-10-04:2580,2026-10-05:2606"
+ring_history: "assess@2026-10-05"
+star_history: "2026-10-05:1265"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_agent"
-  - "topic/ai_agents"
-  - "topic/ai_browser"
-  - "topic/anti_detect_browser"
-  - "topic/browser_agent"
+  - "lang/c"
+  - org
 aliases:
-  - "dots"
-  - "feder-cr/dots"
+  - "muse-gadget-sdk"
+  - "facebookincubator/muse-gadget-sdk"
 ---
 
-# dots
+# muse-gadget-sdk
 
-**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Python · MIT
+**1.3k** stars · **633** stars/天 · 建立 2 天前 · C · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/feder-cr--dots");
+const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` `dots` `firefox` `llm-agent` `mcp` `open-source-alternative` `openai` `openai-dots` `openrouter` `playwright` `stealth-browser` `web-agent` `web-automation`
+`ORG`
 
 > [!summary] 一句話摘要
-> Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+> Open source SDK to build Muse gadgets
 
 ## 專案簡介
 
-Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+Open source SDK to build Muse gadgets
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +119,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,103 +143,110 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 321 |
-| Open Issues | 0 |
-| 最後推送 | 2026-09-29 |
-| 建立日期 | 2026-09-29 |
-| Repo 大小 | 10 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/feder-cr/dots) |
-| Topics | `ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` |
+| Forks | 234 |
+| Open Issues | 40 |
+| Issue 解決率 | 18% (9 closed) |
+| 最後推送 | 2026-10-05 |
+| 建立日期 | 2026-10-02 |
+| 官方網站 | [Link](gadgets.muse.ai) |
+| Repo 大小 | 3.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/facebookincubator/muse-gadget-sdk) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "Shell" : 42
+>     "C" : 89
+>     "Python" : 6
+>     "C++" : 4
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@feder-cr](https://github.com/feder-cr) | 4 |
+> | [@ViSaReVe](https://github.com/ViSaReVe) | 5 |
+> | [@akshitkhokhani](https://github.com/akshitkhokhani) | 4 |
+> | [@anantn](https://github.com/anantn) | 2 |
+> | [@firasbouzazi](https://github.com/firasbouzazi) | 2 |
+> | [@timzenxia](https://github.com/timzenxia) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-09-29）
-> **活躍天數** 1 天 · **最新 commit** README: the title as the first element, so nothing pushes it down
+> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-03）
+> **活躍天數** 3 天 · **最新 commit** fix: keep unrelated chat replies out of device turns
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#11](https://github.com/facebookincubator/muse-gadget-sdk/issues/11) | Board support request: FoloToy AI Passport (ESP32-C3) | 3 | 1 |
+> | [#20](https://github.com/facebookincubator/muse-gadget-sdk/issues/20) | I would like to see a wake-word feature added—specifically,  | 2 | 0 |
+> | [#14](https://github.com/facebookincubator/muse-gadget-sdk/issues/14) | Plans for spoken replies on gadgets (Realtime Voice or a TTS | 1 | 3 |
+> | [#99](https://github.com/facebookincubator/muse-gadget-sdk/issues/99) | iPhone: Muse app doesn't discover community board (nRF Conne | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> dots
+> # Muse Gadgets
 > 
-> Every AI agent is a model and a browser.You can swap the model with one flag. The browser is what the website sees.
+>   
+>     
+>     
+>   
 > 
-> ---
+> Muse gadgets are open source devices you build yourself. Program an
+> off-the-shelf ESP32 board or set up a Raspberry Pi with our device SDKs, then
+> connect Muse to your displays, buttons, sensors, actuators, and whatever else
+> you've got lying on your workbench.
 > 
-> Windows, in PowerShell:
+> We open sourced the SDKs and firmware here. It's built by hackers, for hackers,
+> just for fun. Side effects of tinkering may include bricked boards, voided
+> warranties, brownouts, or bankruptcies. Proceed at your own risk!
 > 
-> ```powershell
-> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-> $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
-> ```
+> | | |
+> |---|---|
+> | [**ESP32 Device SDK**](esp32) | Connect your ESP32 board to Muse through our open source SDK. Throw in a screen to show images, add audio in and out, or wire up other sensors. |
+> | [**Linux Device SDK**](linux) | Turn that spare Raspberry Pi or Linux box into a Muse gadget. Hack in your own commands to let Muse handle sysadmin chores or your Home Assistant setup. |
 > 
-> Linux:
+> Before you flash or pair a gadget, get an
+> [SDK token](https://gadgets.muse.ai/settings/sdk-tokens) and review the
+> [Gadget SDK Terms](https://gadgets.muse.ai/sdk-terms). Every gadget needs a
+> token to pair.
 > 
-> ```bash
-> curl -LsSf https://astral.sh/uv/install.sh | sh
-> source $HOME/.local/bin/env
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
-> ```
+> ESP32 and Linux gadgets pair with the Muse app on iOS and Android, via
+> Settings > Devices. Turn on Developer mode there first, then look for devices
+> prefixed with "MuseGadget".
+> Each directory has a `README.md` to get started and an `AGENTS.md` for coding
+> agents like [Muse Code](https://developer.meta.com/ai/lp/muse-code/).
 > 
-> Then open **http://127.0.0.1:8765**. The conversation on the left, the browser on the right, live.
+> ## Community
 > 
-> ## It all comes down to the browser
+> Meet other hackers who are building and customizing Muse gadgets in our
+> community [Discord](https://discord.gg/3bhjCkZdd6). Get inspired, support each
+> other, and share what you make.
 > 
-> When a web agent fails, the model is rarely why. The page never loaded, a
-> challenge appeared, the login expired, the click did not land. All of that
-> happens in the browser, before the model gets to think.
+> ## License
 > 
-> So dots is built around one:
+> Muse Gadgets is licensed under the Apache License, Version 2.0, found in
+> [`LICENSE`](LICENSE), except for these third-party files, which keep their
+> upstream licenses:
 > 
-> - **A real Firefox engine, patched in C++.** The fingerprint is decided inside
->   the engine, not painted over with JavaScript that a page can inspect.
-> - **One identity per seed.** Screen, fonts, GPU, timezone and language agree
->   with each other, and `--seed` gives back the same person on every run.
-> - **Nothing for a page to find.** No WebDriver flag, no DevTools protocol, no
->   automation globals in the page.
-> - **A person's hands.** The pointer travels to what it clicks and keys are
->   pressed one at a time, so every event the page receives is a trusted one.
-> - **A browser that remembers.** `--profile-dir` keeps logins and cookies from
->   one run to the next.
-> - **Where it connects from is who it is.** With `--proxy`, the timezone and the
->   language follow the exit.
+> | Path | Upstream | License |
+> |---|---|---|
+> | [`esp32/components/minimp3/include/minimp3.h`](esp32/components/minimp3) | [lieff/minimp3](https://github.com/lieff/minimp3) | CC0-1.0, see [`LICENSE`](esp32/components/minimp3/LICENSE) |
+> | [`esp32/main/pixel_font.c`](esp32/main/pixel_font.c) | Adafruit GFX `glcdfont.c` | BSD-2-Clause, in the file header |
 > 
-> The model is any model on OpenRouter, and `--model` changes it.
+> Dependencies fetched at build time are under their own licenses: ESP-IDF
+> components (into `esp32/managed_components/`), and the simulator's LVGL and
+> SDL (listed in [`esp32/simulator/THIRD_PARTY.md`](esp32/simulator/THIRD_PARTY.md)).
 > 
-> ## What to ask it
-> 
-> > Go to ``. One way, Milan to Lisbon, economy, one adult. Check
-> > every date from the 12th to the 16th of next month and read the cheapest fare
-> > for each day. If a date has no availability, say so. Do not guess a number.
-> 
-> ## The same browser, in your own assistant
-> 
-> Claude Code, Codex, Gemini CLI or any MCP client:
-> [invisible_playwright_mcp](https://github.com/feder-cr/invisible_playwright_mcp)
-> gives them this browser as a server. `dots` is its interface, and `dots --help`
-> lists every option.
-> 
-> ---
-> 
-> Not affiliated with OpenAI. MIT licensed.
+> The Apache License does not cover the [Jollybot avatar](esp32/avatar).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/feder-cr/dots)
+[GitHub](https://github.com/facebookincubator/muse-gadget-sdk) · [官方網站](gadgets.muse.ai)
 
 ## 相關收錄
 
@@ -253,7 +254,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "feder-cr--dots"
+> WHERE category = "Other" AND file.name != "facebookincubator--muse-gadget-sdk"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +263,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "feder-cr--dots" AND status != "archived"
+> WHERE language = "C" AND file.name != "facebookincubator--muse-gadget-sdk" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +272,18 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "feder-cr--dots"
+> WHERE week = "2026-W41" AND file.name != "facebookincubator--muse-gadget-sdk"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "feder-cr--dots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "facebookincubator--muse-gadget-sdk" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +299,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "feder-cr" AND file.name != "feder-cr--dots"
+> WHERE owner = "facebookincubator" AND file.name != "facebookincubator--muse-gadget-sdk"
 > SORT stars DESC
 > ```
 
@@ -306,7 +307,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +324,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +357,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +381,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +418,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +501,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-01** — 首次收錄
+> **2026-10-05** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,8 +517,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-05|2026-10-05]] — 再次上榜，2.6k stars
-- [[2026-10-04|2026-10-04]] — 再次上榜，2.6k stars
-- [[2026-10-03|2026-10-03]] — 再次上榜，2.5k stars
-- [[2026-10-02|2026-10-02]] — 再次上榜，2.4k stars
-- [[2026-10-01|2026-10-01]] — 首次收錄，2.0k stars
+- [[2026-10-05|2026-10-05]] — 首次收錄，1.3k stars
