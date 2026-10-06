@@ -4509,10 +4509,10 @@
   },
   "feder-cr/dots": {
     "first_seen": "2026-10-01",
-    "last_seen": "2026-10-05",
-    "times_seen": 5,
+    "last_seen": "2026-10-06",
+    "times_seen": 6,
     "stars_first": 1954,
-    "stars_last": 2606
+    "stars_last": 2621
   },
   "Louis-CFM/coucou": {
     "first_seen": "2026-10-01",
@@ -4537,10 +4537,10 @@
   },
   "rehan-remade/universal-modder": {
     "first_seen": "2026-10-02",
-    "last_seen": "2026-10-05",
-    "times_seen": 4,
+    "last_seen": "2026-10-06",
+    "times_seen": 5,
     "stars_first": 1662,
-    "stars_last": 3362
+    "stars_last": 3986
   },
   "yihui-dev/awesome-opus5-5-videos": {
     "first_seen": "2026-10-02",
@@ -4565,17 +4565,17 @@
   },
   "CopilotKit/OpenDots": {
     "first_seen": "2026-10-03",
-    "last_seen": "2026-10-05",
-    "times_seen": 3,
+    "last_seen": "2026-10-06",
+    "times_seen": 4,
     "stars_first": 1627,
-    "stars_last": 3290
+    "stars_last": 3738
   },
   "nanaism/yomiyasu": {
     "first_seen": "2026-10-04",
-    "last_seen": "2026-10-05",
-    "times_seen": 2,
+    "last_seen": "2026-10-06",
+    "times_seen": 3,
     "stars_first": 1342,
-    "stars_last": 1431
+    "stars_last": 1548
   },
   "edenfunf/reelmimic": {
     "first_seen": "2026-10-04",
@@ -4586,16 +4586,44 @@
   },
   "facebookincubator/muse-gadget-sdk": {
     "first_seen": "2026-10-05",
-    "last_seen": "2026-10-05",
-    "times_seen": 1,
+    "last_seen": "2026-10-06",
+    "times_seen": 2,
     "stars_first": 1265,
-    "stars_last": 1265
+    "stars_last": 1465
   },
   "QingYunA/answer-me-with-html": {
     "first_seen": "2026-10-05",
-    "last_seen": "2026-10-05",
-    "times_seen": 1,
+    "last_seen": "2026-10-06",
+    "times_seen": 2,
     "stars_first": 1169,
-    "stars_last": 1169
+    "stars_last": 1540
+  },
+  "omlahore/RemoveMacAI": {
+    "first_seen": "2026-10-06",
+    "last_seen": "2026-10-06",
+    "times_seen": 1,
+    "stars_first": 2342,
+    "stars_last": 2342
+  },
+  "storytold/photocraft": {
+    "first_seen": "2026-10-06",
+    "last_seen": "2026-10-06",
+    "times_seen": 1,
+    "stars_first": 2293,
+    "stars_last": 2293
+  },
+  "nykooi1/vibe-wise": {
+    "first_seen": "2026-10-06",
+    "last_seen": "2026-10-06",
+    "times_seen": 1,
+    "stars_first": 1939,
+    "stars_last": 1939
+  },
+  "kargulstudio/sales-crm": {
+    "first_seen": "2026-10-06",
+    "last_seen": "2026-10-06",
+    "times_seen": 1,
+    "stars_first": 1508,
+    "stars_last": 1508
   }
 }

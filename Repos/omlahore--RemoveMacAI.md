@@ -1,68 +1,68 @@
 ---
-repo: feder-cr/dots
-url: https://github.com/feder-cr/dots
-owner: feder-cr
+repo: omlahore/RemoveMacAI
+url: https://github.com/omlahore/RemoveMacAI
+owner: omlahore
 owner_type: User
-language: Python
+language: Swift
 license: MIT
-description: "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
+description: "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible."
 homepage: ""
-stars: 2621
-stars_per_day: 437
-forks: 438
-open_issues: 1
+stars: 2342
+stars_per_day: 390
+forks: 51
+open_issues: 5
 created: 2026-09-29
-pushed_at: 2026-10-03
-first_seen: 2026-10-01
-week: "2026-W40"
+pushed_at: 2026-10-06
+first_seen: 2026-10-06
+week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.5"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-01
+last_reviewed: 2026-10-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-10-09"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 10
-readme_length: 2340
+contributor_count: 2
+engagement: "low"
+issue_close_rate: 44
+repo_size_kb: 4041
+readme_length: 5828
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1954,2026-10-02:2403,2026-10-03:2546,2026-10-04:2580,2026-10-05:2606,2026-10-06:2621"
+ring_history: "assess@2026-10-06"
+star_history: "2026-10-06:2342"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_agent"
-  - "topic/ai_agents"
-  - "topic/ai_browser"
-  - "topic/anti_detect_browser"
-  - "topic/browser_agent"
+  - "lang/swift"
+  - "topic/apple_intelligence"
+  - "topic/cli"
+  - "topic/debloat"
+  - "topic/macos"
+  - "topic/macos_27"
 aliases:
-  - "dots"
-  - "feder-cr/dots"
+  - "RemoveMacAI"
+  - "omlahore/RemoveMacAI"
 ---
 
-# dots
+# RemoveMacAI
 
-**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Python · MIT
+**2.3k** stars · **390** stars/天 · 建立 6 天前 · Swift · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/feder-cr--dots");
+const me = dv.page("Repos/omlahore--RemoveMacAI");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.2.5`
 
-`ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` `dots` `firefox` `llm-agent` `mcp` `open-source-alternative` `openai` `openai-dots` `openrouter` `playwright` `stealth-browser` `web-agent` `web-automation`
+`apple-intelligence` `cli` `debloat` `macos` `macos-27` `privacy` `siri` `swift`
 
 > [!summary] 一句話摘要
-> Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+> Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible.
 
 ## 專案簡介
 
-Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/omlahore--RemoveMacAI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/omlahore--RemoveMacAI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,103 +149,185 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 321 |
-| Open Issues | 0 |
-| 最後推送 | 2026-09-29 |
+| Forks | 51 |
+| Open Issues | 5 |
+| Issue 解決率 | 44% (4 closed) |
+| 最後推送 | 2026-10-06 |
 | 建立日期 | 2026-09-29 |
-| Repo 大小 | 10 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/feder-cr/dots) |
-| Topics | `ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` |
+| Repo 大小 | 3.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/omlahore/RemoveMacAI) |
+| Topics | `apple-intelligence` `cli` `debloat` `macos` `macos-27` `privacy` `siri` `swift` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "Shell" : 42
+>     "Swift" : 86
+>     "Objective-C" : 11
+>     "Shell" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@feder-cr](https://github.com/feder-cr) | 4 |
+> | [@omlahore](https://github.com/omlahore) | 20 |
+> | [@dantraynor](https://github.com/dantraynor) | 1 |
+
+**最新版本**：v0.2.5 (2026-10-05)
+
+> [!info]- Release Notes
+> - `off` no longer counts a model set the asset service can't size as 0. Those sizes show as unknown, and when removal fails or can't be confirmed, `off` says the run is incomplete, leaves the profile in place and exits with status 1. Contributed by Daniel Traynor in #1.
+> - `off --keep` says when a kept feature is switched off. `--keep` stops the profile from locking a feature, but it doesn't turn the feature back on. Reported by J-Liu in #8.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-09-29）
-> **活躍天數** 1 天 · **最新 commit** README: the title as the first element, so nothing pushes it down
+> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-06）
+> **活躍天數** 3 天 · **最新 commit** Credit pared at the top of the README
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#8](https://github.com/omlahore/RemoveMacAI/issues/8) | Can I get only Siri on? | 1 | 2 |
+> | [#12](https://github.com/omlahore/RemoveMacAI/issues/12) | It worked on an M1. | 0 | 0 |
+> | [#11](https://github.com/omlahore/RemoveMacAI/issues/11) | Unclear how to install for absolute noobs | 0 | 1 |
+> | [#5](https://github.com/omlahore/RemoveMacAI/issues/5) | Profile clarification | 0 | 4 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> dots
+> # RemoveMacAI
 > 
-> Every AI agent is a model and a browser.You can swap the model with one flag. The browser is what the website sees.
+> Turn off Apple Intelligence on macOS 27 and remove its downloaded models.
 > 
-> ---
+> Built on [pared](https://github.com/4evy/pared) by 4evy, who did the hard work first: mapping Apple's asset service, the model sets and the settings keys this tool relies on.
 > 
-> Windows, in PowerShell:
+> macOS 27 no longer has a single switch for Apple Intelligence, and its models stay on disk after the features are turned off. RemoveMacAI turns the features off, removes the models and prevents macOS from downloading them again. All changes can be reverted.
 > 
-> ```powershell
-> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-> $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
+> [MacRumors](https://www.macrumors.com/2026/10/05/apple-intelligence-removal-tool-frees-mac-storage/), [AppleInsider](https://appleinsider.com/articles/26/10/05/dumb-down-your-mac-save-12gb-by-removing-apple-intelligence) and [Help Net Security](https://www.helpnetsecurity.com/2026/10/05/removemacai-turn-off-apple-intelligence/) have written about RemoveMacAI.
+> 
+>   
+> 
+> Demo video
+> 
+> ## Install
+> 
+> ```sh
+> curl -fsSL https://raw.githubusercontent.com/omlahore/RemoveMacAI/main/install.sh | bash
 > ```
 > 
-> Linux:
+> The script downloads the latest release, verifies its SHA-256 checksum and runs it from a temporary directory. Nothing is installed.
 > 
-> ```bash
-> curl -LsSf https://astral.sh/uv/install.sh | sh
-> source $HOME/.local/bin/env
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
+> Every release is built from its tag by GitHub Actions and carries a build provenance attestation. To check that a download came from this repository's source:
+> 
+> ```sh
+> gh attestation verify removemacai-darwin-arm64.tar.gz -R omlahore/RemoveMacAI
 > ```
 > 
-> Then open **http://127.0.0.1:8765**. The conversation on the left, the browser on the right, live.
+> With Homebrew:
 > 
-> ## It all comes down to the browser
+> ```sh
+> brew install omlahore/tap/removemacai
+> removemacai
+> ```
 > 
-> When a web agent fails, the model is rarely why. The page never loaded, a
-> challenge appeared, the login expired, the click did not land. All of that
-> happens in the browser, before the model gets to think.
+> RemoveMacAI shows the current state and asks for confirmation. It then opens System Settings to install its configuration profile, which macOS requires the user to approve, and removes the models.
 > 
-> So dots is built around one:
+> To leave some features on, name them with `--keep`. For example, to turn everything off except the Photos features:
 > 
-> - **A real Firefox engine, patched in C++.** The fingerprint is decided inside
->   the engine, not painted over with JavaScript that a page can inspect.
-> - **One identity per seed.** Screen, fonts, GPU, timezone and language agree
->   with each other, and `--seed` gives back the same person on every run.
-> - **Nothing for a page to find.** No WebDriver flag, no DevTools protocol, no
->   automation globals in the page.
-> - **A person's hands.** The pointer travels to what it clicks and keys are
->   pressed one at a time, so every event the page receives is a trusted one.
-> - **A browser that remembers.** `--profile-dir` keeps logins and cookies from
->   one run to the next.
-> - **Where it connects from is who it is.** With `--proxy`, the timezone and the
->   language follow the exit.
+> ```sh
+> curl -fsSL https://raw.githubusercontent.com/omlahore/RemoveMacAI/main/install.sh | bash -s -- off --keep spatial-photos,photos-clean-up
+> ```
 > 
-> The model is any model on OpenRouter, and `--model` changes it.
+> `removemacai features` lists the names.
 > 
-> ## What to ask it
+> ## Usage
 > 
-> > Go to ``. One way, Milan to Lisbon, economy, one adult. Check
-> > every date from the 12th to the 16th of next month and read the cheapest fare
-> > for each day. If a date has no availability, say so. Do not guess a number.
+> | Command | Description |
+> |---|---|
+> | `removemacai` | Show the current state, then turn Apple Intelligence off |
+> | `removemacai status` | Show each feature and the size of the models on disk |
+> | `removemacai off --keep ` | Leave the listed features alone (one that is already off stays off until you turn it on) |
+> | `removemacai off --dry-run` | Show the changes without applying them |
+> | `removemacai revert` | Undo all changes |
+> | `removemacai features` | List the feature names accepted by `--keep` |
 > 
-> ## The same browser, in your own assistant
+> Model sizes that the asset service cannot report are shown as `unknown`. If model removal fails or cannot be confirmed, `off` exits with status 1 and leaves the configuration profile active. Check the reported warnings and run `removemacai status` before trying again.
 > 
-> Claude Code, Codex, Gemini CLI or any MCP client:
-> [invisible_playwright_mcp](https://github.com/feder-cr/invisible_playwright_mcp)
-> gives them this browser as a server. `dots` is its interface, and `dots --help`
-> lists every option.
+> To revert with the one-line installer:
 > 
-> ---
+> ```sh
+> curl -fsSL https://raw.githubusercontent.com/omlahore/RemoveMacAI/main/install.sh | bash -s revert
+> ```
 > 
-> Not affiliated with OpenAI. MIT licensed.
+> ## What it changes
+> 
+> **Features turned off:** Siri (including "Hey Siri" and the menu bar icon), Writing Tools, Genmoji, Image Playground, the ChatGPT extension, summaries in Mail, Messages, Safari, Notes and notifications, Mail smart replies, inline text predictions, Spatial Photos, Photos Clean Up and Xcode predictive code completion.
+> 
+> **Models removed:** the Apple Intelligence foundation models and the models for image generation and Genmoji, Spatial Photos, Photos Clean Up and Xcode code completion.
+> 
+>   
+> 
+> ## How it works
+> 
+> - A configuration profile applies Apple's restriction keys for Apple Intelligence and forces the settings that have no restriction key.
+> - Models are removed through Apple's asset service. System Integrity Protection stays enabled and no files under `/System` are modified directly.
+> - The profile redirects the download of each removed model to a closed local port, so macOS does not download it again.
+> - Removing the profile restores the previous settings. macOS downloads the models again when a feature needs them.
+> 
+> RemoveMacAI makes no network requests and collects no data.
+> 
+> ## FAQ
+> 
+> **Does dictation still work?**
+> Yes. Dictation is a separate setting, and its speech models are not removed.
+> 
+> **Do macOS updates undo the changes?**
+> No. The profile, including the download block, persists across updates.
+> 
+> **Storage settings still lists Apple Intelligence after the models were deleted.**
+> Apple's asset service releases the models right away, but macOS deletes the files on its own schedule. Until then, System Settings > General > Storage keeps counting them under Apple Intelligence.
+> 
+> **Why is a process named Siri still running?**
+> In macOS 27 the Spotlight window runs as a process named Siri. Some system services also stay loaded; they are protected by System Integrity Protection.
+> 
+> **What stops working?**
+> The features listed above, apps that use Apple's on-device models (the Foundation Models framework and the Use Model action in Shortcuts), Visual Intelligence and natural-language editing in Calendar.
+> 
+> ## Requirements
+> 
+> Apple silicon.
+> 
+> | macOS | Status |
+> |---|---|
+> | 27 | Supported, tested on 27.0. On 27.0.1, use 0.2.3 or later. |
+> | 26 and earlier | Not supported |
+> 
+> ## Uninstall
+> 
+> Run `removemacai revert`, then `brew uninstall removemacai` if it was installed with Homebrew.
+> 
+> ## Acknowledgements
+> 
+> RemoveMacAI is built on [pared](https://github.com/4evy/pared), a complete working tool by 4evy that first mapped the asset service, the model sets and several of the settings keys. Its license is in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+> 
+> ## Support
+> 
+> If RemoveMacAI is useful to you, you can [sponsor it on GitHub](https://github.com/sponsors/omlahore).
+> 
+> ## Author
+> 
+> I'm [Om Lahore](https://github.com/omlahore) and I'm open to new roles. You can reach me on [LinkedIn](https://linkedin.com/in/om-lahorey) or at omlahorey@gmail.com.
+> 
+> ## License
+> 
+> [MIT](LICENSE)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/feder-cr/dots)
+[GitHub](https://github.com/omlahore/RemoveMacAI)
 
 ## 相關收錄
 
@@ -253,7 +335,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "feder-cr--dots"
+> WHERE category = "Other" AND file.name != "omlahore--RemoveMacAI"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +344,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "feder-cr--dots" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "omlahore--RemoveMacAI" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +353,18 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "feder-cr--dots"
+> WHERE week = "2026-W41" AND file.name != "omlahore--RemoveMacAI"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/omlahore--RemoveMacAI");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "feder-cr--dots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "omlahore--RemoveMacAI" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +380,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "feder-cr" AND file.name != "feder-cr--dots"
+> WHERE owner = "omlahore" AND file.name != "omlahore--RemoveMacAI"
 > SORT stars DESC
 > ```
 
@@ -306,7 +388,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/omlahore--RemoveMacAI");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +405,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/omlahore--RemoveMacAI");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +438,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/omlahore--RemoveMacAI");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +462,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/omlahore--RemoveMacAI");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +499,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/omlahore--RemoveMacAI");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +582,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-01** — 首次收錄
+> **2026-10-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,9 +598,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-06|2026-10-06]] — 再次上榜，2.6k stars
-- [[2026-10-05|2026-10-05]] — 再次上榜，2.6k stars
-- [[2026-10-04|2026-10-04]] — 再次上榜，2.6k stars
-- [[2026-10-03|2026-10-03]] — 再次上榜，2.5k stars
-- [[2026-10-02|2026-10-02]] — 再次上榜，2.4k stars
-- [[2026-10-01|2026-10-01]] — 首次收錄，2.0k stars
+- [[2026-10-06|2026-10-06]] — 首次收錄，2.3k stars

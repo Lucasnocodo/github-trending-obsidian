@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。"
 homepage: ""
-stars: 1169
-stars_per_day: 585
-forks: 81
-open_issues: 12
+stars: 1540
+stars_per_day: 513
+forks: 108
+open_issues: 6
 created: 2026-10-02
-pushed_at: 2026-10-05
+pushed_at: 2026-10-06
 first_seen: 2026-10-05
 week: "2026-W41"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-08"
+appearances: 2
+next_review: "2026-10-09"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-05"
-star_history: "2026-10-05:1169"
+star_history: "2026-10-05:1169,2026-10-06:1540"
 tags:
   - github
   - "category/other"
@@ -664,4 +664,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-06|2026-10-06]] — 再次上榜，1.5k stars
 - [[2026-10-05|2026-10-05]] — 首次收錄，1.2k stars

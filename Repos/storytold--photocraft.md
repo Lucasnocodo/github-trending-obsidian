@@ -1,68 +1,69 @@
 ---
-repo: feder-cr/dots
-url: https://github.com/feder-cr/dots
-owner: feder-cr
-owner_type: User
-language: Python
-license: MIT
-description: "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
-homepage: ""
-stars: 2621
-stars_per_day: 437
-forks: 438
-open_issues: 1
-created: 2026-09-29
-pushed_at: 2026-10-03
-first_seen: 2026-10-01
-week: "2026-W40"
+repo: storytold/photocraft
+url: https://github.com/storytold/photocraft
+owner: storytold
+owner_type: Organization
+language: Rust
+license: Apache-2.0
+description: "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust"
+homepage: "https://getartcraft.com/apps/photocraft"
+stars: 2293
+stars_per_day: 459
+forks: 239
+open_issues: 45
+created: 2026-09-30
+pushed_at: 2026-10-06
+first_seen: 2026-10-06
+week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-01
+last_reviewed: 2026-10-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-10-09"
-contributor_count: 1
+contributor_count: 5
 engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 10
-readme_length: 2340
+issue_close_rate: 69
+repo_size_kb: 14892
+readme_length: 9982
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1954,2026-10-02:2403,2026-10-03:2546,2026-10-04:2580,2026-10-05:2606,2026-10-06:2621"
+ring_history: "assess@2026-10-06"
+star_history: "2026-10-06:2293"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_agent"
-  - "topic/ai_agents"
-  - "topic/ai_browser"
-  - "topic/anti_detect_browser"
-  - "topic/browser_agent"
+  - "lang/rust"
+  - org
+  - "topic/adobe"
+  - "topic/adobe_photoshop_2026"
+  - "topic/adobe_photoshop_2026_ai"
+  - "topic/art"
+  - "topic/image_editing"
 aliases:
-  - "dots"
-  - "feder-cr/dots"
+  - "photocraft"
+  - "storytold/photocraft"
 ---
 
-# dots
+# photocraft
 
-**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Python · MIT
+**2.3k** stars · **459** stars/天 · 建立 5 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/feder-cr--dots");
+const me = dv.page("Repos/storytold--photocraft");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG` `v0.2.0`
 
-`ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` `dots` `firefox` `llm-agent` `mcp` `open-source-alternative` `openai` `openai-dots` `openrouter` `playwright` `stealth-browser` `web-agent` `web-automation`
+`adobe` `adobe-photoshop-2026` `adobe-photoshop-2026-ai` `art` `image-editing` `image-editing-software` `image-editor` `images` `photo-editing` `photoshop` `psd` `rust`
 
 > [!summary] 一句話摘要
-> Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+> An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust
 
 ## 專案簡介
 
-Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/storytold--photocraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +126,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/storytold--photocraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,103 +150,232 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 321 |
-| Open Issues | 0 |
-| 最後推送 | 2026-09-29 |
-| 建立日期 | 2026-09-29 |
-| Repo 大小 | 10 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/feder-cr/dots) |
-| Topics | `ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` |
+| Forks | 239 |
+| Open Issues | 45 |
+| Issue 解決率 | 69% (99 closed) |
+| 最後推送 | 2026-10-06 |
+| 建立日期 | 2026-09-30 |
+| 官方網站 | [Link](https://getartcraft.com/apps/photocraft) |
+| Repo 大小 | 14.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/storytold/photocraft) |
+| Topics | `adobe` `adobe-photoshop-2026` `adobe-photoshop-2026-ai` `art` `image-editing` `image-editing-software` `image-editor` `images` |
 
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Python" : 58
->     "Shell" : 42
-> ```
+> [!info]- 主要依賴
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `default-members` `version` `edition` `license` `rust-version` `photocraft-geom` `photocraft-color` `photocraft-cms` `photocraft-raster` `photocraft-doc` `photocraft-ops` `photocraft-psd` `photocraft-codecs`
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@feder-cr](https://github.com/feder-cr) | 4 |
+> | [@echelon](https://github.com/echelon) | 176 |
+> | [@MikeeI](https://github.com/MikeeI) | 22 |
+> | [@Ni-zav](https://github.com/Ni-zav) | 8 |
+> | [@storybored379](https://github.com/storybored379) | 8 |
+> | [@Gh0stlyKn1ght](https://github.com/Gh0stlyKn1ght) | 4 |
+
+**最新版本**：v0.2.0 — PhotoCraft v0.2.0 (2026-10-05)
+
+> [!info]- Release Notes
+> ## Upgrade notes
+> 
+> - **Automation (MCP / control channel) now needs explicit file roots.** File access from automation clients is limited to folders you grant with `--automation-read-root <dir>` / `--automation-write-root <dir>` (or `PHOTOCRAFT_AUTOMATION_READ_ROOT` / `PHOTOCRAFT_AUTOMATION_WRITE_ROOT`), and paths must be relative to them. Without roots, automation file operations fail closed. The desktop control channel also requires the per-launch token printed at startup. Interactive file dialogs and one-shot CLI commands are unaffected.
+> - **Camera RAW:** DNG, Canon CR2, Sony ARW (lossless and compressed), Panasonic RW2 and uncompressed Olympus ORF now decode. Nikon's compressed NEF and other formats still open their embedded full-size preview for now.
+> 
+> ## What's Changed
+> * Indexed Color: no panic when forced colours fill the palette by @storybored379 in https://github.com/storytold/photocraft/pull/17
+> * MCP: a panicking command no longer wedges the headless session by @storybored379 in https://github.com/storytold/photocraft/pull/16
+> * Layers: Add Layer Mask uses the active selection by @Multipad-cyber in https://github.com/storytold/photocraft/pull/11
+> * feat(ui): add Exit to the File menu by @torstfugl in https://github.com/storytold/photocraft/pull/10
+> * fix(ui): give menu bar labels more breathing room by @torstfugl in https://github.com/storytold/photocraft/pull/8
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-09-29）
-> **活躍天數** 1 天 · **最新 commit** README: the title as the first element, so nothing pushes it down
+> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-06）
+> **活躍天數** 2 天 · **最新 commit** FreeBSD release tarball and README platform lines (#284) (#284)
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#221](https://github.com/storytold/photocraft/issues/221) | Scorecard: measure performance, tools, compatibility and fea `enhancement` `scorecard` | 1 | 1 |
+> | [#300](https://github.com/storytold/photocraft/issues/300) | Missing horizontal and vertical scrollbars on the canvas | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> dots
+> PhotoCraft
 > 
-> Every AI agent is a model and a browser.You can swap the model with one flag. The browser is what the website sees.
+>   Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust.
+>   Layers, masks, adjustment layers, layer styles, type, vectors, brushes and real PSD files,
+>   in a native app written entirely in Rust. Open source, offline, and yours.
 > 
-> ---
+>   
+>   
+>   
+>   
 > 
-> Windows, in PowerShell:
+>   
 > 
-> ```powershell
-> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-> $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
-> ```
+>   PhotoCraft on getartcraft.com ·
+>   ArtCraft ·
+>   All Crafting Apps
 > 
-> Linux:
+>   
+>   
+>   A caption card with a drop shadow, live type, and Vibrance and Curves adjustment layers, with the Curves editor open.
+>   The Great Wave off Kanagawa, Katsushika Hokusai, c. 1831
 > 
-> ```bash
-> curl -LsSf https://astral.sh/uv/install.sh | sh
-> source $HOME/.local/bin/env
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
-> ```
+> > [!NOTE]
+> > **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
+> > games &mdash; if you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
 > 
-> Then open **http://127.0.0.1:8765**. The conversation on the left, the browser on the right, live.
+>   Features ·
+>   Everything in the box ·
+>   PSD ·
+>   Agents ·
+>   Under the hood ·
+>   Get started ·
+>   Crafting Apps ·
+>   Discord
 > 
-> ## It all comes down to the browser
+>   
+>     
+>       🎛️ Familiar by design
+>       The menus, shortcuts, panels and tools are where your hands expect them, from ⌘J to ⇧⌘D. If you know Photoshop, you already know PhotoCraft.
+>     
+>     
+>       ⚡ Native and fast
+>       A GPU compositor on wgpu (Metal, Vulkan, DX12, WebGPU), copy-on-write tiles and multithreaded filters. No Electron, no web view, no waiting.
+>     
+>     
+>       🗂️ Real PSD files
+>       Open, edit and save layered Photoshop documents. Re-saving keeps the render of 307 of the 309 psd-tools test files.
+>     
+>     
+>       🤖 Agent-ready
+>       Every action is a command, so you can drive the same engine from the UI, the CLI, a JSON control channel or an MCP server.
+>     
+>   
 > 
-> When a web agent fails, the model is rarely why. The page never loaded, a
-> challenge appeared, the login expired, the click did not land. All of that
-> happens in the browser, before the model gets to think.
 > 
-> So dots is built around one:
+> ## Features
 > 
-> - **A real Firefox engine, patched in C++.** The fingerprint is decided inside
->   the engine, not painted over with JavaScript that a page can inspect.
-> - **One identity per seed.** Screen, fonts, GPU, timezone and language agree
->   with each other, and `--seed` gives back the same person on every run.
-> - **Nothing for a page to find.** No WebDriver flag, no DevTools protocol, no
->   automation globals in the page.
-> - **A person's hands.** The pointer travels to what it clicks and keys are
->   pressed one at a time, so every event the page receives is a trusted one.
-> - **A browser that remembers.** `--profile-dir` keeps logins and cookies from
->   one run to the next.
-> - **Where it connects from is who it is.** With `--proxy`, the timezone and the
->   language follow the exit.
+> Every screenshot here is the real app at work on public-domain art, rendered offscreen through its control channel.
 > 
-> The model is any model on OpenRouter, and `--model` changes it.
+>   
+>     
+>       
+>       
+>       Levels and Vibrance adjustment layers, with the live Histogram panel.Impression, Sunrise, Claude Monet, 1872
+>       Edit without regret
+>       Adjustment layers keep every edit live. Stack Levels, Curves, Vibrance, Hue/Saturation and a dozen more, mask them to an area, reorder them, or turn them off, and your original pixels never change.
+>       
+>       16 adjustment layers that also apply directly to pixels, including Curves with per-channel editing, Levels with a live histogram, Black &amp; White, Channel Mixer, Gradient Map, Photo Filter, Selective Color and Color Lookup (.cube, .3dl, .look). Plus Shadows/Highlights, Replace Color, Match Color, HDR Toning, Desaturate and Equalize.
+>     
+>     
+>       
+>       
+>       Outer Glow and Stroke on a live type layer, in the Layer Style dialog.Earthrise, William Anders / NASA, 1968
+>       Styles that sell the shot
+>       Drop Shadow, Inner Shadow, Outer and Inner Glow, Bevel &amp; Emboss, Satin, Stroke, and Color, Gradient and Pattern Overlay, live on any layer, including type. Patterns come from a library (built-ins, Edit › Define Pattern, .pat import/export) and PSD Patt blocks.
+>       
+>       Copy and paste styles between layers, hide all effects at once, and open styles straight from your PSDs, rendered to match Photoshop.
+>     
+>   
+>   
+>     
+>       
+>       
+>       An elliptical selection becomes the mask of a Hue/Saturation layer, so only the face keeps its color.Girl with a Pearl Earring, Johannes Vermeer, c. 1665
+>       Selections that understand your image
+>       Marquees, lassos and the Magic Wand for precision; Quick Selection, Object Selection and Select Subject when you want the computer to do the tracing; Select and Mask to refine hair-fine edges.
+>       
+>       Feather, expand, contract, smooth, grow, reselect. Turn any selection into a layer mask, a vector path or a shape. Smart selection runs on your machine, with no cloud and no account.
+>     
+>     
+>       
+>       
+>       A headline edited in place, with a byline and a paragraph of body text.Among the Sierra Nevada, California, Albert Bierstadt, 1868
+>       Type that sets beautifully
+>       Point and paragraph text, edited right on the canvas, with full Character and Paragraph controls: font, weight, size, leading, tracking, alignment and colour.
+>       
+>       Type layers stay editable, take layer styles, and round-trip through PSD.
+>     
+>   
+>   
+>     
+>       
+>       
+>       A badge made of shape layers: a gradient-filled lotus, a star and a dotted ring.Water Lilies, Claude Monet, 1906
+>       Pixel-perfect vectors
+>       Rectangle, Ellipse, Triangle, Polygon, Line and the Pen tool, with resolution-independent shape layers, gradient fills, and dashed, aligned strokes.
+>       
+>       Combine shapes (unite, subtract, intersect, exclude), keep paths in the Paths panel, use them as vector masks, or stroke and fill them. 116 of 116 shape layers in our PSD corpus match Photoshop's pixels.
+>     
+>     
+>       
+>       
+>       Twirl previews live on the canvas, only inside the selection.The Starry Night, Vincent van Gogh, 1889
+>       See it before you commit
+>       Every filter dialog previews live on the canvas, through your selection. Blurs (Gaussian, Box, Motion, Radial, Surface, Smart, Lens, Shape, and the Blur Gallery: Tilt-Shift, Iris, Field, Spin, Path), sharpening, Reduce Noise, distortions (Twirl, Wave, Ripple, Displace, Shear, Zig Zag…), Pixelate, Stylize (Oil Paint, Wind, Extrude…), Render (Clouds, Fibers, Lens Flare, Lighting Effects) and more.
+>       
+>       Run filters on a smart object and they stay editable: change, hide, reorder or mask them at any time.
+>       
+>       Large-radius blurs use running-sum box passes across all cores: a radius-180 Gaussian on 3.6 MP takes under a second.
+>     
+>   
+>   
+>     
+>       
+>       
+>       Free Transform on a rotated print, with every step listed in History.The Tetons and the Snake River, Ansel Adams, 1942
+>       Shape it any way you like
+>       Free Transform with scale, rotate, skew, distort and perspective; exact 90° and 180° rotations and flips; Transform Again. Layers, type, shapes, masks and selections all transform together.
+>       
+>       Full history, Toggle Last State and the History Brush mean every step can be undone, even one brush stroke at a time.
+>     
+>     
+>       
+>       
+>       Export As in the light theme, with a preview and a file-size estimate.The Kiss, Gustav Klimt, 1907–1908
+>       Ship it anywhere
+>       Export As with format, quality, transparency and scale, plus a preview and an instant file-size estimate. Quick Export to PNG in one click.
+>       
+>       Choose a dark Pro theme, the airy Studio themes, or a Classic look.
+>     
+>   
 > 
-> ## What to ask it
 > 
-> > Go to ``. One way, Milan to Lisbon, economy, one adult. Check
-> > every date from the 12th to the 16th of next month and read the cheapest fare
-> > for each day. If a date has no availability, say so. Do not guess a number.
+> ## Everything in the box
 > 
-> ## The same browser, in your own assistant
-> 
-> Claude Code, Codex, Gemini CLI or any MCP client:
-> [invisible_playwright_mcp](https://github.com/feder-cr/invisible_playwright_mcp)
-> gives them this browser as a server. `dots` is its interface, and `dots --help`
-> lists every option.
-> 
-> ---
-> 
-> Not affiliated with OpenAI. MIT licensed.
+>   
+>     
+>       🧰 34 tools
+>       Move · Rectangular and Elliptical Marquee · Lasso · Polygonal Lasso · Magic Wand · Quick Selection · Object Selection · Crop · Eyedropper · Brush · Pencil · Mixer Brush · Color Replacement · Eraser · Clone Stamp · Healing Brush · Spot Healing · History Brush · Gradient · Paint Bucket · Blur · Sharpen · Smudge · Dodge · Burn · Sponge · Pen · Path Selection · Type · five Shape tools · Hand · Zoom
+>     
+>     
+>       🖌️ A real brush engine
+>       Shape Dynamics, Scattering, Texture, Dual Brush, Color Dynamics, Transfer, Brush Pose, Wet Edges, Build-up and Smoothing (including Pulled String), driven by pen pressure, tilt, rotation and direction. Brush presets, Define Brush from Selection, and deterministic, replayable strokes.
+>     
+>     
+>       🗃️ Layers, done properly
+>       Groups, clipping masks, pixel and vector masks, fill layers (solid, gradient and pattern), adjustment layers, live smart objects with smart filters and lossless transforms and warps, multi-layer selection with align, distribute and link, alpha channels and Quick Mask, 27 blend modes, opacity and fill, locks, colour labels, layer filters, merge, flatten, rasterize, Layer via Copy/Cut, Paste Into.
+>     
+>   
+>   
+>     
+>       🎨 Any colour, any depth
+>       RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel. Bit depth and colour model are runtime data, so every tool works at every depth.
+>       
+>       Real ICC colour management in pure Rust: embedded profiles, Assign and Convert to Profile with all four rendering intents and black point compensation, soft proofing (⌘Y) and G
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/feder-cr/dots)
+[GitHub](https://github.com/storytold/photocraft) · [官方網站](https://getartcraft.com/apps/photocraft)
 
 ## 相關收錄
 
@@ -253,7 +383,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "feder-cr--dots"
+> WHERE category = "Other" AND file.name != "storytold--photocraft"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +392,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "feder-cr--dots" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "storytold--photocraft" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +401,18 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "feder-cr--dots"
+> WHERE week = "2026-W41" AND file.name != "storytold--photocraft"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/storytold--photocraft");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "feder-cr--dots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "storytold--photocraft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +428,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "feder-cr" AND file.name != "feder-cr--dots"
+> WHERE owner = "storytold" AND file.name != "storytold--photocraft"
 > SORT stars DESC
 > ```
 
@@ -306,7 +436,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/storytold--photocraft");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +453,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/storytold--photocraft");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +486,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/storytold--photocraft");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +510,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/storytold--photocraft");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +547,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/storytold--photocraft");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +630,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-01** — 首次收錄
+> **2026-10-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,9 +646,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-06|2026-10-06]] — 再次上榜，2.6k stars
-- [[2026-10-05|2026-10-05]] — 再次上榜，2.6k stars
-- [[2026-10-04|2026-10-04]] — 再次上榜，2.6k stars
-- [[2026-10-03|2026-10-03]] — 再次上榜，2.5k stars
-- [[2026-10-02|2026-10-02]] — 再次上榜，2.4k stars
-- [[2026-10-01|2026-10-01]] — 首次收錄，2.0k stars
+- [[2026-10-06|2026-10-06]] — 首次收錄，2.3k stars

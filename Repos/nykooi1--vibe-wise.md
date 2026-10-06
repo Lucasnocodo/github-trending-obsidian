@@ -1,20 +1,20 @@
 ---
-repo: feder-cr/dots
-url: https://github.com/feder-cr/dots
-owner: feder-cr
+repo: nykooi1/vibe-wise
+url: https://github.com/nykooi1/vibe-wise
+owner: nykooi1
 owner_type: User
 language: Python
 license: MIT
-description: "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
+description: "A Claude Code plugin that helps you learn how to build while AI writes the code."
 homepage: ""
-stars: 2621
-stars_per_day: 437
-forks: 438
-open_issues: 1
+stars: 1939
+stars_per_day: 277
+forks: 94
+open_issues: 13
 created: 2026-09-29
-pushed_at: 2026-10-03
-first_seen: 2026-10-01
-week: "2026-W40"
+pushed_at: 2026-10-01
+first_seen: 2026-10-06
+week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
@@ -25,44 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-01
+last_reviewed: 2026-10-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-10-09"
 contributor_count: 1
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 10
-readme_length: 2340
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 189
+readme_length: 8824
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1954,2026-10-02:2403,2026-10-03:2546,2026-10-04:2580,2026-10-05:2606,2026-10-06:2621"
+ring_history: "assess@2026-10-06"
+star_history: "2026-10-06:1939"
 tags:
   - github
   - "category/other"
   - "lang/python"
-  - "topic/ai_agent"
-  - "topic/ai_agents"
-  - "topic/ai_browser"
-  - "topic/anti_detect_browser"
-  - "topic/browser_agent"
 aliases:
-  - "dots"
-  - "feder-cr/dots"
+  - "vibe-wise"
+  - "nykooi1/vibe-wise"
 ---
 
-# dots
+# vibe-wise
 
-**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Python · MIT
+**1.9k** stars · **277** stars/天 · 建立 7 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/feder-cr--dots");
+const me = dv.page("Repos/nykooi1--vibe-wise");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -77,20 +72,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
-`ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` `dots` `firefox` `llm-agent` `mcp` `open-source-alternative` `openai` `openai-dots` `openrouter` `playwright` `stealth-browser` `web-agent` `web-automation`
-
 > [!summary] 一句話摘要
-> Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+> A Claude Code plugin that helps you learn how to build while AI writes the code.
 
 ## 專案簡介
 
-Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+A Claude Code plugin that helps you learn how to build while AI writes the code.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/nykooi1--vibe-wise");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/nykooi1--vibe-wise");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,103 +142,248 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 321 |
-| Open Issues | 0 |
-| 最後推送 | 2026-09-29 |
+| Forks | 94 |
+| Open Issues | 13 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-10-01 |
 | 建立日期 | 2026-09-29 |
-| Repo 大小 | 10 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/feder-cr/dots) |
-| Topics | `ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Python" : 58
->     "Shell" : 42
-> ```
+| Repo 大小 | 189 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nykooi1/vibe-wise) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@feder-cr](https://github.com/feder-cr) | 4 |
+> | [@nykooi1](https://github.com/nykooi1) | 73 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-09-29）
-> **活躍天數** 1 天 · **最新 commit** README: the title as the first element, so nothing pushes it down
+> [!abstract] 最近 10 次 commit（2026-10-01 ~ 2026-10-01）
+> **活躍天數** 1 天 · **最新 commit** cut dev stuff from md
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#2](https://github.com/nykooi1/vibe-wise/issues/2) | Addition to Multiple Agentic Applications | 2 | 2 |
+> | [#14](https://github.com/nykooi1/vibe-wise/issues/14) | Codex port of VibeWise | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> dots
+> # VibeWise
 > 
-> Every AI agent is a model and a browser.You can swap the model with one flag. The browser is what the website sees.
+> **You build. AI writes.**
 > 
-> ---
+> A Claude Code plugin that puts learning first and keeps you in control while AI writes the code you designed. Claude **asks for your approach first**, helps you examine tradeoffs, and explains unfamiliar concepts. You shape the design and decide when it's ready to implement. Claude writes the code, then explains what it changed and why.
 > 
-> Windows, in PowerShell:
+> For anyone who wants to learn as they build—whether you're an aspiring engineer, a junior developer, or an experienced engineer exploring an unfamiliar stack. Practice planning how the pieces fit together, anticipating failures, and checking the result while keeping ownership of the decisions.
 > 
-> ```powershell
-> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-> $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
+> ## Get started
+> 
+> You need [Claude Code](https://code.claude.com/docs/en/setup) and
+> [Python 3](https://www.python.org/downloads/). VibeWise uses Python to restore
+> learning context and reset learning notes. No extra Python packages are needed.
+> 
+> VibeWise has been approved for Anthropic's Claude directory, but isn't listed in
+> the public community marketplace yet. I expect it to appear soon. In the meantime,
+> install it in Claude Code through my GitHub marketplace:
+> 
+> Run these commands **one at a time** in Claude Code. First, add the marketplace:
+> 
+> ```text
+> /plugin marketplace add nykooi1/vibe-wise
 > ```
 > 
-> Linux:
+> After it finishes, install the plugin:
 > 
-> ```bash
-> curl -LsSf https://astral.sh/uv/install.sh | sh
-> source $HOME/.local/bin/env
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
+> ```text
+> /plugin install vibe-wise@vibe-wise
 > ```
 > 
-> Then open **http://127.0.0.1:8765**. The conversation on the left, the browser on the right, live.
+> **Enable automatic updates:** open `/plugin` → **Marketplaces** → **vibe-wise** →
+> **Enable auto-update**. This is off by default for third-party marketplaces.
 > 
-> ## It all comes down to the browser
+> Restart Claude Code in the project you want to work on, then run:
 > 
-> When a web agent fails, the model is rarely why. The page never loaded, a
-> challenge appeared, the login expired, the click did not land. All of that
-> happens in the browser, before the model gets to think.
+> ```text
+> /vibe-wise:learn
+> ```
 > 
-> So dots is built around one:
+> Setup asks one question at a time. Use the arrow keys and Enter for choices; pick **Use defaults** to skip preference setup. Then ask Claude to build something. Starting fresh or joining an unfamiliar repository both work. For an existing repository, Claude first inspects the code and sketches a small system map.
 > 
-> - **A real Firefox engine, patched in C++.** The fingerprint is decided inside
->   the engine, not painted over with JavaScript that a page can inspect.
-> - **One identity per seed.** Screen, fonts, GPU, timezone and language agree
->   with each other, and `--seed` gives back the same person on every run.
-> - **Nothing for a page to find.** No WebDriver flag, no DevTools protocol, no
->   automation globals in the page.
-> - **A person's hands.** The pointer travels to what it clicks and keys are
->   pressed one at a time, so every event the page receives is a trusted one.
-> - **A browser that remembers.** `--profile-dir` keeps logins and cookies from
->   one run to the next.
-> - **Where it connects from is who it is.** With `--proxy`, the timezone and the
->   language follow the exit.
+> ## What it feels like
 > 
-> The model is any model on OpenRouter, and `--model` changes it.
+> You're building a Notion-style notes app: users sign in, create and edit private
+> notes, and organize them into folders. Here, you're working through how notes and
+> folders relate—and what should happen when someone deletes a folder.
 > 
-> ## What to ask it
+> This condensed example is adapted from a real learning session. Later implementation
+> steps are illustrative; intervening design discussions are omitted.
 > 
-> > Go to ``. One way, Milan to Lisbon, economy, one adult. Check
-> > every date from the 12th to the 16th of next month and read the cheapest fare
-> > for each day. If a date has no availability, say so. Do not guess a number.
+> **You:**
 > 
-> ## The same browser, in your own assistant
+> ```text
+> A note can be in several folders. Deleting a folder should delete its notes.
+> ```
 > 
-> Claude Code, Codex, Gemini CLI or any MCP client:
-> [invisible_playwright_mcp](https://github.com/feder-cr/invisible_playwright_mcp)
-> gives them this browser as a server. `dots` is its interface, and `dots --help`
-> lists every option.
+> **Claude:**
 > 
-> ---
+> ```text
+> ✦ Build checkpoint: Deleting a shared note
 > 
-> Not affiliated with OpenAI. MIT licensed.
+> "Trip ideas" is in both Travel and Summer. Deleting it removes it from both.
+> 
+> When someone deletes Travel, what should happen to that note in Summer?
+> ```
+> 
+> **You:**
+> 
+> ```text
+> Keep it in Summer. If it has no folders left, keep the note outside any folder.
+> ```
+> 
+> **Claude:**
+> 
+> ```text
+> That separates deleting a folder from deleting a note.
+> 
+> ✦ Build checkpoint: Connecting notes and folders
+> 
+> How would you represent which folders a note belongs to, without copying the note?
+> ```
+> 
+> **You:**
+> 
+> ```text
+> A links table with note_id and folder_id. Deleting a folder removes its links,
+> not the notes.
+> ```
+> 
+> **Claude:**
+> 
+> ```text
+> Each link records one membership. Several links can point to the same note;
+> a note with no links is unfiled.
+> 
+> notes ← folder links → folders
+> 
+> ✦ Design checkpoint: Folder membership
+> 
+> Proposed: store notes once and track folder membership in a links table.
+> Deleting a folder removes its links and keeps the notes. This supports multiple
+> folders per note; loading a folder's notes needs a lookup through those links.
+> 
+> Confirming records this design. We still need to work through access rules
+> and technology choices before writing code.
+> 
+> ❯ 1. Confirm and continue
+>      This approach makes sense to me; move to the next piece.
+>   2. Discuss
+>      Ask questions or clarify anything that doesn't make sense before deciding.
+> ```
+> 
+> **You:**
+> 
+> ```text
+> Confirm and continue.
+> ```
+> 
+> *Later, after the remaining choices for this step are worked through...*
+> 
+> **Claude:**
+> 
+> ```text
+> ✦ Implementation checkpoint: Folder membership
+> 
+> I'll add the agreed tables and folder-deletion operation, then test that deleting
+> a folder preserves its notes and their membership in other folders.
+> This step builds storage behavior; the UI comes later.
+> 
+> ❯ 1. Implement this step
+>      This approach makes sense to me; write the code for this step.
+>   2. Discuss
+>      Ask questions or clarify anything that doesn't make sense before deciding.
+> ```
+> 
+> **You:**
+> 
+> ```text
+> Implement this step.
+> ```
+> 
+> *Claude writes the code and runs the tests.*
+> 
+> **Claude:**
+> 
+> ```text
+> ✦ Implementation report: Folder membership
+> 
+> - Added the schema migration: each membership references one note and one folder.
+> - Added folder deletion: removes the folder and its links, preserving note content.
+> - Added and ran tests for shared notes and notes left without a folder; both passed.
+> ```
+> 
+> You don't need to know the answer already. Claude can explain unfamiliar concepts, sketch the relevant pieces, and help you tackle a smaller question. You stay involved in forming the plan. Answer in plain English; ask for more help or say “skip” whenever you want.
+> 
+> Describing what you want sets the requirements. Build Checkpoints ask you to work
+> out how it should function; a feature preference doesn't approve an architecture.
+> 
+> | Checkpoint | What happens |
+> | --- | --- |
+> | **Build** | You reason through how to approach the problem with Claude. |
+> | **Design** | Review the design. **Confirm and continue** records it and continues planning; no code yet. |
+> | **Implementation** | Review the specific code changes. **Implement this step** authorizes Claude to make them. |
+> 
+> These aren't three mandatory stops. When ready to code, the Implementation
+> checkpoint also confirms the design, skipping a separate Design checkpoint.
+> Both confirmations offer **Discuss** to ask questions, clarify anything confusing,
+> or explore alternatives before deciding.
+> 
+> When Claude proposes additional implementation details, it separates them from your
+> decisions in a short list or table explaining each addition and why it matters.
+> You can question or change any item before proceeding.
+> 
+> After implementation, Claude briefly explains what changed, how the key code works,
+> why it fits your decision, any tests it added or updated and what they cover, and
+> which checks ran with their results. Ask to dig deeper anywhere it's unclear.
+> 
+> Small diagrams help you trace data, understand relationships, and see how the system fits together.
+> 
+> ## Make it yours
+> 
+> Experience changes the support you get, not your ownership of decisions:
+> 
+> | Level | Teaching approach |
+> | --- | --- |
+> | Beginner | Explain unfamiliar pieces, use diagrams, ask smaller reasoning questions. |
+> | Intermediate | Less introductory context; explore interactions and tradeoffs. |
+> | Advanced | Probe difficult constraints, failure modes, and design assumptions. |
+> 
+> Everyone reasons first. Claude adapts to what you demonstrate and how familiar you
+> are with the stack. Checkpoint frequency—Light, Normal, or Frequent—is separate.
+> 
+> - “Use fewer checkpoints.”
+> - “Focus on backend architecture.”
+> - “Use multiple-choice questions.”
+> - “Just implement this one.”
+> - “Pause learning.” Resume with `/vibe-wise:learn`.
+> 
+> Preferences, learning notes, and a project map live in `.vibe-wise/` in your project. Learning mode resumes in future sessions and after compaction. Add `.vibe-wise/` to your `.gitignore` to keep your notes out of Git; the plugin won't change it silently.
+> 
+> No extra account, backend, or telemetry. Saved notes are included in Claude's context, so your normal Claude Code data settings still apply.
+> 
+> To start learning this project from scratch, run `/vibe-wise:reset`. It shows the
+> project and asks **Cancel / Reset learning**. After confirmation, it backs up your
+> profile, progress, and project map inside the notes directory's `backups/` folder,
+> then restarts onboarding. Source code and other projects stay untouched. To change
+> your experience level or preferences, just tell Claude; no reset is needed.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/feder-cr/dots)
+[GitHub](https://github.com/nykooi1/vibe-wise)
 
 ## 相關收錄
 
@@ -253,7 +391,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "feder-cr--dots"
+> WHERE category = "Other" AND file.name != "nykooi1--vibe-wise"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +400,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "feder-cr--dots" AND status != "archived"
+> WHERE language = "Python" AND file.name != "nykooi1--vibe-wise" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +409,18 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "feder-cr--dots"
+> WHERE week = "2026-W41" AND file.name != "nykooi1--vibe-wise"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/nykooi1--vibe-wise");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "feder-cr--dots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "nykooi1--vibe-wise" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +436,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "feder-cr" AND file.name != "feder-cr--dots"
+> WHERE owner = "nykooi1" AND file.name != "nykooi1--vibe-wise"
 > SORT stars DESC
 > ```
 
@@ -306,7 +444,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/nykooi1--vibe-wise");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +461,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/nykooi1--vibe-wise");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +494,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/nykooi1--vibe-wise");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +518,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/nykooi1--vibe-wise");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +555,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/nykooi1--vibe-wise");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +638,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-01** — 首次收錄
+> **2026-10-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,9 +654,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-06|2026-10-06]] — 再次上榜，2.6k stars
-- [[2026-10-05|2026-10-05]] — 再次上榜，2.6k stars
-- [[2026-10-04|2026-10-04]] — 再次上榜，2.6k stars
-- [[2026-10-03|2026-10-03]] — 再次上榜，2.5k stars
-- [[2026-10-02|2026-10-02]] — 再次上榜，2.4k stars
-- [[2026-10-01|2026-10-01]] — 首次收錄，2.0k stars
+- [[2026-10-06|2026-10-06]] — 首次收錄，1.9k stars

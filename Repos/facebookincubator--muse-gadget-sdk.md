@@ -7,10 +7,10 @@ language: C
 license: Apache-2.0
 description: "Open source SDK to build Muse gadgets"
 homepage: "gadgets.muse.ai"
-stars: 1265
-stars_per_day: 633
-forks: 234
-open_issues: 40
+stars: 1465
+stars_per_day: 488
+forks: 284
+open_issues: 57
 created: 2026-10-02
 pushed_at: 2026-10-05
 first_seen: 2026-10-05
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-08"
+appearances: 2
+next_review: "2026-10-09"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 18
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-05"
-star_history: "2026-10-05:1265"
+star_history: "2026-10-05:1265,2026-10-06:1465"
 tags:
   - github
   - "category/other"
@@ -517,4 +517,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-06|2026-10-06]] — 再次上榜，1.5k stars
 - [[2026-10-05|2026-10-05]] — 首次收錄，1.3k stars

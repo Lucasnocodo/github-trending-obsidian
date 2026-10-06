@@ -1,20 +1,20 @@
 ---
-repo: feder-cr/dots
-url: https://github.com/feder-cr/dots
-owner: feder-cr
+repo: kargulstudio/sales-crm
+url: https://github.com/kargulstudio/sales-crm
+owner: kargulstudio
 owner_type: User
-language: Python
+language: TypeScript
 license: MIT
-description: "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
+description: ""
 homepage: ""
-stars: 2621
-stars_per_day: 437
-forks: 438
-open_issues: 1
-created: 2026-09-29
-pushed_at: 2026-10-03
-first_seen: 2026-10-01
-week: "2026-W40"
+stars: 1508
+stars_per_day: 1508
+forks: 315
+open_issues: 5
+created: 2026-10-04
+pushed_at: 2026-10-06
+first_seen: 2026-10-06
+week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
@@ -25,44 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-01
+last_reviewed: 2026-10-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-10-09"
-contributor_count: 1
+contributor_count: 2
 engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 10
-readme_length: 2340
+issue_close_rate: 0
+repo_size_kb: 1476
+readme_length: 2324
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-01"
-star_history: "2026-10-01:1954,2026-10-02:2403,2026-10-03:2546,2026-10-04:2580,2026-10-05:2606,2026-10-06:2621"
+ring_history: "assess@2026-10-06"
+star_history: "2026-10-06:1508"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_agent"
-  - "topic/ai_agents"
-  - "topic/ai_browser"
-  - "topic/anti_detect_browser"
-  - "topic/browser_agent"
+  - "lang/typescript"
 aliases:
-  - "dots"
-  - "feder-cr/dots"
+  - "sales-crm"
+  - "kargulstudio/sales-crm"
 ---
 
-# dots
+# sales-crm
 
-**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Python · MIT
+**1.5k** stars · **1.5k** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/feder-cr--dots");
+const me = dv.page("Repos/kargulstudio--sales-crm");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` `dots` `firefox` `llm-agent` `mcp` `open-source-alternative` `openai` `openai-dots` `openrouter` `playwright` `stealth-browser` `web-agent` `web-automation`
-
 > [!summary] 一句話摘要
-> Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+> No description
 
 ## 專案簡介
 
-Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/kargulstudio--sales-crm");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +116,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/kargulstudio--sales-crm");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,103 +140,92 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 321 |
-| Open Issues | 0 |
-| 最後推送 | 2026-09-29 |
-| 建立日期 | 2026-09-29 |
-| Repo 大小 | 10 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/feder-cr/dots) |
-| Topics | `ai-agent` `ai-agents` `ai-browser` `anti-detect-browser` `browser-agent` `browser-automation` `chatgpt` `dotfiles` |
+| Forks | 315 |
+| Open Issues | 5 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-10-06 |
+| 建立日期 | 2026-10-04 |
+| Repo 大小 | 1.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kargulstudio/sales-crm) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@rive-app/canvas` `@rive-app/react-canvas` `class-variance-authority` `clsx` `cmdk` `cn` `lottie-react` `motion` `next` `photoswipe` `radix-ui` `react` `react-dom` `react-use-measure` `swiper`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "Shell" : 42
+>     "TypeScript" : 89
+>     "JavaScript" : 6
+>     "CSS" : 3
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@feder-cr](https://github.com/feder-cr) | 4 |
+> | [@vipulkumar-dev](https://github.com/vipulkumar-dev) | 19 |
+> | [@kargulstudio](https://github.com/kargulstudio) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-09-29）
-> **活躍天數** 1 天 · **最新 commit** README: the title as the first element, so nothing pushes it down
+> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-10-06）
+> **活躍天數** 3 天 · **最新 commit** Add MIT License and update package.json with new project name and license
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#1](https://github.com/kargulstudio/sales-crm/issues/1) | CONVENTIONS.md is missing | 3 | 2 |
+> | [#2](https://github.com/kargulstudio/sales-crm/issues/2) | Real Database Integration | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> dots
+> # Kargul Starter
 > 
-> Every AI agent is a model and a browser.You can swap the model with one flag. The browser is what the website sees.
+> Next.js 16 + React 19 + Tailwind CSS 4 boilerplate. Read `CONVENTIONS.md` before writing any component, section, or page — it is the whole spec for how this repo is built.
 > 
-> ---
-> 
-> Windows, in PowerShell:
-> 
-> ```powershell
-> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-> $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
-> ```
-> 
-> Linux:
+> ## Getting started
 > 
 > ```bash
-> curl -LsSf https://astral.sh/uv/install.sh | sh
-> source $HOME/.local/bin/env
-> uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key sk-or-...
+> npm install
+> npm run dev
 > ```
 > 
-> Then open **http://127.0.0.1:8765**. The conversation on the left, the browser on the right, live.
+> Open [http://localhost:3000](http://localhost:3000).
 > 
-> ## It all comes down to the browser
+> | Script                 | What it does                                                       |
+> | ---------------------- | ------------------------------------------------------------------ |
+> | `npm run dev`          | Start the dev server                                               |
+> | `npm run build`        | Production build                                                   |
+> | `npm run start`        | Serve the production build                                         |
+> | `npm run lint`         | ESLint                                                             |
+> | `npm run to:avif`      | Convert an image to AVIF and report its inline cost — rule 11      |
+> | `npm run extract:avif` | Pull the first frame of every `.webm` under `public/` as a poster  |
+> | `npm run frame:rive`   | Render a still from a `.riv` file for use as its poster            |
 > 
-> When a web agent fails, the model is rarely why. The page never loaded, a
-> challenge appeared, the login expired, the click did not land. All of that
-> happens in the browser, before the model gets to think.
+> ## First things to set on a new project
 > 
-> So dots is built around one:
+> 1. **`lib/seo.ts`** — `SITE_NAME`, `SITE_URL`, `SITE_DESCRIPTION`, `SITE_ROUTES`. Everything in `app/robots.ts`, `app/sitemap.ts`, `app/llms.txt/route.ts` and every page's metadata derives from these (rule 18). Set `NEXT_PUBLIC_SITE_URL` in the environment to override the URL per deploy.
+> 2. **`app/globals.css`** — match the `@layer base` type scale and the `--padding-section-*` tokens to the design before building anything (rules 1 and 3).
+> 3. **`app/opengraph-image.jpg`** — 1200×630, with an `opengraph-image.alt.txt` beside it.
+> 4. **Fonts** — `app/layout.tsx` ships Inter + a local Inter Display; swap them for the design's typeface.
 > 
-> - **A real Firefox engine, patched in C++.** The fingerprint is decided inside
->   the engine, not painted over with JavaScript that a page can inspect.
-> - **One identity per seed.** Screen, fonts, GPU, timezone and language agree
->   with each other, and `--seed` gives back the same person on every run.
-> - **Nothing for a page to find.** No WebDriver flag, no DevTools protocol, no
->   automation globals in the page.
-> - **A person's hands.** The pointer travels to what it clicks and keys are
->   pressed one at a time, so every event the page receives is a trusted one.
-> - **A browser that remembers.** `--profile-dir` keeps logins and cookies from
->   one run to the next.
-> - **Where it connects from is who it is.** With `--proxy`, the timezone and the
->   language follow the exit.
+> ## Docs
 > 
-> The model is any model on OpenRouter, and `--model` changes it.
-> 
-> ## What to ask it
-> 
-> > Go to ``. One way, Milan to Lisbon, economy, one adult. Check
-> > every date from the 12th to the 16th of next month and read the cheapest fare
-> > for each day. If a date has no availability, say so. Do not guess a number.
-> 
-> ## The same browser, in your own assistant
-> 
-> Claude Code, Codex, Gemini CLI or any MCP client:
-> [invisible_playwright_mcp](https://github.com/feder-cr/invisible_playwright_mcp)
-> gives them this browser as a server. `dots` is its interface, and `dots --help`
-> lists every option.
-> 
-> ---
-> 
-> Not affiliated with OpenAI. MIT licensed.
+> | File               | What's in it                                                        |
+> | ------------------ | ------------------------------------------------------------------- |
+> | `CONVENTIONS.md`   | The build rules. Read first.                                        |
+> | `AGENTS.md`        | Next.js version notes for agents                                    |
+> | `OPTIMIZATION.md`  | Why `Asset`'s Rive loading is gated behind LCP, with the measurements |
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/feder-cr/dots)
+[GitHub](https://github.com/kargulstudio/sales-crm)
 
 ## 相關收錄
 
@@ -253,7 +233,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "feder-cr--dots"
+> WHERE category = "Other" AND file.name != "kargulstudio--sales-crm"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +242,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "feder-cr--dots" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "kargulstudio--sales-crm" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +251,18 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "feder-cr--dots"
+> WHERE week = "2026-W41" AND file.name != "kargulstudio--sales-crm"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/kargulstudio--sales-crm");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "feder-cr--dots" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "kargulstudio--sales-crm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +278,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "feder-cr" AND file.name != "feder-cr--dots"
+> WHERE owner = "kargulstudio" AND file.name != "kargulstudio--sales-crm"
 > SORT stars DESC
 > ```
 
@@ -306,7 +286,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/kargulstudio--sales-crm");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +303,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/kargulstudio--sales-crm");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +336,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/kargulstudio--sales-crm");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +360,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/kargulstudio--sales-crm");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +397,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/feder-cr--dots");
+> const me = dv.page("Repos/kargulstudio--sales-crm");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +480,7 @@ Open-source dots for the web: an AI agent with its own browser, one that does no
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-01** — 首次收錄
+> **2026-10-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,9 +496,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-06|2026-10-06]] — 再次上榜，2.6k stars
-- [[2026-10-05|2026-10-05]] — 再次上榜，2.6k stars
-- [[2026-10-04|2026-10-04]] — 再次上榜，2.6k stars
-- [[2026-10-03|2026-10-03]] — 再次上榜，2.5k stars
-- [[2026-10-02|2026-10-02]] — 再次上榜，2.4k stars
-- [[2026-10-01|2026-10-01]] — 首次收錄，2.0k stars
+- [[2026-10-06|2026-10-06]] — 首次收錄，1.5k stars
