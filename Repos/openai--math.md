@@ -1,19 +1,19 @@
 ---
-repo: facebookincubator/muse-gadget-sdk
-url: https://github.com/facebookincubator/muse-gadget-sdk
-owner: facebookincubator
+repo: openai/math
+url: https://github.com/openai/math
+owner: openai
 owner_type: Organization
-language: C
+language: Lean
 license: Apache-2.0
-description: "Open source SDK to build Muse gadgets"
-homepage: "gadgets.muse.ai"
-stars: 1586
-stars_per_day: 397
-forks: 307
-open_issues: 64
-created: 2026-10-02
+description: ""
+homepage: ""
+stars: 4898
+stars_per_day: 4898
+forks: 445
+open_issues: 0
+created: 2026-10-06
 pushed_at: 2026-10-06
-first_seen: 2026-10-05
+first_seen: 2026-10-07
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
@@ -25,40 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-05
+last_reviewed: 2026-10-07
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-10-10"
-contributor_count: 5
-engagement: "medium"
-issue_close_rate: 18
-repo_size_kb: 3848
-readme_length: 2471
-bus_factor: 2
+contributor_count: 0
+engagement: "low"
+issue_close_rate: -1
+repo_size_kb: 798943
+readme_length: 4121
+bus_factor: 0
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-05"
-star_history: "2026-10-05:1265,2026-10-06:1465,2026-10-07:1586"
+ring_history: "assess@2026-10-07"
+star_history: "2026-10-07:4898"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/lean"
   - org
 aliases:
-  - "muse-gadget-sdk"
-  - "facebookincubator/muse-gadget-sdk"
+  - "math"
+  - "openai/math"
 ---
 
-# muse-gadget-sdk
+# math
 
-**1.3k** stars · **633** stars/天 · 建立 2 天前 · C · Apache-2.0
+**4.9k** stars · **4.9k** stars/天 · 建立 1 天前 · Lean · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+const me = dv.page("Repos/openai--math");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -74,17 +74,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> Open source SDK to build Muse gadgets
+> No description
 
 ## 專案簡介
 
-Open source SDK to build Muse gadgets
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/openai--math");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +119,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/openai--math");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,110 +143,82 @@ Open source SDK to build Muse gadgets
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 234 |
-| Open Issues | 40 |
-| Issue 解決率 | 18% (9 closed) |
-| 最後推送 | 2026-10-05 |
-| 建立日期 | 2026-10-02 |
-| 官方網站 | [Link](gadgets.muse.ai) |
-| Repo 大小 | 3.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/facebookincubator/muse-gadget-sdk) |
+| Forks | 445 |
+| Open Issues | 0 |
+| 最後推送 | 2026-10-06 |
+| 建立日期 | 2026-10-06 |
+| Repo 大小 | 780.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/openai/math) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C" : 89
->     "Python" : 6
->     "C++" : 4
+>     "Lean" : 92
+>     "TeX" : 8
 > ```
-
-> [!info]- 主要貢獻者
-> | 貢獻者 | Commits |
-> | --- | --- |
-> | [@ViSaReVe](https://github.com/ViSaReVe) | 5 |
-> | [@akshitkhokhani](https://github.com/akshitkhokhani) | 4 |
-> | [@anantn](https://github.com/anantn) | 2 |
-> | [@firasbouzazi](https://github.com/firasbouzazi) | 2 |
-> | [@timzenxia](https://github.com/timzenxia) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-03）
-> **活躍天數** 3 天 · **最新 commit** fix: keep unrelated chat replies out of device turns
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#11](https://github.com/facebookincubator/muse-gadget-sdk/issues/11) | Board support request: FoloToy AI Passport (ESP32-C3) | 3 | 1 |
-> | [#20](https://github.com/facebookincubator/muse-gadget-sdk/issues/20) | I would like to see a wake-word feature added—specifically,  | 2 | 0 |
-> | [#14](https://github.com/facebookincubator/muse-gadget-sdk/issues/14) | Plans for spoken replies on gadgets (Realtime Voice or a TTS | 1 | 3 |
-> | [#99](https://github.com/facebookincubator/muse-gadget-sdk/issues/99) | iPhone: Muse app doesn't discover community board (nRF Conne | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-10-06）
+> **活躍天數** 1 天 · **最新 commit** Initial commit
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Muse Gadgets
+> # Readme
 > 
->   
->     
->     
->   
+> This repository contains mathematical manuscripts and supporting proof artifacts produced by an internal OpenAI model. 
 > 
-> Muse gadgets are open source devices you build yourself. Program an
-> off-the-shelf ESP32 board or set up a Raspberry Pi with our device SDKs, then
-> connect Muse to your displays, buttons, sensors, actuators, and whatever else
-> you've got lying on your workbench.
+> As part of model development, we evaluate our models on open research problems. We expanded these evaluations after performance on our existing mathematical evaluations saturated. Some outputs build upon earlier results produced by the models.
 > 
-> We open sourced the SDKs and firmware here. It's built by hackers, for hackers,
-> just for fun. Side effects of tinkering may include bricked boards, voided
-> warranties, brownouts, or bankruptcies. Proceed at your own risk!
+> This collection includes results at different stages of verification. Not all have accompanying Lean formalizations. We will continue to update this repository with Lean formalizations as we obtain them. 
 > 
-> | | |
+> Some of the unformalized results could have issues. We will endeavor to fix any such issues quickly.
+> We are also exploring community-hosted repositories for these materials. 
+> 
+> ## Navigating the collection
+> 
+> The current catalogue contains 722 manuscripts organized into 372 families. A family groups related papers, which may include a principal result, companion arguments, consequences, or alternative proofs. Each family is classified by mathematical discipline.
+> 
+> - Start with the [overview](overview.pdf) for descriptions of the families.
+> - Use the [manuscript map](CONTENTS.md) to find individual papers and their supporting materials.
+> - The [`preprints/`](preprints/) directory contains PDFs, source files, and manuscript-specific citation and build instructions.
+> - The [Lean library](lean/README.md) and [formalization catalogue](lean/formalization.yaml) describe the available formal proofs, their associated papers, and verification configurations. See the [Comparator instructions](lean/ComparatorChallenges/README.md) for additional checking instructions. Many, but not all, of the manuscripts have been formalized.
+> 
+> ### Reasoning summaries
+> 
+> We are also releasing abridged summaries of the model's reasoning, covering the following results:
+> 
+> | Family | Subject |
 > |---|---|
-> | [**ESP32 Device SDK**](esp32) | Connect your ESP32 board to Muse through our open source SDK. Throw in a screen to show images, add audio in and out, or wire up other sensors. |
-> | [**Linux Device SDK**](linux) | Turn that spare Raspberry Pi or Linux box into a Muse gadget. Hack in your own commands to let Muse handle sysadmin chores or your Home Assistant setup. |
+> | 007 | [Ordinary two-point correlations of multiplicative functions](reasoning_traces/ordinary-two-point-correlations.pdf) |
+> | 017 | [The irrationality exponent of π](reasoning_traces/irrationality-exponent-of-pi.pdf) |
+> | 087 | [Symmetric and general Mahler conjectures](reasoning_traces/symmetric-and-general-mahler-conjectures.pdf) |
+> | 102 | [Ordinary NP-hardness at the basic semidefinite threshold](reasoning_traces/basic-semidefinite-threshold-np-hardness.pdf) |
+> | 159 | [Quasipolynomial bounds for arithmetic progressions](reasoning_traces/quasipolynomial-arithmetic-progressions.pdf) |
+> | 197 | [Kaplansky's direct-finiteness conjecture in characteristic two](reasoning_traces/kaplansky-direct-finiteness-characteristic-two.pdf) |
+> | 221 | [The Mézard–Parisi formula for diluted spin glasses](reasoning_traces/mezard-parisi-formula.pdf) |
+> | 271 | [Spontaneous magnetization in the quantum Heisenberg ferromagnet](reasoning_traces/spontaneous-magnetization-quantum-heisenberg-ferromagnet.pdf) |
+> | 287 | [Isomorphism of free group factors](reasoning_traces/free-group-factor-isomorphism.pdf) |
+> | 362 | [The three-dimensional relativistic Vlasov–Maxwell system](reasoning_traces/relativistic-vlasov-maxwell.pdf) |
 > 
-> Before you flash or pair a gadget, get an
-> [SDK token](https://gadgets.muse.ai/settings/sdk-tokens) and review the
-> [Gadget SDK Terms](https://gadgets.muse.ai/sdk-terms). Every gadget needs a
-> token to pair.
+> ## How the results were produced
 > 
-> ESP32 and Linux gadgets pair with the Muse app on iOS and Android, via
-> Settings > Devices. Turn on Developer mode there first, then look for devices
-> prefixed with "MuseGadget".
-> Each directory has a `README.md` to get started and an `AGENTS.md` for coding
-> agents like [Muse Code](https://developer.meta.com/ai/lp/muse-code/).
+> The vast majority of results were obtained with the same procedure using an unreleased internal OpenAI model. On average, each result used three hours of ChatGPT Pro thinking compute with that model. Over the course of the evaluation, the model was posed approximately 4,000 problems. Aggregating the output into result families and manuscripts and requiring an appropriate level of significance led to the catalog outlined above.
 > 
-> ## Community
+> Exceptions to this fixed procedure include work on a zero-free region for the Riemann zeta function and proof of the Hodge Conjecture for CM abelian varieties. Additionally, the writeup for the Re(s) > 11/12 zero-free region for the Riemann zeta function was human edited for readability. 
 > 
-> Meet other hackers who are building and customizing Muse gadgets in our
-> community [Discord](https://discord.gg/3bhjCkZdd6). Get inspired, support each
-> other, and share what you make.
+> ## Versions and citations
 > 
-> ## License
+> We will preserve the public release history of this collection. Corrections and revisions will be recorded as new versions, with previously released versions remaining accessible. 
 > 
-> Muse Gadgets is licensed under the Apache License, Version 2.0, found in
-> [`LICENSE`](LICENSE), except for these third-party files, which keep their
-> upstream licenses:
-> 
-> | Path | Upstream | License |
-> |---|---|---|
-> | [`esp32/components/minimp3/include/minimp3.h`](esp32/components/minimp3) | [lieff/minimp3](https://github.com/lieff/minimp3) | CC0-1.0, see [`LICENSE`](esp32/components/minimp3/LICENSE) |
-> | [`esp32/main/pixel_font.c`](esp32/main/pixel_font.c) | Adafruit GFX `glcdfont.c` | BSD-2-Clause, in the file header |
-> 
-> Dependencies fetched at build time are under their own licenses: ESP-IDF
-> components (into `esp32/managed_components/`), and the simulator's LVGL and
-> SDL (listed in [`esp32/simulator/THIRD_PARTY.md`](esp32/simulator/THIRD_PARTY.md)).
-> 
-> The Apache License does not cover the [Jollybot avatar](esp32/avatar).
+> To cite the individual manuscript, use the BibTeX block in its directory.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/facebookincubator/muse-gadget-sdk) · [官方網站](gadgets.muse.ai)
+[GitHub](https://github.com/openai/math)
 
 ## 相關收錄
 
@@ -254,7 +226,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE category = "Other" AND file.name != "openai--math"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -263,7 +235,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "facebookincubator--muse-gadget-sdk" AND status != "archived"
+> WHERE language = "Lean" AND file.name != "openai--math" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -272,18 +244,18 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE week = "2026-W41" AND file.name != "openai--math"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/openai--math");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "facebookincubator--muse-gadget-sdk" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "openai--math" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -299,7 +271,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "facebookincubator" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE owner = "openai" AND file.name != "openai--math"
 > SORT stars DESC
 > ```
 
@@ -307,7 +279,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/openai--math");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -324,7 +296,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/openai--math");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -357,7 +329,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/openai--math");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -381,7 +353,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/openai--math");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -418,7 +390,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/openai--math");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -501,7 +473,7 @@ Open source SDK to build Muse gadgets
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-05** — 首次收錄
+> **2026-10-07** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -517,6 +489,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.6k stars
-- [[2026-10-06|2026-10-06]] — 再次上榜，1.5k stars
-- [[2026-10-05|2026-10-05]] — 首次收錄，1.3k stars
+- [[2026-10-07|2026-10-07]] — 首次收錄，4.9k stars

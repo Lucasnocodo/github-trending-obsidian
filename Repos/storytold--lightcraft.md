@@ -1,64 +1,69 @@
 ---
-repo: facebookincubator/muse-gadget-sdk
-url: https://github.com/facebookincubator/muse-gadget-sdk
-owner: facebookincubator
+repo: storytold/lightcraft
+url: https://github.com/storytold/lightcraft
+owner: storytold
 owner_type: Organization
-language: C
+language: Rust
 license: Apache-2.0
-description: "Open source SDK to build Muse gadgets"
-homepage: "gadgets.muse.ai"
-stars: 1586
-stars_per_day: 397
-forks: 307
-open_issues: 64
-created: 2026-10-02
+description: "An open-source, clean-room reimplementation of Adobe Lightroom in pure Rust."
+homepage: "https://getartcraft.com/apps/lightcraft"
+stars: 1575
+stars_per_day: 263
+forks: 482
+open_issues: 40
+created: 2026-09-30
 pushed_at: 2026-10-06
-first_seen: 2026-10-05
+first_seen: 2026-10-07
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-05
+last_reviewed: 2026-10-07
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-10-10"
 contributor_count: 5
-engagement: "medium"
-issue_close_rate: 18
-repo_size_kb: 3848
-readme_length: 2471
-bus_factor: 2
-last_release_days: -1
-release_cadence: "never"
+engagement: "high"
+issue_close_rate: 57
+repo_size_kb: 29962
+readme_length: 9972
+bus_factor: 1
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-05"
-star_history: "2026-10-05:1265,2026-10-06:1465,2026-10-07:1586"
+ring_history: "assess@2026-10-07"
+star_history: "2026-10-07:1575"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/rust"
   - org
+  - "topic/art"
+  - "topic/lightroom"
+  - "topic/photography"
+  - "topic/raw"
+  - "topic/raw_editor"
 aliases:
-  - "muse-gadget-sdk"
-  - "facebookincubator/muse-gadget-sdk"
+  - "lightcraft"
+  - "storytold/lightcraft"
 ---
 
-# muse-gadget-sdk
+# lightcraft
 
-**1.3k** stars · **633** stars/天 · 建立 2 天前 · C · Apache-2.0
+**1.6k** stars · **263** stars/天 · 建立 6 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+const me = dv.page("Repos/storytold--lightcraft");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`ORG` `v0.2.1`
+
+`art` `lightroom` `photography` `raw` `raw-editor` `raw-processing` `rust`
 
 > [!summary] 一句話摘要
-> Open source SDK to build Muse gadgets
+> An open-source, clean-room reimplementation of Adobe Lightroom in pure Rust.
 
 ## 專案簡介
 
-Open source SDK to build Muse gadgets
+An open-source, clean-room reimplementation of Adobe Lightroom in pure Rust.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--lightcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +126,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--lightcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,110 +150,217 @@ Open source SDK to build Muse gadgets
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 234 |
+| Forks | 482 |
 | Open Issues | 40 |
-| Issue 解決率 | 18% (9 closed) |
-| 最後推送 | 2026-10-05 |
-| 建立日期 | 2026-10-02 |
-| 官方網站 | [Link](gadgets.muse.ai) |
-| Repo 大小 | 3.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/facebookincubator/muse-gadget-sdk) |
+| Issue 解決率 | 57% (52 closed) |
+| 最後推送 | 2026-10-06 |
+| 建立日期 | 2026-09-30 |
+| 官方網站 | [Link](https://getartcraft.com/apps/lightcraft) |
+| Repo 大小 | 29.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/storytold/lightcraft) |
+| Topics | `art` `lightroom` `photography` `raw` `raw-editor` `raw-processing` `rust` |
+
+> [!info]- 主要依賴
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `version` `edition` `license` `rust-version` `repository` `lightcraft-geom` `lightcraft-sysmem` `lightcraft-color` `lightcraft-raster` `lightcraft-tiff` `lightcraft-raw` `lightcraft-codecs` `lightcraft-meta`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C" : 89
->     "Python" : 6
->     "C++" : 4
+>     "Rust" : 98
+>     "WGSL" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ViSaReVe](https://github.com/ViSaReVe) | 5 |
-> | [@akshitkhokhani](https://github.com/akshitkhokhani) | 4 |
-> | [@anantn](https://github.com/anantn) | 2 |
-> | [@firasbouzazi](https://github.com/firasbouzazi) | 2 |
-> | [@timzenxia](https://github.com/timzenxia) | 2 |
+> | [@echelon](https://github.com/echelon) | 478 |
+> | [@storybored379](https://github.com/storybored379) | 6 |
+> | [@arata-1972](https://github.com/arata-1972) | 5 |
+> | [@leipsfur](https://github.com/leipsfur) | 1 |
+> | [@benlukka](https://github.com/benlukka) | 1 |
+
+**最新版本**：v0.2.1 — LightCraft v0.2.1 (2026-10-06)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * Persistence: a failed save fails the command (change kept in memory, queued, retried) by @echelon in https://github.com/storytold/lightcraft/pull/82
+> * Local: forget untouched browse records of folders not browsed for 30 days by @echelon in https://github.com/storytold/lightcraft/pull/83
+> * Issue #78: GPU export: respect device limits, fall back to CPU on GPU errors by @echelon in https://github.com/storytold/lightcraft/pull/84
+> * Issue #10: Raw: Nikon compressed NEF (lossless + lossy) by @echelon in https://github.com/storytold/lightcraft/pull/86
+> * Docs: honest parity assessment — where we stand, where we're going by @echelon in https://github.com/storytold/lightcraft/pull/87
+> * Issue #85: Raw: CR2 colour pattern from the file's CR2CFAPattern tag, not a constant by @echelon in https://github.com/storytold/lightcraft/pull/88
+> * Ignore /target-*/ build dirs by @echelon in https://github.com/storytold/lightcraft/pull/89
+> * docs: point agents to the shared test corpora by @echelon in https://github.com/storytold/lightcraft/pull/90
+> * FreeBSD: build and test the workspace in a FreeBSD VM by @echelon in https://github.com/storytold/lightcraft/pull/91
+> * FreeBSD CI: match the shared template by @echelon in https://github.com/storytold/lightcraft/pull/108
+> * Metadata: gracefully ignore invalid Unicode timezone offsets by @storybored379 in https://github.com/storytold/lightcraft/pull/111
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-03）
-> **活躍天數** 3 天 · **最新 commit** fix: keep unrelated chat replies out of device turns
+> [!abstract] 最近 10 次 commit（2026-10-06 ~ 2026-10-06）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #158 from storytold/fix/issue-148-rx100m3-green
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#11](https://github.com/facebookincubator/muse-gadget-sdk/issues/11) | Board support request: FoloToy AI Passport (ESP32-C3) | 3 | 1 |
-> | [#20](https://github.com/facebookincubator/muse-gadget-sdk/issues/20) | I would like to see a wake-word feature added—specifically,  | 2 | 0 |
-> | [#14](https://github.com/facebookincubator/muse-gadget-sdk/issues/14) | Plans for spoken replies on gadgets (Realtime Voice or a TTS | 1 | 3 |
-> | [#99](https://github.com/facebookincubator/muse-gadget-sdk/issues/99) | iPhone: Muse app doesn't discover community board (nRF Conne | 0 | 0 |
+> | [#74](https://github.com/storytold/lightcraft/issues/74) | Tablet editing `enhancement` `roadmap` | 1 | 3 |
+> | [#183](https://github.com/storytold/lightcraft/issues/183) | `app.export` `watermark` object: accepted keys and the unit  | 0 | 0 |
+> | [#182](https://github.com/storytold/lightcraft/issues/182) | MCP `select_photos` with a nonexistent photo id returns `sel | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Muse Gadgets
+> LightCraft
+> 
+> Your photos. Your pixels. Your machine.
+> 
+>   Photo library and raw development; an open-source, clean-room reimplementation of Adobe Lightroom, rebuilt in pure Rust.
+>   Native on macOS, Windows and Linux. In the browser via WebAssembly. Drivable end to end by AI agents over MCP.
 > 
 >   
->     
->     
+>   
+>   
+>   
 >   
 > 
-> Muse gadgets are open source devices you build yourself. Program an
-> off-the-shelf ESP32 board or set up a Raspberry Pi with our device SDKs, then
-> connect Muse to your displays, buttons, sensors, actuators, and whatever else
-> you've got lying on your workbench.
+>   
 > 
-> We open sourced the SDKs and firmware here. It's built by hackers, for hackers,
-> just for fun. Side effects of tinkering may include bricked boards, voided
-> warranties, brownouts, or bankruptcies. Proceed at your own risk!
+>   LightCraft on getartcraft.com ·
+>   ArtCraft ·
+>   All Crafting Apps
 > 
-> | | |
+>   
+>   
+>   Ansel Adams, "The Tetons and the Snake River" (1942). Public domain, U.S. National Archives. Developed in LightCraft.
+> 
+> > [!NOTE]
+> > **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
+> > games &mdash; if you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
+> 
+>   Editing ·
+>   Color grading ·
+>   Before &amp; after ·
+>   Masking ·
+>   Presets ·
+>   Library ·
+>   Agents &amp; MCP ·
+>   Performance ·
+>   Status ·
+>   Quick start ·
+>   Roadmap ·
+>   Crafting Apps
+> 
+> 
+> ## Quick start
+> 
+> ```sh
+> git clone https://github.com/storytold/lightcraft && cd lightcraft
+> cargo run --release -p lightcraft                       # opens your library (~/Pictures/LightCraft Library; a new one starts with demo photos)
+> cargo run --release -p lightcraft -- ~/Pictures/trip    # import your photos (folders are scanned, duplicates skipped)
+> cargo run --release -p lightcraft -- --memory           # a throwaway in-memory demo session (writes nothing)
+> cargo run --release -p lightcraft -- --control 7980     # with the automation channel
+> cargo xtask web --serve                                 # the same app in the browser: http://127.0.0.1:8080/
+> cargo run --release -p lightcraft-cli -- render photo.jpg -o out.jpg --set light.exposure=0.5
+> cargo xtask ci                                          # fmt, clippy, tests, layering, wasm checks
+> ```
+> 
+> **Japanese text** needs the shared font repo, an optional build input (official releases always include it):
+> 
+> ```sh
+> git clone https://github.com/storytold/craft-fonts ../craft-fonts
+> CRAFT_FONTS_DIR=../craft-fonts cargo run --release -p lightcraft
+> ```
+> 
+> Without it LightCraft builds and runs the same, but Japanese text has no glyphs. Fonts are never committed to this
+> repo; see [craftrules `standards/fonts.md`](https://github.com/storytold/craftrules/blob/main/standards/fonts.md).
+> 
+> The web build needs the `wasm32-unknown-unknown` target and the matching `wasm-bindgen` CLI
+> (`cargo xtask web` prints the exact install command); see [docs/web.md](docs/web.md).
+> 
+> **Keyboard:** G grid · D detail · E edit · C crop · M masking ·
+> Shift+P presets · \\ original · Y before/after · Z zoom ·
+> J clipping · ⌘Z undo · ⌘/ all shortcuts.
+> 
+> 
+> ## Feature status
+> 
+> LightCraft is young and moving fast. **Where we honestly stand** (details in the [roadmap](ROADMAP.md#where-we-stand)):
+> 
+> - **By feature count we're at ~79%** of Lightroom (core features 98%), tracked row by row in
+>   [docs/parity.md](docs/parity.md).
+> - **As a day-to-day Lightroom replacement we're nearer 60–70%.** It's great for JPEG/DNG and most Nikon / Sony /
+>   older-Canon raws on one machine.
+> - **The biggest gaps:**
+>   - **camera colour calibration:** raws other than DNG develop with a neutral colour matrix today, so colour is muted;
+>   - **CR3 and compressed Fujifilm / Olympus raws:** these open as embedded previews only;
+>   - **AI masks and denoise:** subject and sky selection are classical heuristics;
+>   - **HDR, video and the Classic Print / Book / Map modules.**
+> - **What's next:** see [where we're going](ROADMAP.md#where-were-going).
+> 
+> | Area | Status |
 > |---|---|
-> | [**ESP32 Device SDK**](esp32) | Connect your ESP32 board to Muse through our open source SDK. Throw in a screen to show images, add audio in and out, or wire up other sensors. |
-> | [**Linux Device SDK**](linux) | Turn that spare Raspberry Pi or Linux box into a Muse gadget. Hack in your own commands to let Muse handle sysadmin chores or your Home Assistant setup. |
+> | Library: albums, folders, smart albums, stacks (incl. auto-stack), virtual copies, ratings, flags, labels, filter bar, search, sort, grids, filmstrip | ✅ |
+> | Culling: Compare (synced zoom) and Survey views, auto-advance, instant previews | ✅ |
+> | Light, Color, Effects (vignette styles), Tone Curve (+ refine saturation, targeted adjustment), Color Mixer (+ targeted), Point Color, Color Grading, Calibration, B&W | ✅ |
+> | Masking: brush, linear, radial, luminance/colour range, add/subtract/intersect | ✅ (AI subject/sky use classical heuristics for now) |
+> | Crop, straighten tool + auto straighten, flip, rotate, aspect ratios, overlays | ✅ |
+> | Profiles (Color, Neutral, Vivid, Landscape, Portrait, Monochrome: our own looks), presets, versions, history, copy/paste/sync settings | ✅ |
+> | Camera colour: DNG files use their own matrices | ✅ · our own calibration for other raws ⬜ (top priority; neutral fallback today) |
+> | Native macOS menu bar (generated from the command registry), control channel + every widget addressable, headless UI snapshots | ✅ |
+> | RAW: DNG, CR2, ARW, NEF (uncompressed + lossless/lossy compressed), Fujifilm RAF (uncompressed, Bayer + X-Trans), Panasonic RW2, Pentax PEF, Olympus ORF (uncompressed); embedded previews for every format incl. CR3 | ✅ · CR3, compressed RAF/ORF decode ⬜ |
+> | Detail: sharpening, luminance + colour noise reduction | ✅ · AI Denoise, Super Resolution ⬜ |
+> | Remove / Heal / Clone spots (auto source), Visualize Spots, Red Eye and Pet Eye (auto pupil detection, catchlight) | ✅ · content-aware fill, spot pin editing 🚧 |
+> | Export: JPEG / PNG / TIFF / WebP / AVIF / DNG / original, sizing, file-size limit, output sharpening, naming templates, batch, metadata policy, text or image watermark | ✅ · HDR export ⬜ |
+> | Library persistence (crash-safe op log + snapshots, background compaction, failed saves reported), disk thumbnail cache | ✅ |
+> | Import: Add in place / Copy / Move, rename and folder templates, devices, duplicate detection, watched folders; Local folder browsing | ✅ |
+> | MCP server (headless or live app, persistent libraries), CLI, control channel | ✅ |
+> | XMP sidecars (read/write, auto-write), reading `crs:` develop settings, preset files (`.lcpreset`, XMP presets) | ✅ |
+> | Optics (distortion, vignetting, auto + manual CA, defringe, DNG-embedded lens corrections), Geometry (transforms, Constrain Crop), Upright (Auto/Level/Vertical/Full/Guided) | ✅ · camera lens profiles (our own) ⬜ |
+> | Photo Merge: HDR (auto-align, deghost), Panorama (spherical/cylindrical/perspective, boundary warp, auto crop), HDR Panorama → DNG | ✅ |
+> | GPU pipeline (wgpu compute, CPU-exact within 1/255), CPU fallback on device limits / errors | ✅ · WebGPU in the browser 🚧 |
+> | AI: segmentation masks, AI denoise, super resolution, faces; HDR editing; video | ⬜ (see [roadmap](ROADMAP.md#where-were-going)) |
+> | Web build (same UI in the browser via WASM): persistent library in OPFS/IndexedDB, Web Worker rendering, export downloads | ✅ · WebGPU, Safari/Firefox testing 🚧 |
 > 
-> Before you flash or pair a gadget, get an
-> [SDK token](https://gadgets.muse.ai/settings/sdk-tokens) and review the
-> [Gadget SDK Terms](https://gadgets.muse.ai/sdk-terms). Every gadget needs a
-> token to pair.
+> ✅ works today · 🚧 in progress · ⬜ not started
 > 
-> ESP32 and Linux gadgets pair with the Muse app on iOS and Android, via
-> Settings > Devices. Turn on Developer mode there first, then look for devices
-> prefixed with "MuseGadget".
-> Each directory has a `README.md` to get started and an `AGENTS.md` for coding
-> agents like [Muse Code](https://developer.meta.com/ai/lp/muse-code/).
 > 
-> ## Community
+> ## Edit like you mean it
 > 
-> Meet other hackers who are building and customizing Muse gadgets in our
-> community [Discord](https://discord.gg/3bhjCkZdd6). Get inspired, support each
-> other, and share what you make.
+> LightCraft is a complete darkroom in a single native app. Every adjustment is **non-destructive**, so your originals
+> are never touched. Every slider renders through a **scene-referred, wide-gamut, 32-bit float pipeline**: highlights
+> roll off like film, shadows open up without halos, and colour stays clean from capture to export.
 > 
-> ## License
 > 
-> Muse Gadgets is licensed under the Apache License, Version 2.0, found in
-> [`LICENSE`](LICENSE), except for these third-party files, which keep their
-> upstream licenses:
+> ### ☀️ Light
+> **Exposure, Contrast, Highlights, Shadows, Whites, Blacks**, with edge-aware local tone mapping (a guided filter on
+> log-luminance). Pulling −100 Highlights recovers a blown sky without the grey halos you'd get from a naive curve.
 > 
-> | Path | Upstream | License |
-> |---|---|---|
-> | [`esp32/components/minimp3/include/minimp3.h`](esp32/components/minimp3) | [lieff/minimp3](https://github.com/lieff/minimp3) | CC0-1.0, see [`LICENSE`](esp32/components/minimp3/LICENSE) |
-> | [`esp32/main/pixel_font.c`](esp32/main/pixel_font.c) | Adafruit GFX `glcdfont.c` | BSD-2-Clause, in the file header |
 > 
-> Dependencies fetched at build time are under their own licenses: ESP-IDF
-> components (into `esp32/managed_components/`), and the simulator's LVGL and
-> SDL (listed in [`esp32/simulator/THIRD_PARTY.md`](esp32/simulator/THIRD_PARTY.md)).
+> ### 🎨 Color
+> **White balance** by temperature and tint (Kelvin for raw, relative for JPEG) with presets, Auto and a
+> click-to-neutralise **eyedropper**. **Vibrance** that protects skin tones, **Saturation**, an 8-band **Color Mixer**
+> (hue / saturation / luminance) and 3-way **Color Grading** wheels with blending and balance. All of it is computed in
+> OkLCh, a modern perceptual colour space.
 > 
-> The Apache License does not cover the [Jollybot avatar](esp32/avatar).
+> 
+> ### ✨ Effects
+> **Texture** for fine detail, **Clarity** for mid-tone punch, **Dehaze** (dark-channel prior with guided refinement;
+> push it negative to add atmosphere), post-crop **Vignette** with highlight priority, roundness and feather, and
+> resolution-independent film **Grain** with size and roughness.
+> 
+> 
+> ### 📈 Tone Curve
+> Parametric region curve with movable splits **plus** point curves for RGB, Red, Green and Blue. Curves are monotone by
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/facebookincubator/muse-gadget-sdk) · [官方網站](gadgets.muse.ai)
+[GitHub](https://github.com/storytold/lightcraft) · [官方網站](https://getartcraft.com/apps/lightcraft)
 
 ## 相關收錄
 
@@ -254,7 +368,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE category = "Other" AND file.name != "storytold--lightcraft"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -263,7 +377,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "facebookincubator--muse-gadget-sdk" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "storytold--lightcraft" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -272,18 +386,18 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE week = "2026-W41" AND file.name != "storytold--lightcraft"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--lightcraft");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "facebookincubator--muse-gadget-sdk" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "storytold--lightcraft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -299,7 +413,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "facebookincubator" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE owner = "storytold" AND file.name != "storytold--lightcraft"
 > SORT stars DESC
 > ```
 
@@ -307,7 +421,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--lightcraft");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -324,7 +438,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--lightcraft");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -357,7 +471,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--lightcraft");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -381,7 +495,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--lightcraft");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -418,7 +532,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--lightcraft");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -501,7 +615,7 @@ Open source SDK to build Muse gadgets
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-05** — 首次收錄
+> **2026-10-07** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -517,6 +631,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.6k stars
-- [[2026-10-06|2026-10-06]] — 再次上榜，1.5k stars
-- [[2026-10-05|2026-10-05]] — 首次收錄，1.3k stars
+- [[2026-10-07|2026-10-07]] — 首次收錄，1.6k stars

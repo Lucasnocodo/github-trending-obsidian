@@ -1,64 +1,69 @@
 ---
-repo: facebookincubator/muse-gadget-sdk
-url: https://github.com/facebookincubator/muse-gadget-sdk
-owner: facebookincubator
+repo: storytold/printcraft
+url: https://github.com/storytold/printcraft
+owner: storytold
 owner_type: Organization
-language: C
+language: Rust
 license: Apache-2.0
-description: "Open source SDK to build Muse gadgets"
-homepage: "gadgets.muse.ai"
-stars: 1586
-stars_per_day: 397
-forks: 307
-open_issues: 64
-created: 2026-10-02
-pushed_at: 2026-10-06
-first_seen: 2026-10-05
+description: "An open-source, clean-room reimplementation of Adobe Acrobat built in pure Rust"
+homepage: "https://getartcraft.com/apps/printcraft"
+stars: 1410
+stars_per_day: 235
+forks: 486
+open_issues: 45
+created: 2026-09-30
+pushed_at: 2026-10-07
+first_seen: 2026-10-07
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-05
+last_reviewed: 2026-10-07
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-10-10"
 contributor_count: 5
-engagement: "medium"
-issue_close_rate: 18
-repo_size_kb: 3848
-readme_length: 2471
-bus_factor: 2
-last_release_days: -1
-release_cadence: "never"
+engagement: "high"
+issue_close_rate: 29
+repo_size_kb: 22391
+readme_length: 9856
+bus_factor: 1
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-05"
-star_history: "2026-10-05:1265,2026-10-06:1465,2026-10-07:1586"
+ring_history: "assess@2026-10-07"
+star_history: "2026-10-07:1410"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/rust"
   - org
+  - "topic/acrobat"
+  - "topic/acrobat_full"
+  - "topic/acrobat_pro"
+  - "topic/adobe"
+  - "topic/adobe_acrobat"
 aliases:
-  - "muse-gadget-sdk"
-  - "facebookincubator/muse-gadget-sdk"
+  - "printcraft"
+  - "storytold/printcraft"
 ---
 
-# muse-gadget-sdk
+# printcraft
 
-**1.3k** stars · **633** stars/天 · 建立 2 天前 · C · Apache-2.0
+**1.4k** stars · **235** stars/天 · 建立 6 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+const me = dv.page("Repos/storytold--printcraft");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`ORG` `v0.2.1`
+
+`acrobat` `acrobat-full` `acrobat-pro` `adobe` `adobe-acrobat` `document-processing` `documents` `pdf` `pdf-generation` `pdf-processing` `pdf-tools` `pdf-viewer` `rust`
 
 > [!summary] 一句話摘要
-> Open source SDK to build Muse gadgets
+> An open-source, clean-room reimplementation of Adobe Acrobat built in pure Rust
 
 ## 專案簡介
 
-Open source SDK to build Muse gadgets
+An open-source, clean-room reimplementation of Adobe Acrobat built in pure Rust
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--printcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +126,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--printcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,110 +150,280 @@ Open source SDK to build Muse gadgets
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 234 |
-| Open Issues | 40 |
-| Issue 解決率 | 18% (9 closed) |
-| 最後推送 | 2026-10-05 |
-| 建立日期 | 2026-10-02 |
-| 官方網站 | [Link](gadgets.muse.ai) |
-| Repo 大小 | 3.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/facebookincubator/muse-gadget-sdk) |
+| Forks | 486 |
+| Open Issues | 45 |
+| Issue 解決率 | 29% (18 closed) |
+| 最後推送 | 2026-10-07 |
+| 建立日期 | 2026-09-30 |
+| 官方網站 | [Link](https://getartcraft.com/apps/printcraft) |
+| Repo 大小 | 21.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/storytold/printcraft) |
+| Topics | `acrobat` `acrobat-full` `acrobat-pro` `adobe` `adobe-acrobat` `document-processing` `documents` `pdf` |
+
+> [!info]- 主要依賴
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `exclude` `default-members` `version` `edition` `license` `rust-version` `repository` `printcraft-geom` `printcraft-filters` `printcraft-cos` `printcraft-crypt` `printcraft-organize` `printcraft-annot`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C" : 89
->     "Python" : 6
->     "C++" : 4
+>     "Rust" : 97
+>     "HTML" : 2
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ViSaReVe](https://github.com/ViSaReVe) | 5 |
-> | [@akshitkhokhani](https://github.com/akshitkhokhani) | 4 |
-> | [@anantn](https://github.com/anantn) | 2 |
-> | [@firasbouzazi](https://github.com/firasbouzazi) | 2 |
-> | [@timzenxia](https://github.com/timzenxia) | 2 |
+> | [@echelon](https://github.com/echelon) | 249 |
+> | [@bflatastic](https://github.com/bflatastic) | 23 |
+> | [@storybored379](https://github.com/storybored379) | 8 |
+> | [@justinjohn0306](https://github.com/justinjohn0306) | 1 |
+> | [@midasdf](https://github.com/midasdf) | 1 |
+
+**最新版本**：v0.2.1 — PrintCraft v0.2.1 (2026-10-06)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * Updates: check only when asked (no check at start) by @echelon in https://github.com/storytold/printcraft/pull/38
+> * Docs: honest parity assessment, gap list and direction by @echelon in https://github.com/storytold/printcraft/pull/39
+> * Never crash: the fuzz job's eleven hangs finish (parser retries, inline images, Type 3 fan-out) by @echelon in https://github.com/storytold/printcraft/pull/41
+> * Fix text editing layout and preserve source PDF font styles by @justinjohn0306 in https://github.com/storytold/printcraft/pull/36
+> * docs: point agents to the shared test corpora by @echelon in https://github.com/storytold/printcraft/pull/44
+> * Never crash: JBIG2 images can't decode billions of pixels by @echelon in https://github.com/storytold/printcraft/pull/43
+> * FreeBSD: build and test the workspace in a FreeBSD VM by @echelon in https://github.com/storytold/printcraft/pull/45
+> * Never crash: Type 1 font programs can't hang or overflow the stack (skrifa 0.47) by @echelon in https://github.com/storytold/printcraft/pull/46
+> * FreeBSD: release tarball, packaging check and docs (builds on #45) by @echelon in https://github.com/storytold/printcraft/pull/42
+> * XFDF: gracefully ignore invalid Unicode annotation colours by @storybored379 in https://github.com/storytold/printcraft/pull/48
+> * Add persisted English/Japanese interface language by @midasdf in https://github.com/storytold/printcraft/pull/47
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-03）
-> **活躍天數** 3 天 · **最新 commit** fix: keep unrelated chat replies out of device turns
+> [!abstract] 最近 10 次 commit（2026-10-07 ~ 2026-10-07）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #122 from storytold/fix/107-windows-pdf-association
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#11](https://github.com/facebookincubator/muse-gadget-sdk/issues/11) | Board support request: FoloToy AI Passport (ESP32-C3) | 3 | 1 |
-> | [#20](https://github.com/facebookincubator/muse-gadget-sdk/issues/20) | I would like to see a wake-word feature added—specifically,  | 2 | 0 |
-> | [#14](https://github.com/facebookincubator/muse-gadget-sdk/issues/14) | Plans for spoken replies on gadgets (Realtime Voice or a TTS | 1 | 3 |
-> | [#99](https://github.com/facebookincubator/muse-gadget-sdk/issues/99) | iPhone: Muse app doesn't discover community board (nRF Conne | 0 | 0 |
+> | [#81](https://github.com/storytold/printcraft/issues/81) | add brew and scope support for more MacOS/Windows way instal | 2 | 0 |
+> | [#96](https://github.com/storytold/printcraft/issues/96) | Linux Wayland: default LowPower GPU preference causes startu | 1 | 0 |
+> | [#80](https://github.com/storytold/printcraft/issues/80) | MacOS - Move the "Menu" to Menu Bar | 1 | 0 |
+> | [#135](https://github.com/storytold/printcraft/issues/135) | fix(cli): commands panic when the stdout reader exits early | 0 | 0 |
+> | [#134](https://github.com/storytold/printcraft/issues/134) | fix(automation): document when doc_protect permission defaul | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Muse Gadgets
+> PrintCraft
+> 
+>   The PDF workbench; an open-source, clean-room reimplementation of Adobe Acrobat, rebuilt in pure Rust.
+>   Read, organize, combine, split and secure PDFs in a fast, native app, written in Rust from the ground up.
+>   macOS · Windows · Linux · FreeBSD · the web
 > 
 >   
->     
->     
+>   
+>   
 >   
 > 
-> Muse gadgets are open source devices you build yourself. Program an
-> off-the-shelf ESP32 board or set up a Raspberry Pi with our device SDKs, then
-> connect Muse to your displays, buttons, sensors, actuators, and whatever else
-> you've got lying on your workbench.
+>   
 > 
-> We open sourced the SDKs and firmware here. It's built by hackers, for hackers,
-> just for fun. Side effects of tinkering may include bricked boards, voided
-> warranties, brownouts, or bankruptcies. Proceed at your own risk!
+>   PrintCraft on getartcraft.com ·
+>   ArtCraft ·
+>   All Crafting Apps
 > 
-> | | |
-> |---|---|
-> | [**ESP32 Device SDK**](esp32) | Connect your ESP32 board to Muse through our open source SDK. Throw in a screen to show images, add audio in and out, or wire up other sensors. |
-> | [**Linux Device SDK**](linux) | Turn that spare Raspberry Pi or Linux box into a Muse gadget. Hack in your own commands to let Muse handle sysadmin chores or your Home Assistant setup. |
+>   
+>   
+>   The PrintCraft Showcase, a 13-page specimen PDF, open with the All tools panel and threaded comments.
 > 
-> Before you flash or pair a gadget, get an
-> [SDK token](https://gadgets.muse.ai/settings/sdk-tokens) and review the
-> [Gadget SDK Terms](https://gadgets.muse.ai/sdk-terms). Every gadget needs a
-> token to pair.
+> > [!NOTE]
+> > **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
+> > games &mdash; if you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
 > 
-> ESP32 and Linux gadgets pair with the Muse app on iOS and Android, via
-> Settings > Devices. Turn on Developer mode there first, then look for devices
-> prefixed with "MuseGadget".
-> Each directory has a `README.md` to get started and an `AGENTS.md` for coding
-> agents like [Muse Code](https://developer.meta.com/ai/lp/muse-code/).
+>   Highlights ·
+>   Read ·
+>   Find ·
+>   Organize ·
+>   Combine &amp; split ·
+>   Protect ·
+>   Forms &amp; layers ·
+>   Everywhere ·
+>   Agents ·
+>   How it's built ·
+>   Get started ·
+>   What's next ·
+>   Crafting Apps
+> 
+> ---
+> 
+> 
+> ## Highlights
+> 
 > 
 > ## Community
 > 
-> Meet other hackers who are building and customizing Muse gadgets in our
-> community [Discord](https://discord.gg/3bhjCkZdd6). Get inspired, support each
-> other, and share what you make.
+> PrintCraft is part of [ArtCraft](https://getartcraft.com). Come say hello, get help and follow development:
 > 
-> ## License
+> - **Discord: [discord.gg/artcraft](https://discord.gg/artcraft)**. This is the fastest way to get help and share feedback. The app has a Discord button in its title bar.
+> - **Web page:** [getartcraft.com/apps/printcraft](https://getartcraft.com/apps/printcraft)
+> - **Source:** [github.com/storytold/printcraft](https://github.com/storytold/printcraft)
 > 
-> Muse Gadgets is licensed under the Apache License, Version 2.0, found in
-> [`LICENSE`](LICENSE), except for these third-party files, which keep their
-> upstream licenses:
+> The ArtCraft name and logos in `docs/brand/` are trademarks of the ArtCraft Team and are not open source. They may be used only unmodified, and only as part of PrintCraft (see `docs/brand/LICENSE-brand.txt`). Forks and modified versions must remove them.
 > 
-> | Path | Upstream | License |
-> |---|---|---|
-> | [`esp32/components/minimp3/include/minimp3.h`](esp32/components/minimp3) | [lieff/minimp3](https://github.com/lieff/minimp3) | CC0-1.0, see [`LICENSE`](esp32/components/minimp3/LICENSE) |
-> | [`esp32/main/pixel_font.c`](esp32/main/pixel_font.c) | Adafruit GFX `glcdfont.c` | BSD-2-Clause, in the file header |
 > 
-> Dependencies fetched at build time are under their own licenses: ESP-IDF
-> components (into `esp32/managed_components/`), and the simulator's LVGL and
-> SDL (listed in [`esp32/simulator/THIRD_PARTY.md`](esp32/simulator/THIRD_PARTY.md)).
+> ### Faithful
+> Real-world typography: world scripts, vertical Japanese, colour emoji, gradients, soft masks and transparency. All of it renders the way the author intended.
 > 
-> The Apache License does not cover the [Jollybot avatar](esp32/avatar).
+> 
+> ### Fearless
+> Every save appends your changes and leaves the original bytes untouched. Writes are atomic, undo runs deep, and nothing is lost if you close by mistake.
+> 
+> 
+> ### Yours
+> No account, no telemetry, no cloud. It works offline and opens instantly. The engine, CLI and app are all open source.
+> 
+> ---
+> 
+> 
+> ## Read anything, beautifully
+> 
+> PrintCraft renders PDFs with care for the details that make a page feel right: kerning and ligatures, right-to-left and complex scripts, vertical CJK, colour emoji, shadings, blend modes, soft masks and optional content.
+> 
+>   
+>   
+>   Twelve writing systems on one page, plus vertical Japanese, at 125%.
+> 
+> - **Deep zoom stays sharp.** Large pages render in tiles, so text stays crisp at any magnification.
+> - **Built to survive bad files.** Every page renders in isolation and damaged documents are repaired. Across the 983-file pdf.js test corpus the result is 0 crashes.
+> - **Layouts for every task:** continuous, single page, two-up, view rotation, full screen and a distraction-free Read mode.
+> - **Light and dark themes**, both designed to be easy on the eyes for long sessions.
+> 
+> Two-up Read mode, ready for long reading
+> The dark theme, with the comments panel open
+> 
+> 
+> ## Find it, select it, copy it
+> 
+> Search the whole document as you type, step through matches with ⌘G, and select text that comes out in the right reading order. That holds for columns, right-to-left runs and CJK too.
+> 
+> 
+> ## Navigate long documents
+> 
+> Bookmarks, page thumbnails and the document's own page labels (i, ii, 1, 2…) keep you oriented in long documents.
+> 
+> Find as you type: match 10 of 16
+> Nested bookmarks with the document's own page labels
+> 
+> ---
+> 
+> 
+> ## Organize pages like cards on a table
+> 
+> Open **Organize pages** to see every page at once:
+> - **Select pages:** click, ⌘-click or ⇧-click.
+> - **Change them:** rotate, delete, insert blank pages, insert pages from another file, and move them earlier or later.
+> - **Undo anything:** ⌘Z, then save.
+> 
+>   
+>   
+>   Organize pages with three pages selected and the page tools in the toolbar above.
+> 
+> **Undo that goes the distance.** Each change is one step in a history you can walk backwards and forwards. The Edit menu names the step ("Undo Rotate pages"), and undo still works after you save.
+> 
+> **Saves you can trust:**
+> - *Incremental:* the original bytes stay byte-for-byte intact.
+> - *Atomic:* the file is written to a temporary copy, then swapped in.
+> - *Verified:* independently checked with qpdf.
+> 
+> Unsaved documents carry a dot on their tab, and closing or quitting asks before anything is lost. Changes are autosaved every minute. If PrintCraft ever quits unexpectedly, it offers to recover your work the next time it opens. Encrypted documents stay encrypted on disk.
+> 
+> Split document: one page per file makes 13 files.
+> 
+> 
+> ## Combine and split without losing a thing
+> 
+> **Combine files** merges any number of PDFs into one. Each file gets a bookmark, with its own bookmarks nested underneath.
+> 
+> **Extract** copies the pages you select into a new document. **Split** divides a document every *n* pages, or before the pages you choose.
+> 
+> Nothing quietly disappears along the way:
+> - links and named destinations are rewired to the copied pages;
+> - form fields stay interactive;
+> - layers keep their on/off defaults;
+> - attachments come along.
+> 
+> Every page of a combined document renders pixel-identical to its source.
+> 
+> ```sh
+> printcraft-cli combine report.pdf appendix.pdf --out combined.pdf
+> printcraft-cli extract report.pdf --pages 1,3,5 --out highlights.pdf
+> printcraft-cli split   report.pdf --every 10 --out-dir parts/
+> ```
+> 
+> ---
+> 
+> 
+> ## Open protected documents and respect their rules
+> 
+> PrintCraft implements the PDF standard security handler completely:
+> - every revision, from 40-bit RC4 to AES-256;
+> - user and owner passwords, including Unicode passwords normalised with SASLprep;
+> - crypt filters and attachment-only encryption.
+> 
+> Documents restricted by their author show a clear notice, and PrintCraft honours their permissions. Enter the owner password and the restrictions lift. Edits to encrypted documents are saved encrypted, under the same keys.
+> 
+> Document Properties, Description tab
+> 
+> **Document Properties** shows:
+> - the document's title, author, subject and keywords, which you can edit;
+> - the fonts it uses and whether each is embedded;
+> - PDF version, page size, tags, fields, layers and attachments;
+> - the full security picture: encryption method, which password opened it, and each permission.
+> 
+> 
+> ## Comments, forms, layers and attachments
+> 
+> Forms: every field with its current value, field highlighting, and checkboxes, radio buttons, lists and signatures drawn the way their author designed them.
+> Layers: switch optional content on and off and the page re-renders instantly. Comments appear as threaded conversations, and attachments can be opened or saved.
+> 
+> 
+> ## Every tool, one keystroke away
+> 
+> Press ⌘K to search every tool and command, or browse the **All tools** catalogue. Tools that are still in development are marked with the milestone that will ship them.
+> 
+> The ⌘K command palette
+> The home screen and the All tools catalogue
+> 
+> ---
+> 
+> 
+> ## Runs everywhere, stays yours
+> 
+> - **Native on macOS, Windows, Linux and FreeBSD**, and **in the browser** through WebAssembly, from the same Rust codebase. Windows builds come for x64, x86 and ARM64 (Windows on ARM, no emulation); every ARM64 change is tested on ARM64 hardware in CI.
+> - **Private by design.** Documents never leave your machine. There's no account, no telemetry and no cloud processing.
+> - **Engine first.** Parsing, rendering and editing live in reusable library crates. The interface is one swappable layer on top.
+> - **Scriptable.** The `printcraft-cli` tool (see [Built for agents, too](#built-for-agents-too)) covers inspecting, rendering, extracting text, editing, combining, extracting pages and splitting. Robustness sweeps run on the same engine as the app.
+> 
+> ```sh
+> printcraft-cli info  form.pdf                                  # structure as JSON
+> printcraft-cli text  paper.pdf --page 3                        # reading-order text
+> printcraft-cli edit  in.pdf --rotate 1,2:90 --delete 5 --title "Q3" --out out.pdf
+> ```
+> 
+> ---
+> 
+> 
+> ## Built for agents, too
+> 
+> Every engine feature is reach
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/facebookincubator/muse-gadget-sdk) · [官方網站](gadgets.muse.ai)
+[GitHub](https://github.com/storytold/printcraft) · [官方網站](https://getartcraft.com/apps/printcraft)
 
 ## 相關收錄
 
@@ -254,7 +431,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE category = "Other" AND file.name != "storytold--printcraft"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -263,7 +440,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "facebookincubator--muse-gadget-sdk" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "storytold--printcraft" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -272,18 +449,18 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE week = "2026-W41" AND file.name != "storytold--printcraft"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--printcraft");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "facebookincubator--muse-gadget-sdk" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "storytold--printcraft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -299,7 +476,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "facebookincubator" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE owner = "storytold" AND file.name != "storytold--printcraft"
 > SORT stars DESC
 > ```
 
@@ -307,7 +484,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--printcraft");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -324,7 +501,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--printcraft");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -357,7 +534,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--printcraft");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -381,7 +558,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--printcraft");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -418,7 +595,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--printcraft");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -501,7 +678,7 @@ Open source SDK to build Muse gadgets
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-05** — 首次收錄
+> **2026-10-07** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -517,6 +694,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.6k stars
-- [[2026-10-06|2026-10-06]] — 再次上榜，1.5k stars
-- [[2026-10-05|2026-10-05]] — 首次收錄，1.3k stars
+- [[2026-10-07|2026-10-07]] — 首次收錄，1.4k stars

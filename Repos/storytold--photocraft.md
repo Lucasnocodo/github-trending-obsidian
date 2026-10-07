@@ -7,12 +7,12 @@ language: Rust
 license: Apache-2.0
 description: "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust"
 homepage: "https://getartcraft.com/apps/photocraft"
-stars: 2293
-stars_per_day: 459
-forks: 239
-open_issues: 45
+stars: 9827
+stars_per_day: 1638
+forks: 1285
+open_issues: 158
 created: 2026-09-30
-pushed_at: 2026-10-06
+pushed_at: 2026-10-07
 first_seen: 2026-10-06
 week: "2026-W41"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-09"
+appearances: 2
+next_review: "2026-10-10"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 69
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-06"
-star_history: "2026-10-06:2293"
+star_history: "2026-10-06:2293,2026-10-07:9827"
 tags:
   - github
   - "category/other"
@@ -646,4 +646,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-07|2026-10-07]] — 再次上榜，9.8k stars
 - [[2026-10-06|2026-10-06]] — 首次收錄，2.3k stars

@@ -4537,10 +4537,10 @@
   },
   "rehan-remade/universal-modder": {
     "first_seen": "2026-10-02",
-    "last_seen": "2026-10-06",
-    "times_seen": 5,
+    "last_seen": "2026-10-07",
+    "times_seen": 6,
     "stars_first": 1662,
-    "stars_last": 3986
+    "stars_last": 4765
   },
   "yihui-dev/awesome-opus5-5-videos": {
     "first_seen": "2026-10-02",
@@ -4572,10 +4572,10 @@
   },
   "nanaism/yomiyasu": {
     "first_seen": "2026-10-04",
-    "last_seen": "2026-10-06",
-    "times_seen": 3,
+    "last_seen": "2026-10-07",
+    "times_seen": 4,
     "stars_first": 1342,
-    "stars_last": 1548
+    "stars_last": 1656
   },
   "edenfunf/reelmimic": {
     "first_seen": "2026-10-04",
@@ -4586,17 +4586,17 @@
   },
   "facebookincubator/muse-gadget-sdk": {
     "first_seen": "2026-10-05",
-    "last_seen": "2026-10-06",
-    "times_seen": 2,
+    "last_seen": "2026-10-07",
+    "times_seen": 3,
     "stars_first": 1265,
-    "stars_last": 1465
+    "stars_last": 1586
   },
   "QingYunA/answer-me-with-html": {
     "first_seen": "2026-10-05",
-    "last_seen": "2026-10-06",
-    "times_seen": 2,
+    "last_seen": "2026-10-07",
+    "times_seen": 3,
     "stars_first": 1169,
-    "stars_last": 1540
+    "stars_last": 1848
   },
   "omlahore/RemoveMacAI": {
     "first_seen": "2026-10-06",
@@ -4607,10 +4607,10 @@
   },
   "storytold/photocraft": {
     "first_seen": "2026-10-06",
-    "last_seen": "2026-10-06",
-    "times_seen": 1,
+    "last_seen": "2026-10-07",
+    "times_seen": 2,
     "stars_first": 2293,
-    "stars_last": 2293
+    "stars_last": 9827
   },
   "nykooi1/vibe-wise": {
     "first_seen": "2026-10-06",
@@ -4621,9 +4621,37 @@
   },
   "kargulstudio/sales-crm": {
     "first_seen": "2026-10-06",
-    "last_seen": "2026-10-06",
-    "times_seen": 1,
+    "last_seen": "2026-10-07",
+    "times_seen": 2,
     "stars_first": 1508,
-    "stars_last": 1508
+    "stars_last": 1597
+  },
+  "openai/math": {
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "stars_first": 4898,
+    "stars_last": 4898
+  },
+  "storytold/filmcraft": {
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "stars_first": 2024,
+    "stars_last": 2024
+  },
+  "storytold/lightcraft": {
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "stars_first": 1575,
+    "stars_last": 1575
+  },
+  "storytold/printcraft": {
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "stars_first": 1410,
+    "stars_last": 1410
   }
 }

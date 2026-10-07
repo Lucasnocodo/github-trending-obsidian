@@ -1,64 +1,69 @@
 ---
-repo: facebookincubator/muse-gadget-sdk
-url: https://github.com/facebookincubator/muse-gadget-sdk
-owner: facebookincubator
+repo: storytold/filmcraft
+url: https://github.com/storytold/filmcraft
+owner: storytold
 owner_type: Organization
-language: C
+language: Rust
 license: Apache-2.0
-description: "Open source SDK to build Muse gadgets"
-homepage: "gadgets.muse.ai"
-stars: 1586
-stars_per_day: 397
-forks: 307
-open_issues: 64
-created: 2026-10-02
+description: "An open-source, clean-room reimplementation of Adobe Premiere Pro built in pure Rust."
+homepage: "https://getartcraft.com/apps/filmcraft"
+stars: 2024
+stars_per_day: 337
+forks: 589
+open_issues: 68
+created: 2026-09-30
 pushed_at: 2026-10-06
-first_seen: 2026-10-05
+first_seen: 2026-10-07
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-05
+last_reviewed: 2026-10-07
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-10-10"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 18
-repo_size_kb: 3848
-readme_length: 2471
-bus_factor: 2
-last_release_days: -1
-release_cadence: "never"
+issue_close_rate: 1
+repo_size_kb: 22296
+readme_length: 10000
+bus_factor: 1
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-05"
-star_history: "2026-10-05:1265,2026-10-06:1465,2026-10-07:1586"
+ring_history: "assess@2026-10-07"
+star_history: "2026-10-07:2024"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/rust"
   - org
+  - "topic/adobe"
+  - "topic/art"
+  - "topic/rust"
+  - "topic/video"
+  - "topic/video_editing"
 aliases:
-  - "muse-gadget-sdk"
-  - "facebookincubator/muse-gadget-sdk"
+  - "filmcraft"
+  - "storytold/filmcraft"
 ---
 
-# muse-gadget-sdk
+# filmcraft
 
-**1.3k** stars · **633** stars/天 · 建立 2 天前 · C · Apache-2.0
+**2.0k** stars · **337** stars/天 · 建立 6 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+const me = dv.page("Repos/storytold--filmcraft");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`ORG` `v0.2.1`
+
+`adobe` `art` `rust` `video` `video-editing` `video-editor` `video-processing`
 
 > [!summary] 一句話摘要
-> Open source SDK to build Muse gadgets
+> An open-source, clean-room reimplementation of Adobe Premiere Pro built in pure Rust.
 
 ## 專案簡介
 
-Open source SDK to build Muse gadgets
+An open-source, clean-room reimplementation of Adobe Premiere Pro built in pure Rust.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--filmcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +126,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--filmcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,110 +150,189 @@ Open source SDK to build Muse gadgets
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 234 |
-| Open Issues | 40 |
-| Issue 解決率 | 18% (9 closed) |
-| 最後推送 | 2026-10-05 |
-| 建立日期 | 2026-10-02 |
-| 官方網站 | [Link](gadgets.muse.ai) |
-| Repo 大小 | 3.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/facebookincubator/muse-gadget-sdk) |
+| Forks | 589 |
+| Open Issues | 68 |
+| Issue 解決率 | 1% (1 closed) |
+| 最後推送 | 2026-10-06 |
+| 建立日期 | 2026-09-30 |
+| 官方網站 | [Link](https://getartcraft.com/apps/filmcraft) |
+| Repo 大小 | 21.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/storytold/filmcraft) |
+| Topics | `adobe` `art` `rust` `video` `video-editing` `video-editor` `video-processing` |
 
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "C" : 89
->     "Python" : 6
->     "C++" : 4
-> ```
+> [!info]- 主要依賴
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `default-members` `version` `edition` `license` `rust-version` `repository` `filmcraft-time` `filmcraft-geom` `filmcraft-color` `filmcraft-bitstream` `filmcraft-isobmff` `filmcraft-matroska` `filmcraft-mxf`
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ViSaReVe](https://github.com/ViSaReVe) | 5 |
-> | [@akshitkhokhani](https://github.com/akshitkhokhani) | 4 |
-> | [@anantn](https://github.com/anantn) | 2 |
-> | [@firasbouzazi](https://github.com/firasbouzazi) | 2 |
-> | [@timzenxia](https://github.com/timzenxia) | 2 |
+> | [@echelon](https://github.com/echelon) | 422 |
+> | [@punkhop](https://github.com/punkhop) | 17 |
+> | [@storybored379](https://github.com/storybored379) | 13 |
+> | [@justjohn12345](https://github.com/justjohn12345) | 5 |
+> | [@midasdf](https://github.com/midasdf) | 1 |
+
+**最新版本**：v0.2.1 — FilmCraft v0.2.1 (2026-10-06)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * GPU1: blend modes on the GPU compositor (#30) by @echelon in https://github.com/storytold/filmcraft/pull/32
+> * Docs: honest parity assessment (ROADMAP, README, agent docs) by @echelon in https://github.com/storytold/filmcraft/pull/34
+> * HW1: platform crate + VideoToolbox H.264/HEVC hardware decode (#30) by @echelon in https://github.com/storytold/filmcraft/pull/33
+> * docs: point agents to the shared test corpora by @echelon in https://github.com/storytold/filmcraft/pull/36
+> * GPU2: standard effects on the GPU compositor (#30) by @echelon in https://github.com/storytold/filmcraft/pull/35
+> * Captions: report invalid TTML timing parameters on import by @storybored379 in https://github.com/storytold/filmcraft/pull/39
+> * Export: same file on every machine (fixed mux interleave, H.264 slices by frame size) by @storybored379 in https://github.com/storytold/filmcraft/pull/19
+> * MCP: tool annotations, core tools, resources, export progress and cancellation by @storybored379 in https://github.com/storytold/filmcraft/pull/28
+> * Windows packaging: Start Menu/Add-Remove icon, no console window, correct description by @echelon in https://github.com/storytold/filmcraft/pull/61
+> * Never crash: filmcraft-export without expect()/unreachable!() by @echelon in https://github.com/storytold/filmcraft/pull/62
+> * Release: FilmCraft v0.2.1 by @echelon in https://github.com/storytold/filmcraft/pull/63
+> 
+> 
+> **Full Changelog**: https://github.com/storytold/filmcraft/compare/v0.2.0...v0.2.1
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-03）
-> **活躍天數** 3 天 · **最新 commit** fix: keep unrelated chat replies out of device turns
+> [!abstract] 最近 10 次 commit（2026-10-06 ~ 2026-10-06）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #81 from storytold/pr/craft-fonts
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#11](https://github.com/facebookincubator/muse-gadget-sdk/issues/11) | Board support request: FoloToy AI Passport (ESP32-C3) | 3 | 1 |
-> | [#20](https://github.com/facebookincubator/muse-gadget-sdk/issues/20) | I would like to see a wake-word feature added—specifically,  | 2 | 0 |
-> | [#14](https://github.com/facebookincubator/muse-gadget-sdk/issues/14) | Plans for spoken replies on gadgets (Realtime Voice or a TTS | 1 | 3 |
-> | [#99](https://github.com/facebookincubator/muse-gadget-sdk/issues/99) | iPhone: Muse app doesn't discover community board (nRF Conne | 0 | 0 |
+> | [#30](https://github.com/storytold/filmcraft/issues/30) | Hardware acceleration: GPU/media-engine decode, GPU effects  `enhancement` | 2 | 4 |
+> | [#23](https://github.com/storytold/filmcraft/issues/23) | alsa audio error | 1 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Muse Gadgets
+> FilmCraft
+> 
+>   Video editing, color and sound; an open-source, clean-room reimplementation of Adobe Premiere Pro, rebuilt in pure Rust.
+> 
+>   An open-source, clean-room take on the Adobe Premiere Pro workflow: native on macOS, Windows and Linux, and in the browser via WebAssembly.
+>   By the ArtCraft team.
+> 
+>   
+>   
+>   
+>   
+> 
+>   
+> 
+>   FilmCraft on getartcraft.com ·
+>   ArtCraft ·
+>   All Crafting Apps
+> 
+>   
+> 
+> Apollo 11 - Tranquility: a three-minute documentary edit of NASA's 1969 launch, landing and moonwalk film, with subtitles from the mission transcript. Every frame in these screenshots comes from public-domain footage, decoded, composited and graded by FilmCraft's own code.
+> 
+> > [!NOTE]
+> > **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
+> > games &mdash; if you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
+> 
+>   Edit ·
+>   Color ·
+>   Effects ·
+>   Audio ·
+>   Titles ·
+>   Formats ·
+>   Export ·
+>   Interchange ·
+>   Agents ·
+>   Get started ·
+>   Docs ·
+>   Status
+> 
+> FilmCraft is a non-linear editor for people who know Premiere: the same panels, workspaces, tools and shortcuts, so your hands already know where everything is. Underneath, it is new from the bitstream up. The H.264, HEVC, ProRes and AAC codecs are our own, written in Rust from the public specifications. A GPU compositor works in linear light. Frame math runs on exact integer time, so edits never drift. And every action in the app is a command that an AI agent can drive as precisely as you can.
+> 
+> 
+> ## Edit
+> 
+>   
+> 
+> The Assembly workspace, cutting a trailer for Night of the Living Dead (1968) with an insert from Carnival of Souls (1962).
+> 
+> **A timeline you already know.** Source and Program monitors, bins with thumbnails, a multi-track timeline with patch and target buttons, sync locks and linked selection. The Editing, Assembly, Color, Effects and Audio workspaces are all there, and every panel docks wherever you want it.
+> 
+> - **Three-point editing.** Mark In and Out in the Source monitor, then insert (`,`) or overwrite (`.`) onto the patched tracks. Lift (`;`) and extract (`'`) take ranges back out.
+> - **Every trim.** Ripple, roll, slip, slide, rate stretch and razor tools. Trim mode selects edit points as ripple, roll or trim, nudges them a frame at a time (`⌥←` `⌥→`, ×5 with `⇧`), toggles the trim type with `⌃T` and extends them to the playhead with `E`. `Q` and `W` ripple-trim to the playhead. The **Trim Monitor** shows both sides of the edit, and **dynamic trimming** trims live while it plays: `L` forward, `J` back, `K` to stop and commit as one undo step.
+> - **Exact time.** Every edit is computed on integer ticks: 254,016,000,000 per second, which divides evenly by every common frame rate and sample rate. 23.976, 29.97 drop-frame and 59.94 are exact, not approximate.
+> - **The details pros rely on.** Markers with colours, names and durations; add edit (`⌘K`) on one or all tracks; nesting; copy, paste and paste insert; ripple delete and close gap; snapping; unlimited undo with a History panel.
+> - **Your keys.** A Keyboard Shortcuts editor (`⌥⌘K`) with a drawn keyboard, panel-specific shortcuts, conflict warnings and presets for FilmCraft, Premiere Pro, Final Cut Pro and Avid key layouts.
+> - **Never lose work.** Saves are atomic, auto-save keeps a rolling set of versions, and a crash-recovery journal written about a second after each edit brings back unsaved changes after a crash or power cut.
+> 
+>   
+> 
+> Up close: dissolves, an insert on V2, the score on A2, coloured markers, and the loudness meters on the right.
+> 
+> 
+> ## Color
+> 
+>   
+> 
+> The Color workspace on Charade (1963), with live scopes beside the Program monitor.
+> 
+> **A complete Lumetri-style grading panel**, in the order a colourist works:
+> 
+> - **Basic Correction:** temperature and tint, exposure, contrast, highlights, shadows, whites, blacks, saturation.
+> - **Creative:** eight built-in looks with an intensity control, plus faded film, sharpen and vibrance. The looks are colour transforms written in code, not LUT files.
+> - **Curves:** an RGB curve editor with monotone-cubic interpolation (no overshoot), and hue vs saturation, hue vs hue, hue vs luma, luma vs saturation and saturation vs saturation.
+> - **Color Wheels:** shadow, midtone and highlight wheels, each with its own lightness control.
+> - **HSL Secondary:** key a colour by hue, saturation and luma, view the key as a matte, and correct only what you selected.
+> - **Vignette:** amount, midpoint, roundness and feather.
 > 
 >   
 >     
+>       
+>       The Lumetri Color panel. Basic Correction, Color Wheels and every other section, each with its own on/off switch.
+>     
+>     
+>       
+>       Scopes that tell the truth. The waveform and vectorscope are computed from the graded frame. All grading happens in linear light, in 32-bit float.
 >     
 >   
 > 
-> Muse gadgets are open source devices you build yourself. Program an
-> off-the-shelf ESP32 board or set up a Raspberry Pi with our device SDKs, then
-> connect Muse to your displays, buttons, sensors, actuators, and whatever else
-> you've got lying on your workbench.
 > 
-> We open sourced the SDKs and firmware here. It's built by hackers, for hackers,
-> just for fun. Side effects of tinkering may include bricked boards, voided
-> warranties, brownouts, or bankruptcies. Proceed at your own risk!
+> ## Effects and motion
 > 
-> | | |
-> |---|---|
-> | [**ESP32 Device SDK**](esp32) | Connect your ESP32 board to Muse through our open source SDK. Throw in a screen to show images, add audio in and out, or wire up other sensors. |
-> | [**Linux Device SDK**](linux) | Turn that spare Raspberry Pi or Linux box into a Muse gadget. Hack in your own commands to let Muse handle sysadmin chores or your Home Assistant setup. |
+>   
 > 
-> Before you flash or pair a gadget, get an
-> [SDK token](https://gadgets.muse.ai/settings/sdk-tokens) and review the
-> [Gadget SDK Terms](https://gadgets.muse.ai/sdk-terms). Every gadget needs a
-> token to pair.
+> NASA's Earth Views from the ISS with a look applied, and the Effects browser open on the dissolves.
 > 
-> ESP32 and Linux gadgets pair with the Muse app on iOS and Android, via
-> Settings > Devices. Turn on Developer mode there first, then look for devices
-> prefixed with "MuseGadget".
-> Each directory has a `README.md` to get started and an `AGENTS.md` for coding
-> agents like [Muse Code](https://developer.meta.com/ai/lp/muse-code/).
+> - **Premiere 26's full Video Effects bin (93 effects in 16 folders), the Legacy bin and the obsolete effects old projects use, plus around 30 transitions.** Blurs (Bokeh, Focus, Compound), keys (Ultra Key, Track Matte), distortions (Corner Pin, Turbulent Displace, Warp Stabilizer), Lights & Glows, Immersive Video (VR) effects on equirectangular footage, Posterize Time, Echo and more. Cross dissolve, dip to black or white, film dissolve, wipes, irises, pushes, slides, zooms, page peel, cube spin and more.
+> - **Motion and opacity on every clip:** position, scale, rotation, anchor point and anti-flicker, plus 26 blend modes.
+> - **Keyframes like Premiere's:** linear, Bezier, auto and continuous Bezier, hold, ease in and ease out. Effect Controls shows a keyframe lane for every parameter, and each animated parameter opens into **value and velocity graphs** with draggable influence handles.
+> - **A GPU compositor** built on wgpu (Metal, Vulkan, DirectX 12, WebGPU). It samples YUV straight from the decoder with footprint supersampling and blends in linear light. A CPU path renders the same frames, and the two are tested against each other.
 > 
-> ## Community
+>   
 > 
-> Meet other hackers who are building and customizing Muse gadgets in our
-> community [Discord](https://discord.gg/3bhjCkZdd6). Get inspired, support each
-> other, and share what you make.
+> An eased push-in on the title card: the value graph, the velocity graph and the Bezier influence handle.
 > 
-> ## License
 > 
-> Muse Gadgets is licensed under the Apache License, Version 2.0, found in
-> [`LICENSE`](LICENSE), except for these third-party files, which keep their
-> upstream licenses:
+> ## Audio
 > 
-> | Path | Upstream | License |
-> |---|---|---|
-> | [`esp32/components/minimp3/include/minimp3.h`](esp32/components/minimp3) | [lieff/minimp3](https://github.com/lieff/minimp3) | CC0-1.0, see [`LICENSE`](esp32/components/minimp3/LICENSE) |
-> | [`esp32/main/pixel_font.c`](esp32/main/pixel_font.c) | Adafruit GFX `glcdfont.c` | BSD-2-Clause, in the file header |
+> - **Loudness meters to broadcast standards.** Momentary, short-term and integrated loudness and true peak to ITU-R BS.1770 and EBU R128, alongside the peak meters. Our integrated reading matches ffmpeg's `ebur128` filter to the tenth of a LU.
+> - **Clip effects on our own DSP library:** parametric EQ, high-pass, low-pass and band-pass filters, dynamics, a true-peak limiter, delay, reverb, DeNoise, DeHummer, invert and pitch shift. Parameters can be keyframed. Effects stay continuous across scrubbing, playback and export, with latency compensated.
+> - **Audio Track Mixer and Audio Clip Mixer:** faders, pan, mute, solo, five insert slots per track (pre- or post-fader), sends, submixes and a Mix track, all sample-accurate and latency-compensated. 24 tracks with three effects each mix about six times faster than real time on one core.
+> - **Automation like a console:** Read, Latch, Touch and Write modes recorded live from the mixer during playback, shown and edited as track keyframes on the timeline. Plus the Audio Gain dialog (set, adjust, normalize) and constant-power crossfades.
+> - **Audio-clock playback.** The sound card is the master clock, so picture follows sound and never the other way round.
 > 
-> Dependencies fetched at build time are under their own licenses: ESP-IDF
-> components (into `esp32/managed_components/`), and the simulator's LVGL and
-> SDL (listed in [`esp32/simulator/THIRD_PARTY.md`](esp32/simulator/THIRD_PARTY.md)).
 > 
-> The Apache License does not cover the [Jollybot avatar](esp32/avatar).
+> ## Titles and captions
+> 
+> - **A real text engine:** OpenType shaping with kerning and ligatures, bidirectional text, line breaking, tracking and leading, drawn in linear light and sharp at any scale or rotation.
+> - **Type, Shape and Pen tools** on the Program monitor: click to type, edit with a caret and selection, drag out rectangles, ellipses and paths. Graphic clips hold text and shape layers with fill, strokes, background and shadow, all keyframable, and edited in the Properties panel.
+> - **Captions:** caption tracks in Subtitle, CEA-608, CEA-708 and Teletext formats; import and export SRT, 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/facebookincubator/muse-gadget-sdk) · [官方網站](gadgets.muse.ai)
+[GitHub](https://github.com/storytold/filmcraft) · [官方網站](https://getartcraft.com/apps/filmcraft)
 
 ## 相關收錄
 
@@ -254,7 +340,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE category = "Other" AND file.name != "storytold--filmcraft"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -263,7 +349,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "facebookincubator--muse-gadget-sdk" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "storytold--filmcraft" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -272,18 +358,18 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE week = "2026-W41" AND file.name != "storytold--filmcraft"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--filmcraft");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "facebookincubator--muse-gadget-sdk" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "storytold--filmcraft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -299,7 +385,7 @@ Open source SDK to build Muse gadgets
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "facebookincubator" AND file.name != "facebookincubator--muse-gadget-sdk"
+> WHERE owner = "storytold" AND file.name != "storytold--filmcraft"
 > SORT stars DESC
 > ```
 
@@ -307,7 +393,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--filmcraft");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -324,7 +410,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--filmcraft");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -357,7 +443,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--filmcraft");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -381,7 +467,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--filmcraft");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -418,7 +504,7 @@ Open source SDK to build Muse gadgets
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/facebookincubator--muse-gadget-sdk");
+> const me = dv.page("Repos/storytold--filmcraft");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -501,7 +587,7 @@ Open source SDK to build Muse gadgets
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-05** — 首次收錄
+> **2026-10-07** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -517,6 +603,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.6k stars
-- [[2026-10-06|2026-10-06]] — 再次上榜，1.5k stars
-- [[2026-10-05|2026-10-05]] — 首次收錄，1.3k stars
+- [[2026-10-07|2026-10-07]] — 首次收錄，2.0k stars
