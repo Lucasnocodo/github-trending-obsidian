@@ -4586,17 +4586,17 @@
   },
   "facebookincubator/muse-gadget-sdk": {
     "first_seen": "2026-10-05",
-    "last_seen": "2026-10-07",
-    "times_seen": 3,
+    "last_seen": "2026-10-08",
+    "times_seen": 4,
     "stars_first": 1265,
-    "stars_last": 1586
+    "stars_last": 1702
   },
   "QingYunA/answer-me-with-html": {
     "first_seen": "2026-10-05",
-    "last_seen": "2026-10-07",
-    "times_seen": 3,
+    "last_seen": "2026-10-08",
+    "times_seen": 4,
     "stars_first": 1169,
-    "stars_last": 1848
+    "stars_last": 2189
   },
   "omlahore/RemoveMacAI": {
     "first_seen": "2026-10-06",
@@ -4621,17 +4621,17 @@
   },
   "kargulstudio/sales-crm": {
     "first_seen": "2026-10-06",
-    "last_seen": "2026-10-07",
-    "times_seen": 2,
+    "last_seen": "2026-10-08",
+    "times_seen": 3,
     "stars_first": 1508,
-    "stars_last": 1597
+    "stars_last": 1643
   },
   "openai/math": {
     "first_seen": "2026-10-07",
-    "last_seen": "2026-10-07",
-    "times_seen": 1,
+    "last_seen": "2026-10-08",
+    "times_seen": 2,
     "stars_first": 4898,
-    "stars_last": 4898
+    "stars_last": 10548
   },
   "storytold/filmcraft": {
     "first_seen": "2026-10-07",
@@ -4653,5 +4653,47 @@
     "times_seen": 1,
     "stars_first": 1410,
     "stars_last": 1410
+  },
+  "alchaincyf/huashu-art-motion": {
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "stars_first": 1972,
+    "stars_last": 1972
+  },
+  "storytold/effectcraft": {
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "stars_first": 1881,
+    "stars_last": 1881
+  },
+  "deadinside28/bloodborne_pc": {
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "stars_first": 1701,
+    "stars_last": 1701
+  },
+  "lucasmarkes/hairline": {
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "stars_first": 1174,
+    "stars_last": 1174
+  },
+  "storytold/designcraft": {
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "stars_first": 1109,
+    "stars_last": 1109
+  },
+  "mizorewww/x_gift_bot": {
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "stars_first": 1004,
+    "stars_last": 1004
   }
 }

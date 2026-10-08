@@ -1,63 +1,64 @@
 ---
-repo: kargulstudio/sales-crm
-url: https://github.com/kargulstudio/sales-crm
-owner: kargulstudio
-owner_type: User
-language: TypeScript
-license: MIT
+repo: storytold/designcraft
+url: https://github.com/storytold/designcraft
+owner: storytold
+owner_type: Organization
+language: Rust
+license: Apache-2.0
 description: ""
 homepage: ""
-stars: 1643
-stars_per_day: 548
-forks: 356
-open_issues: 12
-created: 2026-10-04
-pushed_at: 2026-10-06
-first_seen: 2026-10-06
+stars: 1109
+stars_per_day: 185
+forks: 602
+open_issues: 54
+created: 2026-10-01
+pushed_at: 2026-10-08
+first_seen: 2026-10-08
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-06
+last_reviewed: 2026-10-08
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-11"
-contributor_count: 2
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 1476
-readme_length: 2324
+appearances: 1
+next_review: "2026-10-15"
+contributor_count: 5
+engagement: "high"
+issue_close_rate: 10
+repo_size_kb: 12988
+readme_length: 9163
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-06"
-star_history: "2026-10-06:1508,2026-10-07:1597,2026-10-08:1643"
+ring_history: "assess@2026-10-08"
+star_history: "2026-10-08:1109"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/rust"
+  - org
 aliases:
-  - "sales-crm"
-  - "kargulstudio/sales-crm"
+  - "designcraft"
+  - "storytold/designcraft"
 ---
 
-# sales-crm
+# designcraft
 
-**1.5k** stars · **1.5k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.1k** stars · **185** stars/天 · 建立 6 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/kargulstudio--sales-crm");
+const me = dv.page("Repos/storytold--designcraft");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,6 +71,8 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG` `v0.2.1`
+
 > [!summary] 一句話摘要
 > No description
 
@@ -81,7 +84,7 @@ No description available.
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--designcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +119,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--designcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,92 +143,236 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 315 |
-| Open Issues | 5 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-10-06 |
-| 建立日期 | 2026-10-04 |
-| Repo 大小 | 1.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kargulstudio/sales-crm) |
+| Forks | 602 |
+| Open Issues | 54 |
+| Issue 解決率 | 10% (6 closed) |
+| 最後推送 | 2026-10-08 |
+| 建立日期 | 2026-10-01 |
+| Repo 大小 | 12.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/storytold/designcraft) |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@rive-app/canvas` `@rive-app/react-canvas` `class-variance-authority` `clsx` `cmdk` `cn` `lottie-react` `motion` `next` `photoswipe` `radix-ui` `react` `react-dom` `react-use-measure` `swiper`
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `default-members` `version` `edition` `license` `rust-version` `repository` `designcraft-geom` `designcraft-color` `designcraft-doc` `designcraft-fonts` `designcraft-compose` `designcraft-images` `designcraft-render`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 89
->     "JavaScript" : 6
->     "CSS" : 3
->     "Shell" : 1
+>     "Rust" : 97
+>     "Max" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vipulkumar-dev](https://github.com/vipulkumar-dev) | 19 |
-> | [@kargulstudio](https://github.com/kargulstudio) | 1 |
+> | [@echelon](https://github.com/echelon) | 317 |
+> | [@CameronGilroy](https://github.com/CameronGilroy) | 23 |
+> | [@aiongg](https://github.com/aiongg) | 19 |
+> | [@ShaoWenbinSaleh](https://github.com/ShaoWenbinSaleh) | 10 |
+> | [@japbcoelho](https://github.com/japbcoelho) | 9 |
+
+**最新版本**：v0.2.1 — DesignCraft v0.2.1 (2026-10-06)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * docs: point agents to the shared test corpora by @echelon in https://github.com/storytold/designcraft/pull/26
+> * FreeBSD: CI job and X11 drag-and-drop on every non-Apple Unix by @echelon in https://github.com/storytold/designcraft/pull/25
+> * FreeBSD CI: match the shared template by @echelon in https://github.com/storytold/designcraft/pull/27
+> * Bundle Japanese fallback fonts and localize vertical typography controls by @midasdf in https://github.com/storytold/designcraft/pull/28
+> * Text: keep selections on character boundaries by @storybored379 in https://github.com/storytold/designcraft/pull/31
+> * Windows packaging: Start Menu/Add-Remove icon, no console window, correct description by @echelon in https://github.com/storytold/designcraft/pull/46
+> * Release: DesignCraft v0.2.1 by @echelon in https://github.com/storytold/designcraft/pull/47
+> 
+> ## New Contributors
+> * @midasdf made their first contribution in https://github.com/storytold/designcraft/pull/28
+> 
+> **Full Changelog**: https://github.com/storytold/designcraft/compare/v0.2.0...v0.2.1
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-10-06）
-> **活躍天數** 3 天 · **最新 commit** Add MIT License and update package.json with new project name and license
+> [!abstract] 最近 10 次 commit（2026-10-08 ~ 2026-10-08）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #76 from CameronGilroy/pr/data-merge
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/kargulstudio/sales-crm/issues/1) | CONVENTIONS.md is missing | 3 | 2 |
-> | [#2](https://github.com/kargulstudio/sales-crm/issues/2) | Real Database Integration | 0 | 0 |
+> | [#23](https://github.com/storytold/designcraft/issues/23) | Issues when editing text (Text Frame behaviour) | 2 | 2 |
+> | [#21](https://github.com/storytold/designcraft/issues/21) | INDD file support missing | 2 | 2 |
+> | [#86](https://github.com/storytold/designcraft/issues/86) | Bug: Clicking Search Field for fonts doesn't work (MacOS) | 1 | 0 |
+> | [#64](https://github.com/storytold/designcraft/issues/64) | Windows installer is confusing | 1 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Kargul Starter
+> DesignCraft
 > 
-> Next.js 16 + React 19 + Tailwind CSS 4 boilerplate. Read `CONVENTIONS.md` before writing any component, section, or page — it is the whole spec for how this repo is built.
+>   Page layout and publishing; an open-source, clean-room reimplementation of Adobe InDesign, rebuilt in pure Rust.
 > 
-> ## Getting started
+>   A fast, open-source, clean-room take on the Adobe InDesign workflow. It runs natively on macOS,
+>   Windows and Linux, and in the browser via WebAssembly.
+>   By the ArtCraft team.
 > 
-> ```bash
-> npm install
-> npm run dev
+>   
+>   
+>   
+>   
+> 
+>   
+> 
+>   DesignCraft on getartcraft.com ·
+>   ArtCraft ·
+>   All Crafting Apps
+> 
+>   
+>   Quarterly, Spring Issue: threaded three-column body text, a wrapped pull quote and parent-page folios, all set by DesignCraft's own paragraph composer.
+> 
+> > [!NOTE]
+> > **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
+> > games &mdash; if you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
+> 
+>   The sample magazine ·
+>   Why DesignCraft ·
+>   Quick start ·
+>   Web ·
+>   Architecture ·
+>   The Crafting Apps ·
+>   License and credits
+> 
+> ## The sample magazine
+> 
+> Every page below was laid out by DesignCraft from code (`crates/engine/src/sample.rs`) and exported
+> by its own renderer. Try it yourself with `File → New → Sample Document`, or start the app with
+> `--sample`.
+> 
+> Cover. A full-bleed graphic frame, display type and an italic deck.
+> Styles. Kicker rule, headline, deck, caption and justified two-column body.
+> 
+> Threading, columns and text wrap. One story flows through three columns and around the pull quote.
+> Swatches. Named colors and a CMYK process swatch, laid out as a palette.
+> 
+> ## Why DesignCraft
+> 
+> - **Familiar.** InDesign's layout, tools, menus, panels and shortcuts: spreads and parent pages,
+>   frames and threaded stories, the Control panel, paragraph and character styles, swatches, text
+>   wrap and more. If you know InDesign, you already know how to use it.
+> - **Beautiful type.** A Knuth–Plass paragraph composer (plus single-line), dictionary hyphenation
+>   (the public-domain Moby word list plus our own trained patterns), word, letter and glyph-scaling
+>   justification, keeps, optical margin alignment, columns, baseline grid, tabs, rules and shading.
+>   Line breaks are identical on screen and in PDF.
+> - **Fast.** Multithreaded SIMD rendering (vello_cpu), copy-on-write documents with O(1) undo
+>   snapshots, and cached composition.
+> - **Open.** A documented native format, IDML import and export, PNG export, and PDF on the roadmap.
+>   No subscription, no licence server, no telemetry.
+> - **Agent-native.** Every menu item, tool gesture, panel control and dialog can be driven over a
+>   JSON control channel and an **MCP server**, so Claude and other agents can lay out and edit
+>   documents like a designer. See [`docs/control-protocol.md`](docs/control-protocol.md) and
+>   [`docs/mcp.md`](docs/mcp.md).
+> - **Everywhere.** One Rust codebase for desktop and the web.
+> 
+> ## Quick start
+> 
+> ```sh
+> cargo run --release -p designcraft                         # desktop app (start screen)
+> cargo run --release -p designcraft -- --sample             # open the sample magazine
+> cargo run --release -p designcraft -- --sample --control 7979   # + JSON control channel
+> cargo run --release -p designcraft-cli -- run --sample --all-pages out/       # headless: render every page to PNG
+> cargo run --release -p designcraft-cli -- commands         # list every command
+> cargo xtask ci                                             # fmt, clippy, tests, assets, layering, wasm
 > ```
 > 
-> Open [http://localhost:3000](http://localhost:3000).
+> Japanese text (UI and documents) uses fonts from
+> [storytold/craft-fonts](https://github.com/storytold/craft-fonts), an optional build input (font
+> files are never committed here; see craftrules
+> [`standards/fonts.md`](https://github.com/storytold/craftrules/blob/main/standards/fonts.md)):
 > 
-> | Script                 | What it does                                                       |
-> | ---------------------- | ------------------------------------------------------------------ |
-> | `npm run dev`          | Start the dev server                                               |
-> | `npm run build`        | Production build                                                   |
-> | `npm run start`        | Serve the production build                                         |
-> | `npm run lint`         | ESLint                                                             |
-> | `npm run to:avif`      | Convert an image to AVIF and report its inline cost — rule 11      |
-> | `npm run extract:avif` | Pull the first frame of every `.webm` under `public/` as a poster  |
-> | `npm run frame:rive`   | Render a still from a `.riv` file for use as its poster            |
+> ```sh
+> git clone https://github.com/storytold/craft-fonts ../craft-fonts
+> CRAFT_FONTS_DIR="$PWD/../craft-fonts" cargo run --release -p designcraft   # absolute path
+> ```
 > 
-> ## First things to set on a new project
+> Without it, Japanese falls back to the system's fonts (none on the web). Release builds always
+> include it.
 > 
-> 1. **`lib/seo.ts`** — `SITE_NAME`, `SITE_URL`, `SITE_DESCRIPTION`, `SITE_ROUTES`. Everything in `app/robots.ts`, `app/sitemap.ts`, `app/llms.txt/route.ts` and every page's metadata derives from these (rule 18). Set `NEXT_PUBLIC_SITE_URL` in the environment to override the URL per deploy.
-> 2. **`app/globals.css`** — match the `@layer base` type scale and the `--padding-section-*` tokens to the design before building anything (rules 1 and 3).
-> 3. **`app/opengraph-image.jpg`** — 1200×630, with an `opengraph-image.alt.txt` beside it.
-> 4. **Fonts** — `app/layout.tsx` ships Inter + a local Inter Display; swap them for the design's typeface.
+> To drive a running app, send JSON lines to `127.0.0.1:7979`. The protocol is described in
+> [`docs/control-protocol.md`](docs/control-protocol.md).
 > 
-> ## Docs
+> ### Web
 > 
-> | File               | What's in it                                                        |
-> | ------------------ | ------------------------------------------------------------------- |
-> | `CONVENTIONS.md`   | The build rules. Read first.                                        |
-> | `AGENTS.md`        | Next.js version notes for agents                                    |
-> | `OPTIMIZATION.md`  | Why `Asset`'s Rive loading is gated behind LCP, with the measurements |
+> ```sh
+> cd apps/designcraft-web && trunk build --release          # → dist/web (serve it with any static server)
+> cd apps/designcraft-web && trunk serve --release          # http://127.0.0.1:8767
+> ```
+> 
+> You need [trunk](https://trunkrs.dev) and the `wasm32-unknown-unknown` target. The same app runs
+> through eframe's web runner on WebGPU, falling back to WebGL2 (`?webgl` forces it; `?sample` opens
+> the sample magazine). Open and Place use the browser's file picker, and dropping files works too.
+> Save and Export download the file. The web build has no control channel.
+> 
+> ## Architecture
+> 
+> DesignCraft is an engine-first Cargo workspace with enforced layering (`cargo xtask layers`). The
+> egui frontend is a separate crate, so the UI can be swapped without touching the engine.
+> 
+> | Layer | Crates |
+> |---|---|
+> | L0 | `geom` (paths, units & measurement parsing, corner options) · `color` (CMYK/RGB/Lab, swatches, tints, gradients) |
+> | L1 | `doc` (spreads, pages, parents, layers, frames, stories, styles) · `fonts` (font DB, shaping, outlines) |
+> | L2 | `compose` (the text engine) |
+> | L3 | `render` (vello_cpu) |
+> | L4 | `tools` (pointer events → commands + overlays) |
+> | L5 | `engine` (session, history, command registry) |
+> | L6 | `ui-egui` (InDesign-style UI, control channel) |
+> | L7 | `apps/designcraft`, `apps/designcraft-cli`, `apps/designcraft-web` |
+> 
+> - **Status and milestones:** [ROADMAP.md](ROADMAP.md)
+> - **Contributor and agent rules** (clean-room, asset policy, quality gates): [`AGENTS.md`](AGENTS.md)
+> - **Bundled assets:** every one is listed with its licence in [`ASSETS.md`](ASSETS.md)
+> - **App icon and colour:** a calico cat in a polka-dot scarf on DesignCraft green `#7bb51c`; see [`assets/app-icon/`](assets/app-icon/README.md)
+> 
+> ## The Crafting Apps
+> 
+> DesignCraft is one of the **Crafting Apps**: free, open-source creative tools from the
+> [ArtCraft](https://getartcraft.com/) team, each written from scratch in Rust and each able to
+> stand on its own.
+> 
+> | | App | What it's for | Code | Learn more |
+> |:-:|---|---|---|---|
+> |  | **PhotoCraft** | Image editing: layers, masks, type and real PSD files | [GitHub](https://github.com/storytold/photocraft) | [Website](https://getartcraft.com/apps/photocraft) |
+> |  | **VectorCraft** | Vector illustration | [GitHub](https://github.com/storytold/vectorcraft) | [Website](https://getartcraft.com/apps/vectorcraft) |
+> |  | **FilmCraft** | Video editing, color and sound | [GitHub](https://github.com/storytold/filmcraft) | [Website](https://getartcraft.com/apps/filmcraft) |
+> |  | **LightCraft** | Photo library and raw development | [GitHub](https://github.com/storytold/lightcraft) | [Website](https://getartcraft.com/apps/lightcraft) |
+> |  | **PdfCraft** | Reading, organizing and protecting PDFs | [GitHub](https://github.com/storytold/pdfcraft) | [Website](https://getartcraft.com/apps/pdfcraft) |
+> |  | **EffectCraft** | Motion graphics and visual effects | [GitHub](https://github.com/storytold/effectcraft) | [Website](https://getartcraft.com/apps/effectcraft) |
+> |  | **DesignCraft** | **Page layout and publishing · you are here** | [GitHub](https://github.com/storytold/designcraft) | [Website](https://getartcraft.com/apps/designcraft) |
+> 
+> And [**ArtCraft**](https://getartcraft.com/) itself, our AI image and video studio for artists who want real control.
+> 
+>   
+> 
+> Come make things with us
+> 
+>   Our Discord is where artists of every kind hang out: people who paint, shoot, draw, cut film,
+>   set type, and people still figuring out what they like to make. Share what you're working on,
+>   ask for help, tell us what's broken, or tell us what you wish these tools could do.
+>   Whatever your medium and however long you've been at it, you're welcome here.
+> 
+>   discord.gg/artcraft ·
+>   getartcraft.com ·
+>   The Crafting Apps ·
+>   DesignCraft
+> 
+> ## License and credits
+> 
+> DesignCraft is dual-licensed under [MIT](LICENSE-MIT) or [Apache-2.0](LICENSE-APACHE), at your option.
+> Copyright (c) 2026 ArtCraft Team and the Des
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/kargulstudio/sales-crm)
+[GitHub](https://github.com/storytold/designcraft)
 
 ## 相關收錄
 
@@ -233,7 +380,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "kargulstudio--sales-crm"
+> WHERE category = "Other" AND file.name != "storytold--designcraft"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -242,7 +389,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "kargulstudio--sales-crm" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "storytold--designcraft" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -251,18 +398,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "kargulstudio--sales-crm"
+> WHERE week = "2026-W41" AND file.name != "storytold--designcraft"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--designcraft");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "kargulstudio--sales-crm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "storytold--designcraft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -278,7 +425,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "kargulstudio" AND file.name != "kargulstudio--sales-crm"
+> WHERE owner = "storytold" AND file.name != "storytold--designcraft"
 > SORT stars DESC
 > ```
 
@@ -286,7 +433,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--designcraft");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -303,7 +450,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--designcraft");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -336,7 +483,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--designcraft");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -360,7 +507,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--designcraft");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -397,7 +544,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--designcraft");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -480,7 +627,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-06** — 首次收錄
+> **2026-10-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -496,6 +643,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-08|2026-10-08]] — 再次上榜，1.6k stars
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.6k stars
-- [[2026-10-06|2026-10-06]] — 首次收錄，1.5k stars
+- [[2026-10-08|2026-10-08]] — 首次收錄，1.1k stars

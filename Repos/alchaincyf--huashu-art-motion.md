@@ -1,68 +1,63 @@
 ---
-repo: QingYunA/answer-me-with-html
-url: https://github.com/QingYunA/answer-me-with-html
-owner: QingYunA
+repo: alchaincyf/huashu-art-motion
+url: https://github.com/alchaincyf/huashu-art-motion
+owner: alchaincyf
 owner_type: User
 language: JavaScript
 license: MIT
-description: "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。"
+description: "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。"
 homepage: ""
-stars: 2189
-stars_per_day: 438
-forks: 148
-open_issues: 12
-created: 2026-10-02
+stars: 1972
+stars_per_day: 986
+forks: 217
+open_issues: 3
+created: 2026-10-06
 pushed_at: 2026-10-08
-first_seen: 2026-10-05
+first_seen: 2026-10-08
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: "v0.4.8"
+release_tag: "v1.0.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-05
+last_reviewed: 2026-10-08
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-10-11"
-contributor_count: 5
-engagement: "low"
-issue_close_rate: 50
-repo_size_kb: 21793
-readme_length: 9913
+contributor_count: 1
+engagement: "medium"
+issue_close_rate: 0
+repo_size_kb: 47646
+readme_length: 7162
 bus_factor: 1
-last_release_days: 0
+last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-05"
-star_history: "2026-10-05:1169,2026-10-06:1540,2026-10-07:1848,2026-10-08:2189"
+ring_history: "assess@2026-10-08"
+star_history: "2026-10-08:1972"
 tags:
   - github
   - "category/other"
   - "lang/javascript"
-  - "topic/agent_skill"
-  - "topic/ai_agent"
-  - "topic/claude_code"
-  - "topic/cli"
-  - "topic/diagram"
 aliases:
-  - "answer-me-with-html"
-  - "QingYunA/answer-me-with-html"
+  - "huashu-art-motion"
+  - "alchaincyf/huashu-art-motion"
 ---
 
-# answer-me-with-html
+# huashu-art-motion
 
-**1.2k** stars · **585** stars/天 · 建立 2 天前 · JavaScript · MIT
+**2.0k** stars · **986** stars/天 · 建立 2 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/QingYunA--answer-me-with-html");
+const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.4.8`
-
-`agent-skill` `ai-agent` `claude-code` `cli` `diagram` `explainer` `html` `llm` `ste100`
+`個人專案` `v1.0.0`
 
 > [!summary] 一句話摘要
-> Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。
+> 艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。
 
 ## 專案簡介
 
-Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。
+艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,251 +142,235 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 81 |
-| Open Issues | 12 |
-| Issue 解決率 | 50% (12 closed) |
-| 最後推送 | 2026-10-05 |
-| 建立日期 | 2026-10-02 |
-| Repo 大小 | 21.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/QingYunA/answer-me-with-html) |
-| Topics | `agent-skill` `ai-agent` `claude-code` `cli` `diagram` `explainer` `html` `llm` |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@dagrejs/dagre` `marked` `esbuild` `yaml`
+| Forks | 217 |
+| Open Issues | 3 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-10-08 |
+| 建立日期 | 2026-10-06 |
+| Repo 大小 | 46.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alchaincyf/huashu-art-motion) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 96
->     "CSS" : 4
+>     "JavaScript" : 93
+>     "Python" : 7
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@QingYunA](https://github.com/QingYunA) | 56 |
-> | [@xianull](https://github.com/xianull) | 4 |
-> | [@zhaidewei](https://github.com/zhaidewei) | 3 |
-> | [@takaburi](https://github.com/takaburi) | 2 |
-> | [@21tesla](https://github.com/21tesla) | 1 |
+> | [@alchaincyf](https://github.com/alchaincyf) | 3 |
 
-**最新版本**：v0.4.8 (2026-10-05)
+**最新版本**：v1.0.0 — huashu-art-motion v1.0.0 (2026-10-06)
 
 > [!info]- Release Notes
-> ## Highlights
+> huashu-art-motion首次公开发布。
 > 
-> - **English throughout the repository** (#46, spec #39). CLI output, errors, help, notices, writing-check messages, the skill instructions, slash commands, comments and test names are now English. Pages and the video player still switch between Chinese, English and Japanese by the draft's language, and the agent still replies in your language. A language-check test keeps it that way.
-> - **`--voice local`** (#37, thanks @chnln): narrate videos with a self-hosted OpenAI-compatible `/v1/audio/speech` server such as Qwen3-TTS via mlx-audio. Runaway or truncated clips are regenerated automatically. `AM_TTS_API_KEY` is supported, and `am patch` keeps a video's voice.
-> - **Wider tables and diagrams on sheet pages** (#38): tables with 4+ columns and wide diagrams get more width automatically and scroll on phones.
+> - 35种艺术风格配方与可运行场景。
+> - 9种解说语法，其中8种提供示范片与参数化片段。
+> - 3段长卷穿越示范，附卡通角色帧；口播整片参考代码需自备部分角色素材与音频。
+> - 动画拆解、配乐合成、确定性及框景检查工具。
 > 
-> ## Also
+> 安装：`npx skills add alchaincyf/huashu-art-motion`
 > 
-> - Issue forms and a pull request template (#34).
-> - CONTRIBUTING.md, `npm run snapshot` and `npm run release` for maintainers (#33).
-> - More tests for `am clean` (#30).
+> 附件中的MP4是35种风格的无声画面样片；ZIP与本次公开提交内容一致，不含.git和开发历史。
 > 
-> ## Note
-> 
-> CLI text the agent reads is now English (for example `STE 2 warnings`, `! Cleanup hint`). Update the skill and the CLI together, as the update commands below do.
-> 
-> ## Update
-> 
-> - Plugin: `claude plugin update answer-me-with-html@answer-me-with-html`
-> - Skill: `npx skills update answer-me-with-html -y`
-> 
-> **Full changelog:** https://github.com/QingYunA/answer-me-with-html/compare/v0.4.7...v0.4.8
+> 代码与文档采用MIT许可；字体、第三方笔顺数据与示范角色的使用边界见README及各目录许可说明。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-05）
-> **活躍天數** 1 天 · **最新 commit** feat(video): update ElevenLabs defaults, add ELEVENLABS_MODEL_ID and a setup guide (#48)
+> [!abstract] 最近 10 次 commit（2026-10-06 ~ 2026-10-08）
+> **活躍天數** 2 天 · **最新 commit** feat: add configurable voice and host-image capabilities
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#47](https://github.com/QingYunA/answer-me-with-html/issues/47) | Page aria-labels are always Chinese (flow, sequence, doc tab `bug` | 1 | 0 |
-> | [#19](https://github.com/QingYunA/answer-me-with-html/issues/19) | 感觉功能还能继续拓展下，图片有时候会比文字和图表箭线图还更好理解 | 1 | 0 |
+> | [#3](https://github.com/alchaincyf/huashu-art-motion/issues/3) | [Bug] Windows: render.py 本地 http 服务用单线程 TCPServer，Chromium 并 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Answer me with HTML
+> # huashu-art-motion · 艺术动画
 > 
->   An agent skill. Ask a hard question, get a page you can actually read instead of a wall of text.The model writes about 1/7 of the tokens it would need to hand-write the HTML.
+> 让你的coding agent，把艺术风格写成会动的画。
 > 
->   
->   
->   
+> 35种艺术风格 · 9种解说语法 · 8种参数化片段 · 口播整片参考代码
 > 
->   English · 简体中文
-> 
-> Once installed, ask questions the way you always do:
-> 
-> ```
-> > Explain the TCP three-way handshake
-> > Map out how the modules in this repo fit together
-> > Redis or Memcached for our cache?
+> ```sh
+> npx skills add alchaincyf/huashu-art-motion
 > ```
 > 
-> The agent writes a short Markdown draft and hands it to the CLI that ships with the skill. About 50 ms later you have a page:
+> [看动画](#动画样片) · [看风格](#看效果) · [开始使用](#里面有什么) · [下载完整样片](https://github.com/alchaincyf/huashu-art-motion/releases/latest)
 > 
-> https://github.com/user-attachments/assets/d3063a28-5dfd-4c44-a562-be901c49b249
+> ## 动画样片
 > 
-> 24-second demo. Turn the sound on for the music.
+> ### 核心案例：花叔闯进超级玛丽
 > 
+> 把自己做成像素主角，跑完一整关。砖块、水管、关卡运动与转场用代码完成，人物用生成帧合成；下面直接截自65秒成片。
 > 
-> ## Install
+> 连吃蘑菇都得先选会员：OpenAI，还是Claude？选完Claude，星芒道具落下来，花叔变大。
 > 
-> You need [Node.js](https://nodejs.org/) 20 or newer. There is no `npm install` step. The CLI is bundled inside the skill.
+> 连踩带踢 · 像素Sam与Dario客串敌人
+> 钻进水管 · 金币密室与扫描线甩镜
 > 
+> 这组展示的是成片效果；GIF无声、循环播放。[片段时间点与导出参数](assets/showcase/mario-clips.md)。
 > 
-> ### Let your agent install it (recommended)
+> ### 花叔穿越名画
 > 
-> Paste this into Claude Code, Codex, Cursor, OpenCode or any other agent:
+> 画里真的会动。下面三段来自同一支穿越短片，场景用代码画，角色用生成帧合成。
 > 
-> > Install the Answer me with HTML skill: run `npx -y skills add QingYunA/answer-me-with-html -g -y`, and pass `-a` with your own agent name (for Claude Code, `-a claude-code`). Then read its SKILL.md and use it to make a page that explains the TCP three-way handshake, so we know it works.
+> 日本桥上的一次水漂。
 > 
+> 古埃及 · 圣甲虫
+> 8-bit · 顶出金币
 > 
-> ## Features
+> ## 看效果
 > 
-> - **Fewer tokens, less waiting:** The model writes a short draft, about 900 output tokens, instead of 7,000 tokens of HTML, CSS and SVG. See the [benchmark](bench/README.md).
-> - **Layout by code:** Panel placement and diagram coordinates are computed, not guessed. Labels don't get cut off, and there are no gaps in the grid.
-> - **Fixes its own mistakes:** When a draft has an error, the CLI returns the line number, the component and a correct example. The agent fixes it in one try.
-> - **Two themes:** `blueprint` looks like an engineering drawing. `shadcn` uses clean cards. Both have light and dark modes.
-> - **One file, no dependencies:** Each page is a single `.html` with no CDN links or web fonts. It opens offline and is easy to share.
-> - **Writing check:** Drafts are checked against rules adapted from ASD-STE100: long sentences, wordy phrases, passive voice. It only warns unless you ask for strict mode.
-> - **Keeps its source:** Every page embeds the Markdown that made it. Click "Copy source" to get it back.
+> 35段样片各取一帧：同一位少女、同一只橘白猫、同一张桌子，从公元前 40000 年的岩洞一路穿到 2026 年。每一段都在动：梵高的星空在转，马赛克的颜色从石块上流过去，水墨晕染把画面带进下一个时代。
 > 
->   
->     
->     
->   
->   
->     Blueprint theme (examples/ste100.md)
->     shadcn theme, dark mode
->   
+> 👉 [下载全风格样片（MP4）](https://github.com/alchaincyf/huashu-art-motion/releases/latest)
 > 
+> 长卷穿越片：一个人从左走到右，跨过边界的那一刻，世界和他自己的画风一起换（下图是收进仓库的 3 段示范：埃及壁画 → 莫奈《日本桥》→ 8-bit）：
 > 
-> ## Always-on mode (optional)
+> 8种解说语法各有一支可运行示范片（下图每镜取一帧）。此外还有第9种「讲解员式财经科普」，提供语法卡和需自备角色的整片代码快照。白板适合跟着口播画关系，Vox适合图形与信息拼贴：
 > 
-> By default, the agent makes a page only for questions that need one. If you want **a page with every conclusion**, turn on always-on mode.
+> | | |
+> |---|---|
+> |  Kurzgesagt：扁平无描边、尺度穿行 |  Vox：剪报、红线、荧光笔 |
+> |  白板：笔尖揭开线稿 |  3Blue1Brown：一个对象形变成下一个 |
+> |  Storytime：反应特写、笑点停顿 |  动态文字：主词砸进来 |
+> |  发布会：光斑底、毛玻璃卡、大数字 |  财经图表：先轴、后数据、只标一件事 |
 > 
-> The agent then gets a short reminder each turn (about 90 tokens). Whenever it gives a conclusion, summary, plan or comparison, even a short one, it adds a small page with 2 to 4 panels and puts the path at the end of the reply. These pages never pop open, so they don't interrupt you. Casual chat and replies with no conclusion stay as they are. Claude Code makes no pages in plan mode.
+> ---
 > 
-> **Claude Code:** install one more plugin.
+> ## 能做什么
 > 
-> ```
-> /plugin marketplace add QingYunA/answer-me-with-html
-> /plugin install answer-me-with-html-always@answer-me-with-html
-> ```
+> | 你说 | 它做 |
+> |---|---|
+> | 「复刻这个动画」「拆一下这段」 | 先跑拆解脚本量出转场、节拍网格、每段运动热图，再按机制用代码复刻 |
+> | 「做个梵高／莫奈／包豪斯那种的动画」 | 先设计一帧，再让它动起来；35张风格配方卡当起点 |
+> | 「用我的口播做一段艺术动画」 | 镜头表 → 定风格 → 世界画布加镜头 → 输出一条画面轨 |
+> | 「做一个人穿过一幅幅名画的片子」 | 长卷骨架：每个世界一个段文件，主角一路往右走，跨边界换画风，镜头只进不退 |
+> | 「做解说视频的动画段」 | 按口播选语法，喂一份 JSON，出一段时长精确到帧的片段（横竖屏、可透明底） |
+> | 「画面里要有人」 | 人交给生图模型出帧，代码负责合成、换帧和材质 |
+> | 「配个乐、卡节奏」 | BPM 网格、动机换乐器、结尾音效序列，纯代码合成 |
 > 
-> Pause it with `/answer-me-with-html:config always off`. You don't need to uninstall.
+> 交付前有一道数字验收：`qa.py` 量稳定、效率、动感、流畅及文字框景线索，再派一个没参与制作的 agent 只看成片挑问题。
 > 
-> **Other agents:** paste this to your agent so it writes the rule into its own rules file, such as `AGENTS.md`:
+> ---
 > 
-> > Turn on always-on mode for Answer me with HTML: add a global rule — "[answer-me-with-html always-on] Whenever a reply gives a conclusion, summary, plan, comparison, review or explanation, even a short one, also make a page with the answer-me-with-html skill (2 to 4 panels for routine answers), render it with --no-open, and end the reply with the page path. Skip casual chat, one- or two-sentence replies with no conclusion, pure command output, and requests for plain text."
+> ## 里面有什么
 > 
-> 
-> ## Why not just ask for HTML?
-> 
-> You can. Models write decent HTML now. The problem is the bill you pay in output tokens: the model has to type every line of CSS, every wrapper `div` and every SVG coordinate. Output tokens are also what you sit and wait for.
-> 
-> With this skill, the model writes only the content. We asked the same questions with the same model both ways (3 topics × 3 runs, medians, Claude Sonnet 5.5):
-> 
-> | | Ask for HTML directly | Answer me with HTML | |
-> | :--- | ---: | ---: | :--- |
-> | Output tokens | 6,873 | **923** | **7.4× fewer** |
-> | Time | 46 s | **13 s** | **3.6× faster** |
-> | Cost per answer | $0.22 | $0.26 | about the same |
-> 
->   
-> 
-> One run from the benchmark: same prompt, same model, and both pages are usable. This run took 9,351 output tokens for the plain page and 899 with the skill. The table above shows the medians.
-> 
-> Why the cost doesn't drop too: the skill adds two short turns (load the skill, run the CLI), and every turn re-reads the conversation context. You save the waiting, not the bill. Per-topic numbers and the script to reproduce them are in [bench/](bench/README.md).
-> 
-> 
-> ### Claude Code plugin
-> 
-> Run this inside Claude Code:
+> | | 数量 |
+> |---|---|
+> | 艺术风格配方卡（参数、母题动作、签名转场、当前短板） | 35张，`references/风格配方/` |
+> | 对应的场景代码 | 35个，`scripts/engine/scenes/` |
+> | 解说动画语法卡 | 9份；其中8种附示范片、参数化片段与示例spec |
+> | 口播整片参考代码 | 混合风格、白板、Vox、讲解员；需自备部分素材，详见目录README |
+> | 长卷穿越片示范（骨架＋3 段＋角色帧库） | 1 支，`scripts/engine/demos/long_scroll/` |
+> | 转场 | 艺术风格签名转场与解说转场，包含淡入、硬切和纸面转场 |
+> | 绘画与动画库（笔刷、渲染器、后期、骨架、镜头、图表、排版……） | 17 个，`scripts/engine/lib/` |
+> | 方法文档（拆解、机制、一帧先行、纯代码绘制、节奏配乐、角色、长卷……） | 核心12篇，`references/01`–`12`；另有[可选语音指南](references/capabilities.md) |
 > 
 > ```
-> /plugin marketplace add QingYunA/answer-me-with-html
-> /plugin install answer-me-with-html@answer-me-with-html
+> huashu-art-motion/
+> ├── SKILL.md                 # 先判断任务，再按表读对应文档
+> ├── references/              # 01–12方法文档、35张风格配方卡、9张语法卡、正面经验
+> ├── assets/                  # 总览图（README 用）
+> └── scripts/
+>     ├── engine/              # 可整个复制走的动画工程：引擎、转场、库、场景、示范片、片段
+>     ├── analyze/breakdown.py # 把参考动画拆成「能写代码的地图」
+>     ├── qa.py                # 一键验收
+>     ├── audio/               # 纯代码合成配乐的模板
+>     └── font_subset.py ...   # 字体子集、绿幕抠图
 > ```
 > 
+> 依赖：[uv](https://docs.astral.sh/uv/)、ffmpeg、Playwright Chromium（第一次跑 `uv run --with playwright playwright install chromium`）。试一下：
 > 
-> ### One command
-> 
-> ```bash
-> npx skills add QingYunA/answer-me-with-html
+> ```sh
+> cd huashu-art-motion
+> uv run --with playwright python scripts/engine/render.py --solo 09_postimp --stills 0.3 --out 试渲   # 梵高那一段的一帧
+> uv run --with playwright python scripts/engine/render.py --spec scripts/engine/examples/t3_finance_chart.json --out 财经图表.mp4
 > ```
 > 
-> It asks which agents to install into. The installer, [vercel-labs/skills](https://github.com/vercel-labs/skills), supports more than 70 agents.
+> ---
 > 
-> Manual install
+> ## 背后的故事
 > 
-> Copy the `skills/answer-me-with-html` folder into your agent's skill folder. For Claude Code:
+> 2026 年 10 月初，我在 X 上看到 Tak（[@cherry_mx_reds](https://x.com/cherry_mx_reds/status/2106095190285144331)）的一支 15 秒动画：一位少女和一只猫穿过 40000 年艺术史，每个时代只有一秒左右，但画里的东西都在动。
 > 
-> ```bash
-> git clone --depth 1 https://github.com/QingYunA/answer-me-with-html.git /tmp/answer-me-with-html
-> cp -R /tmp/answer-me-with-html/skills/answer-me-with-html ~/.claude/skills/answer-me-with-html
-> ```
+> 我让 Claude 复刻它。第一版是「一张张画之间做转场」，被我否了：原片每个时代可能就一秒，但画里的元素完全是流动的。于是改成先拆解（量转场、拟合节拍网格、看每段哪里在动），再用代码一层层把画画出来、让它动起来。
 > 
-> Skill folders for other agents: Codex `~/.codex/skills/`, Cursor `~/.cursor/skills/`, OpenCode `~/.config/opencode/skill/`.
+> 做的过程中我跟它说：「我们不只是为了复刻，我需要你积累经验。」所以这个 skill 里记的不只是代码，还有哪些做法被证明有效（`references/07-正面经验.md`）、每种风格的坑和短板。之后又派了 4 组只读 skill 的 agent 去做它没见过的 20 种风格，把它们各自造的轮子收成统一的库；再加上 8 种 YouTube 解说动画语法，接进了我自己的口播视频管线。最后用同一套东西做了《花叔穿越名画》：23种画风、2分08秒，我从洞穴一路走到 2026，骨架和其中 3 段也收进来了。
 > 
-> No setup is needed after install.
+> ---
 > 
+> ## 致谢
 > 
-> ## What you ask, what you get
+> - **Tak（[@cherry_mx_reds](https://x.com/cherry_mx_reds)）** 的《Art History Speedrun》是这个 skill 的起点。16 个艺术时代的场景构图和「少女＋猫穿越」的设定沿用了原片的思路，画面全部用代码重新画，配乐脚本里是原创示例乐谱（只保留拆解方法，不保留对原曲的转录）；仓库里不含原片的帧、截图或音频文件。想看原作请去他的 X。
+> - 解说语法卡里拆解过的频道和资料（Kurzgesagt、Vox、3Blue1Brown、RSA Animate、TheOdd1sOut 等）都在各张卡的「一手参考」里给了链接，仓库只记测量出来的参数，不含他们的画面。
+> - 字体都是 SIL OFL 1.1 开源字体，清单和版权见 `scripts/engine/lib/fonts/LICENSES.md`。
 > 
-> | You ask | You get |
-> | :--- | :--- |
-> | "Explain the TCP three-way handshake" | A sequence diagram, a state diagram and a flag table |
-> | "How are the modules in this repo organized?" | A folder tree plus a call graph |
-> | "Redis or Memcached?" | A comparison table with ✓ and ✗, then a verdict |
-> | "What's wrong with this paragraph?" | Each sentence annotated, with the problem words and fixes |
-> | "How did Kubernetes come about?" | A timeline with the key moments highlighted |
-> | "How do I show hidden files with `ls`?" | No page. A one-line question gets a one-line answer |
+> ---
 > 
-> The agent decides when a page is worth it: related concepts, multi-step flows, multi-way comparisons. You can also just say "explain it in HTML".
+> ## 关于作者
 > 
-> Pages are saved in `~/.answer-me-with-html/pages/`. The buttons in the top-right corner switch the theme and light/dark mode, and copy the Markdown that produced the page.
+> | | |
+> |:---|:---|
+> | 🌐 官网 | [bookai.top](https://bookai.top) · [huasheng.ai](https://www.huasheng.ai) |
+> | 𝕏 Twitter | [@AlchainHust](https://x.com/AlchainHust) |
+> | 📺 B站 | [花叔v](https://space.bilibili.com/14097567) |
+> | ▶️ YouTube | [@Alchain](https://www.youtube.com/@Alchain) |
+> | 📕 小红书 | [花叔](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf) |
+> | 💬 公众号 | 微信搜「花叔」 |
 > 
+> ## 许可证
 > 
-> ## Explainer videos (3Blue1Brown style)
+> 代码和文档：MIT。随便用，随便改，随便造。
 > 
-> Karpathy's ladder for understanding LLM output ends with explainer videos. Ask for one: "make a 3b1b-style video on the TCP handshake".
+> 例外：笔顺衍生数据`reference_films/spacex/spacex_wb/assets/strokes.js`沿用Arphic Public License（原文随文件附带）；`scripts/engine/lib/fonts/` 里的字体沿用各自的 OFL 许可；花叔的卡通形象与角色帧（`scripts/engine/demos/_shared/hero/`、`scripts/engine/demos/long_scroll/frames/`、`assets/角色/`）以及总览图、示范视频中包含的同一形象，只用于本 skill 的示范，不随 MIT 授权用于其他用途。
 > 
-> The agent writes the same kind of draft as for a page, plus one line of narration per beat. Nothing else:
+> ---
 > 
-> ````markdown
+> **[女娲](https://github.com/alchaincyf/nuwa-skill)** 造 Skill。**[达尔文](https://github.com/alchaincyf/darwin-skill)** 让 Skill 进化。**艺术动画** 让画动起来。
 > 
-> ## Both sides wait
-> ```sequence
-> Client -> Server: SYN
-> Server -> Client: SYN-ACK
-> ```
-> > The client sends a SYN to ask for a connection.
-> > The [Server] answers with a SYN-ACK.
-> ````
+> MIT License © [花叔 Huashu](https://github.com/alchaincyf)
 > 
-> `am video` turns it into a player page:
+> ---
 > 
-> - **Built step by step.** When the Nth line of narration plays, the Nth step of the diagram appears. Arrows draw themselves. If there are more lines than steps, the extra lines at the start act as an intro.
-> - **Spoken narration.** The agent writes narration the way a person explains things out loud, not like a manual.
-> - **Camera focus.** `[Server]` in the narration pushes the camera toward that node and highlights it. The diagram never leaves the frame.
-> - **Objects carry over.** A node with the same name in the next scene glides to its new place instead of cutting.
-> - **Narration.** It uses ElevenLabs if `ELEVENLABS_API_KEY` is set (optional; [setup guide](docs/elevenlabs.md)), the system voice otherwise (macOS `say`: Tingting for Chinese, Samantha for English, Kyoko for Japanese), and captions only if neith
+> 作者的其他项目 · also by 花叔
+> 
+> [](https://github.com/alchaincyf/fanbox)
+> 
+> ---
+> 
+> ## English
+> 
+> **huashu-art-motion** is an agent skill for making animation with code, where the paintings actually move. It ships 35 art-style recipes (cave painting, Egyptian murals, Van Gogh, Klimt, Bauhaus, Kirby comics, 8-bit, vaporwave, Shinkai and more), each with a working Canvas scene, a style "renderer" and a signature transition; 8 explainer-video grammars (Kurzgesagt, Vox, whiteboard, storytime, kinetic type, 3Blue1Brown, keynote UI, finance charts) with demo films and parameterized clips you drive with a JSON spec, frame-accurate and in landscape, portrait or alpha; a long-scroll skeleton where a character walks left to right through one painting after another (3 sample worlds included); plus a breakdown script that maps a reference animation into cuts, beat grid and motion heatmaps, and a QA script that measures stability, cost per frame, motion and smoothness.
+> 
+> It started as a code-only recreation of Tak's ([@cherry_mx_reds](https://x.com/cherry_mx_reds/status/2106095190285144331)) 15-second *Art History Speedrun*. The scene layouts and the girl-and-cat premise follow his original; every frame here is redrawn in code, and no frames, screenshots or audio from the original are included.
+> 
+> Install: `npx skills add alchaincyf/huashu-art-motion`. Requires uv, ffmpeg and Playwright Chromium. The skill content is in Chinese. The ninth grammar, presenter-led explainers, ships as a reference implementation and requires your own character assets. Full-narration examples are code snapshots, not ready-to-render projects. Code and docs are MIT; the bundled stroke medians retain the Arphic Public License; bundled fonts keep their SIL OFL licenses; the Huashu character artwork, including its appearance in overview images and demo videos, is for demo use only.
+> 
+> ## 可选媒体能力
+> 
+> 基础代码动画不需要语音或图片账号。有素材先沿用；需要生成时，按用户选择和当前环境调用。语音支持macOS系统声音和自己的火山复刻音色；图片支持现有文件导入和当前Agent/MCP工具桥接。
+> 
+> - [语音与私人配置](references/capabilities.md)：按需配置、可跳过，旧koubo入口兼容。
+> - [图片工具接入](references/images.md)：先生成计划，由Agent调用工具，再验收并收纳素材。
+> - [兼容性与验证范围](references/compatibility.md)：三家安装重装通过；Codex在线回归通过，Claude Code/Kimi在线回归受测试账户条件阻塞，待补验。
+> - [维护、扩展与发布](CONTRIBUTING.md)：公共默认与私人配置分离，升级不覆盖个人选择，发布检查覆盖实际待发Git对象。
+> 
+> 先运行`python scripts/capabilities.py status --explain`。新增能力默认未选择、未授权；不能从检测到Key或工具推断允许消费。独立图片API执行器为后续可选扩展，不会自动切换供应商。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/QingYunA/answer-me-with-html)
+[GitHub](https://github.com/alchaincyf/huashu-art-motion)
 
 ## 相關收錄
 
@@ -401,7 +378,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "QingYunA--answer-me-with-html"
+> WHERE category = "Other" AND file.name != "alchaincyf--huashu-art-motion"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -410,7 +387,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "QingYunA--answer-me-with-html" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "alchaincyf--huashu-art-motion" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -419,18 +396,18 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "QingYunA--answer-me-with-html"
+> WHERE week = "2026-W41" AND file.name != "alchaincyf--huashu-art-motion"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "QingYunA--answer-me-with-html" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "alchaincyf--huashu-art-motion" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -446,7 +423,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "QingYunA" AND file.name != "QingYunA--answer-me-with-html"
+> WHERE owner = "alchaincyf" AND file.name != "alchaincyf--huashu-art-motion"
 > SORT stars DESC
 > ```
 
@@ -454,7 +431,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -471,7 +448,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -504,7 +481,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -528,7 +505,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -565,7 +542,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/alchaincyf--huashu-art-motion");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -648,7 +625,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-05** — 首次收錄
+> **2026-10-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -664,7 +641,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-08|2026-10-08]] — 再次上榜，2.2k stars
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.8k stars
-- [[2026-10-06|2026-10-06]] — 再次上榜，1.5k stars
-- [[2026-10-05|2026-10-05]] — 首次收錄，1.2k stars
+- [[2026-10-08|2026-10-08]] — 首次收錄，2.0k stars

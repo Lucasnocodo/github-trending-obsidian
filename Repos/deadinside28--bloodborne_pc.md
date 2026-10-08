@@ -1,63 +1,63 @@
 ---
-repo: kargulstudio/sales-crm
-url: https://github.com/kargulstudio/sales-crm
-owner: kargulstudio
+repo: deadinside28/bloodborne_pc
+url: https://github.com/deadinside28/bloodborne_pc
+owner: deadinside28
 owner_type: User
-language: TypeScript
-license: MIT
+language: C++
+license: GPL-2.0
 description: ""
 homepage: ""
-stars: 1643
-stars_per_day: 548
-forks: 356
-open_issues: 12
-created: 2026-10-04
-pushed_at: 2026-10-06
-first_seen: 2026-10-06
+stars: 1701
+stars_per_day: 243
+forks: 184
+open_issues: 64
+created: 2026-10-01
+pushed_at: 2026-10-07
+first_seen: 2026-10-08
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "0.4"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-06
+last_reviewed: 2026-10-08
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-10-11"
-contributor_count: 2
+contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 1476
-readme_length: 2324
+issue_close_rate: 11
+repo_size_kb: 2216
+readme_length: 9175
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-06"
-star_history: "2026-10-06:1508,2026-10-07:1597,2026-10-08:1643"
+ring_history: "assess@2026-10-08"
+star_history: "2026-10-08:1701"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/c++"
 aliases:
-  - "sales-crm"
-  - "kargulstudio/sales-crm"
+  - "bloodborne_pc"
+  - "deadinside28/bloodborne_pc"
 ---
 
-# sales-crm
+# bloodborne_pc
 
-**1.5k** stars · **1.5k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.7k** stars · **243** stars/天 · 建立 7 天前 · C++ · GPL-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/kargulstudio--sales-crm");
+const me = dv.page("Repos/deadinside28--bloodborne_pc");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,6 +70,8 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`個人專案` `0.4`
+
 > [!summary] 一句話摘要
 > No description
 
@@ -81,7 +83,7 @@ No description available.
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/deadinside28--bloodborne_pc");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +118,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/deadinside28--bloodborne_pc");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,92 +142,175 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 315 |
-| Open Issues | 5 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-10-06 |
-| 建立日期 | 2026-10-04 |
-| Repo 大小 | 1.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kargulstudio/sales-crm) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@rive-app/canvas` `@rive-app/react-canvas` `class-variance-authority` `clsx` `cmdk` `cn` `lottie-react` `motion` `next` `photoswipe` `radix-ui` `react` `react-dom` `react-use-measure` `swiper`
+| Forks | 184 |
+| Open Issues | 64 |
+| Issue 解決率 | 11% (8 closed) |
+| 最後推送 | 2026-10-07 |
+| 建立日期 | 2026-10-01 |
+| Repo 大小 | 2.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/deadinside28/bloodborne_pc) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 89
->     "JavaScript" : 6
->     "CSS" : 3
+>     "C++" : 80
+>     "C" : 13
+>     "Python" : 5
 >     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vipulkumar-dev](https://github.com/vipulkumar-dev) | 19 |
-> | [@kargulstudio](https://github.com/kargulstudio) | 1 |
+> | [@deadinside28](https://github.com/deadinside28) | 144 |
+
+**最新版本**：0.4 (2026-10-07)
+
+> [!info]- Release Notes
+> **English** · [Русский](#русский)
+> 
+> bbport is the counterpart of Wine + DXVK for a single game: Bloodborne (CUSA03173, v1.09) on Linux. The game's x86-64 code runs directly on the CPU, a runtime written for this game replaces the PS4 system libraries, and the graphics are translated to Vulkan. **No game files are included** — you need your own dump. AppImage for desktops and the Steam Deck: data in `~/.local/share/bbport`, `--play` starts the game without the launcher window.
+> 
+> Questions about this project: Discord https://discord.gg/KYZRKk9CB — not the shadPS4 server.
+> 
+> ### What's new since 0.3
+> 
+> **FSR 4.1.1 from one DLL, with a button**
+> - Launcher: *Upscaler → FSR 4.1.1 from your own AMD DLL → Choose DLL…*, pick `amd_fidelityfx_upscaler_dx12.dll` 4.1.x (OptiScaler's `FSR4_LATEST`, or a game with FSR 4.1) — that one file is enough, no loader DLL needed. The DLL is checked first (version, model), then recorded under Proton and translated; progress in the row and in the *Log* tab, FSR 4.1.1 is selected at the end. Without a window: `--build-fsr411 <DLL>`.
+> - The AppImage brings its own tools: nothing to install but a Proton build. On NixOS the AppImage now builds too: the recording runs on the system through the user's systemd, with umu-launcher from `nix-shell`. The Proton build is picked automatically (GE-Proton 10+, Proton-CachyOS, Proton Experimental; Steam's Proton 11.0 and GE-Proton 9 do not start FSR 4.1), in the Steam runtime it needs or through umu-launcher.
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-10-06）
-> **活躍天數** 3 天 · **最新 commit** Add MIT License and update package.json with new project name and license
+> [!abstract] 最近 10 次 commit（2026-10-01 ~ 2026-10-07）
+> **活躍天數** 5 天 · **最新 commit** 0.4: FSR 4.1.1 from one DLL (FP8 on RDNA4), gestures, keyboard, DoF and shader cache fixes
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/kargulstudio/sales-crm/issues/1) | CONVENTIONS.md is missing | 3 | 2 |
-> | [#2](https://github.com/kargulstudio/sales-crm/issues/2) | Real Database Integration | 0 | 0 |
+> | [#35](https://github.com/deadinside28/bloodborne_pc/issues/35) | Ultrawide support please | 4 | 2 |
+> | [#21](https://github.com/deadinside28/bloodborne_pc/issues/21) | Futuros ports a otras plataformas? | 2 | 4 |
+> | [#15](https://github.com/deadinside28/bloodborne_pc/issues/15) | No way to select a controller, or to change controllers on t | 2 | 0 |
+> | [#67](https://github.com/deadinside28/bloodborne_pc/issues/67) | Loading screen item picture vanishes for most of the loading | 1 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Kargul Starter
+> THIS PROJECT IS NOT RELATED TO SHADPS4. ALL QUESTIONS RELATED TO THIS PROJECT SHOULD BE SENT TO THE DISCORD SERVER https://discord.gg/KYZRKk9CB, NOT TO THE SHADPS4 SERVER.
 > 
-> Next.js 16 + React 19 + Tailwind CSS 4 boilerplate. Read `CONVENTIONS.md` before writing any component, section, or page — it is the whole spec for how this repo is built.
 > 
-> ## Getting started
+> ## Highlights
 > 
-> ```bash
-> npm install
-> npm run dev
-> ```
+> - **Native execution.** The eboot is converted offline into a flat memory image; PS4 libc and
+>   libSceFios2 are linked into it as native code. No CPU emulation and no per-instruction
+>   translation: the game code runs at full speed.
+> - **Two modes** (launcher → *Mode*):
+>   - **Switch off (the default) — as in 0.3.** The old memory model: VRAM copies of the game's
+>     memory, writes tracked through page protection. With every fix made since 0.3 (motion
+>     vectors and the upscaler, flicker with DoF on, a damaged shader cache).
+>   - **New memory and translation model — experimental, AMD GPUs only.** The game's memory lives
+>     in system RAM and the GPU reads it where it is, as a PC game's buffers; data it reads often
+>     is kept in VRAM and given back when unused (textures after 20 s, buffers after 60 s). No
+>     write tracking, no copies of the whole GPU-visible memory. The PS4 command processor's work
+>     is translated into Vulkan commands rather than emulated on the CPU: memory writes
+>     (`WRITE_DATA`, DMA) are done by the GPU in command-stream order, and fences are written once
+>     the GPU has really finished the work. Where the game is CPU-bound it runs 20–25% faster
+>     (measured standing in the Hunter's Dream), with fewer stutters. **It may crash**, and has
+>     been tested thoroughly only on the author's PC (RX 7800 XT). On NVIDIA and Intel the switch
+>     is unavailable: NVIDIA's driver cannot map the game's memory as needed, Intel is untested.
+>     Without the launcher: `BB_PC_MODEL=1`; to try it on another GPU: `BB_PC_MODEL_ANY_GPU=1`.
 > 
-> Open [http://localhost:3000](http://localhost:3000).
+>   Unused textures are freed in both modes, so VRAM no longer grows with every area visited.
+> - **Unlocked frame rate.** Community patches (`patches/Bloodborne.xml`) make the simulation
+>   use the real frame time; ~90 FPS at 4K with FSR 4 Balanced on an RX 7800 XT, ~150 FPS at
+>   1440p with FSR 4 Quality. Also 30/60/90 FPS modes.
+> - **Temporal upscaling built for this game.** Bloodborne has no velocity buffer, so bbport
+>   computes motion vectors itself: camera motion from depth and the scene matrices, and object
+>   motion (characters, cloth, weapons) from the vertex positions of the previous frame. The
+>   scene is jittered sub-pixel (Halton) and rendered at a reduced resolution; the upscaler fills
+>   the output (720p for the Steam Deck, 1080p, 1440p or 2160p) and the UI is drawn natively at the output resolution.
+>   - **FSR 3.1** (FireBurn/FSR-Vulkan).
+>   - **FSR 4 (INT8, model v07)** on GPUs exposing the required Vulkan shader features —
+>     RDNA2/3 included (see Requirements).
+>   - **FSR 4.1.1**: AMD's 4.1.1 DLL is recorded once under vkd3d-proton and its passes are
+>     replayed natively on Vulkan; the output is **bit-exact** with the DLL. Two variants, as in
+>     the DLL: INT8 on any GPU with the required shader features, and FP8 matrices on RDNA4 (RX
+>     9000; picked automatically). The assets are built on your machine from one DLL of your own
+>     (4.1.x): the launcher's *FSR 4.1.1 from your own AMD DLL → Choose DLL…* button (2–5 minutes,
+>     twice that on RDNA4; needs a recent Proton), or `tools/fsr4cap`.
+>   - Faster than AMD's own shaders on RDNA3: the final passes of FSR 4 and 4.1.1 were rewritten
+>     to store through workgroup memory (3.5× and 2.3× faster, bit-exact); FSR 4 costs ~4 ms at
+>     4K on an RX 7800 XT instead of ~6 ms.
+> - **Multi-threaded GPU command processing.** The PS4 command stream is decoded on one thread
+>   and draws are bound and recorded on another (two-stage pipeline), with a Vulkan recording
+>   thread and helper threads for memory copies. Early on the single GPU thread capped the game
+>   at ~26 FPS; now it runs at 90–150 FPS depending on resolution and scene.
+> - **In-game menu** (Insert or L3+R3): upscaler, preset, sharpness, output resolution, game
+>   effects (chromatic aberration, DoF, motion blur, SSAO, the game's own AA, SSR, model LOD).
+>   It opens where it was left, with the mouse cursor shown over it.
+> - **GTK4 launcher** and an **AppImage** for the Steam Deck.
 > 
-> | Script                 | What it does                                                       |
-> | ---------------------- | ------------------------------------------------------------------ |
-> | `npm run dev`          | Start the dev server                                               |
-> | `npm run build`        | Production build                                                   |
-> | `npm run start`        | Serve the production build                                         |
-> | `npm run lint`         | ESLint                                                             |
-> | `npm run to:avif`      | Convert an image to AVIF and report its inline cost — rule 11      |
-> | `npm run extract:avif` | Pull the first frame of every `.webm` under `public/` as a poster  |
-> | `npm run frame:rive`   | Render a still from a `.riv` file for use as its poster            |
 > 
-> ## First things to set on a new project
+> # bbport — a native Linux port of Bloodborne
 > 
-> 1. **`lib/seo.ts`** — `SITE_NAME`, `SITE_URL`, `SITE_DESCRIPTION`, `SITE_ROUTES`. Everything in `app/robots.ts`, `app/sitemap.ts`, `app/llms.txt/route.ts` and every page's metadata derives from these (rule 18). Set `NEXT_PUBLIC_SITE_URL` in the environment to override the URL per deploy.
-> 2. **`app/globals.css`** — match the `@layer base` type scale and the `--padding-section-*` tokens to the design before building anything (rules 1 and 3).
-> 3. **`app/opengraph-image.jpg`** — 1200×630, with an `opengraph-image.alt.txt` beside it.
-> 4. **Fonts** — `app/layout.tsx` ships Inter + a local Inter Display; swap them for the design's typeface.
+> **English** · [Русский](README.ru.md)
 > 
-> ## Docs
+> bbport is the counterpart of Wine + DXVK for a single game: *Bloodborne* for PlayStation 4
+> (CUSA03173, game version 1.09) on an x86-64 Linux PC. The game's original executable runs
+> directly on the PC:
 > 
-> | File               | What's in it                                                        |
-> | ------------------ | ------------------------------------------------------------------- |
-> | `CONVENTIONS.md`   | The build rules. Read first.                                        |
-> | `AGENTS.md`        | Next.js version notes for agents                                    |
-> | `OPTIMIZATION.md`  | Why `Asset`'s Rive loading is gated behind LCP, with the measurements |
+> - **as in Wine**, the game's x86-64 code runs on the CPU directly, and a runtime written for
+>   this one game replaces the PS4 system libraries;
+> - **as in DXVK**, the game's graphics are translated to Vulkan — by a renderer derived from
+>   [shadPS4](https://github.com/shadps4-emu/shadPS4) and heavily extended for this game, including
+>   temporal upscaling with AMD FSR 3.1, FSR 4 and FSR 4.1.1;
+> - memory and the GPU's work are moving to the PC model: the launcher has an experimental
+>   *New memory and translation model* mode (AMD GPUs only); without it the game runs on the old
+>   memory model, as in 0.3.
+> 
+> Two steps remain to the full Wine + DXVK model: make the new mode the default, and move the
+> reading of resource descriptors (textures, buffers) from the CPU to the GPU (see below).
+> 
+> > **No game files are included.** You need your own dump of Bloodborne (CUSA03173, v1.09).
+> > This project is not affiliated with Sony Interactive Entertainment, FromSoftware or AMD.
+> 
+> **Status: experimental, playable.** The game boots, loads saves and plays (the Hunter's Dream
+> and several areas of Yharnam were played with it) with sound, gamepad and saving.
+> A full play-through has not been verified, and only one machine (Linux, AMD Radeon RX 7800 XT,
+> Mesa/RADV) has been tested thoroughly.
+> 
+> 
+> ## How it differs from shadPS4
+> 
+> | | shadPS4 | bbport |
+> |---|---|---|
+> | Scope | General PS4 emulator, many games | One game: Bloodborne v1.09 |
+> | Loading | Its own ELF loader and kernel emulation at run time | The eboot is converted offline (`scripts/`) into an image with PS4 libc/Fios2 linked in; a C loader maps it and jumps into the game (loader and runtime: ~5k lines) |
+> | Memory | The GPU's view of PS4 memory is kept in VRAM copies, synchronized through page-protection write tracking | By default the same model (as in 0.3); in the *New memory and translation model* mode (AMD): the game's memory in system RAM, used by the GPU in place, frequently read data in VRAM, freed when unused |
+> | Command processor | Emulated: memory writes, DMA and fences are done by the CPU while decoding | By default the same; in the new mode translated into Vulkan commands that the GPU runs in stream order, fences written after the work has really finished |
+> | System libraries | Broad HLE of the PS4 OS | A small runtime (`src/runtime_*.c`) that implements exactly what Bloodborne calls: memory, threads, sync, files, audio (incl. ATRAC9), pad, saves, AppContent |
+> | GPU | shadPS4 video core and shader recompiler | The same core (vendored, GPL) with ~200 marked changes (`bbport:`) plus new modules: two-stage draw pipeline, render-state and texture-set memoization, render-scale proxies, motion vectors, FSR 3.1/4/4.1.1, frame capture and GPU profiler |
+> | GPU thread | One thread processes the whole command stream (the bottleneck in Bloodborne) | Decode and draw recording run on separate threads; the work scales with the hardware threads (Steam Deck included) |
+> | Upscaling | — | Temporal (FSR 3.1, FSR 4, FSR 4.1.1) with the game's own motion vectors and jitter |
+> | Game patches | Patch files applied by the emulator | The same community patches, compiled at start (`scripts/patches.py`); render resolution, effects and FPS from the launcher |
+> 
+> Without shadPS4 there would be no bbport: its renderer and shader recompiler are the base of
+> the graphics side.
+> 
+> 
+> ### Wine + DXVK for one game
+> 
+> - **CPU.** The PS4 CPU is x86-64, so the game's code runs directly on the PC's CPU, with no
+>   emulation and no instruction translation.
+> - **System libraries.** As Wine
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/kargulstudio/sales-crm)
+[GitHub](https://github.com/deadinside28/bloodborne_pc)
 
 ## 相關收錄
 
@@ -233,7 +318,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "kargulstudio--sales-crm"
+> WHERE category = "Other" AND file.name != "deadinside28--bloodborne_pc"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -242,7 +327,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "kargulstudio--sales-crm" AND status != "archived"
+> WHERE language = "C++" AND file.name != "deadinside28--bloodborne_pc" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -251,18 +336,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "kargulstudio--sales-crm"
+> WHERE week = "2026-W41" AND file.name != "deadinside28--bloodborne_pc"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/deadinside28--bloodborne_pc");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "kargulstudio--sales-crm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "deadinside28--bloodborne_pc" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -278,7 +363,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "kargulstudio" AND file.name != "kargulstudio--sales-crm"
+> WHERE owner = "deadinside28" AND file.name != "deadinside28--bloodborne_pc"
 > SORT stars DESC
 > ```
 
@@ -286,7 +371,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/deadinside28--bloodborne_pc");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -303,7 +388,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/deadinside28--bloodborne_pc");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -336,7 +421,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/deadinside28--bloodborne_pc");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -360,7 +445,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/deadinside28--bloodborne_pc");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -397,7 +482,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/deadinside28--bloodborne_pc");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -480,7 +565,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-06** — 首次收錄
+> **2026-10-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -496,6 +581,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-08|2026-10-08]] — 再次上榜，1.6k stars
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.6k stars
-- [[2026-10-06|2026-10-06]] — 首次收錄，1.5k stars
+- [[2026-10-08|2026-10-08]] — 首次收錄，1.7k stars

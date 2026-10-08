@@ -1,63 +1,68 @@
 ---
-repo: kargulstudio/sales-crm
-url: https://github.com/kargulstudio/sales-crm
-owner: kargulstudio
+repo: lucasmarkes/hairline
+url: https://github.com/lucasmarkes/hairline
+owner: lucasmarkes
 owner_type: User
 language: TypeScript
 license: MIT
-description: ""
-homepage: ""
-stars: 1643
-stars_per_day: 548
-forks: 356
-open_issues: 12
-created: 2026-10-04
-pushed_at: 2026-10-06
-first_seen: 2026-10-06
+description: "Six isometric line figures that answer the pointer. For React and for anything with a DOM."
+homepage: "https://hairline.lucasmarkes.com"
+stars: 1174
+stars_per_day: 196
+forks: 61
+open_issues: 6
+created: 2026-10-01
+pushed_at: 2026-10-08
+first_seen: 2026-10-08
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.3.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-06
+last_reviewed: 2026-10-08
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-11"
-contributor_count: 2
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 1476
-readme_length: 2324
+appearances: 1
+next_review: "2026-10-15"
+contributor_count: 1
+engagement: "low"
+issue_close_rate: 14
+repo_size_kb: 6122
+readme_length: 9750
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 3
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-06"
-star_history: "2026-10-06:1508,2026-10-07:1597,2026-10-08:1643"
+ring_history: "assess@2026-10-08"
+star_history: "2026-10-08:1174"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
+  - "topic/animation"
+  - "topic/isometric"
+  - "topic/react"
+  - "topic/shadcn"
+  - "topic/svg"
 aliases:
-  - "sales-crm"
-  - "kargulstudio/sales-crm"
+  - "hairline"
+  - "lucasmarkes/hairline"
 ---
 
-# sales-crm
+# hairline
 
-**1.5k** stars · **1.5k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.2k** stars · **196** stars/天 · 建立 6 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/kargulstudio--sales-crm");
+const me = dv.page("Repos/lucasmarkes--hairline");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`個人專案` `v0.3.0`
+
+`animation` `isometric` `react` `shadcn` `svg` `typescript`
+
 > [!summary] 一句話摘要
-> No description
+> Six isometric line figures that answer the pointer. For React and for anything with a DOM.
 
 ## 專案簡介
 
-No description available.
+Six isometric line figures that answer the pointer. For React and for anything with a DOM.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/lucasmarkes--hairline");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +125,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/lucasmarkes--hairline");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,92 +149,204 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 315 |
-| Open Issues | 5 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-10-06 |
-| 建立日期 | 2026-10-04 |
-| Repo 大小 | 1.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kargulstudio/sales-crm) |
+| Forks | 61 |
+| Open Issues | 6 |
+| Issue 解決率 | 14% (1 closed) |
+| 最後推送 | 2026-10-08 |
+| 建立日期 | 2026-10-01 |
+| 官方網站 | [Link](https://hairline.lucasmarkes.com) |
+| Repo 大小 | 6.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/lucasmarkes/hairline) |
+| Topics | `animation` `isometric` `react` `shadcn` `svg` `typescript` |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@rive-app/canvas` `@rive-app/react-canvas` `class-variance-authority` `clsx` `cmdk` `cn` `lottie-react` `motion` `next` `photoswipe` `radix-ui` `react` `react-dom` `react-use-measure` `swiper`
+> `ajv` `esbuild` `turbo` `typescript`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 89
->     "JavaScript" : 6
->     "CSS" : 3
->     "Shell" : 1
+>     "TypeScript" : 58
+>     "HTML" : 26
+>     "JavaScript" : 12
+>     "CSS" : 4
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vipulkumar-dev](https://github.com/vipulkumar-dev) | 19 |
-> | [@kargulstudio](https://github.com/kargulstudio) | 1 |
+> | [@lucasmarkes](https://github.com/lucasmarkes) | 157 |
+
+**最新版本**：v0.3.0 (2026-10-05)
+
+> [!info]- Release Notes
+> ### Added
+> 
+> - `loupe` and `Loupe`: a stand loupe over a blank ruled sheet. The pointer
+>   drags it across, and the rules pass enlarged under the glass with nothing
+>   between them. A stronger `intensity` magnifies more.
+> - `sieve` and `Sieve`: three test sieves stacked over a pan. The pointer's
+>   height picks one, it rises clear of the stack, and every mesh is bare. A
+>   stronger `intensity` opens the gap further.
+> - `rail` and `Rail`: a garment rail with seven bare hangers. The pointer
+>   brushes them, and each rocks away from it, the nearest most. A stronger
+>   `intensity` reaches more hangers.
+> - `plug` and `Plug`: a wall socket and a plug lying on the floor at the end of
+>   its cord. The pointer draws the plug up toward the socket; it stops short and
+>   falls back. A stronger `intensity` brings it closer.
+> - `query` and `Query`: a question mark built as a bent bar over a loose ball.
+>   The hook turns toward the pointer and the ball rolls after it. A stronger
+>   `intensity` turns it further.
+> - `drawer` and `Drawer`: a cabinet of three drawers. The pointer's height
+>   picks one, and it slides out to show two dividers with nothing between them.
+>   A stronger `intensity` opens it further.
+> - `basket` and `Basket`: a wire basket under a bail handle. It tilts toward
+>   the pointer and shows its bare floor. A stronger `intensity` tilts it
+>   further.
+> - `plot` and `Plot`: a bar chart with seven flat tabs where the bars would
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-10-06）
-> **活躍天數** 3 天 · **最新 commit** Add MIT License and update package.json with new project name and license
+> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-05）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #30 from lucasmarkes/funding
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/kargulstudio/sales-crm/issues/1) | CONVENTIONS.md is missing | 3 | 2 |
-> | [#2](https://github.com/kargulstudio/sales-crm/issues/2) | Real Database Integration | 0 | 0 |
+> | [#31](https://github.com/lucasmarkes/hairline/issues/31) | Invitation to share hairline on GithubStarMate and help more | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Kargul Starter
+> # hairline
 > 
-> Next.js 16 + React 19 + Tailwind CSS 4 boilerplate. Read `CONVENTIONS.md` before writing any component, section, or page — it is the whole spec for how this repo is built.
+> Twenty-seven isometric line figures that answer the pointer. For React and for anything with a DOM.
 > 
-> ## Getting started
+> [](https://www.npmjs.com/package/@lucasmarkes/hairline)
+> [](https://github.com/lucasmarkes/hairline/actions/workflows/ci.yml)
+> [](./LICENSE)
 > 
-> ```bash
-> npm install
-> npm run dev
+> Live, with a slider for `intensity`: **[hairline.lucasmarkes.com](https://hairline.lucasmarkes.com)**
+> 
+> ## Install
+> 
+> ```sh
+> npm i @lucasmarkes/hairline
 > ```
 > 
-> Open [http://localhost:3000](http://localhost:3000).
+> No dependencies. ESM only. React 18 or later is an optional peer, needed only by `@lucasmarkes/hairline/react`.
 > 
-> | Script                 | What it does                                                       |
-> | ---------------------- | ------------------------------------------------------------------ |
-> | `npm run dev`          | Start the dev server                                               |
-> | `npm run build`        | Production build                                                   |
-> | `npm run start`        | Serve the production build                                         |
-> | `npm run lint`         | ESLint                                                             |
-> | `npm run to:avif`      | Convert an image to AVIF and report its inline cost — rule 11      |
-> | `npm run extract:avif` | Pull the first frame of every `.webm` under `public/` as a poster  |
-> | `npm run frame:rive`   | Render a still from a `.riv` file for use as its poster            |
+> With shadcn, which adds the package and a wrapper that reads your theme's tokens:
 > 
-> ## First things to set on a new project
+> ```sh
+> npx shadcn@latest add https://hairline.lucasmarkes.com/r/hairline.json
+> ```
 > 
-> 1. **`lib/seo.ts`** — `SITE_NAME`, `SITE_URL`, `SITE_DESCRIPTION`, `SITE_ROUTES`. Everything in `app/robots.ts`, `app/sitemap.ts`, `app/llms.txt/route.ts` and every page's metadata derives from these (rule 18). Set `NEXT_PUBLIC_SITE_URL` in the environment to override the URL per deploy.
-> 2. **`app/globals.css`** — match the `@layer base` type scale and the `--padding-section-*` tokens to the design before building anything (rules 1 and 3).
-> 3. **`app/opengraph-image.jpg`** — 1200×630, with an `opengraph-image.alt.txt` beside it.
-> 4. **Fonts** — `app/layout.tsx` ships Inter + a local Inter Display; swap them for the design's typeface.
+> ## Use
 > 
-> ## Docs
+> ### React
 > 
-> | File               | What's in it                                                        |
-> | ------------------ | ------------------------------------------------------------------- |
-> | `CONVENTIONS.md`   | The build rules. Read first.                                        |
-> | `AGENTS.md`        | Next.js version notes for agents                                    |
-> | `OPTIMIZATION.md`  | Why `Asset`'s Rive loading is gated behind LCP, with the measurements |
+> ```tsx
+> import { Terrain } from "@lucasmarkes/hairline/react";
+> 
+> export function Hero() {
+>   return ;
+> }
+> ```
+> 
+> The figure fills its parent's width at a 5:4 aspect ratio. The entry is a client module, so a Server Component can render it with no `"use client"` of its own. Every component takes the options below and every `` attribute, and forwards its ref to the ``.
+> 
+> ### Anything else
+> 
+> ```ts
+> import { terrain } from "@lucasmarkes/hairline";
+> 
+> const figure = terrain(document.getElementById("figure")!);
+> 
+> figure.update({ intensity: 0.8 });
+> figure.destroy();
+> ```
+> 
+> A figure draws into the element you give it, at the element's width and a 5:4 aspect ratio. `update` changes options on the running figure; `destroy` removes what the figure added. That is the shape of a Svelte action, so `use:terrain={{ intensity }}` works as it is.
+> 
+> ## The figures
+> 
+> | Function | Component | What it is | A stronger `intensity` |
+> | --- | --- | --- | --- |
+> | `riffle` | `Riffle` | A tray of eight cards. The card under the pointer stands up; the arrow keys walk the cards. | The ripple spreads further from the pulled card. |
+> | `terrain` | `Terrain` | Eighty-one pillars on a plinth that rise around the pointer. | A wider area rises. |
+> | `exploded` | `Exploded` | An app window in four layers. Moving across opens the gap; moving down picks a layer. | The layers open further. |
+> | `phosphor` | `Phosphor` | A dot matrix that plays a loop, and fades like phosphor where the pointer paints it. | The trail lingers longer. |
+> | `slow` | `Slow` | Crates riding a belt through a gate. Hovering slows the clock without stopping it. | Time slows down more. |
+> | `turntable` | `Turntable` | Blocks on a turntable. A flick spins it; it settles on the nearest quarter turn. | The spin coasts longer. |
+> | `keyboard` | `Keyboard` | A sixty-key board. The key under the pointer sinks, and its neighbours follow it down. | A wider patch of keys sinks. |
+> | `elevator` | `Elevator` | Four floors beside an open shaft. The pointer's height picks a floor; the car travels there. | The car travels faster between floors. |
+> | `phone` | `Phone` | A phone in layers: glass, board, battery, shell. Moving across opens the gap; moving down picks a layer. | The layers open further. |
+> | `laptop` | `Laptop` | A thin laptop, open on its hinge. The pointer's height sets the lid; it follows on a spring. | The lid opens wider. |
+> | `terminal` | `Terminal` | A terminal window with its history in rows. The pointer's height scrolls back; the line under it lifts and its neighbours follow. | The lift spreads further. |
+> | `cabinet` | `Cabinet` | A rack of twelve blades, a few half out. The pointer's height pulls the nearest ones out, the farther the less. | More blades come out. |
+> | `branches` | `Branches` | A commit graph with a branch forking off main and merging back. The commit under the pointer rises, and its history rises after it. | More of the history rises. |
+> | `vault` | `Vault` | A vault door with a dial and three bolts. The pointer turns the dial; detents catch every ten, and on the combination the bolts draw back. | The dial coasts longer. |
+> | `lockers` | `Lockers` | A bank of twelve lockers, one ajar at rest. The locker under the pointer opens; the one at rest closes. | The door opens wider. |
+> | `padlock` | `Padlock` | A padlock with its shackle in. As the pointer comes near the shackle lifts out and swings open. | The shackle swings further. |
+> | `patch` | `Patch` | A patch panel of twenty-four ports with cables. The cable under the pointer lifts and its neighbours lean away. | The lean spreads further. |
+> | `dish` | `Dish` | A parabolic dish on a two-axis gimbal. The pointer aims the dish; it follows on a spring. | The dish swings further. |
+> | `router` | `Router` | A router with its antennas up. Each antenna leans toward the pointer, the nearest most. | The lean spreads further. |
+> | `loupe` | `Loupe` | A stand loupe on a blank ruled sheet. The pointer drags it across; the rules pass enlarged under the glass, with nothing between them. | The glass magnifies more. |
+> | `sieve` | `Sieve` | Three test sieves stacked over a pan. The pointer's height picks one; it rises clear of the stack, and every mesh is bare. | The gap opens further. |
+> | `rail` | `Rail` | A garment rail with seven bare hangers. The pointer brushes them; each rocks away, the nearest most, and settles. | The brush reaches more hangers. |
+> | `plug` | `Plug` | A wall socket, and a plug lying on the floor at the end of its cord. The pointer draws the plug up toward the socket; it stops short, and falls back. | The plug comes closer to the socket. |
+> | `query` | `Query` | A question mark built as a bent bar over a loose ball. The hook turns toward the pointer, and the ball rolls after it. | The hook turns further. |
+> | `drawer` | `Drawer` | A cabinet of three drawers. The pointer's height picks one; it slides out and shows two dividers with nothing between them. | The drawer opens further. |
+> | `basket` | `Basket` | A wire basket under a bail handle. It tilts toward the pointer and shows its bare floor; the handle swings after it. | The basket tilts further. |
+> | `plot` | `Plot` | A bar chart with seven flat tabs where the bars would stand. The pointer brushes them; each lifts a little and drops back to zero. | The tabs lift higher. |
+> 
+> ## Options
+> 
+> Every figure takes the same four, all optional:
+> 
+> | Option | Type | Default | |
+> | --- | --- | --- | --- |
+> | `intensity` | `number` | `0.5` | How strongly the figure answers the pointer, from 0 (subtle) to 1 (strong). A number outside 0…1 is clamped; anything that is not a number is 0.5. |
+> | `theme` | `"auto" \| "light" \| "dark"` | `"auto"` | `"auto"` follows the page: an ancestor with class `dark` or `data-theme="dark"`, then the page's `color-scheme`. |
+> | `label` | `string` | a description in English | The accessible name. In React, `aria-label` does the same. |
+> | `onRead` | `(text: string) => void` | | The figure's caption, each time it changes: `"03"`, `"gap 28.0"`, `"rate 0.20×"`. |
+> 
+> In `update`, a key set to `undefined` goes back to its default, and a key left out stays as it is.
+> 
+> ## Theme
+> 
+> Six custom properties, set on the figure or on anything above it:
+> 
+> ```css
+> .figures {
+>   --hairline-plate: #101014; /* the fill of every plate: the colour the figure sits on */
+>   --hairline-hi: #fafafa;    /* what is lit */
+>   --hairline-edge: #a1a1aa;  /* silhouettes */
+>   --hairline-mid: #52525b;   /* every other stroke */
+>   --hairline-lo: #27272a;    /* what recedes */
+>   --hairline-stroke: 0.9;    /* stroke width, in CSS pixels at any size */
+> }
+> ```
+> 
+> `--hairline-plate` is the one to get right. Plates are filled, not transparent, because a plate hides what is drawn behind it; on a background that is neither white nor `#08090a`, set it to that background.
+> 
+> The figure's styles have no specificity, so any rule of yours wins without `!important`.
+> 
+> ## Notes
+> 
+> - **Accessibility.** A figure is an image with a description you can replace with `label`. Riffle is the exception: it is a focusable group, the arrow keys walk its cards, and a live region reads the card out.
+> - **Reduced motion.** With `prefers-reduced-motion`, the figures that play on their own (Phosphor and Slow) hold still, and every figure still answers the pointer.
+> - **Performance.** Every figure on a page sh
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/kargulstudio/sales-crm)
+[GitHub](https://github.com/lucasmarkes/hairline) · [官方網站](https://hairline.lucasmarkes.com)
 
 ## 相關收錄
 
@@ -233,7 +354,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "kargulstudio--sales-crm"
+> WHERE category = "Other" AND file.name != "lucasmarkes--hairline"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -242,7 +363,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "kargulstudio--sales-crm" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "lucasmarkes--hairline" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -251,18 +372,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "kargulstudio--sales-crm"
+> WHERE week = "2026-W41" AND file.name != "lucasmarkes--hairline"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/lucasmarkes--hairline");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "kargulstudio--sales-crm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "lucasmarkes--hairline" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -278,7 +399,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "kargulstudio" AND file.name != "kargulstudio--sales-crm"
+> WHERE owner = "lucasmarkes" AND file.name != "lucasmarkes--hairline"
 > SORT stars DESC
 > ```
 
@@ -286,7 +407,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/lucasmarkes--hairline");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -303,7 +424,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/lucasmarkes--hairline");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -336,7 +457,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/lucasmarkes--hairline");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -360,7 +481,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/lucasmarkes--hairline");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -397,7 +518,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/lucasmarkes--hairline");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -480,7 +601,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-06** — 首次收錄
+> **2026-10-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -496,6 +617,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-08|2026-10-08]] — 再次上榜，1.6k stars
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.6k stars
-- [[2026-10-06|2026-10-06]] — 首次收錄，1.5k stars
+- [[2026-10-08|2026-10-08]] — 首次收錄，1.2k stars

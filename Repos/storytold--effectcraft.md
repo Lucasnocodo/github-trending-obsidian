@@ -1,63 +1,64 @@
 ---
-repo: kargulstudio/sales-crm
-url: https://github.com/kargulstudio/sales-crm
-owner: kargulstudio
-owner_type: User
-language: TypeScript
-license: MIT
+repo: storytold/effectcraft
+url: https://github.com/storytold/effectcraft
+owner: storytold
+owner_type: Organization
+language: Rust
+license: Apache-2.0
 description: ""
 homepage: ""
-stars: 1643
-stars_per_day: 548
-forks: 356
-open_issues: 12
-created: 2026-10-04
-pushed_at: 2026-10-06
-first_seen: 2026-10-06
+stars: 1881
+stars_per_day: 314
+forks: 765
+open_issues: 16
+created: 2026-10-01
+pushed_at: 2026-10-08
+first_seen: 2026-10-08
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.4.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-06
+last_reviewed: 2026-10-08
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-10-11"
-contributor_count: 2
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 1476
-readme_length: 2324
+contributor_count: 5
+engagement: "high"
+issue_close_rate: 84
+repo_size_kb: 22646
+readme_length: 9730
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-06"
-star_history: "2026-10-06:1508,2026-10-07:1597,2026-10-08:1643"
+ring_history: "assess@2026-10-08"
+star_history: "2026-10-08:1881"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/rust"
+  - org
 aliases:
-  - "sales-crm"
-  - "kargulstudio/sales-crm"
+  - "effectcraft"
+  - "storytold/effectcraft"
 ---
 
-# sales-crm
+# effectcraft
 
-**1.5k** stars · **1.5k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.9k** stars · **314** stars/天 · 建立 6 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/kargulstudio--sales-crm");
+const me = dv.page("Repos/storytold--effectcraft");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,6 +71,8 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG` `v0.4.0`
+
 > [!summary] 一句話摘要
 > No description
 
@@ -81,7 +84,7 @@ No description available.
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--effectcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +119,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--effectcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,92 +143,233 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 315 |
-| Open Issues | 5 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-10-06 |
-| 建立日期 | 2026-10-04 |
-| Repo 大小 | 1.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kargulstudio/sales-crm) |
+| Forks | 765 |
+| Open Issues | 16 |
+| Issue 解決率 | 84% (83 closed) |
+| 最後推送 | 2026-10-08 |
+| 建立日期 | 2026-10-01 |
+| Repo 大小 | 22.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/storytold/effectcraft) |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@rive-app/canvas` `@rive-app/react-canvas` `class-variance-authority` `clsx` `cmdk` `cn` `lottie-react` `motion` `next` `photoswipe` `radix-ui` `react` `react-dom` `react-use-measure` `swiper`
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `default-members` `version` `edition` `license` `rust-version` `repository` `effectcraft-time` `effectcraft-geom` `effectcraft-color` `effectcraft-raster` `effectcraft-path` `effectcraft-keyframe` `effectcraft-project`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 89
->     "JavaScript" : 6
->     "CSS" : 3
->     "Shell" : 1
+>     "Rust" : 94
+>     "WGSL" : 3
+>     "JavaScript" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vipulkumar-dev](https://github.com/vipulkumar-dev) | 19 |
-> | [@kargulstudio](https://github.com/kargulstudio) | 1 |
+> | [@echelon](https://github.com/echelon) | 543 |
+> | [@bflatastic](https://github.com/bflatastic) | 216 |
+> | [@claude](https://github.com/claude) | 16 |
+> | [@storybored379](https://github.com/storybored379) | 6 |
+> | [@dexterlabs1](https://github.com/dexterlabs1) | 4 |
+
+**最新版本**：v0.4.0 — EffectCraft v0.4.0 (2026-10-07)
+
+> [!info]- Release Notes
+> ## Highlights
+> 
+> A release built around the issues people filed since v0.3.1: more than 40 of them are fixed.
+> 
+> - **Timeline:** Alt+wheel zooms out to the whole comp; the Time Navigator's ends drag to zoom and `;` toggles frame level / the whole comp; reveal shortcuts (U, E, P…) only touch the selected layers; enabling Time Remapping reveals it; Project items land where you drop them.
+> - **Viewer:** drop Project items, files and effects straight onto the comp; Pan Behind snaps the anchor to its own layer, with Alt-drag, Shift-drag and Ctrl+double-click to center; a locked viewer keeps its comp.
+> - **Panels and editing:** clicking a value or name field selects it, so typing replaces it (Enter commits, Escape cancels); the gaps between the right column's stacked panels drag to resize them; Delete removes selected animators, masks and shape groups; the font menus list your installed fonts.
+> - **Export:** VP9 WebM frames always decode (no false superframe markers); long audio keeps its sound past 12:36; `--format hevc` / `av1` and `.mp4` outputs keep the codec you chose; AV1 WebM refuses alpha instead of silently dropping it.
+> - **Reliability:** running out of video memory falls back to the CPU instead of crashing; GPU start-up failures are contained; the CLI no longer panics when its output is piped into `head`.
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-10-06）
-> **活躍天數** 3 天 · **最新 commit** Add MIT License and update package.json with new project name and license
+> [!abstract] 最近 10 次 commit（2026-10-08 ~ 2026-10-08）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #233 from ulanch/fix-variable-font-axis-test
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/kargulstudio/sales-crm/issues/1) | CONVENTIONS.md is missing | 3 | 2 |
-> | [#2](https://github.com/kargulstudio/sales-crm/issues/2) | Real Database Integration | 0 | 0 |
+> | [#227](https://github.com/storytold/effectcraft/issues/227) | [EffectCraft 0.4.0] - Misc. Missing Features | 1 | 2 |
+> | [#246](https://github.com/storytold/effectcraft/issues/246) | EffectCraft Audio Problem | 0 | 0 |
+> | [#243](https://github.com/storytold/effectcraft/issues/243) | Failed to open Effectcraft on an igpu | 0 | 0 |
+> | [#234](https://github.com/storytold/effectcraft/issues/234) | [Bug] macOS 27 / Apple Silicon: app exits after ~10s without | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Kargul Starter
+> EffectCraft
 > 
-> Next.js 16 + React 19 + Tailwind CSS 4 boilerplate. Read `CONVENTIONS.md` before writing any component, section, or page — it is the whole spec for how this repo is built.
+>   Motion graphics and visual effects; an open-source, clean-room reimplementation of Adobe After Effects, rebuilt in pure Rust.
 > 
-> ## Getting started
+>   A free, open-source compositor in the spirit of After Effects: compositions, layers,
+>   keyframes, 306 effects, layer styles, expressions, 3D cameras and lights, and a render queue, native on macOS,
+>   Windows and Linux, and in the browser. Young, moving fast, and already usable.
 > 
-> ```bash
-> npm install
-> npm run dev
-> ```
+>   
+>   
+>   
 > 
-> Open [http://localhost:3000](http://localhost:3000).
+>   
 > 
-> | Script                 | What it does                                                       |
-> | ---------------------- | ------------------------------------------------------------------ |
-> | `npm run dev`          | Start the dev server                                               |
-> | `npm run build`        | Production build                                                   |
-> | `npm run start`        | Serve the production build                                         |
-> | `npm run lint`         | ESLint                                                             |
-> | `npm run to:avif`      | Convert an image to AVIF and report its inline cost — rule 11      |
-> | `npm run extract:avif` | Pull the first frame of every `.webm` under `public/` as a poster  |
-> | `npm run frame:rive`   | Render a still from a `.riv` file for use as its poster            |
+>   EffectCraft on getartcraft.com ·
+>   ArtCraft ·
+>   All Crafting Apps
 > 
-> ## First things to set on a new project
+>   
 > 
-> 1. **`lib/seo.ts`** — `SITE_NAME`, `SITE_URL`, `SITE_DESCRIPTION`, `SITE_ROUTES`. Everything in `app/robots.ts`, `app/sitemap.ts`, `app/llms.txt/route.ts` and every page's metadata derives from these (rule 18). Set `NEXT_PUBLIC_SITE_URL` in the environment to override the URL per deploy.
-> 2. **`app/globals.css`** — match the `@layer base` type scale and the `--padding-section-*` tokens to the design before building anything (rules 1 and 3).
-> 3. **`app/opengraph-image.jpg`** — 1200×630, with an `opengraph-image.alt.txt` beside it.
-> 4. **Fonts** — `app/layout.tsx` ships Inter + a local Inter Display; swap them for the design's typeface.
+> > [!NOTE]
+> > **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
+> > games &mdash; if you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
 > 
-> ## Docs
+>   What it is ·
+>   Animate ·
+>   Effects ·
+>   3D ·
+>   Export ·
+>   Agents ·
+>   Get started ·
+>   Status ·
+>   How it's made ·
+>   The Crafting Apps ·
+>   License
 > 
-> | File               | What's in it                                                        |
-> | ------------------ | ------------------------------------------------------------------- |
-> | `CONVENTIONS.md`   | The build rules. Read first.                                        |
-> | `AGENTS.md`        | Next.js version notes for agents                                    |
-> | `OPTIMIZATION.md`  | Why `Asset`'s Rive loading is gated behind LCP, with the measurements |
+> 
+> ## What EffectCraft is
+> 
+> EffectCraft is for animated titles, motion graphics and compositing work: the kind of thing
+> people reach for After Effects to do. You build a composition out of layers (solids, shapes,
+> text, footage, other compositions), animate their properties with keyframes, stack effects on
+> them and render the result.
+> 
+> The aim is to feel familiar to anyone who has used After Effects, with the same panels (Project,
+> Composition, Timeline, Effect Controls, Effects & Presets) and the same keyframe behaviour, and
+> then to go further in a few places where it matters to us:
+> 
+> - **Lottie import and export built in**, so animations can go straight to the web and apps
+>   without a plugin.
+> - **A project file you can read.** Projects are versioned JSON (`.ecproj`), so they diff cleanly
+>   in version control.
+> - **Everything is scriptable.** Every menu item, timeline drag and property edit goes through one
+>   command registry, so the same actions are reachable from a command line, a JSON control
+>   channel and an MCP server for agents.
+> - **No FFmpeg.** Video and audio decoding and encoding are pure Rust: FilmCraft's codecs and
+>   EffectCraft's own VP9, AV1, HEVC and Opus encoders.
+> 
+> 
+> ## Animate
+> 
+> The panels, menus and shortcuts follow After Effects, so your muscle memory carries over:
+> Project, Composition, Timeline, Effect Controls, Properties, Effects & Presets, Character,
+> Paragraph, Align, Info, Preview, Audio and the Render Queue, docked the way you expect. Drag
+> footage, comps and effects between them: onto the comp viewer, where they land under the pointer,
+> or into the Timeline, between layers and at the time you point to.
+> 
+> - **Layers of every kind:** solids, shapes, text, footage, nested compositions, nulls,
+>   adjustment layers, cameras and lights; parenting, track mattes, all 38 blend modes, motion blur.
+> - **Keyframes that behave the same:** linear, Bezier, hold, auto and continuous Bezier, roving
+>   keys, Easy Ease (F9), Keyframe Velocity and Interpolation dialogs, copy and paste at the current
+>   time, and a **Graph Editor** with value and speed graphs and draggable handles.
+> - **Time:** time remapping, time stretch, time-reverse, freeze frame, work area, markers, exact
+>   frame-accurate timing at every frame rate including 29.97 drop-frame.
+> - **Shapes and masks:** shape layers with trim paths, repeaters, round corners, offset, zig zag,
+>   twist, wiggle, merge paths and gradient strokes; masks drawn with the pen tool, with modes,
+>   feather, expansion and vertex editing in the viewer.
+> - **Text:** point and paragraph text with real shaping in any font installed on your machine, the
+>   Character and Paragraph panels, and text animators with range selectors.
+> - **Expressions:** JavaScript with the After Effects object model (`wiggle`, `loopOut`,
+>   `thisComp.layer("…")`, vector maths on arrays), an inline editor and the pick-whip.
+> - **Timeline like you know it:** twirl layers open to Transform, masks, effects and the rest; drag
+>   rows to reorder layers; rename with Enter or a double-click; the property shortcuts (A, P, S,
+>   R, T, M, F, E, L, U and their double presses AA, PP, SS, RR, TT, MM, FF, EE, LL, UU), Shift to
+>   add properties, Alt+Shift+A/P/S/R/T to key the current time, Ctrl+` to twirl selected layers.
+> - **Puppet tools:** Position, Advanced, Bend, Starch and Overlap pins on a mesh built from the
+>   layer, real-time pin recording, rotate/scale handles, pins driven by (or carrying) nulls for
+>   rigging, and follow-through for hair and cloth.
+> 
+>   
+> 
+> 
+> ## Effects
+> 
+> 306 effects (every one of After Effects' 298, and more) across its categories, each with its parameter names, order and
+> defaults: blur and sharpen, channel, color correction (Curves, Levels, Hue/Saturation, Lumetri
+> Color…), distort (Warp, Bulge, Turbulent Displace, CC Power Pin…), generate (Fractal Noise,
+> Gradient Ramp, Stroke, Write-on, Audio Spectrum…), keying, matte, noise and grain, perspective,
+> **simulation** (CC Particle World, CC Rainfall, Shatter, Card Dance, Caustics, Wave World…),
+> stylize (Glow, CC Glass…), **time** (Echo, Posterize Time, Timewarp, Time Displacement…),
+> **audio** (Reverb, Parametric EQ, Delay, Stereo Mixer…), text, transitions, utility and expression
+> controls. All nine **Layer Styles** (Drop Shadow, Inner/Outer Glow, Bevel and Emboss, Satin,
+> overlays, Stroke) with Global Light. Preview plays audio in sync, with meters and waveforms.
+> 
+>   
+> 
+> 
+> ## 3D
+> 
+> Classic 3D the way After Effects does it: 3D layers with orientation and material options,
+> one- and two-node **cameras** with depth of field, **lights** (parallel, spot, point, ambient)
+> with soft ray-traced shadows, layers that intersect correctly, orbit, pan and dolly camera
+> tools, and Front, Top, Left and Custom views.
+> 
+>   
+> 
+> 
+> ## Export
+> 
+> A Render Queue like After Effects', with Render Settings and Output Modules: **H.264** MP4 and
+> **ProRes** MOV (Proxy to 4444 XQ with alpha) with audio, **HEVC** (Main / Main 10) and **AV1**
+> MP4, **WebM** (VP9 with inter frames and alpha, or AV1; Opus audio), PNG, JPEG, TIFF and 32-bit EXR sequences, animated GIF and WAV/AIFF. Field
+> rendering with 3:2 pulldown, effect/solo/guide/depth overrides, crop, region of interest and
+> resize, Render Settings and Output Module templates with defaults, post-render actions, storage
+> overflow and render logs. The same queue runs from the command line. Every encoder is pure
+> Rust (FilmCraft's H.264, ProRes and AAC; EffectCraft's own VP9, AV1, HEVC and Opus); there is no
+> FFmpeg inside.
+> 
+> **Lottie** goes both ways: File ▸ Export ▸ Lottie JSON… writes a composition (precomps, shape,
+> solid, image, text and null layers, eased and spatial keyframes, masks, track mattes, blend
+> modes, time remapping, optionally expressions) as `.json` or `.lottie`, and lists anything Lottie
+> cannot express; File ▸ Import ▸ Lottie… opens one as a new composition.
+> 
+>   
+> 
+> 
+> ## Built for agents
+> 
+> Everything you can do from a menu is a command with an id, and agents can reach every one of
+> them:
+> 
+> - **MCP server:** `effectcraft-cli mcp` speaks the Model Context Protocol over stdio, headless
+>   or bridged to the running app (`--bridge 9877`). Tools cover commands, the project and property
+>   tree, keyframes and rendered frames. This repository ships a ready [`.mcp.json`](.mcp.json).
+> - **Command line:** one-shot calls with JSON output, for example
+>   `effectcraft-cli set Main '#1' transform/position '[100,360]' --time 0 main.ecproj --save`
+>   or `effectcraft-cli render --comp Main --out main.mp4`, or
+>   `effectcraft-cli exec file.exportLottie '{"comp":"Main","path":"main.json"}' main.ecproj`.
+> - **Control channel:** `effectcraft --control 9877` accepts JSON lines to run commands, inspect
+>   and click any widget by its automation id, and take screenshots.
+> 
+> See [docs/agents.md](docs/agents.md) and [docs/control-protocol.md](docs/control-protocol.md).
+> 
+> 
+> ## Get started
+> 
+> Installers for each version are on the [Releases](https://github.com/storytold/effectcraft/releases)
+> page: a universal macOS app; Windows MSIs and portable zips for x64, x86 and ARM64; and Linux
+> AppImage, deb, rpm and tar.gz for x86_64 and aarch64. The Windows ARM64 build runs natively on
+> Windows on
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/kargulstudio/sales-crm)
+[GitHub](https://github.com/storytold/effectcraft)
 
 ## 相關收錄
 
@@ -233,7 +377,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "kargulstudio--sales-crm"
+> WHERE category = "Other" AND file.name != "storytold--effectcraft"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -242,7 +386,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "kargulstudio--sales-crm" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "storytold--effectcraft" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -251,18 +395,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "kargulstudio--sales-crm"
+> WHERE week = "2026-W41" AND file.name != "storytold--effectcraft"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--effectcraft");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "kargulstudio--sales-crm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "storytold--effectcraft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -278,7 +422,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "kargulstudio" AND file.name != "kargulstudio--sales-crm"
+> WHERE owner = "storytold" AND file.name != "storytold--effectcraft"
 > SORT stars DESC
 > ```
 
@@ -286,7 +430,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--effectcraft");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -303,7 +447,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--effectcraft");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -336,7 +480,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--effectcraft");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -360,7 +504,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--effectcraft");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -397,7 +541,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/kargulstudio--sales-crm");
+> const me = dv.page("Repos/storytold--effectcraft");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -480,7 +624,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-06** — 首次收錄
+> **2026-10-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -496,6 +640,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-08|2026-10-08]] — 再次上榜，1.6k stars
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.6k stars
-- [[2026-10-06|2026-10-06]] — 首次收錄，1.5k stars
+- [[2026-10-08|2026-10-08]] — 首次收錄，1.9k stars
