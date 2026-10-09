@@ -1,68 +1,63 @@
 ---
-repo: QingYunA/answer-me-with-html
-url: https://github.com/QingYunA/answer-me-with-html
-owner: QingYunA
+repo: nullmoth/nvidia-macos-driver
+url: https://github.com/nullmoth/nvidia-macos-driver
+owner: nullmoth
 owner_type: User
-language: JavaScript
-license: MIT
-description: "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。"
-homepage: ""
-stars: 2387
-stars_per_day: 398
-forks: 161
-open_issues: 7
-created: 2026-10-02
-pushed_at: 2026-10-09
-first_seen: 2026-10-05
+language: Rust
+license: NOASSERTION
+description: "Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included."
+homepage: "https://nullmothsystems.com"
+stars: 1419
+stars_per_day: 1419
+forks: 130
+open_issues: 44
+created: 2026-10-07
+pushed_at: 2026-10-08
+first_seen: 2026-10-09
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: "v0.4.8"
+release_tag: "v1.1.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-05
+last_reviewed: 2026-10-09
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-10-12"
-contributor_count: 5
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 50
-repo_size_kb: 21793
-readme_length: 9913
+issue_close_rate: 4
+repo_size_kb: 2774
+readme_length: 8483
 bus_factor: 1
-last_release_days: 0
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-05"
-star_history: "2026-10-05:1169,2026-10-06:1540,2026-10-07:1848,2026-10-08:2189,2026-10-09:2387"
+ring_history: "assess@2026-10-09"
+star_history: "2026-10-09:1419"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
-  - "topic/agent_skill"
-  - "topic/ai_agent"
-  - "topic/claude_code"
-  - "topic/cli"
-  - "topic/diagram"
+  - "lang/rust"
 aliases:
-  - "answer-me-with-html"
-  - "QingYunA/answer-me-with-html"
+  - "nvidia-macos-driver"
+  - "nullmoth/nvidia-macos-driver"
 ---
 
-# answer-me-with-html
+# nvidia-macos-driver
 
-**1.2k** stars · **585** stars/天 · 建立 2 天前 · JavaScript · MIT
+**1.4k** stars · **1.4k** stars/天 · 建立 1 天前 · Rust · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/QingYunA--answer-me-with-html");
+const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.4.8`
-
-`agent-skill` `ai-agent` `claude-code` `cli` `diagram` `explainer` `html` `llm` `ste100`
+`個人專案` `v1.1.1`
 
 > [!summary] 一句話摘要
-> Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。
+> Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included.
 
 ## 專案簡介
 
-Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。
+Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,251 +142,212 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 81 |
-| Open Issues | 12 |
-| Issue 解決率 | 50% (12 closed) |
-| 最後推送 | 2026-10-05 |
-| 建立日期 | 2026-10-02 |
-| Repo 大小 | 21.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/QingYunA/answer-me-with-html) |
-| Topics | `agent-skill` `ai-agent` `claude-code` `cli` `diagram` `explainer` `html` `llm` |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@dagrejs/dagre` `marked` `esbuild` `yaml`
+| Forks | 130 |
+| Open Issues | 44 |
+| Issue 解決率 | 4% (2 closed) |
+| 最後推送 | 2026-10-08 |
+| 建立日期 | 2026-10-07 |
+| 官方網站 | [Link](https://nullmothsystems.com) |
+| Repo 大小 | 2.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nullmoth/nvidia-macos-driver) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 96
->     "CSS" : 4
+>     "Rust" : 77
+>     "C++" : 8
+>     "C" : 7
+>     "Objective-C" : 6
+>     "Swift" : 1
+>     "Python" : 1
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@QingYunA](https://github.com/QingYunA) | 56 |
-> | [@xianull](https://github.com/xianull) | 4 |
-> | [@zhaidewei](https://github.com/zhaidewei) | 3 |
-> | [@takaburi](https://github.com/takaburi) | 2 |
-> | [@21tesla](https://github.com/21tesla) | 1 |
+> | [@nullmoth](https://github.com/nullmoth) | 2 |
 
-**最新版本**：v0.4.8 (2026-10-05)
+**最新版本**：v1.1.1 — 1401 Mac 1.1.1 (2026-10-08)
 
 > [!info]- Release Notes
-> ## Highlights
+> 1401 Mac 1.1.1
 > 
-> - **English throughout the repository** (#46, spec #39). CLI output, errors, help, notices, writing-check messages, the skill instructions, slash commands, comments and test names are now English. Pages and the video player still switch between Chinese, English and Japanese by the draft's language, and the agent still replies in your language. A language-check test keeps it that way.
-> - **`--voice local`** (#37, thanks @chnln): narrate videos with a self-hosted OpenAI-compatible `/v1/audio/speech` server such as Qwen3-TTS via mlx-audio. Runaway or truncated clips are regenerated automatically. `AM_TTS_API_KEY` is supported, and `am patch` keeps a video's voice.
-> - **Wider tables and diagrams on sheet pages** (#38): tables with 4+ columns and wide diagrams get more width automatically and scroll on phones.
+> Send logs now captures what happened right before each WindowServer crash.
 > 
-> ## Also
+> - For each of the three most recent WindowServer crashes, the logs include the driver's and WindowServer's own messages from the two minutes before the crash. Previously only the newest lines were kept, so the reason for a crash at startup was usually gone by the time logs were sent.
+> - Driver and plugin messages and kernel messages are kept in separate budgets so one cannot crowd out the other.
 > 
-> - Issue forms and a pull request template (#34).
-> - CONTRIBUTING.md, `npm run snapshot` and `npm run release` for maintainers (#33).
-> - More tests for `am clean` (#30).
+> The NVIDIA driver is unchanged from 1.1.0 (nullmoth-nvidia-1.1.0.tar.gz is included for convenience).
 > 
-> ## Note
-> 
-> CLI text the agent reads is now English (for example `STE 2 warnings`, `! Cleanup hint`). Update the skill and the CLI together, as the update commands below do.
-> 
-> ## Update
-> 
-> - Plugin: `claude plugin update answer-me-with-html@answer-me-with-html`
-> - Skill: `npx skills update answer-me-with-html -y`
-> 
-> **Full changelog:** https://github.com/QingYunA/answer-me-with-html/compare/v0.4.7...v0.4.8
+> Known issue (fix planned)
+> - With two displays, changing the refresh rate or resolution of one can make the other flash or go blank until you restart.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-05 ~ 2026-10-05）
-> **活躍天數** 1 天 · **最新 commit** feat(video): update ElevenLabs defaults, add ELEVENLABS_MODEL_ID and a setup guide (#48)
+> [!abstract] 最近 10 次 commit（2026-10-08 ~ 2026-10-08）
+> **活躍天數** 1 天 · **最新 commit** Mac 1.1.1: Send logs keeps the two minutes before each WindowServer crash
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#47](https://github.com/QingYunA/answer-me-with-html/issues/47) | Page aria-labels are always Chinese (flow, sequence, doc tab `bug` | 1 | 0 |
-> | [#19](https://github.com/QingYunA/answer-me-with-html/issues/19) | 感觉功能还能继续拓展下，图片有时候会比文字和图表箭线图还更好理解 | 1 | 0 |
+> | [#36](https://github.com/nullmoth/nvidia-macos-driver/issues/36) | Is it supported on Tahoe? | 1 | 3 |
+> | [#14](https://github.com/nullmoth/nvidia-macos-driver/issues/14) | GTX 10 series support? | 1 | 0 |
+> | [#4](https://github.com/nullmoth/nvidia-macos-driver/issues/4) | RTX 5060 Ti macOS 15.7.9 no image | 1 | 1 |
+> | [#46](https://github.com/nullmoth/nvidia-macos-driver/issues/46) | [Issue] Core Ultra 7 265KF / Colorful BATTLE-AX B860M-GHA WI | 0 | 0 |
+> | [#45](https://github.com/nullmoth/nvidia-macos-driver/issues/45) | 1650s | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Answer me with HTML
+> # NullMoth NVIDIA Driver for macOS
 > 
->   An agent skill. Ask a hard question, get a page you can actually read instead of a wall of text.The model writes about 1/7 of the tokens it would need to hand-write the HTML.
+> A Metal driver for NVIDIA Turing-and-later cards on Intel Macs and OpenCore systems running **macOS 15 Sequoia**.
+> The device table includes GTX 16, RTX 20/30/40/50, TITAN RTX, and supported Quadro/RTX workstation cards.
+> The driver implements NVIDIA-backed display and Metal interfaces. Feature availability and application behavior depend on the card, operating-system version and installed components; device-table coverage is not runtime qualification.
 > 
->   
->   
->   
+> Made by **NullMoth Systems**.
 > 
->   English · 简体中文
+> **Latest update:** [1401 and NVIDIA driver 1.1.0](docs/RELEASE-1.1.0.md). See the changes, validation and qualification scope before updating.
 > 
-> Once installed, ask questions the way you always do:
+> Installing macOS from Windows? Use **1401**: https://github.com/nullmoth/1401
 > 
-> ```
-> > Explain the TCP three-way handshake
-> > Map out how the modules in this repo fit together
-> > Redis or Memcached for our cache?
-> ```
+> > **This driver is new and may not work on every PC.** It is tested on an RTX 5060 under macOS 15.7.x and 15.8.1. Device-table coverage is broader than physical hardware validation; see [card support](docs/CARD-SUPPORT.md). If your PC does
+> > not boot macOS with OpenCore yet, set that up first with the
+> > [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+> > ([OpenCore releases](https://github.com/acidanthera/OpenCorePkg/releases)), then install the driver.
+> > The full write-up of how the driver works is in [`docs/HOW-IT-WORKS.md`](docs/HOW-IT-WORKS.md).
 > 
-> The agent writes a short Markdown draft and hands it to the CLI that ships with the skill. About 50 ms later you have a page:
+> Support the work: https://buymeacoffee.com/nullmoth
 > 
-> https://github.com/user-attachments/assets/d3063a28-5dfd-4c44-a562-be901c49b249
+> | | |
+> |---|---|
+> | macOS | 15 Sequoia (tested 15.7.x and 15.8.1), x86_64 |
+> | GPUs | NVIDIA Turing and later from the GSP device table; physical validation: RTX 5060 |
+> | Metal | Metal 3: argument buffers tier 2, ray tracing, mesh shaders, MPS, MetalFX path |
+> | Also | OpenGL (through Apple's GL-on-Metal), OpenCL, Core Image, Core ML |
 > 
-> 24-second demo. Turn the sound on for the music.
-> 
-> 
-> ## Install
-> 
-> You need [Node.js](https://nodejs.org/) 20 or newer. There is no `npm install` step. The CLI is bundled inside the skill.
-> 
-> 
-> ### Let your agent install it (recommended)
-> 
-> Paste this into Claude Code, Codex, Cursor, OpenCode or any other agent:
-> 
-> > Install the Answer me with HTML skill: run `npx -y skills add QingYunA/answer-me-with-html -g -y`, and pass `-a` with your own agent name (for Claude Code, `-a claude-code`). Then read its SKILL.md and use it to make a page that explains the TCP three-way handshake, so we know it works.
-> 
-> 
-> ## Features
-> 
-> - **Fewer tokens, less waiting:** The model writes a short draft, about 900 output tokens, instead of 7,000 tokens of HTML, CSS and SVG. See the [benchmark](bench/README.md).
-> - **Layout by code:** Panel placement and diagram coordinates are computed, not guessed. Labels don't get cut off, and there are no gaps in the grid.
-> - **Fixes its own mistakes:** When a draft has an error, the CLI returns the line number, the component and a correct example. The agent fixes it in one try.
-> - **Two themes:** `blueprint` looks like an engineering drawing. `shadcn` uses clean cards. Both have light and dark modes.
-> - **One file, no dependencies:** Each page is a single `.html` with no CDN links or web fonts. It opens offline and is easy to share.
-> - **Writing check:** Drafts are checked against rules adapted from ASD-STE100: long sentences, wordy phrases, passive voice. It only warns unless you ask for strict mode.
-> - **Keeps its source:** Every page embeds the Markdown that made it. Click "Copy source" to get it back.
-> 
->   
->     
->     
->   
->   
->     Blueprint theme (examples/ste100.md)
->     shadcn theme, dark mode
->   
-> 
-> 
-> ## Always-on mode (optional)
-> 
-> By default, the agent makes a page only for questions that need one. If you want **a page with every conclusion**, turn on always-on mode.
-> 
-> The agent then gets a short reminder each turn (about 90 tokens). Whenever it gives a conclusion, summary, plan or comparison, even a short one, it adds a small page with 2 to 4 panels and puts the path at the end of the reply. These pages never pop open, so they don't interrupt you. Casual chat and replies with no conclusion stay as they are. Claude Code makes no pages in plan mode.
-> 
-> **Claude Code:** install one more plugin.
+> ## How it works
 > 
 > ```
-> /plugin marketplace add QingYunA/answer-me-with-html
-> /plugin install answer-me-with-html-always@answer-me-with-html
+> Metal app ─► NVMTLDriver.bundle ─► translator (Apple AIR → SPIR-V) ─► NVK (Mesa Vulkan + NAK compiler) ─► kexts ─► GPU
 > ```
 > 
-> Pause it with `/answer-me-with-html:config always off`. You don't need to uninstall.
+> | Component | Path on disk | Source |
+> |---|---|---|
+> | Metal driver plugin | `/Library/GPUBundles/NVMTLDriver.bundle` | `plugin/` |
+> | Shader translator | inside the plugin (`libnvmtl_translate.dylib`) | `translator/` (LGPL-3.0, based on metal2vulkan) |
+> | Vulkan back end (NVK) | `/Library/GPUBundles/nvmtl/` | `nvk/nvk-macos.patch` on Mesa `17ca6174` |
+> | Kernel extensions | `/Library/Extensions/NVRM, NVAccel, NVRMFB, NVRMAGDC` | `kexts/` |
+> | GPU firmware (GSP) | `/Users/Shared/nvfw/nvidia/610.57.04` | NVIDIA, unmodified |
 > 
-> **Other agents:** paste this to your agent so it writes the rule into its own rules file, such as `AGENTS.md`:
+> The kernel side runs NVIDIA's own open GPU kernel modules (r610) under macOS. NVRMFB is the display framebuffer,
+> NVAccel the accelerator WindowServer composites through, NVRMAGDC the display-policy shim.
 > 
-> > Turn on always-on mode for Answer me with HTML: add a global rule — "[answer-me-with-html always-on] Whenever a reply gives a conclusion, summary, plan, comparison, review or explanation, even a short one, also make a page with the answer-me-with-html skill (2 to 4 panels for routine answers), render it with --no-open, and end the reply with the page path. Skip casual chat, one- or two-sentence replies with no conclusion, pure command output, and requests for plain text."
+> ## Install — prebuilt (recommended)
 > 
-> 
-> ## Why not just ask for HTML?
-> 
-> You can. Models write decent HTML now. The problem is the bill you pay in output tokens: the model has to type every line of CSS, every wrapper `div` and every SVG coordinate. Output tokens are also what you sit and wait for.
-> 
-> With this skill, the model writes only the content. We asked the same questions with the same model both ways (3 topics × 3 runs, medians, Claude Sonnet 5.5):
-> 
-> | | Ask for HTML directly | Answer me with HTML | |
-> | :--- | ---: | ---: | :--- |
-> | Output tokens | 6,873 | **923** | **7.4× fewer** |
-> | Time | 46 s | **13 s** | **3.6× faster** |
-> | Cost per answer | $0.22 | $0.26 | about the same |
-> 
->   
-> 
-> One run from the benchmark: same prompt, same model, and both pages are usable. This run took 9,351 output tokens for the plain page and 899 with the skill. The table above shows the medians.
-> 
-> Why the cost doesn't drop too: the skill adds two short turns (load the skill, run the CLI), and every turn re-reads the conversation context. You save the waiting, not the bill. Per-topic numbers and the script to reproduce them are in [bench/](bench/README.md).
-> 
-> 
-> ### Claude Code plugin
-> 
-> Run this inside Claude Code:
-> 
-> ```
-> /plugin marketplace add QingYunA/answer-me-with-html
-> /plugin install answer-me-with-html@answer-me-with-html
-> ```
-> 
-> 
-> ### One command
+> Download `nullmoth-nvidia-.tar.gz` from **Releases**, then:
 > 
 > ```bash
-> npx skills add QingYunA/answer-me-with-html
+> tar -xzf nullmoth-nvidia-*.tar.gz && cd pkgroot
+> shasum -a 256 -c SHA256SUMS          # every file must say OK
+> sudo ./install.sh                    # copies the files, rebuilds the Auxiliary Kernel Collection
+> sudo shutdown -r now                 # a reboot is required: logout does not load the driver
 > ```
 > 
-> It asks which agents to install into. The installer, [vercel-labs/skills](https://github.com/vercel-labs/skills), supports more than 70 agents.
+> macOS asks you to **allow the extensions** in System Settings → Privacy & Security the first time. Allow, then reboot again.
 > 
-> Manual install
+> ## 1401 Mac app (easiest)
 > 
-> Copy the `skills/answer-me-with-html` folder into your agent's skill folder. For Claude Code:
+> Download the latest `1401-Mac-.dmg` from **Releases**, open it, and run **1401** (the driver package is inside the disk
+> image, so nothing else to download). Follow its steps. A supported setup must use a verified or explicitly selected OpenCore partition. The app finds the OpenCore that started your Mac (in `EFI/OC` or `EFI/BOOT`, on an
+> EFI or FAT32 partition), shows every change before making it, backs the config up, installs the driver, and adds
+> **1401: Remove NVIDIA driver** to the OpenCore boot picker. Choosing that entry removes the driver at the next start and
+> puts the Mac back exactly as it was before the install, OpenCore config included, then restarts by itself. The app also
+> maps your USB ports and, if the driver ever crashes the Mac, offers to make a crash report you can upload yourself
+> (it never sends anything on its own).
+> 
+> **Something not working?** Open 1401 > Crash report > **Send logs to NullMoth**. It sends what 1401 did, the driver's
+> state, driver crash reports, recent WindowServer crash reports and OpenCore's startup logs (names, serial numbers and addresses removed), each
+> with a SHA-256 the site checks, and shows a report ID to quote in the NullMoth Discord.
+> 
+> **macOS 26 Tahoe:** the package carries a separate NVAccel build, but full hardware and application qualification remains pending. The obsolete preparation action has been removed from the app; do not treat package contents as a verified upgrade path.
+> 
+> **Keep the USB stick or disk OpenCore started your Mac from plugged in** while the app runs: that is the config it
+> changes. A shared SMBIOS model alone does not establish the startup partition. Automatic USB-to-internal copying is disabled, preserving Windows and vendor boot files. Driver installation uses the selected startup partition. Keep the OpenCore stick attached for every restart until the internal boot setup is reviewed. After the install,
+> restart; the first start with the driver pauses for up to a minute at "PCI configuration end" while the GPU comes up.
+> 
+> ## Wiring into an existing OpenCore setup
+> 
+> The kexts install into `/Library/Extensions` and load from the Auxiliary Kernel Collection — **do not** also inject
+> them from `EFI/OC/Kexts`. OpenCore only needs to set SIP and boot-args.
+> 
+> **`NVRAM → Add → 7C436110-AB2A-4BBB-A880-FE41995C9F82`**
+> 
+> | Key | Value | Why |
+> |---|---|---|
+> | `csr-active-config` | `` (Data) | the tested value: unsigned kexts, plus what root patches need |
+> | `boot-args` | `nvfb=1 nvaccel=1 nvfbheads=4 -nvkmsnosmooth amfi_get_out_of_my_way=0x1 amfi=0x80` | framebuffer + accelerator, 4 display heads; the AMFI args let WindowServer load the driver bundle |
+> 
+> Add every key you set to `NVRAM → Delete` as well, so the values are rewritten each boot.
+> 
+> | Setting | Value | Why |
+> |---|---|---|
+> | `UEFI → Quirks → ResizeGpuBars` | `13` | 8 GB BAR: full memory bandwidth (tested on the RTX 5060) |
+> | `Booter → Quirks → ResizeAppleGpuBars` | `-1` | macOS sees the full BAR |
+> | `Kernel → Block` | `com.apple.iokit.IONDRVSupport`, Strategy `Exclude` | otherwise the firmware framebuffer takes display index 0 from NVRMFB |
+> | `Misc → Security → SecureBootModel` | `Disabled` | Apple Secure Boot refuses kexts Apple did not sign |
+> 
+> The macOS **installer** needs the opposite BAR settings (`ResizeAppleGpuBars` `0`, `ResizeGpuBars` `-1`, IONDRVSupport
+> not excluded): it has no NVIDIA driver and runs on the firmware's screen. 1401 builds installers that way, and the 1401
+> Mac app switches to the values above when it installs the driver.
+> 
+> Also required:
+> - **BIOS:** Above 4G Decoding ON (the card maps memory above 4 GB), CSM OFF.
+> - **SMBIOS:** a Mac model that runs macOS 15 with a discrete GPU (tested: `iMacPro1,1`, which 1401 uses).
+> - **Remove** any `nv_disable=1`, WhateverGreen NVIDIA patches, or `agdpmod=pikera` for this card.
+> - **No `DeviceProperties`** are needed for the NVIDIA card.
+> 
+> Verify after the reboot:
 > 
 > ```bash
-> git clone --depth 1 https://github.com/QingYunA/answer-me-with-html.git /tmp/answer-me-with-html
-> cp -R /tmp/answer-me-with-html/skills/answer-me-with-html ~/.claude/skills/answer-me-with-html
+> kmutil showloaded --list-only | grep nullmoth      # 4 lines
+> system_profiler SPDisplaysDataType | head -20      # your GeForce, Metal: supported
 > ```
 > 
-> Skill folders for other agents: Codex `~/.codex/skills/`, Cursor `~/.cursor/skills/`, OpenCode `~/.config/opencode/skill/`.
+> ## Dual boot
 > 
-> No setup is needed after install.
+> Nothing in the driver touches other disks. OpenCore's picker boots Windows (`ScanPolicy` 0 or including NTFS) and Linux
+> (`OpenLinuxBoot.efi` in `UEFI → Drivers`, `LauncherOption = Full`) alongside macOS.
 > 
+> ## Uninstall
 > 
-> ## What you ask, what you get
-> 
-> | You ask | You get |
-> | :--- | :--- |
-> | "Explain the TCP three-way handshake" | A sequence diagram, a state diagram and a flag table |
-> | "How are the modules in this repo organized?" | A folder tree plus a call graph |
-> | "Redis or Memcached?" | A comparison table with ✓ and ✗, then a verdict |
-> | "What's wrong with this paragraph?" | Each sentence annotated, with the problem words and fixes |
-> | "How did Kubernetes come about?" | A timeline with the key moments highlighted |
-> | "How do I show hidden files with `ls`?" | No page. A one-line question gets a one-line answer |
-> 
-> The agent decides when a page is worth it: related concepts, multi-step flows, multi-way comparisons. You can also just say "explain it in HTML".
-> 
-> Pages are saved in `~/.answer-me-with-html/pages/`. The buttons in the top-right corner switch the theme and light/dark mode, and copy the Markdown that produced the page.
-> 
-> 
-> ## Explainer videos (3Blue1Brown style)
-> 
-> Karpathy's ladder for understanding LLM output ends with explainer videos. Ask for one: "make a 3b1b-style video on the TCP handshake".
-> 
-> The agent writes the same kind of draft as for a page, plus one line of narration per beat. Nothing else:
-> 
-> ````markdown
-> 
-> ## Both sides wait
-> ```sequence
-> Client -> Server: SYN
-> Server -> Client: SYN-ACK
+> ```bash
+> sudo ./uninstall.sh && sudo shutdown -r now
 > ```
-> > The client sends a SYN to ask for a connection.
-> > The [Server] answers with a SYN-ACK.
-> ````
 > 
-> `am video` turns it into a player page:
+> ## Build from source
 > 
-> - **Built step by step.** When the Nth line of narration plays, the Nth step of the diagram appears. Arrows draw themselves. If there are more lines than steps, the extra lines at the start act as an intro.
-> - **Spoken narration.** The agent writes narration the way a person explains things out loud, not like a manual.
-> - **Camera focus.** `[Server]` in the narration pushes the camera toward that node and highlights it. The diagram never leaves the frame.
-> - **Objects carry over.** A node with the same name in the next scene glides to its new place instead of cutting.
-> - **Narration.** It uses ElevenLabs if `ELEVENLABS_API_KEY` is set (optional; [setup guide](docs/elevenlabs.md)), the system voice otherwise (macOS `say`: Tingting for Chinese, Samantha for English, Kyoko for Japanese), and captions only if neith
+> Requires Xcode 16, Rust (stable), Meson/Ninja, and NVIDIA's `open-gpu-kernel-modules` at tag `610.57.04`.
+> 
+> ```bash
+> build/build_xlate.sh       # translator  -> libnvmtl_translate.dylib
+> RELEASE=1 build/build_plugin.sh   # plugin -> NVMTLDriver.bundle (RELEASE=1 strips every diagnostic)
+> build/build263.sh          # NVK: apply nvk/nvk-macos.patch to Mesa 17ca6174 first
+> build/accel_build.sh    # kexts
+> ```
+> 
+> ## License
+> 
+> Free of charge, source code included. Nobody may sell
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/QingYunA/answer-me-with-html)
+[GitHub](https://github.com/nullmoth/nvidia-macos-driver) · [官方網站](https://nullmothsystems.com)
 
 ## 相關收錄
 
@@ -401,7 +355,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "QingYunA--answer-me-with-html"
+> WHERE category = "Other" AND file.name != "nullmoth--nvidia-macos-driver"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -410,7 +364,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "QingYunA--answer-me-with-html" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "nullmoth--nvidia-macos-driver" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -419,18 +373,18 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "QingYunA--answer-me-with-html"
+> WHERE week = "2026-W41" AND file.name != "nullmoth--nvidia-macos-driver"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "QingYunA--answer-me-with-html" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "nullmoth--nvidia-macos-driver" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -446,7 +400,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "QingYunA" AND file.name != "QingYunA--answer-me-with-html"
+> WHERE owner = "nullmoth" AND file.name != "nullmoth--nvidia-macos-driver"
 > SORT stars DESC
 > ```
 
@@ -454,7 +408,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -471,7 +425,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -504,7 +458,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -528,7 +482,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -565,7 +519,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/QingYunA--answer-me-with-html");
+> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -648,7 +602,7 @@ Answer me with HTML — an agent skill that answers hard questions with a one-pa
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-05** — 首次收錄
+> **2026-10-09** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -664,8 +618,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-09|2026-10-09]] — 再次上榜，2.4k stars
-- [[2026-10-08|2026-10-08]] — 再次上榜，2.2k stars
-- [[2026-10-07|2026-10-07]] — 再次上榜，1.8k stars
-- [[2026-10-06|2026-10-06]] — 再次上榜，1.5k stars
-- [[2026-10-05|2026-10-05]] — 首次收錄，1.2k stars
+- [[2026-10-09|2026-10-09]] — 首次收錄，1.4k stars

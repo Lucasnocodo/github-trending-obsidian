@@ -7,12 +7,12 @@ language: Go
 license: MIT
 description: "X Premium gift CLI and redemption site"
 homepage: "xp.kfcv50.today"
-stars: 1004
-stars_per_day: 201
-forks: 330
-open_issues: 0
+stars: 1097
+stars_per_day: 183
+forks: 348
+open_issues: 1
 created: 2026-10-02
-pushed_at: 2026-10-07
+pushed_at: 2026-10-09
 first_seen: 2026-10-08
 week: "2026-W41"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-11"
+appearances: 2
+next_review: "2026-10-16"
 contributor_count: 2
 engagement: "high"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-08"
-star_history: "2026-10-08:1004"
+star_history: "2026-10-08:1004,2026-10-09:1097"
 tags:
   - github
   - "category/other"
@@ -616,4 +616,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-09|2026-10-09]] — 再次上榜，1.1k stars
 - [[2026-10-08|2026-10-08]] — 首次收錄，1.0k stars
