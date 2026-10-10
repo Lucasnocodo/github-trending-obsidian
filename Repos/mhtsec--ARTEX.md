@@ -7,10 +7,10 @@ language: Go
 license: AGPL-3.0
 description: "AI 自主渗透测试系统 | 百度“agent+”攻防挑战赛冠军项目"
 homepage: ""
-stars: 1310
-stars_per_day: 1310
-forks: 3083
-open_issues: 1
+stars: 2494
+stars_per_day: 1247
+forks: 4850
+open_issues: 0
 created: 2026-10-08
 pushed_at: 2026-10-08
 first_seen: 2026-10-09
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-12"
+appearances: 2
+next_review: "2026-10-13"
 contributor_count: 5
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-09"
-star_history: "2026-10-09:1310"
+star_history: "2026-10-09:1310,2026-10-10:2494"
 tags:
   - github
   - "category/other"
@@ -781,4 +781,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-10|2026-10-10]] — 再次上榜，2.5k stars
 - [[2026-10-09|2026-10-09]] — 首次收錄，1.3k stars

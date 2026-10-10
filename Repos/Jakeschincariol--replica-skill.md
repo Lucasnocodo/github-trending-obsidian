@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT."
 homepage: "https://opusjake.ai"
-stars: 1148
-stars_per_day: 230
-forks: 149
+stars: 1426
+stars_per_day: 238
+forks: 186
 open_issues: 5
 created: 2026-10-03
 pushed_at: 2026-10-03
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-12"
+appearances: 2
+next_review: "2026-10-13"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-09"
-star_history: "2026-10-09:1148"
+star_history: "2026-10-09:1148,2026-10-10:1426"
 tags:
   - github
   - "category/other"
@@ -636,4 +636,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-10|2026-10-10]] — 再次上榜，1.4k stars
 - [[2026-10-09|2026-10-09]] — 首次收錄，1.1k stars

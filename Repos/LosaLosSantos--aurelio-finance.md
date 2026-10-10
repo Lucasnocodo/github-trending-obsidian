@@ -1,63 +1,68 @@
 ---
-repo: nullmoth/nvidia-macos-driver
-url: https://github.com/nullmoth/nvidia-macos-driver
-owner: nullmoth
+repo: LosaLosSantos/aurelio-finance
+url: https://github.com/LosaLosSantos/aurelio-finance
+owner: LosaLosSantos
 owner_type: User
-language: Rust
-license: NOASSERTION
-description: "Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included."
-homepage: "https://nullmothsystems.com"
-stars: 2030
-stars_per_day: 1015
-forks: 180
-open_issues: 71
-created: 2026-10-07
-pushed_at: 2026-10-10
-first_seen: 2026-10-09
+language: Python
+license: MIT
+description: "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts on your own computer."
+homepage: ""
+stars: 1556
+stars_per_day: 519
+forks: 138
+open_issues: 0
+created: 2026-10-06
+pushed_at: 2026-10-09
+first_seen: 2026-10-10
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: "v1.1.1"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-10
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-10-13"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 4
-repo_size_kb: 2774
-readme_length: 8483
+issue_close_rate: -1
+repo_size_kb: 9129
+readme_length: 2984
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-10-09"
-star_history: "2026-10-09:1419,2026-10-10:2030"
+ring_history: "assess@2026-10-10"
+star_history: "2026-10-10:1556"
 tags:
   - github
   - "category/other"
-  - "lang/rust"
+  - "lang/python"
+  - "topic/ai"
+  - "topic/dividends"
+  - "topic/etf"
+  - "topic/finance"
+  - "topic/financial_planning"
 aliases:
-  - "nvidia-macos-driver"
-  - "nullmoth/nvidia-macos-driver"
+  - "aurelio-finance"
+  - "LosaLosSantos/aurelio-finance"
 ---
 
-# nvidia-macos-driver
+# aurelio-finance
 
-**1.4k** stars · **1.4k** stars/天 · 建立 1 天前 · Rust · NOASSERTION
+**1.6k** stars · **519** stars/天 · 建立 3 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案` `v1.1.1`
+`個人專案`
+
+`ai` `dividends` `etf` `finance` `financial-planning` `fintech` `investing` `llm` `net-worth` `personal-finance` `portfolio-tracker` `self-hosted` `stocks` `wealth-management`
 
 > [!summary] 一句話摘要
-> Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included.
+> Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts on your own computer.
 
 ## 專案簡介
 
-Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included.
+Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts on your own computer.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,212 +149,135 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 130 |
-| Open Issues | 44 |
-| Issue 解決率 | 4% (2 closed) |
-| 最後推送 | 2026-10-08 |
-| 建立日期 | 2026-10-07 |
-| 官方網站 | [Link](https://nullmothsystems.com) |
-| Repo 大小 | 2.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nullmoth/nvidia-macos-driver) |
+| Forks | 138 |
+| Open Issues | 0 |
+| 最後推送 | 2026-10-09 |
+| 建立日期 | 2026-10-06 |
+| Repo 大小 | 8.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/LosaLosSantos/aurelio-finance) |
+| Topics | `ai` `dividends` `etf` `finance` `financial-planning` `fintech` `investing` `llm` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Rust" : 77
->     "C++" : 8
->     "C" : 7
->     "Objective-C" : 6
->     "Swift" : 1
->     "Python" : 1
->     "Shell" : 1
+>     "Python" : 77
+>     "TypeScript" : 22
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@nullmoth](https://github.com/nullmoth) | 2 |
-
-**最新版本**：v1.1.1 — 1401 Mac 1.1.1 (2026-10-08)
-
-> [!info]- Release Notes
-> 1401 Mac 1.1.1
-> 
-> Send logs now captures what happened right before each WindowServer crash.
-> 
-> - For each of the three most recent WindowServer crashes, the logs include the driver's and WindowServer's own messages from the two minutes before the crash. Previously only the newest lines were kept, so the reason for a crash at startup was usually gone by the time logs were sent.
-> - Driver and plugin messages and kernel messages are kept in separate budgets so one cannot crowd out the other.
-> 
-> The NVIDIA driver is unchanged from 1.1.0 (nullmoth-nvidia-1.1.0.tar.gz is included for convenience).
-> 
-> Known issue (fix planned)
-> - With two displays, changing the refresh rate or resolution of one can make the other flash or go blank until you restart.
+> | [@LosaLosSantos](https://github.com/LosaLosSantos) | 26 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-08 ~ 2026-10-08）
-> **活躍天數** 1 天 · **最新 commit** Mac 1.1.1: Send logs keeps the two minutes before each WindowServer crash
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#36](https://github.com/nullmoth/nvidia-macos-driver/issues/36) | Is it supported on Tahoe? | 1 | 3 |
-> | [#14](https://github.com/nullmoth/nvidia-macos-driver/issues/14) | GTX 10 series support? | 1 | 0 |
-> | [#4](https://github.com/nullmoth/nvidia-macos-driver/issues/4) | RTX 5060 Ti macOS 15.7.9 no image | 1 | 1 |
-> | [#46](https://github.com/nullmoth/nvidia-macos-driver/issues/46) | [Issue] Core Ultra 7 265KF / Colorful BATTLE-AX B860M-GHA WI | 0 | 0 |
-> | [#45](https://github.com/nullmoth/nvidia-macos-driver/issues/45) | 1650s | 0 | 1 |
+> [!abstract] 最近 10 次 commit（2026-10-08 ~ 2026-10-09）
+> **活躍天數** 2 天 · **最新 commit** The README opens on an animated banner, light and dark, instead of the screen recording
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # NullMoth NVIDIA Driver for macOS
+> # Aurelio
 > 
-> A Metal driver for NVIDIA Turing-and-later cards on Intel Macs and OpenCore systems running **macOS 15 Sequoia**.
-> The device table includes GTX 16, RTX 20/30/40/50, TITAN RTX, and supported Quadro/RTX workstation cards.
-> The driver implements NVIDIA-backed display and Metal interfaces. Feature availability and application behavior depend on the card, operating-system version and installed components; device-table coverage is not runtime qualification.
+> [](https://github.com/LosaLosSantos/aurelio-finance/actions/workflows/ci.yml)
 > 
-> Made by **NullMoth Systems**.
+> **Aurelio** is a wealth-management and financial-planning app that runs on your
+> own computer, with an AI advisor you can talk to. Your records are kept on your
+> machine. The AI part is optional: it goes through
+> [OpenRouter](https://openrouter.ai) with your own key.
 > 
-> **Latest update:** [1401 and NVIDIA driver 1.1.0](docs/RELEASE-1.1.0.md). See the changes, validation and qualification scope before updating.
+>   
+>   
 > 
-> Installing macOS from Windows? Use **1401**: https://github.com/nullmoth/1401
+> ## Try it on invented data
 > 
-> > **This driver is new and may not work on every PC.** It is tested on an RTX 5060 under macOS 15.7.x and 15.8.1. Device-table coverage is broader than physical hardware validation; see [card support](docs/CARD-SUPPORT.md). If your PC does
-> > not boot macOS with OpenCore yet, set that up first with the
-> > [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
-> > ([OpenCore releases](https://github.com/acidanthera/OpenCorePkg/releases)), then install the driver.
-> > The full write-up of how the driver works is in [`docs/HOW-IT-WORKS.md`](docs/HOW-IT-WORKS.md).
+> You need [Git](https://git-scm.com), [Node.js](https://nodejs.org) 22 or later
+> and [uv](https://docs.astral.sh/uv/getting-started/installation/). Then:
 > 
-> Support the work: https://buymeacoffee.com/nullmoth
+> ```bash
+> git clone https://github.com/LosaLosSantos/aurelio-finance.git
+> cd aurelio-finance
+> ./start.sh --demo          # macOS and Linux
+> ```
 > 
-> | | |
+> ```powershell
+> git clone https://github.com/LosaLosSantos/aurelio-finance.git
+> cd aurelio-finance
+> ./start.ps1 -Demo          # Windows, in PowerShell
+> ```
+> 
+> If PowerShell says that running scripts is disabled, use
+> `powershell -ExecutionPolicy Bypass -File .\start.ps1 -Demo`.
+> 
+> The first start installs what it needs inside the folder and opens
+>  on an invented household, kept in a file of its own.
+> Start without the flag to use your own data.
+> 
+> ## Run it on your own data
+> 
+> ```bash
+> ./start.sh                 # macOS and Linux
+> ```
+> 
+> ```powershell
+> ./start.ps1                # Windows
+> ```
+> 
+> Your records live in `backend/data.db`. Before an update changes its format,
+> the app saves a copy next to it.
+> 
+> ## What it does
+> 
+> - **Wealth**: your banks and brokers, their cash, and dated situations of what
+>   you hold.
+> - **Portfolio**: every position priced from the market, with its cost, gain and
+>   dividends.
+> - **Look-through**: what your funds really hold, by country, sector, company
+>   and currency.
+> - **Plans, homes and debts**: recurring investments, real assets and the loans
+>   that finance them.
+> - **Cash flow and goals**: income, expenses, savings rate, and the return each
+>   goal needs.
+> - **Ask Aurelio**: a chat that answers from your own records, can search the
+>   web, and proposes every change as a card you confirm.
+> - **The analysis**: an analyst and a confidant who knows you argue over your
+>   portfolio, and a synthesis says what to look at first.
+> 
+> [How Aurelio reasons](docs/how-aurelio-reasons.md) explains the ideas
+> underneath.
+> 
+> ## The AI part
+> 
+> 1. Create an account at , add credit, and create a key at
+>    .
+> 2. Copy `backend/.env.example` to `backend/.env` and set `OPENROUTER_API_KEY`.
+> 
+> The default model is Claude Opus 5.5 ($4 per million input tokens, $20 per
+> million output tokens); you can pick another in the chat. What it cost,
+> measured in October 2026:
+> 
+> | | cost |
 > |---|---|
-> | macOS | 15 Sequoia (tested 15.7.x and 15.8.1), x86_64 |
-> | GPUs | NVIDIA Turing and later from the GSP device table; physical validation: RTX 5060 |
-> | Metal | Metal 3: argument buffers tier 2, ray tracing, mesh shaders, MPS, MetalFX path |
-> | Also | OpenGL (through Apple's GL-on-Metal), OpenCL, Core Image, Core ML |
+> | A first question, answered in one round | $0.11 |
+> | A follow-up, answered in one round | $0.017 |
+> | A request for advice with one web search | $0.16 |
+> | An analysis | $0.33 to $0.51 |
 > 
-> ## How it works
+> ## Development
 > 
-> ```
-> Metal app ─► NVMTLDriver.bundle ─► translator (Apple AIR → SPIR-V) ─► NVK (Mesa Vulkan + NAK compiler) ─► kexts ─► GPU
-> ```
-> 
-> | Component | Path on disk | Source |
-> |---|---|---|
-> | Metal driver plugin | `/Library/GPUBundles/NVMTLDriver.bundle` | `plugin/` |
-> | Shader translator | inside the plugin (`libnvmtl_translate.dylib`) | `translator/` (LGPL-3.0, based on metal2vulkan) |
-> | Vulkan back end (NVK) | `/Library/GPUBundles/nvmtl/` | `nvk/nvk-macos.patch` on Mesa `17ca6174` |
-> | Kernel extensions | `/Library/Extensions/NVRM, NVAccel, NVRMFB, NVRMAGDC` | `kexts/` |
-> | GPU firmware (GSP) | `/Users/Shared/nvfw/nvidia/610.57.04` | NVIDIA, unmodified |
-> 
-> The kernel side runs NVIDIA's own open GPU kernel modules (r610) under macOS. NVRMFB is the display framebuffer,
-> NVAccel the accelerator WindowServer composites through, NVRMAGDC the display-policy shim.
-> 
-> ## Install — prebuilt (recommended)
-> 
-> Download `nullmoth-nvidia-.tar.gz` from **Releases**, then:
-> 
-> ```bash
-> tar -xzf nullmoth-nvidia-*.tar.gz && cd pkgroot
-> shasum -a 256 -c SHA256SUMS          # every file must say OK
-> sudo ./install.sh                    # copies the files, rebuilds the Auxiliary Kernel Collection
-> sudo shutdown -r now                 # a reboot is required: logout does not load the driver
-> ```
-> 
-> macOS asks you to **allow the extensions** in System Settings → Privacy & Security the first time. Allow, then reboot again.
-> 
-> ## 1401 Mac app (easiest)
-> 
-> Download the latest `1401-Mac-.dmg` from **Releases**, open it, and run **1401** (the driver package is inside the disk
-> image, so nothing else to download). Follow its steps. A supported setup must use a verified or explicitly selected OpenCore partition. The app finds the OpenCore that started your Mac (in `EFI/OC` or `EFI/BOOT`, on an
-> EFI or FAT32 partition), shows every change before making it, backs the config up, installs the driver, and adds
-> **1401: Remove NVIDIA driver** to the OpenCore boot picker. Choosing that entry removes the driver at the next start and
-> puts the Mac back exactly as it was before the install, OpenCore config included, then restarts by itself. The app also
-> maps your USB ports and, if the driver ever crashes the Mac, offers to make a crash report you can upload yourself
-> (it never sends anything on its own).
-> 
-> **Something not working?** Open 1401 > Crash report > **Send logs to NullMoth**. It sends what 1401 did, the driver's
-> state, driver crash reports, recent WindowServer crash reports and OpenCore's startup logs (names, serial numbers and addresses removed), each
-> with a SHA-256 the site checks, and shows a report ID to quote in the NullMoth Discord.
-> 
-> **macOS 26 Tahoe:** the package carries a separate NVAccel build, but full hardware and application qualification remains pending. The obsolete preparation action has been removed from the app; do not treat package contents as a verified upgrade path.
-> 
-> **Keep the USB stick or disk OpenCore started your Mac from plugged in** while the app runs: that is the config it
-> changes. A shared SMBIOS model alone does not establish the startup partition. Automatic USB-to-internal copying is disabled, preserving Windows and vendor boot files. Driver installation uses the selected startup partition. Keep the OpenCore stick attached for every restart until the internal boot setup is reviewed. After the install,
-> restart; the first start with the driver pauses for up to a minute at "PCI configuration end" while the GPU comes up.
-> 
-> ## Wiring into an existing OpenCore setup
-> 
-> The kexts install into `/Library/Extensions` and load from the Auxiliary Kernel Collection — **do not** also inject
-> them from `EFI/OC/Kexts`. OpenCore only needs to set SIP and boot-args.
-> 
-> **`NVRAM → Add → 7C436110-AB2A-4BBB-A880-FE41995C9F82`**
-> 
-> | Key | Value | Why |
-> |---|---|---|
-> | `csr-active-config` | `` (Data) | the tested value: unsigned kexts, plus what root patches need |
-> | `boot-args` | `nvfb=1 nvaccel=1 nvfbheads=4 -nvkmsnosmooth amfi_get_out_of_my_way=0x1 amfi=0x80` | framebuffer + accelerator, 4 display heads; the AMFI args let WindowServer load the driver bundle |
-> 
-> Add every key you set to `NVRAM → Delete` as well, so the values are rewritten each boot.
-> 
-> | Setting | Value | Why |
-> |---|---|---|
-> | `UEFI → Quirks → ResizeGpuBars` | `13` | 8 GB BAR: full memory bandwidth (tested on the RTX 5060) |
-> | `Booter → Quirks → ResizeAppleGpuBars` | `-1` | macOS sees the full BAR |
-> | `Kernel → Block` | `com.apple.iokit.IONDRVSupport`, Strategy `Exclude` | otherwise the firmware framebuffer takes display index 0 from NVRMFB |
-> | `Misc → Security → SecureBootModel` | `Disabled` | Apple Secure Boot refuses kexts Apple did not sign |
-> 
-> The macOS **installer** needs the opposite BAR settings (`ResizeAppleGpuBars` `0`, `ResizeGpuBars` `-1`, IONDRVSupport
-> not excluded): it has no NVIDIA driver and runs on the firmware's screen. 1401 builds installers that way, and the 1401
-> Mac app switches to the values above when it installs the driver.
-> 
-> Also required:
-> - **BIOS:** Above 4G Decoding ON (the card maps memory above 4 GB), CSM OFF.
-> - **SMBIOS:** a Mac model that runs macOS 15 with a discrete GPU (tested: `iMacPro1,1`, which 1401 uses).
-> - **Remove** any `nv_disable=1`, WhateverGreen NVIDIA patches, or `agdpmod=pikera` for this card.
-> - **No `DeviceProperties`** are needed for the NVIDIA card.
-> 
-> Verify after the reboot:
-> 
-> ```bash
-> kmutil showloaded --list-only | grep nullmoth      # 4 lines
-> system_profiler SPDisplaysDataType | head -20      # your GeForce, Metal: supported
-> ```
-> 
-> ## Dual boot
-> 
-> Nothing in the driver touches other disks. OpenCore's picker boots Windows (`ScanPolicy` 0 or including NTFS) and Linux
-> (`OpenLinuxBoot.efi` in `UEFI → Drivers`, `LauncherOption = Full`) alongside macOS.
-> 
-> ## Uninstall
-> 
-> ```bash
-> sudo ./uninstall.sh && sudo shutdown -r now
-> ```
-> 
-> ## Build from source
-> 
-> Requires Xcode 16, Rust (stable), Meson/Ninja, and NVIDIA's `open-gpu-kernel-modules` at tag `610.57.04`.
-> 
-> ```bash
-> build/build_xlate.sh       # translator  -> libnvmtl_translate.dylib
-> RELEASE=1 build/build_plugin.sh   # plugin -> NVMTLDriver.bundle (RELEASE=1 strips every diagnostic)
-> build/build263.sh          # NVK: apply nvk/nvk-macos.patch to Mesa 17ca6174 first
-> build/accel_build.sh    # kexts
-> ```
+> `uv run pytest` in `backend/` and `npm test` in `frontend/`. For hot reload,
+> run `uv run uvicorn app.main:app --port 8000` in `backend/` and `npm run dev` in
+> `frontend/`.
 > 
 > ## License
 > 
-> Free of charge, source code included. Nobody may sell
+> MIT, see [LICENSE](LICENSE).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/nullmoth/nvidia-macos-driver) · [官方網站](https://nullmothsystems.com)
+[GitHub](https://github.com/LosaLosSantos/aurelio-finance)
 
 ## 相關收錄
 
@@ -355,7 +285,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "nullmoth--nvidia-macos-driver"
+> WHERE category = "Other" AND file.name != "LosaLosSantos--aurelio-finance"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -364,7 +294,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Rust" AND file.name != "nullmoth--nvidia-macos-driver" AND status != "archived"
+> WHERE language = "Python" AND file.name != "LosaLosSantos--aurelio-finance" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -373,18 +303,18 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "nullmoth--nvidia-macos-driver"
+> WHERE week = "2026-W41" AND file.name != "LosaLosSantos--aurelio-finance"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "nullmoth--nvidia-macos-driver" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "LosaLosSantos--aurelio-finance" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -400,7 +330,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "nullmoth" AND file.name != "nullmoth--nvidia-macos-driver"
+> WHERE owner = "LosaLosSantos" AND file.name != "LosaLosSantos--aurelio-finance"
 > SORT stars DESC
 > ```
 
@@ -408,7 +338,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -425,7 +355,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -458,7 +388,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -482,7 +412,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -519,7 +449,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/LosaLosSantos--aurelio-finance");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -602,7 +532,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-09** — 首次收錄
+> **2026-10-10** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -618,5 +548,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-10|2026-10-10]] — 再次上榜，2.0k stars
-- [[2026-10-09|2026-10-09]] — 首次收錄，1.4k stars
+- [[2026-10-10|2026-10-10]] — 首次收錄，1.6k stars

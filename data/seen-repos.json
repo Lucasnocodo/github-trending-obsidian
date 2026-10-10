@@ -4621,17 +4621,17 @@
   },
   "kargulstudio/sales-crm": {
     "first_seen": "2026-10-06",
-    "last_seen": "2026-10-09",
-    "times_seen": 4,
+    "last_seen": "2026-10-10",
+    "times_seen": 5,
     "stars_first": 1508,
-    "stars_last": 1659
+    "stars_last": 1677
   },
   "openai/math": {
     "first_seen": "2026-10-07",
-    "last_seen": "2026-10-09",
-    "times_seen": 3,
+    "last_seen": "2026-10-10",
+    "times_seen": 4,
     "stars_first": 4898,
-    "stars_last": 12452
+    "stars_last": 13286
   },
   "storytold/filmcraft": {
     "first_seen": "2026-10-07",
@@ -4656,10 +4656,10 @@
   },
   "alchaincyf/huashu-art-motion": {
     "first_seen": "2026-10-08",
-    "last_seen": "2026-10-09",
-    "times_seen": 2,
+    "last_seen": "2026-10-10",
+    "times_seen": 3,
     "stars_first": 1972,
-    "stars_last": 2627
+    "stars_last": 3014
   },
   "storytold/effectcraft": {
     "first_seen": "2026-10-08",
@@ -4698,24 +4698,24 @@
   },
   "nullmoth/nvidia-macos-driver": {
     "first_seen": "2026-10-09",
-    "last_seen": "2026-10-09",
-    "times_seen": 1,
+    "last_seen": "2026-10-10",
+    "times_seen": 2,
     "stars_first": 1419,
-    "stars_last": 1419
+    "stars_last": 2030
   },
   "mhtsec/ARTEX": {
     "first_seen": "2026-10-09",
-    "last_seen": "2026-10-09",
-    "times_seen": 1,
+    "last_seen": "2026-10-10",
+    "times_seen": 2,
     "stars_first": 1310,
-    "stars_last": 1310
+    "stars_last": 2494
   },
   "Jakeschincariol/replica-skill": {
     "first_seen": "2026-10-09",
-    "last_seen": "2026-10-09",
-    "times_seen": 1,
+    "last_seen": "2026-10-10",
+    "times_seen": 2,
     "stars_first": 1148,
-    "stars_last": 1148
+    "stars_last": 1426
   },
   "alejandrobujan/tendedero": {
     "first_seen": "2026-10-09",
@@ -4723,5 +4723,33 @@
     "times_seen": 1,
     "stars_first": 1098,
     "stars_last": 1098
+  },
+  "storytold/wordcraft": {
+    "first_seen": "2026-10-10",
+    "last_seen": "2026-10-10",
+    "times_seen": 1,
+    "stars_first": 2147,
+    "stars_last": 2147
+  },
+  "zhongerxin/iPhone-use": {
+    "first_seen": "2026-10-10",
+    "last_seen": "2026-10-10",
+    "times_seen": 1,
+    "stars_first": 2129,
+    "stars_last": 2129
+  },
+  "LosaLosSantos/aurelio-finance": {
+    "first_seen": "2026-10-10",
+    "last_seen": "2026-10-10",
+    "times_seen": 1,
+    "stars_first": 1556,
+    "stars_last": 1556
+  },
+  "storytold/cadcraft": {
+    "first_seen": "2026-10-10",
+    "last_seen": "2026-10-10",
+    "times_seen": 1,
+    "stars_first": 1463,
+    "stars_last": 1463
   }
 }

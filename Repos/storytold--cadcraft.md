@@ -1,63 +1,64 @@
 ---
-repo: nullmoth/nvidia-macos-driver
-url: https://github.com/nullmoth/nvidia-macos-driver
-owner: nullmoth
-owner_type: User
+repo: storytold/cadcraft
+url: https://github.com/storytold/cadcraft
+owner: storytold
+owner_type: Organization
 language: Rust
-license: NOASSERTION
-description: "Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included."
-homepage: "https://nullmothsystems.com"
-stars: 2030
-stars_per_day: 1015
-forks: 180
-open_issues: 71
+license: Apache-2.0
+description: "CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app in pure Rust"
+homepage: ""
+stars: 1463
+stars_per_day: 488
+forks: 612
+open_issues: 122
 created: 2026-10-07
 pushed_at: 2026-10-10
-first_seen: 2026-10-09
+first_seen: 2026-10-10
 week: "2026-W41"
 month: "2026-10"
 category: "Other"
 subcategory: ""
-release_tag: "v1.1.1"
+release_tag: "v0.4.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-10
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-10-13"
-contributor_count: 1
-engagement: "low"
-issue_close_rate: 4
-repo_size_kb: 2774
-readme_length: 8483
+contributor_count: 3
+engagement: "high"
+issue_close_rate: 0
+repo_size_kb: 2637
+readme_length: 6743
 bus_factor: 1
-last_release_days: 1
+last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-10-09"
-star_history: "2026-10-09:1419,2026-10-10:2030"
+ring_history: "assess@2026-10-10"
+star_history: "2026-10-10:1463"
 tags:
   - github
   - "category/other"
   - "lang/rust"
+  - org
 aliases:
-  - "nvidia-macos-driver"
-  - "nullmoth/nvidia-macos-driver"
+  - "cadcraft"
+  - "storytold/cadcraft"
 ---
 
-# nvidia-macos-driver
+# cadcraft
 
-**1.4k** stars · **1.4k** stars/天 · 建立 1 天前 · Rust · NOASSERTION
+**1.5k** stars · **488** stars/天 · 建立 3 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+const me = dv.page("Repos/storytold--cadcraft");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案` `v1.1.1`
+`ORG` `v0.4.0`
 
 > [!summary] 一句話摘要
-> Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included.
+> CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app in pure Rust
 
 ## 專案簡介
 
-Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included.
+CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app in pure Rust
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/storytold--cadcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +119,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/storytold--cadcraft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,212 +143,214 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 130 |
-| Open Issues | 44 |
-| Issue 解決率 | 4% (2 closed) |
-| 最後推送 | 2026-10-08 |
+| Forks | 612 |
+| Open Issues | 122 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-10-10 |
 | 建立日期 | 2026-10-07 |
-| 官方網站 | [Link](https://nullmothsystems.com) |
-| Repo 大小 | 2.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nullmoth/nvidia-macos-driver) |
+| Repo 大小 | 2.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/storytold/cadcraft) |
+
+> [!info]- 主要依賴
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `version` `edition` `license` `rust-version` `repository` `cadcraft-geom` `cadcraft-dxf` `cadcraft-dwg` `cadcraft-color` `cadcraft-doc` `cadcraft-constraints` `cadcraft-fonts` `cadcraft-render`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Rust" : 77
->     "C++" : 8
->     "C" : 7
->     "Objective-C" : 6
->     "Swift" : 1
->     "Python" : 1
+>     "Rust" : 98
 >     "Shell" : 1
+>     "PowerShell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@nullmoth](https://github.com/nullmoth) | 2 |
+> | [@echelon](https://github.com/echelon) | 27 |
+> | [@h-a-n-a-s-h-i](https://github.com/h-a-n-a-s-h-i) | 2 |
+> | [@XusBadia](https://github.com/XusBadia) | 1 |
 
-**最新版本**：v1.1.1 — 1401 Mac 1.1.1 (2026-10-08)
+**最新版本**：v0.4.0 — CADCraft v0.4.0 (2026-10-10)
 
 > [!info]- Release Notes
-> 1401 Mac 1.1.1
+> ## What's Changed
+> * macOS DMG: branded window background and icon layout by @XusBadia in https://github.com/storytold/cadcraft/pull/13
 > 
-> Send logs now captures what happened right before each WindowServer crash.
+> ## New Contributors
+> * @XusBadia made their first contribution in https://github.com/storytold/cadcraft/pull/13
 > 
-> - For each of the three most recent WindowServer crashes, the logs include the driver's and WindowServer's own messages from the two minutes before the crash. Previously only the newest lines were kept, so the reason for a crash at startup was usually gone by the time logs were sent.
-> - Driver and plugin messages and kernel messages are kept in separate budgets so one cannot crowd out the other.
-> 
-> The NVIDIA driver is unchanged from 1.1.0 (nullmoth-nvidia-1.1.0.tar.gz is included for convenience).
-> 
-> Known issue (fix planned)
-> - With two displays, changing the refresh rate or resolution of one can make the other flash or go blank until you restart.
+> **Full Changelog**: https://github.com/storytold/cadcraft/compare/v0.3.0...v0.4.0
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-10-08 ~ 2026-10-08）
-> **活躍天數** 1 天 · **最新 commit** Mac 1.1.1: Send logs keeps the two minutes before each WindowServer crash
+> [!abstract] 最近 10 次 commit（2026-10-08 ~ 2026-10-10）
+> **活躍天數** 3 天 · **最新 commit** Bump version to 0.4.0 (from 0.3.0) for release; refresh contributors
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#36](https://github.com/nullmoth/nvidia-macos-driver/issues/36) | Is it supported on Tahoe? | 1 | 3 |
-> | [#14](https://github.com/nullmoth/nvidia-macos-driver/issues/14) | GTX 10 series support? | 1 | 0 |
-> | [#4](https://github.com/nullmoth/nvidia-macos-driver/issues/4) | RTX 5060 Ti macOS 15.7.9 no image | 1 | 1 |
-> | [#46](https://github.com/nullmoth/nvidia-macos-driver/issues/46) | [Issue] Core Ultra 7 265KF / Colorful BATTLE-AX B860M-GHA WI | 0 | 0 |
-> | [#45](https://github.com/nullmoth/nvidia-macos-driver/issues/45) | 1650s | 0 | 1 |
+> | [#1](https://github.com/storytold/cadcraft/issues/1) | I am UI Designer，I would like to provied App Icon | 3 | 0 |
+> | [#40](https://github.com/storytold/cadcraft/issues/40) | Potential name change for trademark | 2 | 1 |
+> | [#44](https://github.com/storytold/cadcraft/issues/44) | Lines not visible | 1 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # NullMoth NVIDIA Driver for macOS
+> CADCraft
 > 
-> A Metal driver for NVIDIA Turing-and-later cards on Intel Macs and OpenCore systems running **macOS 15 Sequoia**.
-> The device table includes GTX 16, RTX 20/30/40/50, TITAN RTX, and supported Quadro/RTX workstation cards.
-> The driver implements NVIDIA-backed display and Metal interfaces. Feature availability and application behavior depend on the card, operating-system version and installed components; device-table coverage is not runtime qualification.
+>   Computer-aided design and drafting; an open-source, clean-room reimplementation of Autodesk AutoCAD, rebuilt in pure Rust.
 > 
-> Made by **NullMoth Systems**.
+>   A fast, open-source take on the AutoCAD workflow: the command line, object snaps, layers,
+>   dimensions, hatches, blocks and DXF drawings you already know. It runs natively on macOS,
+>   Windows, Linux and FreeBSD, and in the browser via WebAssembly.
+>   By the ArtCraft team.
 > 
-> **Latest update:** [1401 and NVIDIA driver 1.1.0](docs/RELEASE-1.1.0.md). See the changes, validation and qualification scope before updating.
+>   
+>   
+>   
+>   
+>   
 > 
-> Installing macOS from Windows? Use **1401**: https://github.com/nullmoth/1401
+>   
 > 
-> > **This driver is new and may not work on every PC.** It is tested on an RTX 5060 under macOS 15.7.x and 15.8.1. Device-table coverage is broader than physical hardware validation; see [card support](docs/CARD-SUPPORT.md). If your PC does
-> > not boot macOS with OpenCore yet, set that up first with the
-> > [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
-> > ([OpenCore releases](https://github.com/acidanthera/OpenCorePkg/releases)), then install the driver.
-> > The full write-up of how the driver works is in [`docs/HOW-IT-WORKS.md`](docs/HOW-IT-WORKS.md).
+>   CADCraft on getartcraft.com ·
+>   ArtCraft ·
+>   All Crafting Apps
 > 
-> Support the work: https://buymeacoffee.com/nullmoth
+>   
+>   Apartment plan (examples/apartment.dxf): walls with pick-point hatching, TrueType MTEXT room labels, a TABLE, a multileader and architectural dimensions — built entirely from CADCraft commands.
 > 
-> | | |
+> > [!NOTE]
+> > **ArtCraft is a community of artists from all walks of life.** Painters, photographers,
+> > filmmakers, illustrators, designers, animators, hobbyists, and people who picked up a pencil
+> > last week. If you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
+> 
+>   Screenshots ·
+>   Why CADCraft ·
+>   What works today ·
+>   Quick start ·
+>   Agents, MCP and the CLI ·
+>   Architecture ·
+>   Roadmap ·
+>   Downloads ·
+>   The Crafting Apps ·
+>   License and credits
+> 
+> ## Screenshots
+> 
+>   
+>     
+>     
+>   
+>   
+>     Layouts: paper space with viewports, page setups and PLOT to PDF. Double-click a viewport to work in model space through it.
+>     Mounting bracket: a two-view part drawing with centre lines, hidden lines, an ANSI31 section hatch and a title block.
+>   
+> 
+> ## Why CADCraft
+> 
+> - **The workflow you know.** Type `L`, click two points, type `@5` in the file names is the version number, and `SHA256SUMS.txt` lists a checksum for every file.
+> 
+> ### Windows
+> 
+> | Build | Installer | Portable |
+> |---|---|---|
+> | x64 (64-bit Intel/AMD) | `cadcraft--windows-x64.msi` | `cadcraft--windows-x64-portable.zip` |
+> | arm64 (Snapdragon and other ARM PCs) | `cadcraft--windows-arm64.msi` | `cadcraft--windows-arm64-portable.zip` |
+> | x86 (32-bit) | `cadcraft--windows-x86.msi` | `cadcraft--windows-x86-portable.zip` |
+> 
+> Installers and executables are code-signed.
+> 
+> ### macOS
+> 
+> | Build | File | Notes |
+> |---|---|---|
+> | App, universal (Apple silicon + Intel) | `cadcraft--macos-universal.dmg` | Signed and notarized |
+> | Command-line tool, universal | `cadcraft-cli--macos-universal.zip` | Signed and notarized |
+> 
+> ### Linux
+> 
+> | Format | x86_64 | aarch64 (ARM64) | Notes |
+> |---|---|---|---|
+> | AppImage | `cadcraft--linux-x86_64.AppImage` | `cadcraft--linux-aarch64.AppImage` | Runs anywhere; updates itself with [AppImageUpdate](https://github.com/AppImageCommunity/AppImageUpdate) (`.zsync` files) |
+> | Flatpak | `cadcraft--linux-x86_64.flatpak` | `cadcraft--linux-aarch64.flatpak` | Sandboxed; `flatpak install --user ` |
+> | Debian/Ubuntu | `cadcraft--linux-x86_64.deb` | `cadcraft--linux-aarch64.deb` | |
+> | Fedora/RHEL/openSUSE | `cadcraft--linux-x86_64.rpm` | `cadcraft--linux-aarch64.rpm` | |
+> | Tarball | `cadcraft--linux-x86_64.tar.gz` | `cadcraft--linux-aarch64.tar.gz` | Unpack anywhere |
+> 
+> ### FreeBSD
+> 
+> | Build | File |
 > |---|---|
-> | macOS | 15 Sequoia (tested 15.7.x and 15.8.1), x86_64 |
-> | GPUs | NVIDIA Turing and later from the GSP device table; physical validation: RTX 5060 |
-> | Metal | Metal 3: argument buffers tier 2, ray tracing, mesh shaders, MPS, MetalFX path |
-> | Also | OpenGL (through Apple's GL-on-Metal), OpenCL, Core Image, Core ML |
+> | x86_64 | `cadcraft--freebsd-x86_64.tar.gz` |
 > 
-> ## How it works
+> ### Web (WebAssembly)
 > 
-> ```
-> Metal app ─► NVMTLDriver.bundle ─► translator (Apple AIR → SPIR-V) ─► NVK (Mesa Vulkan + NAK compiler) ─► kexts ─► GPU
-> ```
-> 
-> | Component | Path on disk | Source |
+> | Build | File | Notes |
 > |---|---|---|
-> | Metal driver plugin | `/Library/GPUBundles/NVMTLDriver.bundle` | `plugin/` |
-> | Shader translator | inside the plugin (`libnvmtl_translate.dylib`) | `translator/` (LGPL-3.0, based on metal2vulkan) |
-> | Vulkan back end (NVK) | `/Library/GPUBundles/nvmtl/` | `nvk/nvk-macos.patch` on Mesa `17ca6174` |
-> | Kernel extensions | `/Library/Extensions/NVRM, NVAccel, NVRMFB, NVRMAGDC` | `kexts/` |
-> | GPU firmware (GSP) | `/Users/Shared/nvfw/nvidia/610.57.04` | NVIDIA, unmodified |
+> | Static site | `cadcraft-web-.zip` | Runs in a modern browser; host it on any static server |
 > 
-> The kernel side runs NVIDIA's own open GPU kernel modules (r610) under macOS. NVRMFB is the display framebuffer,
-> NVAccel the accelerator WindowServer composites through, NVRMAGDC the display-policy shim.
+> ## The Crafting Apps
 > 
-> ## Install — prebuilt (recommended)
+> CADCraft is one of the **Crafting Apps**: free, open-source creative tools from the
+> [ArtCraft](https://getartcraft.com/) team, each written from scratch in Rust and each able to
+> stand on its own.
 > 
-> Download `nullmoth-nvidia-.tar.gz` from **Releases**, then:
+> | | App | What it's for | Code | Learn more |
+> |:-:|---|---|---|---|
+> |  | **PhotoCraft** | Image editing: layers, masks, type and real PSD files | [GitHub](https://github.com/storytold/photocraft) | [Website](https://getartcraft.com/apps/photocraft) |
+> |  | **VectorCraft** | Vector illustration | [GitHub](https://github.com/storytold/vectorcraft) | [Website](https://getartcraft.com/apps/vectorcraft) |
+> |  | **FilmCraft** | Video editing, color and sound | [GitHub](https://github.com/storytold/filmcraft) | [Website](https://getartcraft.com/apps/filmcraft) |
+> |  | **LightCraft** | Photo library and raw development | [GitHub](https://github.com/storytold/lightcraft) | [Website](https://getartcraft.com/apps/lightcraft) |
+> |  | **PdfCraft** | Reading, organizing and protecting PDFs | [GitHub](https://github.com/storytold/pdfcraft) | [Website](https://getartcraft.com/apps/pdfcraft) |
+> |  | **EffectCraft** | Motion graphics and visual effects | [GitHub](https://github.com/storytold/effectcraft) | [Website](https://getartcraft.com/apps/effectcraft) |
+> |  | **DesignCraft** | Page layout and publishing | [GitHub](https://github.com/storytold/designcraft) | [Website](https://getartcraft.com/apps/designcraft) |
+> |  | **CADCraft** | **Computer-aided design and drafting · you are here** | [GitHub](https://github.com/storytold/cadcraft) | [Website](https://getartcraft.com/apps/cadcraft) |
 > 
-> ```bash
-> tar -xzf nullmoth-nvidia-*.tar.gz && cd pkgroot
-> shasum -a 256 -c SHA256SUMS          # every file must say OK
-> sudo ./install.sh                    # copies the files, rebuilds the Auxiliary Kernel Collection
-> sudo shutdown -r now                 # a reboot is required: logout does not load the driver
-> ```
+> And [**ArtCraft**](https://getartcraft.com/) itself, our AI image and video studio for artists who want real control.
 > 
-> macOS asks you to **allow the extensions** in System Settings → Privacy & Security the first time. Allow, then reboot again.
+>   
 > 
-> ## 1401 Mac app (easiest)
+> Come make things with us
 > 
-> Download the latest `1401-Mac-.dmg` from **Releases**, open it, and run **1401** (the driver package is inside the disk
-> image, so nothing else to download). Follow its steps. A supported setup must use a verified or explicitly selected OpenCore partition. The app finds the OpenCore that started your Mac (in `EFI/OC` or `EFI/BOOT`, on an
-> EFI or FAT32 partition), shows every change before making it, backs the config up, installs the driver, and adds
-> **1401: Remove NVIDIA driver** to the OpenCore boot picker. Choosing that entry removes the driver at the next start and
-> puts the Mac back exactly as it was before the install, OpenCore config included, then restarts by itself. The app also
-> maps your USB ports and, if the driver ever crashes the Mac, offers to make a crash report you can upload yourself
-> (it never sends anything on its own).
+>   Our Discord is where artists of every kind hang out: people who paint, shoot, draw, cut film,
+>   set type, and people still figuring out what they like to make. Share what you're working on,
+>   ask for help, tell us what's broken, or tell us what you wish these tools could do.
+>   Whatever your medium and however long you've been at it, you're welcome here.
 > 
-> **Something not working?** Open 1401 > Crash report > **Send logs to NullMoth**. It sends what 1401 did, the driver's
-> state, driver crash reports, recent WindowServer crash reports and OpenCore's startup logs (names, serial numbers and addresses removed), each
-> with a SHA-256 the site checks, and shows a report ID to quote in the NullMoth Discord.
+>   discord.gg/artcraft ·
+>   getartcraft.com ·
+>   The Crafting Apps ·
+>   CADCraft
 > 
-> **macOS 26 Tahoe:** the package carries a separate NVAccel build, but full hardware and application qualification remains pending. The obsolete preparation action has been removed from the app; do not treat package contents as a verified upgrade path.
+> ## License and credits
 > 
-> **Keep the USB stick or disk OpenCore started your Mac from plugged in** while the app runs: that is the config it
-> changes. A shared SMBIOS model alone does not establish the startup partition. Automatic USB-to-internal copying is disabled, preserving Windows and vendor boot files. Driver installation uses the selected startup partition. Keep the OpenCore stick attached for every restart until the internal boot setup is reviewed. After the install,
-> restart; the first start with the driver pauses for up to a minute at "PCI configuration end" while the GPU comes up.
+> CADCraft is dual-licensed under [MIT](LICENSE-MIT) or [Apache-2.0](LICENSE-APACHE), at your option.
+> Copyright (c) 2026 ArtCraft Team and the CADCraft contributors. Required notices are in [NOTICE](NOTICE).
 > 
-> ## Wiring into an existing OpenCore setup
+> Bundled fonts, icons, images and other assets keep their own open licenses; each one is listed
+> with its author, source and license in [ATTRIBUTION.md](ATTRIBUTION.md).
 > 
-> The kexts install into `/Library/Extensions` and load from the Auxiliary Kernel Collection — **do not** also inject
-> them from `EFI/OC/Kexts`. OpenCore only needs to set SIP and boot-args.
+> CADCraft's icons, its single-stroke drafting font, its hatch patterns and its linetypes are all
+> original work, drawn or defined in code. The sample drawings are generated in code too.
 > 
-> **`NVRAM → Add → 7C436110-AB2A-4BBB-A880-FE41995C9F82`**
+> The ArtCraft name, wordmark and logos in [`docs/brand/`](docs/brand/) are trademarks of the
+> ArtCraft Team and are not covered by this license. They may be used only unmodified, and only as
+> part of this repository and CADCraft, under [`docs/brand/LICENSE-brand.txt`](docs/brand/LICENSE-brand.txt).
+> Forks and modified versions must remove them.
 > 
-> | Key | Value | Why |
-> |---|---|---|
-> | `csr-active-config` | `` (Data) | the tested value: unsigned kexts, plus what root patches need |
-> | `boot-args` | `nvfb=1 nvaccel=1 nvfbheads=4 -nvkmsnosmooth amfi_get_out_of_my_way=0x1 amfi=0x80` | framebuffer + accelerator, 4 display heads; the AMFI args let WindowServer load the driver bundle |
+> Autodesk, AutoCAD and DWG are trademarks or registered trademarks of Autodesk, Inc. in the United States and/or other countries. CADCraft is an independent, open-source project and is not affiliated with, sponsored by or endorsed by Autodesk, Inc.; these names are used only to describe the workflows and file formats it is compatible with.
 > 
-> Add every key you set to `NVRAM → Delete` as well, so the values are rewritten each boot.
-> 
-> | Setting | Value | Why |
-> |---|---|---|
-> | `UEFI → Quirks → ResizeGpuBars` | `13` | 8 GB BAR: full memory bandwidth (tested on the RTX 5060) |
-> | `Booter → Quirks → ResizeAppleGpuBars` | `-1` | macOS sees the full BAR |
-> | `Kernel → Block` | `com.apple.iokit.IONDRVSupport`, Strategy `Exclude` | otherwise the firmware framebuffer takes display index 0 from NVRMFB |
-> | `Misc → Security → SecureBootModel` | `Disabled` | Apple Secure Boot refuses kexts Apple did not sign |
-> 
-> The macOS **installer** needs the opposite BAR settings (`ResizeAppleGpuBars` `0`, `ResizeGpuBars` `-1`, IONDRVSupport
-> not excluded): it has no NVIDIA driver and runs on the firmware's screen. 1401 builds installers that way, and the 1401
-> Mac app switches to the values above when it installs the driver.
-> 
-> Also required:
-> - **BIOS:** Above 4G Decoding ON (the card maps memory above 4 GB), CSM OFF.
-> - **SMBIOS:** a Mac model that runs macOS 15 with a discrete GPU (tested: `iMacPro1,1`, which 1401 uses).
-> - **Remove** any `nv_disable=1`, WhateverGreen NVIDIA patches, or `agdpmod=pikera` for this card.
-> - **No `DeviceProperties`** are needed for the NVIDIA card.
-> 
-> Verify after the reboot:
-> 
-> ```bash
-> kmutil showloaded --list-only | grep nullmoth      # 4 lines
-> system_profiler SPDisplaysDataType | head -20      # your GeForce, Metal: supported
-> ```
-> 
-> ## Dual boot
-> 
-> Nothing in the driver touches other disks. OpenCore's picker boots Windows (`ScanPolicy` 0 or including NTFS) and Linux
-> (`OpenLinuxBoot.efi` in `UEFI → Drivers`, `LauncherOption = Full`) alongside macOS.
-> 
-> ## Uninstall
-> 
-> ```bash
-> sudo ./uninstall.sh && sudo shutdown -r now
-> ```
-> 
-> ## Build from source
-> 
-> Requires Xcode 16, Rust (stable), Meson/Ninja, and NVIDIA's `open-gpu-kernel-modules` at tag `610.57.04`.
-> 
-> ```bash
-> build/build_xlate.sh       # translator  -> libnvmtl_translate.dylib
-> RELEASE=1 build/build_plugin.sh   # plugin -> NVMTLDriver.bundle (RELEASE=1 strips every diagnostic)
-> build/build263.sh          # NVK: apply nvk/nvk-macos.patch to Mesa 17ca6174 first
-> build/accel_build.sh    # kexts
-> ```
-> 
-> ## License
-> 
-> Free of charge, source code included. Nobody may sell
+>   
+>   Made by the ArtCraft team and community.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[852wa--JIZURA|852wa/JIZURA]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/nullmoth/nvidia-macos-driver) · [官方網站](https://nullmothsystems.com)
+[GitHub](https://github.com/storytold/cadcraft)
 
 ## 相關收錄
 
@@ -355,7 +358,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "nullmoth--nvidia-macos-driver"
+> WHERE category = "Other" AND file.name != "storytold--cadcraft"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -364,7 +367,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Rust" AND file.name != "nullmoth--nvidia-macos-driver" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "storytold--cadcraft" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -373,18 +376,18 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W41" AND file.name != "nullmoth--nvidia-macos-driver"
+> WHERE week = "2026-W41" AND file.name != "storytold--cadcraft"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/storytold--cadcraft");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "nullmoth--nvidia-macos-driver" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "storytold--cadcraft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -400,7 +403,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "nullmoth" AND file.name != "nullmoth--nvidia-macos-driver"
+> WHERE owner = "storytold" AND file.name != "storytold--cadcraft"
 > SORT stars DESC
 > ```
 
@@ -408,7 +411,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/storytold--cadcraft");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -425,7 +428,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/storytold--cadcraft");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -458,7 +461,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/storytold--cadcraft");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -482,7 +485,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/storytold--cadcraft");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -519,7 +522,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/nullmoth--nvidia-macos-driver");
+> const me = dv.page("Repos/storytold--cadcraft");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -602,7 +605,7 @@ Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore)
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-10-09** — 首次收錄
+> **2026-10-10** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -618,5 +621,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-10-10|2026-10-10]] — 再次上榜，2.0k stars
-- [[2026-10-09|2026-10-09]] — 首次收錄，1.4k stars
+- [[2026-10-10|2026-10-10]] — 首次收錄，1.5k stars
