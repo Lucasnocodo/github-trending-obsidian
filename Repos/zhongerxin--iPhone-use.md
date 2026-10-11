@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "让 Codex 通过 USB 操作真实 iPhone：引导安装、App 自动化、实时屏幕与截图回退。"
 homepage: ""
-stars: 2129
-stars_per_day: 710
-forks: 210
-open_issues: 11
+stars: 2699
+stars_per_day: 675
+forks: 270
+open_issues: 13
 created: 2026-10-06
 pushed_at: 2026-10-10
 first_seen: 2026-10-10
@@ -30,10 +30,10 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-13"
+appearances: 2
+next_review: "2026-10-14"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
 repo_size_kb: 44662
 readme_length: 6285
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-10"
-star_history: "2026-10-10:2129"
+star_history: "2026-10-10:2129,2026-10-11:2699"
 tags:
   - github
   - "category/other"
@@ -643,4 +643,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-11|2026-10-11]] — 再次上榜，2.7k stars
 - [[2026-10-10|2026-10-10]] — 首次收錄，2.1k stars

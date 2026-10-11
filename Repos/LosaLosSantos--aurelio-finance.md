@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts on your own computer."
 homepage: ""
-stars: 1556
-stars_per_day: 519
-forks: 138
+stars: 2095
+stars_per_day: 524
+forks: 215
 open_issues: 0
 created: 2026-10-06
-pushed_at: 2026-10-09
+pushed_at: 2026-10-11
 first_seen: 2026-10-10
 week: "2026-W41"
 month: "2026-10"
@@ -30,10 +30,10 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-13"
+appearances: 2
+next_review: "2026-10-14"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: -1
 repo_size_kb: 9129
 readme_length: 2984
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-10"
-star_history: "2026-10-10:1556"
+star_history: "2026-10-10:1556,2026-10-11:2095"
 tags:
   - github
   - "category/other"
@@ -548,4 +548,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-11|2026-10-11]] — 再次上榜，2.1k stars
 - [[2026-10-10|2026-10-10]] — 首次收錄，1.6k stars

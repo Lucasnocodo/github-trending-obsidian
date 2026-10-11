@@ -7,12 +7,12 @@ language: Rust
 license: Apache-2.0
 description: "An open-source, clean-room reimplementation of Microsoft Word in pure Rust"
 homepage: "https://getartcraft.com/apps/wordcraft"
-stars: 2147
-stars_per_day: 1074
-forks: 638
-open_issues: 140
+stars: 3459
+stars_per_day: 1153
+forks: 1018
+open_issues: 252
 created: 2026-10-07
-pushed_at: 2026-10-10
+pushed_at: 2026-10-11
 first_seen: 2026-10-10
 week: "2026-W41"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-13"
+appearances: 2
+next_review: "2026-10-14"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 7
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-10"
-star_history: "2026-10-10:2147"
+star_history: "2026-10-10:2147,2026-10-11:3459"
 tags:
   - github
   - "category/other"
@@ -636,4 +636,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-11|2026-10-11]] — 再次上榜，3.5k stars
 - [[2026-10-10|2026-10-10]] — 首次收錄，2.1k stars
