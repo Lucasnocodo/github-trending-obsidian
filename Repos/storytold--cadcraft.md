@@ -7,10 +7,10 @@ language: Rust
 license: Apache-2.0
 description: "CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app in pure Rust"
 homepage: ""
-stars: 2866
-stars_per_day: 573
-forks: 1320
-open_issues: 112
+stars: 3658
+stars_per_day: 610
+forks: 1688
+open_issues: 274
 created: 2026-10-07
 pushed_at: 2026-10-12
 first_seen: 2026-10-10
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-15"
+appearances: 4
+next_review: "2026-10-16"
 contributor_count: 3
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-10"
-star_history: "2026-10-10:1463,2026-10-11:1991,2026-10-12:2866"
+star_history: "2026-10-10:1463,2026-10-11:1991,2026-10-12:2866,2026-10-13:3658"
 tags:
   - github
   - "category/other"
@@ -621,6 +621,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-13|2026-10-13]] — 再次上榜，3.7k stars
 - [[2026-10-12|2026-10-12]] — 再次上榜，2.9k stars
 - [[2026-10-11|2026-10-11]] — 再次上榜，2.0k stars
 - [[2026-10-10|2026-10-10]] — 首次收錄，1.5k stars

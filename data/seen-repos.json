@@ -4628,10 +4628,10 @@
   },
   "openai/math": {
     "first_seen": "2026-10-07",
-    "last_seen": "2026-10-12",
-    "times_seen": 6,
+    "last_seen": "2026-10-13",
+    "times_seen": 7,
     "stars_first": 4898,
-    "stars_last": 14189
+    "stars_last": 14519
   },
   "storytold/filmcraft": {
     "first_seen": "2026-10-07",
@@ -4656,10 +4656,10 @@
   },
   "alchaincyf/huashu-art-motion": {
     "first_seen": "2026-10-08",
-    "last_seen": "2026-10-12",
-    "times_seen": 5,
+    "last_seen": "2026-10-13",
+    "times_seen": 6,
     "stars_first": 1972,
-    "stars_last": 3454
+    "stars_last": 3695
   },
   "storytold/effectcraft": {
     "first_seen": "2026-10-08",
@@ -4698,17 +4698,17 @@
   },
   "nullmoth/nvidia-macos-driver": {
     "first_seen": "2026-10-09",
-    "last_seen": "2026-10-12",
-    "times_seen": 4,
+    "last_seen": "2026-10-13",
+    "times_seen": 5,
     "stars_first": 1419,
-    "stars_last": 2605
+    "stars_last": 2808
   },
   "mhtsec/ARTEX": {
     "first_seen": "2026-10-09",
-    "last_seen": "2026-10-12",
-    "times_seen": 4,
+    "last_seen": "2026-10-13",
+    "times_seen": 5,
     "stars_first": 1310,
-    "stars_last": 3347
+    "stars_last": 3709
   },
   "Jakeschincariol/replica-skill": {
     "first_seen": "2026-10-09",
@@ -4726,38 +4726,38 @@
   },
   "storytold/wordcraft": {
     "first_seen": "2026-10-10",
-    "last_seen": "2026-10-12",
-    "times_seen": 3,
+    "last_seen": "2026-10-13",
+    "times_seen": 4,
     "stars_first": 2147,
-    "stars_last": 6849
+    "stars_last": 9706
   },
   "zhongerxin/iPhone-use": {
     "first_seen": "2026-10-10",
-    "last_seen": "2026-10-12",
-    "times_seen": 3,
+    "last_seen": "2026-10-13",
+    "times_seen": 4,
     "stars_first": 2129,
-    "stars_last": 3198
+    "stars_last": 3426
   },
   "LosaLosSantos/aurelio-finance": {
     "first_seen": "2026-10-10",
-    "last_seen": "2026-10-12",
-    "times_seen": 3,
+    "last_seen": "2026-10-13",
+    "times_seen": 4,
     "stars_first": 1556,
-    "stars_last": 2432
+    "stars_last": 3046
   },
   "storytold/cadcraft": {
     "first_seen": "2026-10-10",
-    "last_seen": "2026-10-12",
-    "times_seen": 3,
+    "last_seen": "2026-10-13",
+    "times_seen": 4,
     "stars_first": 1463,
-    "stars_last": 2866
+    "stars_last": 3658
   },
   "storytold/gridcraft": {
     "first_seen": "2026-10-11",
-    "last_seen": "2026-10-12",
-    "times_seen": 2,
+    "last_seen": "2026-10-13",
+    "times_seen": 3,
     "stars_first": 1990,
-    "stars_last": 3173
+    "stars_last": 4006
   },
   "noahdunnagan/fsearch": {
     "first_seen": "2026-10-11",
@@ -4768,9 +4768,9 @@
   },
   "wheresryan22/anatomy": {
     "first_seen": "2026-10-12",
-    "last_seen": "2026-10-12",
-    "times_seen": 1,
+    "last_seen": "2026-10-13",
+    "times_seen": 2,
     "stars_first": 4080,
-    "stars_last": 4080
+    "stars_last": 6865
   }
 }

@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects."
 homepage: "https://skills.wheresryan.sh/anatomy"
-stars: 4080
-stars_per_day: 1360
-forks: 322
+stars: 6865
+stars_per_day: 1716
+forks: 495
 open_issues: 4
 created: 2026-10-08
 pushed_at: 2026-10-12
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-15"
+appearances: 2
+next_review: "2026-10-16"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-12"
-star_history: "2026-10-12:4080"
+star_history: "2026-10-12:4080,2026-10-13:6865"
 tags:
   - github
   - "category/other"
@@ -645,4 +645,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-13|2026-10-13]] — 再次上榜，6.9k stars
 - [[2026-10-12|2026-10-12]] — 首次收錄，4.1k stars

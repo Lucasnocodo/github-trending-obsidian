@@ -7,12 +7,12 @@ language: Rust
 license: Apache-2.0
 description: "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft."
 homepage: ""
-stars: 3173
-stars_per_day: 635
-forks: 1328
-open_issues: 293
+stars: 4006
+stars_per_day: 668
+forks: 1750
+open_issues: 304
 created: 2026-10-07
-pushed_at: 2026-10-12
+pushed_at: 2026-10-13
 first_seen: 2026-10-11
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-15"
+appearances: 3
+next_review: "2026-10-16"
 contributor_count: 5
 engagement: "high"
 issue_close_rate: 29
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-11"
-star_history: "2026-10-11:1990,2026-10-12:3173"
+star_history: "2026-10-11:1990,2026-10-12:3173,2026-10-13:4006"
 tags:
   - github
   - "category/other"
@@ -646,5 +646,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-13|2026-10-13]] — 再次上榜，4.0k stars
 - [[2026-10-12|2026-10-12]] — 再次上榜，3.2k stars
 - [[2026-10-11|2026-10-11]] — 首次收錄，2.0k stars

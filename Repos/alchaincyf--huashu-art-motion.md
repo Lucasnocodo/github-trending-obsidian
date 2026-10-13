@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。"
 homepage: ""
-stars: 3454
-stars_per_day: 576
-forks: 389
+stars: 3695
+stars_per_day: 528
+forks: 409
 open_issues: 3
 created: 2026-10-06
-pushed_at: 2026-10-10
+pushed_at: 2026-10-13
 first_seen: 2026-10-08
 week: "2026-W41"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-10-15"
+appearances: 6
+next_review: "2026-10-16"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-08"
-star_history: "2026-10-08:1972,2026-10-09:2627,2026-10-10:3014,2026-10-11:3273,2026-10-12:3454"
+star_history: "2026-10-08:1972,2026-10-09:2627,2026-10-10:3014,2026-10-11:3273,2026-10-12:3454,2026-10-13:3695"
 tags:
   - github
   - "category/other"
@@ -641,6 +641,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-13|2026-10-13]] — 再次上榜，3.7k stars
 - [[2026-10-12|2026-10-12]] — 再次上榜，3.5k stars
 - [[2026-10-11|2026-10-11]] — 再次上榜，3.3k stars
 - [[2026-10-10|2026-10-10]] — 再次上榜，3.0k stars
