@@ -7,12 +7,12 @@ language: Rust
 license: NOASSERTION
 description: "Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included."
 homepage: "https://nullmothsystems.com"
-stars: 2808
-stars_per_day: 562
-forks: 255
-open_issues: 150
+stars: 2923
+stars_per_day: 487
+forks: 276
+open_issues: 145
 created: 2026-10-07
-pushed_at: 2026-10-12
+pushed_at: 2026-10-13
 first_seen: 2026-10-09
 week: "2026-W41"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-10-16"
+appearances: 6
+next_review: "2026-10-17"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 4
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-09"
-star_history: "2026-10-09:1419,2026-10-10:2030,2026-10-11:2360,2026-10-12:2605,2026-10-13:2808"
+star_history: "2026-10-09:1419,2026-10-10:2030,2026-10-11:2360,2026-10-12:2605,2026-10-13:2808,2026-10-14:2923"
 tags:
   - github
   - "category/other"
@@ -618,6 +618,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-14|2026-10-14]] — 再次上榜，2.9k stars
 - [[2026-10-13|2026-10-13]] — 再次上榜，2.8k stars
 - [[2026-10-12|2026-10-12]] — 再次上榜，2.6k stars
 - [[2026-10-11|2026-10-11]] — 再次上榜，2.4k stars

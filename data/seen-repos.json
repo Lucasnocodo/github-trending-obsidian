@@ -4698,17 +4698,17 @@
   },
   "nullmoth/nvidia-macos-driver": {
     "first_seen": "2026-10-09",
-    "last_seen": "2026-10-13",
-    "times_seen": 5,
+    "last_seen": "2026-10-14",
+    "times_seen": 6,
     "stars_first": 1419,
-    "stars_last": 2808
+    "stars_last": 2923
   },
   "mhtsec/ARTEX": {
     "first_seen": "2026-10-09",
-    "last_seen": "2026-10-13",
-    "times_seen": 5,
+    "last_seen": "2026-10-14",
+    "times_seen": 6,
     "stars_first": 1310,
-    "stars_last": 3709
+    "stars_last": 3942
   },
   "Jakeschincariol/replica-skill": {
     "first_seen": "2026-10-09",
@@ -4726,10 +4726,10 @@
   },
   "storytold/wordcraft": {
     "first_seen": "2026-10-10",
-    "last_seen": "2026-10-13",
-    "times_seen": 4,
+    "last_seen": "2026-10-14",
+    "times_seen": 5,
     "stars_first": 2147,
-    "stars_last": 9706
+    "stars_last": 11407
   },
   "zhongerxin/iPhone-use": {
     "first_seen": "2026-10-10",
@@ -4747,17 +4747,17 @@
   },
   "storytold/cadcraft": {
     "first_seen": "2026-10-10",
-    "last_seen": "2026-10-13",
-    "times_seen": 4,
+    "last_seen": "2026-10-14",
+    "times_seen": 5,
     "stars_first": 1463,
-    "stars_last": 3658
+    "stars_last": 4336
   },
   "storytold/gridcraft": {
     "first_seen": "2026-10-11",
-    "last_seen": "2026-10-13",
-    "times_seen": 3,
+    "last_seen": "2026-10-14",
+    "times_seen": 4,
     "stars_first": 1990,
-    "stars_last": 4006
+    "stars_last": 4524
   },
   "noahdunnagan/fsearch": {
     "first_seen": "2026-10-11",
@@ -4768,9 +4768,37 @@
   },
   "wheresryan22/anatomy": {
     "first_seen": "2026-10-12",
-    "last_seen": "2026-10-13",
-    "times_seen": 2,
+    "last_seen": "2026-10-14",
+    "times_seen": 3,
     "stars_first": 4080,
-    "stars_last": 6865
+    "stars_last": 8581
+  },
+  "storytold/deckcraft": {
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "stars_first": 3016,
+    "stars_last": 3016
+  },
+  "ARahim3/DigUp": {
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "stars_first": 2722,
+    "stars_last": 2722
+  },
+  "storytold/soundcraft": {
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "stars_first": 2624,
+    "stars_last": 2624
+  },
+  "t4t5/omdrop-owl": {
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "stars_first": 2607,
+    "stars_last": 2607
   }
 }
