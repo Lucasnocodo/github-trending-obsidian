@@ -7,12 +7,12 @@ language: Rust
 license: MIT
 description: "Whole-disk file search for macOS: fuzzy names, typo tolerance, indexed content grep. ~1 ms over 8M files."
 homepage: ""
-stars: 1696
-stars_per_day: 848
-forks: 111
-open_issues: 8
+stars: 2061
+stars_per_day: 344
+forks: 134
+open_issues: 3
 created: 2026-10-08
-pushed_at: 2026-10-11
+pushed_at: 2026-10-12
 first_seen: 2026-10-11
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-14"
+appearances: 2
+next_review: "2026-10-18"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-11"
-star_history: "2026-10-11:1696"
+star_history: "2026-10-11:1696,2026-10-15:2061"
 tags:
   - github
   - "category/other"
@@ -519,4 +519,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-15|2026-10-15]] — 再次上榜，2.1k stars
 - [[2026-10-11|2026-10-11]] — 首次收錄，1.7k stars

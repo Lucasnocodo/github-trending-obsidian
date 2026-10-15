@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: "Search your Mac by what's in your files: photos, PDFs, recordings, videos and code. On-device, built on Google DeepMind's EmbeddingGemma 2."
 homepage: ""
-stars: 2722
-stars_per_day: 544
-forks: 194
-open_issues: 55
+stars: 3765
+stars_per_day: 628
+forks: 254
+open_issues: 70
 created: 2026-10-08
-pushed_at: 2026-10-12
+pushed_at: 2026-10-14
 first_seen: 2026-10-14
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-17"
+appearances: 2
+next_review: "2026-10-18"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-14"
-star_history: "2026-10-14:2722"
+star_history: "2026-10-14:2722,2026-10-15:3765"
 tags:
   - github
   - "category/other"
@@ -631,4 +631,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-15|2026-10-15]] — 再次上榜，3.8k stars
 - [[2026-10-14|2026-10-14]] — 首次收錄，2.7k stars

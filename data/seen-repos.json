@@ -4705,10 +4705,10 @@
   },
   "mhtsec/ARTEX": {
     "first_seen": "2026-10-09",
-    "last_seen": "2026-10-14",
-    "times_seen": 6,
+    "last_seen": "2026-10-15",
+    "times_seen": 7,
     "stars_first": 1310,
-    "stars_last": 3942
+    "stars_last": 4137
   },
   "Jakeschincariol/replica-skill": {
     "first_seen": "2026-10-09",
@@ -4761,17 +4761,17 @@
   },
   "noahdunnagan/fsearch": {
     "first_seen": "2026-10-11",
-    "last_seen": "2026-10-11",
-    "times_seen": 1,
+    "last_seen": "2026-10-15",
+    "times_seen": 2,
     "stars_first": 1696,
-    "stars_last": 1696
+    "stars_last": 2061
   },
   "wheresryan22/anatomy": {
     "first_seen": "2026-10-12",
-    "last_seen": "2026-10-14",
-    "times_seen": 3,
+    "last_seen": "2026-10-15",
+    "times_seen": 4,
     "stars_first": 4080,
-    "stars_last": 8581
+    "stars_last": 10959
   },
   "storytold/deckcraft": {
     "first_seen": "2026-10-14",
@@ -4782,10 +4782,10 @@
   },
   "ARahim3/DigUp": {
     "first_seen": "2026-10-14",
-    "last_seen": "2026-10-14",
-    "times_seen": 1,
+    "last_seen": "2026-10-15",
+    "times_seen": 2,
     "stars_first": 2722,
-    "stars_last": 2722
+    "stars_last": 3765
   },
   "storytold/soundcraft": {
     "first_seen": "2026-10-14",
@@ -4796,9 +4796,44 @@
   },
   "t4t5/omdrop-owl": {
     "first_seen": "2026-10-14",
-    "last_seen": "2026-10-14",
-    "times_seen": 1,
+    "last_seen": "2026-10-15",
+    "times_seen": 2,
     "stars_first": 2607,
-    "stars_last": 2607
+    "stars_last": 2691
+  },
+  "storytold/craft-launcher": {
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "stars_first": 2702,
+    "stars_last": 2702
+  },
+  "jhaizhou-ops/d2r-mobile": {
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "stars_first": 2393,
+    "stars_last": 2393
+  },
+  "liseami/CCBaga": {
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "stars_first": 2282,
+    "stars_last": 2282
+  },
+  "onehumanbeing/esp32-iphone-agent": {
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "stars_first": 2158,
+    "stars_last": 2158
+  },
+  "T-Auto/dsh-ops": {
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "stars_first": 1817,
+    "stars_last": 1817
   }
 }

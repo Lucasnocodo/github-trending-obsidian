@@ -7,12 +7,12 @@ language: Shell
 license: N/A
 description: "airdrop for non-apple devices"
 homepage: ""
-stars: 2607
-stars_per_day: 521
-forks: 198
-open_issues: 23
+stars: 2691
+stars_per_day: 449
+forks: 208
+open_issues: 22
 created: 2026-10-08
-pushed_at: 2026-10-13
+pushed_at: 2026-10-14
 first_seen: 2026-10-14
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-17"
+appearances: 2
+next_review: "2026-10-18"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 15
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-14"
-star_history: "2026-10-14:2607"
+star_history: "2026-10-14:2607,2026-10-15:2691"
 tags:
   - github
   - "category/other"
@@ -656,4 +656,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-15|2026-10-15]] — 再次上榜，2.7k stars
 - [[2026-10-14|2026-10-14]] — 首次收錄，2.6k stars
