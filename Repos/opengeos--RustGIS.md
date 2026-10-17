@@ -7,12 +7,12 @@ language: Rust
 license: Apache-2.0
 description: "A fast, free and open-source GIS in pure Rust."
 homepage: "https://rustgis.app"
-stars: 1237
-stars_per_day: 247
-forks: 171
-open_issues: 30
+stars: 1380
+stars_per_day: 230
+forks: 192
+open_issues: 33
 created: 2026-10-10
-pushed_at: 2026-10-16
+pushed_at: 2026-10-17
 first_seen: 2026-10-16
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-19"
+appearances: 2
+next_review: "2026-10-20"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 54
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-16"
-star_history: "2026-10-16:1237"
+star_history: "2026-10-16:1237,2026-10-17:1380"
 tags:
   - github
   - "category/other"
@@ -598,4 +598,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-17|2026-10-17]] — 再次上榜，1.4k stars
 - [[2026-10-16|2026-10-16]] — 首次收錄，1.2k stars

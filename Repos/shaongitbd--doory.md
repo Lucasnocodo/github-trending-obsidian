@@ -7,12 +7,12 @@ language: TypeScript
 license: NOASSERTION
 description: "Open source canva alternative"
 homepage: "https://doory.art"
-stars: 1344
-stars_per_day: 224
-forks: 89
-open_issues: 27
+stars: 1436
+stars_per_day: 205
+forks: 103
+open_issues: 24
 created: 2026-10-10
-pushed_at: 2026-10-14
+pushed_at: 2026-10-16
 first_seen: 2026-10-16
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-19"
+appearances: 2
+next_review: "2026-10-20"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-16"
-star_history: "2026-10-16:1344"
+star_history: "2026-10-16:1344,2026-10-17:1436"
 tags:
   - github
   - "category/other"
@@ -645,4 +645,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-17|2026-10-17]] — 再次上榜，1.4k stars
 - [[2026-10-16|2026-10-16]] — 首次收錄，1.3k stars

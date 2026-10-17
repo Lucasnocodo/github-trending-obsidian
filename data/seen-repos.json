@@ -4810,24 +4810,24 @@
   },
   "jhaizhou-ops/d2r-mobile": {
     "first_seen": "2026-10-15",
-    "last_seen": "2026-10-16",
-    "times_seen": 2,
+    "last_seen": "2026-10-17",
+    "times_seen": 3,
     "stars_first": 2393,
-    "stars_last": 3280
+    "stars_last": 3565
   },
   "liseami/CCBaga": {
     "first_seen": "2026-10-15",
-    "last_seen": "2026-10-16",
-    "times_seen": 2,
+    "last_seen": "2026-10-17",
+    "times_seen": 3,
     "stars_first": 2282,
-    "stars_last": 2353
+    "stars_last": 2422
   },
   "onehumanbeing/esp32-iphone-agent": {
     "first_seen": "2026-10-15",
-    "last_seen": "2026-10-16",
-    "times_seen": 2,
+    "last_seen": "2026-10-17",
+    "times_seen": 3,
     "stars_first": 2158,
-    "stars_last": 2599
+    "stars_last": 2895
   },
   "T-Auto/dsh-ops": {
     "first_seen": "2026-10-15",
@@ -4838,10 +4838,10 @@
   },
   "Arekejoker/qwen21-nsfw-pose-skill": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-16",
-    "times_seen": 1,
+    "last_seen": "2026-10-17",
+    "times_seen": 2,
     "stars_first": 2150,
-    "stars_last": 2150
+    "stars_last": 2550
   },
   "storytold/figcraft": {
     "first_seen": "2026-10-16",
@@ -4852,30 +4852,44 @@
   },
   "HeyPuter/everything": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-16",
-    "times_seen": 1,
+    "last_seen": "2026-10-17",
+    "times_seen": 2,
     "stars_first": 1387,
-    "stars_last": 1387
+    "stars_last": 1790
   },
   "shaongitbd/doory": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-16",
-    "times_seen": 1,
+    "last_seen": "2026-10-17",
+    "times_seen": 2,
     "stars_first": 1344,
-    "stars_last": 1344
+    "stars_last": 1436
   },
   "ahwootech/BRUTAL": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-16",
-    "times_seen": 1,
+    "last_seen": "2026-10-17",
+    "times_seen": 2,
     "stars_first": 1253,
-    "stars_last": 1253
+    "stars_last": 1607
   },
   "opengeos/RustGIS": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-16",
-    "times_seen": 1,
+    "last_seen": "2026-10-17",
+    "times_seen": 2,
     "stars_first": 1237,
-    "stars_last": 1237
+    "stars_last": 1380
+  },
+  "chenglou/handwired": {
+    "first_seen": "2026-10-17",
+    "last_seen": "2026-10-17",
+    "times_seen": 1,
+    "stars_first": 1591,
+    "stars_last": 1591
+  },
+  "deeplethe/solid-glass": {
+    "first_seen": "2026-10-17",
+    "last_seen": "2026-10-17",
+    "times_seen": 1,
+    "stars_first": 1498,
+    "stars_last": 1498
   }
 }
