@@ -7,12 +7,12 @@ language: Rust
 license: MIT
 description: ""
 homepage: ""
-stars: 2422
-stars_per_day: 404
-forks: 243
-open_issues: 9
+stars: 2596
+stars_per_day: 371
+forks: 263
+open_issues: 15
 created: 2026-10-11
-pushed_at: 2026-10-15
+pushed_at: 2026-10-18
 first_seen: 2026-10-15
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-20"
+appearances: 4
+next_review: "2026-10-21"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-15"
-star_history: "2026-10-15:2282,2026-10-16:2353,2026-10-17:2422"
+star_history: "2026-10-15:2282,2026-10-16:2353,2026-10-17:2422,2026-10-18:2596"
 tags:
   - github
   - "category/other"
@@ -608,6 +608,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-18|2026-10-18]] — 再次上榜，2.6k stars
 - [[2026-10-17|2026-10-17]] — 再次上榜，2.4k stars
 - [[2026-10-16|2026-10-16]] — 再次上榜，2.4k stars
 - [[2026-10-15|2026-10-15]] — 首次收錄，2.3k stars
