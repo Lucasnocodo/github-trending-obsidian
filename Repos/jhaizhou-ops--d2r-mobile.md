@@ -7,10 +7,10 @@ language: C
 license: MIT
 description: "Open-source iOS / macOS compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs your own Switch copy natively on iPhone, iPad and Mac — full touch controls, 60 fps, new endgame modes. Bring your own game files. 开源的《暗黑破坏神 II：狱火重生》术士君临 iOS / macOS 兼容层"
 homepage: ""
-stars: 3741
-stars_per_day: 748
-forks: 1064
-open_issues: 31
+stars: 3929
+stars_per_day: 655
+forks: 1098
+open_issues: 32
 created: 2026-10-12
 pushed_at: 2026-10-17
 first_seen: 2026-10-15
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-10-21"
+appearances: 5
+next_review: "2026-10-22"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 57
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-15"
-star_history: "2026-10-15:2393,2026-10-16:3280,2026-10-17:3565,2026-10-18:3741"
+star_history: "2026-10-15:2393,2026-10-16:3280,2026-10-17:3565,2026-10-18:3741,2026-10-19:3929"
 tags:
   - github
   - "category/other"
@@ -578,6 +578,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-19|2026-10-19]] — 再次上榜，3.9k stars
 - [[2026-10-18|2026-10-18]] — 再次上榜，3.7k stars
 - [[2026-10-17|2026-10-17]] — 再次上榜，3.6k stars
 - [[2026-10-16|2026-10-16]] — 再次上榜，3.3k stars

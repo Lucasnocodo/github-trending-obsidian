@@ -7,10 +7,10 @@ language: C++
 license: GPL-2.0
 description: "Uncharted: The Nathan Drake Collection running natively on Windows - by SuperMedo"
 homepage: ""
-stars: 1291
-stars_per_day: 430
-forks: 68
-open_issues: 229
+stars: 1473
+stars_per_day: 368
+forks: 76
+open_issues: 299
 created: 2026-10-15
 pushed_at: 2026-10-17
 first_seen: 2026-10-18
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-21"
+appearances: 2
+next_review: "2026-10-22"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 7
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-18"
-star_history: "2026-10-18:1291"
+star_history: "2026-10-18:1291,2026-10-19:1473"
 tags:
   - github
   - "category/other"
@@ -567,4 +567,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-19|2026-10-19]] — 再次上榜，1.5k stars
 - [[2026-10-18|2026-10-18]] — 首次收錄，1.3k stars
