@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "We're rebuilding and open-sourcing the world’s software from scratch."
 homepage: ""
-stars: 2242
-stars_per_day: 448
-forks: 320
-open_issues: 9
+stars: 2653
+stars_per_day: 442
+forks: 349
+open_issues: 8
 created: 2026-10-13
-pushed_at: 2026-10-18
+pushed_at: 2026-10-19
 first_seen: 2026-10-16
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-10-22"
+appearances: 5
+next_review: "2026-10-23"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 78
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-16"
-star_history: "2026-10-16:1387,2026-10-17:1790,2026-10-18:2082,2026-10-19:2242"
+star_history: "2026-10-16:1387,2026-10-17:1790,2026-10-18:2082,2026-10-19:2242,2026-10-20:2653"
 tags:
   - github
   - "category/other"
@@ -572,6 +572,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-20|2026-10-20]] — 再次上榜，2.7k stars
 - [[2026-10-19|2026-10-19]] — 再次上榜，2.2k stars
 - [[2026-10-18|2026-10-18]] — 再次上榜，2.1k stars
 - [[2026-10-17|2026-10-17]] — 再次上榜，1.8k stars

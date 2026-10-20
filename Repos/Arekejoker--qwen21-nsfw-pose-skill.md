@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw"
 homepage: ""
-stars: 3067
-stars_per_day: 511
-forks: 567
+stars: 3417
+stars_per_day: 488
+forks: 617
 open_issues: 4
 created: 2026-10-13
 pushed_at: 2026-10-19
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-10-22"
+appearances: 5
+next_review: "2026-10-23"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-16"
-star_history: "2026-10-16:2150,2026-10-17:2550,2026-10-18:2661,2026-10-19:3067"
+star_history: "2026-10-16:2150,2026-10-17:2550,2026-10-18:2661,2026-10-19:3067,2026-10-20:3417"
 tags:
   - github
   - "category/other"
@@ -591,6 +591,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-20|2026-10-20]] — 再次上榜，3.4k stars
 - [[2026-10-19|2026-10-19]] — 再次上榜，3.1k stars
 - [[2026-10-18|2026-10-18]] — 再次上榜，2.7k stars
 - [[2026-10-17|2026-10-17]] — 再次上榜，2.5k stars

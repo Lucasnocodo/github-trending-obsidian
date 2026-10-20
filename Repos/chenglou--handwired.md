@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Turn your regular JavaScript code into a neural net."
 homepage: "https://chenglou.me/handwired/"
-stars: 1743
-stars_per_day: 436
-forks: 144
+stars: 1823
+stars_per_day: 365
+forks: 151
 open_issues: 9
 created: 2026-10-15
 pushed_at: 2026-10-17
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-22"
+appearances: 4
+next_review: "2026-10-23"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-17"
-star_history: "2026-10-17:1591,2026-10-18:1686,2026-10-19:1743"
+star_history: "2026-10-17:1591,2026-10-18:1686,2026-10-19:1743,2026-10-20:1823"
 tags:
   - github
   - "category/other"
@@ -502,6 +502,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-20|2026-10-20]] — 再次上榜，1.8k stars
 - [[2026-10-19|2026-10-19]] — 再次上榜，1.7k stars
 - [[2026-10-18|2026-10-18]] — 再次上榜，1.7k stars
 - [[2026-10-17|2026-10-17]] — 首次收錄，1.6k stars

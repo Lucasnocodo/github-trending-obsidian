@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。还原 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。"
 homepage: ""
-stars: 1216
-stars_per_day: 304
-forks: 262
-open_issues: 2
+stars: 1261
+stars_per_day: 252
+forks: 266
+open_issues: 0
 created: 2026-10-14
-pushed_at: 2026-10-17
+pushed_at: 2026-10-19
 first_seen: 2026-10-19
 week: "2026-W43"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-22"
+appearances: 2
+next_review: "2026-10-23"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 85
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-19"
-star_history: "2026-10-19:1216"
+star_history: "2026-10-19:1216,2026-10-20:1261"
 tags:
   - github
   - "category/other"
@@ -635,4 +635,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-20|2026-10-20]] — 再次上榜，1.3k stars
 - [[2026-10-19|2026-10-19]] — 首次收錄，1.2k stars

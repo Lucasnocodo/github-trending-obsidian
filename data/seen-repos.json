@@ -4838,10 +4838,10 @@
   },
   "Arekejoker/qwen21-nsfw-pose-skill": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-19",
-    "times_seen": 4,
+    "last_seen": "2026-10-20",
+    "times_seen": 5,
     "stars_first": 2150,
-    "stars_last": 3067
+    "stars_last": 3417
   },
   "storytold/figcraft": {
     "first_seen": "2026-10-16",
@@ -4852,10 +4852,10 @@
   },
   "HeyPuter/everything": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-19",
-    "times_seen": 4,
+    "last_seen": "2026-10-20",
+    "times_seen": 5,
     "stars_first": 1387,
-    "stars_last": 2242
+    "stars_last": 2653
   },
   "shaongitbd/doory": {
     "first_seen": "2026-10-16",
@@ -4866,10 +4866,10 @@
   },
   "ahwootech/BRUTAL": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-19",
-    "times_seen": 4,
+    "last_seen": "2026-10-20",
+    "times_seen": 5,
     "stars_first": 1253,
-    "stars_last": 1924
+    "stars_last": 2002
   },
   "opengeos/RustGIS": {
     "first_seen": "2026-10-16",
@@ -4880,10 +4880,10 @@
   },
   "chenglou/handwired": {
     "first_seen": "2026-10-17",
-    "last_seen": "2026-10-19",
-    "times_seen": 3,
+    "last_seen": "2026-10-20",
+    "times_seen": 4,
     "stars_first": 1591,
-    "stars_last": 1743
+    "stars_last": 1823
   },
   "deeplethe/solid-glass": {
     "first_seen": "2026-10-17",
@@ -4894,17 +4894,17 @@
   },
   "Supermedo/uncharted_pc": {
     "first_seen": "2026-10-18",
-    "last_seen": "2026-10-19",
-    "times_seen": 2,
+    "last_seen": "2026-10-20",
+    "times_seen": 3,
     "stars_first": 1291,
-    "stars_last": 1473
+    "stars_last": 1614
   },
   "feder-cr/git-ai": {
     "first_seen": "2026-10-18",
-    "last_seen": "2026-10-19",
-    "times_seen": 2,
+    "last_seen": "2026-10-20",
+    "times_seen": 3,
     "stars_first": 1148,
-    "stars_last": 2319
+    "stars_last": 2473
   },
   "Gathin23/tv-vibehack": {
     "first_seen": "2026-10-19",
@@ -4915,9 +4915,30 @@
   },
   "Caho1/open-claude-ui": {
     "first_seen": "2026-10-19",
-    "last_seen": "2026-10-19",
-    "times_seen": 1,
+    "last_seen": "2026-10-20",
+    "times_seen": 2,
     "stars_first": 1216,
-    "stars_last": 1216
+    "stars_last": 1261
+  },
+  "Gathin23/cleanyourtv": {
+    "first_seen": "2026-10-20",
+    "last_seen": "2026-10-20",
+    "times_seen": 1,
+    "stars_first": 6617,
+    "stars_last": 6617
+  },
+  "ly05010419/MacNativeGames": {
+    "first_seen": "2026-10-20",
+    "last_seen": "2026-10-20",
+    "times_seen": 1,
+    "stars_first": 1999,
+    "stars_last": 1999
+  },
+  "Leonxlnx/earshot": {
+    "first_seen": "2026-10-20",
+    "last_seen": "2026-10-20",
+    "times_seen": 1,
+    "stars_first": 1634,
+    "stars_last": 1634
   }
 }
