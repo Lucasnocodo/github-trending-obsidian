@@ -7,12 +7,12 @@ language: Go
 license: NOASSERTION
 description: "Git designed for AI agents."
 homepage: "https://www.anthropic.com/engineering/redesigning-source-control"
-stars: 2473
-stars_per_day: 618
-forks: 273
-open_issues: 0
+stars: 1293
+stars_per_day: 259
+forks: 127
+open_issues: 2
 created: 2026-10-15
-pushed_at: 2026-10-19
+pushed_at: 2026-10-21
 first_seen: 2026-10-18
 week: "2026-W43"
 month: "2026-10"
@@ -30,10 +30,10 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-23"
+appearances: 4
+next_review: "2026-10-24"
 contributor_count: 0
-engagement: "medium"
+engagement: "low"
 issue_close_rate: -1
 repo_size_kb: 14992
 readme_length: 7807
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-18"
-star_history: "2026-10-18:1148,2026-10-19:2319,2026-10-20:2473"
+star_history: "2026-10-18:1148,2026-10-19:2319,2026-10-20:2473,2026-10-21:1293"
 tags:
   - github
   - "category/other"
@@ -605,6 +605,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-21|2026-10-21]] — 再次上榜，1.3k stars
 - [[2026-10-20|2026-10-20]] — 再次上榜，2.5k stars
 - [[2026-10-19|2026-10-19]] — 再次上榜，2.3k stars
 - [[2026-10-18|2026-10-18]] — 首次收錄，1.1k stars

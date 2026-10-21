@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source."
 homepage: ""
-stars: 1634
-stars_per_day: 409
-forks: 94
-open_issues: 3
+stars: 1988
+stars_per_day: 398
+forks: 113
+open_issues: 4
 created: 2026-10-15
 pushed_at: 2026-10-18
 first_seen: 2026-10-20
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-23"
+appearances: 2
+next_review: "2026-10-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 40
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-20"
-star_history: "2026-10-20:1634"
+star_history: "2026-10-20:1634,2026-10-21:1988"
 tags:
   - github
   - "category/other"
@@ -584,4 +584,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-21|2026-10-21]] — 再次上榜，2.0k stars
 - [[2026-10-20|2026-10-20]] — 首次收錄，1.6k stars

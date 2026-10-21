@@ -7,12 +7,12 @@ language: C#
 license: NOASSERTION
 description: "A free, open source C# framework for making games, or your own game engine. Direct access to native APIs and Vulkan, with the low-level libraries around them. The foundation under Kitten Space Agency and RimWorld's Waylith engine."
 homepage: "https://ahwoo.com/brutal"
-stars: 2002
-stars_per_day: 400
-forks: 112
-open_issues: 12
+stars: 2072
+stars_per_day: 345
+forks: 116
+open_issues: 13
 created: 2026-10-14
-pushed_at: 2026-10-18
+pushed_at: 2026-10-21
 first_seen: 2026-10-16
 week: "2026-W42"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-10-23"
+appearances: 6
+next_review: "2026-10-24"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-16"
-star_history: "2026-10-16:1253,2026-10-17:1607,2026-10-18:1812,2026-10-19:1924,2026-10-20:2002"
+star_history: "2026-10-16:1253,2026-10-17:1607,2026-10-18:1812,2026-10-19:1924,2026-10-20:2002,2026-10-21:2072"
 tags:
   - github
   - "category/other"
@@ -603,6 +603,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-21|2026-10-21]] — 再次上榜，2.1k stars
 - [[2026-10-20|2026-10-20]] — 再次上榜，2.0k stars
 - [[2026-10-19|2026-10-19]] — 再次上榜，1.9k stars
 - [[2026-10-18|2026-10-18]] — 再次上榜，1.8k stars
