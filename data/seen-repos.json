@@ -4880,10 +4880,10 @@
   },
   "chenglou/handwired": {
     "first_seen": "2026-10-17",
-    "last_seen": "2026-10-21",
-    "times_seen": 5,
+    "last_seen": "2026-10-22",
+    "times_seen": 6,
     "stars_first": 1591,
-    "stars_last": 1858
+    "stars_last": 1875
   },
   "deeplethe/solid-glass": {
     "first_seen": "2026-10-17",
@@ -4894,10 +4894,10 @@
   },
   "Supermedo/uncharted_pc": {
     "first_seen": "2026-10-18",
-    "last_seen": "2026-10-21",
-    "times_seen": 4,
+    "last_seen": "2026-10-22",
+    "times_seen": 5,
     "stars_first": 1291,
-    "stars_last": 1735
+    "stars_last": 1799
   },
   "feder-cr/git-ai": {
     "first_seen": "2026-10-18",
@@ -4922,44 +4922,58 @@
   },
   "Gathin23/cleanyourtv": {
     "first_seen": "2026-10-20",
-    "last_seen": "2026-10-21",
-    "times_seen": 2,
+    "last_seen": "2026-10-22",
+    "times_seen": 3,
     "stars_first": 6617,
-    "stars_last": 13454
+    "stars_last": 20401
   },
   "ly05010419/MacNativeGames": {
     "first_seen": "2026-10-20",
-    "last_seen": "2026-10-21",
-    "times_seen": 2,
+    "last_seen": "2026-10-22",
+    "times_seen": 3,
     "stars_first": 1999,
-    "stars_last": 3057
+    "stars_last": 4055
   },
   "Leonxlnx/earshot": {
     "first_seen": "2026-10-20",
-    "last_seen": "2026-10-21",
-    "times_seen": 2,
+    "last_seen": "2026-10-22",
+    "times_seen": 3,
     "stars_first": 1634,
-    "stars_last": 1988
+    "stars_last": 2061
   },
   "deepseek-ai/DeepInfer": {
     "first_seen": "2026-10-21",
-    "last_seen": "2026-10-21",
-    "times_seen": 1,
+    "last_seen": "2026-10-22",
+    "times_seen": 2,
     "stars_first": 14692,
-    "stars_last": 14692
+    "stars_last": 18527
   },
   "simbasjungles/free-my-tv": {
     "first_seen": "2026-10-21",
-    "last_seen": "2026-10-21",
-    "times_seen": 1,
+    "last_seen": "2026-10-22",
+    "times_seen": 2,
     "stars_first": 2007,
-    "stars_last": 2007
+    "stars_last": 2841
   },
   "xiaoyang111222/cn-math-taxonomy": {
     "first_seen": "2026-10-21",
-    "last_seen": "2026-10-21",
-    "times_seen": 1,
+    "last_seen": "2026-10-22",
+    "times_seen": 2,
     "stars_first": 1703,
-    "stars_last": 1703
+    "stars_last": 2060
+  },
+  "pengchujin/aerial-tv": {
+    "first_seen": "2026-10-22",
+    "last_seen": "2026-10-22",
+    "times_seen": 1,
+    "stars_first": 2433,
+    "stars_last": 2433
+  },
+  "JoasASantos/REA-Prompts": {
+    "first_seen": "2026-10-22",
+    "last_seen": "2026-10-22",
+    "times_seen": 1,
+    "stars_first": 1374,
+    "stars_last": 1374
   }
 }
