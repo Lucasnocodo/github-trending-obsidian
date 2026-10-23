@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "中小学知识图谱 + 前置诊断：数学（一–九年级、高中必修与选择性必修）+ 英语（小学、初中），课标对齐、人教版，1244 知识点、5123 题、自适应诊断"
 homepage: "https://math.pansgo.com/"
-stars: 2060
-stars_per_day: 687
-forks: 469
+stars: 2340
+stars_per_day: 585
+forks: 534
 open_issues: 4
 created: 2026-10-18
-pushed_at: 2026-10-21
+pushed_at: 2026-10-23
 first_seen: 2026-10-21
 week: "2026-W43"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-25"
+appearances: 3
+next_review: "2026-10-26"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-21"
-star_history: "2026-10-21:1703,2026-10-22:2060"
+star_history: "2026-10-21:1703,2026-10-22:2060,2026-10-23:2340"
 tags:
   - github
   - "category/other"
@@ -567,5 +567,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-23|2026-10-23]] — 再次上榜，2.3k stars
 - [[2026-10-22|2026-10-22]] — 再次上榜，2.1k stars
 - [[2026-10-21|2026-10-21]] — 首次收錄，1.7k stars

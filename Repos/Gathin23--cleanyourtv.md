@@ -7,12 +7,12 @@ language: Java
 license: NOASSERTION
 description: "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home."
 homepage: "https://cleanyour.tv"
-stars: 20401
-stars_per_day: 5100
-forks: 2221
-open_issues: 126
+stars: 25016
+stars_per_day: 5003
+forks: 2751
+open_issues: 93
 created: 2026-10-17
-pushed_at: 2026-10-22
+pushed_at: 2026-10-23
 first_seen: 2026-10-20
 week: "2026-W43"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-25"
+appearances: 4
+next_review: "2026-10-26"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 23
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-20"
-star_history: "2026-10-20:6617,2026-10-21:13454,2026-10-22:20401"
+star_history: "2026-10-20:6617,2026-10-21:13454,2026-10-22:20401,2026-10-23:25016"
 tags:
   - github
   - "category/other"
@@ -634,6 +634,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-23|2026-10-23]] — 再次上榜，25.0k stars
 - [[2026-10-22|2026-10-22]] — 再次上榜，20.4k stars
 - [[2026-10-21|2026-10-21]] — 再次上榜，13.5k stars
 - [[2026-10-20|2026-10-20]] — 首次收錄，6.6k stars

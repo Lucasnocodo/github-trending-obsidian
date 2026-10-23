@@ -7,10 +7,10 @@ language: Python
 license: Apache-2.0
 description: "DeepInfer: High-performance, large-scale inference framework for DeepSeek models"
 homepage: ""
-stars: 18527
-stars_per_day: 3705
-forks: 1918
-open_issues: 194
+stars: 20199
+stars_per_day: 3367
+forks: 2169
+open_issues: 196
 created: 2026-10-16
 pushed_at: 2026-10-21
 first_seen: 2026-10-21
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-25"
+appearances: 3
+next_review: "2026-10-26"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-21"
-star_history: "2026-10-21:14692,2026-10-22:18527"
+star_history: "2026-10-21:14692,2026-10-22:18527,2026-10-23:20199"
 tags:
   - github
   - "category/other"
@@ -556,5 +556,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-23|2026-10-23]] — 再次上榜，20.2k stars
 - [[2026-10-22|2026-10-22]] — 再次上榜，18.5k stars
 - [[2026-10-21|2026-10-21]] — 首次收錄，14.7k stars
