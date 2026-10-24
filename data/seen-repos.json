@@ -4922,17 +4922,17 @@
   },
   "Gathin23/cleanyourtv": {
     "first_seen": "2026-10-20",
-    "last_seen": "2026-10-23",
-    "times_seen": 4,
+    "last_seen": "2026-10-24",
+    "times_seen": 5,
     "stars_first": 6617,
-    "stars_last": 25016
+    "stars_last": 28510
   },
   "ly05010419/MacNativeGames": {
     "first_seen": "2026-10-20",
-    "last_seen": "2026-10-23",
-    "times_seen": 4,
+    "last_seen": "2026-10-24",
+    "times_seen": 5,
     "stars_first": 1999,
-    "stars_last": 4595
+    "stars_last": 4998
   },
   "Leonxlnx/earshot": {
     "first_seen": "2026-10-20",
@@ -4950,31 +4950,31 @@
   },
   "simbasjungles/free-my-tv": {
     "first_seen": "2026-10-21",
-    "last_seen": "2026-10-23",
-    "times_seen": 3,
+    "last_seen": "2026-10-24",
+    "times_seen": 4,
     "stars_first": 2007,
-    "stars_last": 3558
+    "stars_last": 4005
   },
   "xiaoyang111222/cn-math-taxonomy": {
     "first_seen": "2026-10-21",
-    "last_seen": "2026-10-23",
-    "times_seen": 3,
+    "last_seen": "2026-10-24",
+    "times_seen": 4,
     "stars_first": 1703,
-    "stars_last": 2340
+    "stars_last": 2890
   },
   "pengchujin/aerial-tv": {
     "first_seen": "2026-10-22",
-    "last_seen": "2026-10-23",
-    "times_seen": 2,
+    "last_seen": "2026-10-24",
+    "times_seen": 3,
     "stars_first": 2433,
-    "stars_last": 3341
+    "stars_last": 3960
   },
   "JoasASantos/REA-Prompts": {
     "first_seen": "2026-10-22",
-    "last_seen": "2026-10-23",
-    "times_seen": 2,
+    "last_seen": "2026-10-24",
+    "times_seen": 3,
     "stars_first": 1374,
-    "stars_last": 1504
+    "stars_last": 1783
   },
   "tek-sys-hub/Rubix-lang": {
     "first_seen": "2026-10-23",
@@ -4985,10 +4985,10 @@
   },
   "ikow/php2shell-poc": {
     "first_seen": "2026-10-23",
-    "last_seen": "2026-10-23",
-    "times_seen": 1,
+    "last_seen": "2026-10-24",
+    "times_seen": 2,
     "stars_first": 1574,
-    "stars_last": 1574
+    "stars_last": 1707
   },
   "OpenMOSS/MOSS-Image": {
     "first_seen": "2026-10-23",
@@ -4996,5 +4996,26 @@
     "times_seen": 1,
     "stars_first": 1496,
     "stars_last": 1496
+  },
+  "aicodeking/leanrea": {
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "stars_first": 1868,
+    "stars_last": 1868
+  },
+  "EthanArbuckle/fairplay-decrypt": {
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "stars_first": 1681,
+    "stars_last": 1681
+  },
+  "alchaincyf/huashu-motion": {
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "stars_first": 1550,
+    "stars_last": 1550
   }
 }

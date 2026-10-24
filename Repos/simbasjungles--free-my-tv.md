@@ -7,12 +7,12 @@ language: Java
 license: MIT
 description: "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo."
 homepage: "https://freemytv.io"
-stars: 3558
-stars_per_day: 1186
-forks: 510
-open_issues: 46
+stars: 4005
+stars_per_day: 1001
+forks: 623
+open_issues: 44
 created: 2026-10-19
-pushed_at: 2026-10-23
+pushed_at: 2026-10-24
 first_seen: 2026-10-21
 week: "2026-W43"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-26"
+appearances: 4
+next_review: "2026-10-27"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 26
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-21"
-star_history: "2026-10-21:2007,2026-10-22:2841,2026-10-23:3558"
+star_history: "2026-10-21:2007,2026-10-22:2841,2026-10-23:3558,2026-10-24:4005"
 tags:
   - github
   - "category/other"
@@ -608,6 +608,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-24|2026-10-24]] — 再次上榜，4.0k stars
 - [[2026-10-23|2026-10-23]] — 再次上榜，3.6k stars
 - [[2026-10-22|2026-10-22]] — 再次上榜，2.8k stars
 - [[2026-10-21|2026-10-21]] — 首次收錄，2.0k stars
