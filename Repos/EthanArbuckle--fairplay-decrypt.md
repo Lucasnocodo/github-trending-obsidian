@@ -7,12 +7,12 @@ language: C
 license: N/A
 description: "Offline FairPlay App Store IPA decryption with independent key derivation"
 homepage: ""
-stars: 1681
-stars_per_day: 420
-forks: 264
-open_issues: 4
+stars: 2005
+stars_per_day: 401
+forks: 310
+open_issues: 6
 created: 2026-10-19
-pushed_at: 2026-10-23
+pushed_at: 2026-10-24
 first_seen: 2026-10-24
 week: "2026-W43"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-27"
+appearances: 2
+next_review: "2026-10-28"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-24"
-star_history: "2026-10-24:1681"
+star_history: "2026-10-24:1681,2026-10-25:2005"
 tags:
   - github
   - "category/other"
@@ -496,4 +496,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-25|2026-10-25]] — 再次上榜，2.0k stars
 - [[2026-10-24|2026-10-24]] — 首次收錄，1.7k stars

@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "CVE-2026-109618/109619 — 5 RCE chains + detection rules (Suricata, Sigma, ModSecurity). PHP session.upload_progress pre-auth exploit research."
 homepage: ""
-stars: 1707
-stars_per_day: 854
-forks: 595
-open_issues: 4
+stars: 1763
+stars_per_day: 588
+forks: 611
+open_issues: 6
 created: 2026-10-21
 pushed_at: 2026-10-22
 first_seen: 2026-10-23
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-27"
+appearances: 3
+next_review: "2026-10-28"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-23"
-star_history: "2026-10-23:1574,2026-10-24:1707"
+star_history: "2026-10-23:1574,2026-10-24:1707,2026-10-25:1763"
 tags:
   - github
   - "category/other"
@@ -636,5 +636,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-25|2026-10-25]] — 再次上榜，1.8k stars
 - [[2026-10-24|2026-10-24]] — 再次上榜，1.7k stars
 - [[2026-10-23|2026-10-23]] — 首次收錄，1.6k stars

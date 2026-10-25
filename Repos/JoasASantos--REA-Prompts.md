@@ -7,10 +7,10 @@ language: N/A
 license: N/A
 description: "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program"
 homepage: ""
-stars: 1783
-stars_per_day: 446
-forks: 282
-open_issues: 0
+stars: 2182
+stars_per_day: 436
+forks: 369
+open_issues: 1
 created: 2026-10-19
 pushed_at: 2026-10-21
 first_seen: 2026-10-22
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-27"
+appearances: 4
+next_review: "2026-10-28"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-22"
-star_history: "2026-10-22:1374,2026-10-23:1504,2026-10-24:1783"
+star_history: "2026-10-22:1374,2026-10-23:1504,2026-10-24:1783,2026-10-25:2182"
 tags:
   - github
   - "category/other"
@@ -670,6 +670,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-25|2026-10-25]] — 再次上榜，2.2k stars
 - [[2026-10-24|2026-10-24]] — 再次上榜，1.8k stars
 - [[2026-10-23|2026-10-23]] — 再次上榜，1.5k stars
 - [[2026-10-22|2026-10-22]] — 首次收錄，1.4k stars

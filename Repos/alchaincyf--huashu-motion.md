@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it."
 homepage: "https://github.com/alchaincyf/huashu-motion"
-stars: 1550
-stars_per_day: 310
-forks: 150
+stars: 1605
+stars_per_day: 268
+forks: 158
 open_issues: 3
 created: 2026-10-18
 pushed_at: 2026-10-22
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-27"
+appearances: 2
+next_review: "2026-10-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-24"
-star_history: "2026-10-24:1550"
+star_history: "2026-10-24:1550,2026-10-25:1605"
 tags:
   - github
   - "category/other"
@@ -808,4 +808,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-25|2026-10-25]] — 再次上榜，1.6k stars
 - [[2026-10-24|2026-10-24]] — 首次收錄，1.6k stars
