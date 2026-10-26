@@ -7,12 +7,12 @@ language: Rust
 license: Apache-2.0
 description: "Extract huge archives in place: the archive shrinks as your files hatch, so you only need room for the output. ZIP, 7z, tar, split archives."
 homepage: "https://hatchzip.dev"
-stars: 1757
-stars_per_day: 586
-forks: 43
-open_issues: 6
+stars: 1967
+stars_per_day: 492
+forks: 52
+open_issues: 3
 created: 2026-10-21
-pushed_at: 2026-10-24
+pushed_at: 2026-10-25
 first_seen: 2026-10-25
 week: "2026-W44"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-28"
+appearances: 2
+next_review: "2026-10-29"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-25"
-star_history: "2026-10-25:1757"
+star_history: "2026-10-25:1757,2026-10-26:1967"
 tags:
   - github
   - "category/other"
@@ -645,4 +645,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-26|2026-10-26]] — 再次上榜，2.0k stars
 - [[2026-10-25|2026-10-25]] — 首次收錄，1.8k stars
