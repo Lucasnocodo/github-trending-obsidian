@@ -4964,10 +4964,10 @@
   },
   "pengchujin/aerial-tv": {
     "first_seen": "2026-10-22",
-    "last_seen": "2026-10-26",
-    "times_seen": 5,
+    "last_seen": "2026-10-27",
+    "times_seen": 6,
     "stars_first": 2433,
-    "stars_last": 5312
+    "stars_last": 6296
   },
   "JoasASantos/REA-Prompts": {
     "first_seen": "2026-10-22",
@@ -4985,10 +4985,10 @@
   },
   "ikow/php2shell-poc": {
     "first_seen": "2026-10-23",
-    "last_seen": "2026-10-26",
-    "times_seen": 4,
+    "last_seen": "2026-10-27",
+    "times_seen": 5,
     "stars_first": 1574,
-    "stars_last": 1800
+    "stars_last": 1842
   },
   "OpenMOSS/MOSS-Image": {
     "first_seen": "2026-10-23",
@@ -5027,37 +5027,58 @@
   },
   "xevrion/hatchzip": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-26",
-    "times_seen": 2,
+    "last_seen": "2026-10-27",
+    "times_seen": 3,
     "stars_first": 1757,
-    "stars_last": 1967
+    "stars_last": 2071
   },
   "wesbos/3d-model-anything": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-26",
-    "times_seen": 2,
+    "last_seen": "2026-10-27",
+    "times_seen": 3,
     "stars_first": 1729,
-    "stars_last": 1960
+    "stars_last": 2100
   },
   "JustAResearcher/gpu-unlock-ada": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-26",
-    "times_seen": 1,
+    "last_seen": "2026-10-27",
+    "times_seen": 2,
     "stars_first": 3057,
-    "stars_last": 3057
+    "stars_last": 3951
   },
   "Jakeschincariol/day-trader-skill": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-26",
-    "times_seen": 1,
+    "last_seen": "2026-10-27",
+    "times_seen": 2,
     "stars_first": 1726,
-    "stars_last": 1726
+    "stars_last": 2115
   },
   "oosexgang/hackios-xnu-kernel": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-26",
-    "times_seen": 1,
+    "last_seen": "2026-10-27",
+    "times_seen": 2,
     "stars_first": 1498,
-    "stars_last": 1498
+    "stars_last": 1717
+  },
+  "rddmwmddr/android-ad-cleaner": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "times_seen": 1,
+    "stars_first": 2279,
+    "stars_last": 2279
+  },
+  "designfuchen/word-atlas": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "times_seen": 1,
+    "stars_first": 1917,
+    "stars_last": 1917
+  },
+  "t3dotgg/tstack": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "times_seen": 1,
+    "stars_first": 1669,
+    "stars_last": 1669
   }
 }

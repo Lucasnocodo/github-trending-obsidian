@@ -7,12 +7,12 @@ language: Kotlin
 license: MIT
 description: "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs."
 homepage: "https://aerial.qust.me"
-stars: 5312
-stars_per_day: 1062
-forks: 438
-open_issues: 262
+stars: 6296
+stars_per_day: 1049
+forks: 531
+open_issues: 300
 created: 2026-10-20
-pushed_at: 2026-10-26
+pushed_at: 2026-10-27
 first_seen: 2026-10-22
 week: "2026-W43"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-10-29"
+appearances: 6
+next_review: "2026-10-30"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 53
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-22"
-star_history: "2026-10-22:2433,2026-10-23:3341,2026-10-24:3960,2026-10-25:4488,2026-10-26:5312"
+star_history: "2026-10-22:2433,2026-10-23:3341,2026-10-24:3960,2026-10-25:4488,2026-10-26:5312,2026-10-27:6296"
 tags:
   - github
   - "category/other"
@@ -688,6 +688,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-27|2026-10-27]] — 再次上榜，6.3k stars
 - [[2026-10-26|2026-10-26]] — 再次上榜，5.3k stars
 - [[2026-10-25|2026-10-25]] — 再次上榜，4.5k stars
 - [[2026-10-24|2026-10-24]] — 再次上榜，4.0k stars
