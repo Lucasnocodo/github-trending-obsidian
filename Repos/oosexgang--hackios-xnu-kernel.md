@@ -7,10 +7,10 @@ language: C
 license: NOASSERTION
 description: ""
 homepage: ""
-stars: 1717
-stars_per_day: 429
-forks: 308
-open_issues: 9
+stars: 1845
+stars_per_day: 308
+forks: 320
+open_issues: 14
 created: 2026-10-22
 pushed_at: 2026-10-26
 first_seen: 2026-10-26
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-30"
+appearances: 3
+next_review: "2026-10-31"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 11
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-26"
-star_history: "2026-10-26:1498,2026-10-27:1717"
+star_history: "2026-10-26:1498,2026-10-27:1717,2026-10-28:1845"
 tags:
   - github
   - "category/other"
@@ -629,5 +629,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-28|2026-10-28]] — 再次上榜，1.8k stars
 - [[2026-10-27|2026-10-27]] — 再次上榜，1.7k stars
 - [[2026-10-26|2026-10-26]] — 首次收錄，1.5k stars

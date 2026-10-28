@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。"
 homepage: ""
-stars: 2279
-stars_per_day: 760
-forks: 190
-open_issues: 140
+stars: 3735
+stars_per_day: 934
+forks: 331
+open_issues: 191
 created: 2026-10-24
-pushed_at: 2026-10-25
+pushed_at: 2026-10-28
 first_seen: 2026-10-27
 week: "2026-W44"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-30"
+appearances: 2
+next_review: "2026-10-31"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 8
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-27"
-star_history: "2026-10-27:2279"
+star_history: "2026-10-27:2279,2026-10-28:3735"
 tags:
   - github
   - "category/other"
@@ -669,4 +669,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-28|2026-10-28]] — 再次上榜，3.7k stars
 - [[2026-10-27|2026-10-27]] — 首次收錄，2.3k stars
