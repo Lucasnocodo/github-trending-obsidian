@@ -7,10 +7,10 @@ language: C
 license: GPL-2.0
 description: "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally"
 homepage: ""
-stars: 4325
-stars_per_day: 1081
-forks: 558
-open_issues: 44
+stars: 4449
+stars_per_day: 890
+forks: 571
+open_issues: 53
 created: 2026-10-23
 pushed_at: 2026-10-26
 first_seen: 2026-10-26
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-10-31"
+appearances: 4
+next_review: "2026-11-01"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 86
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-26"
-star_history: "2026-10-26:3057,2026-10-27:3951,2026-10-28:4325"
+star_history: "2026-10-26:3057,2026-10-27:3951,2026-10-28:4325,2026-10-29:4449"
 tags:
   - github
   - "category/other"
@@ -620,6 +620,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-29|2026-10-29]] — 再次上榜，4.4k stars
 - [[2026-10-28|2026-10-28]] — 再次上榜，4.3k stars
 - [[2026-10-27|2026-10-27]] — 再次上榜，4.0k stars
 - [[2026-10-26|2026-10-26]] — 首次收錄，3.1k stars
