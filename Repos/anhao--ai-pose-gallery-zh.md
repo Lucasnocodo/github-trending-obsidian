@@ -7,12 +7,12 @@ language: HTML
 license: NOASSERTION
 description: "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊"
 homepage: "https://ai-pose-gallery.anhao.app"
-stars: 2251
-stars_per_day: 2251
-forks: 588
-open_issues: 0
+stars: 3450
+stars_per_day: 1725
+forks: 897
+open_issues: 2
 created: 2026-10-27
-pushed_at: 2026-10-27
+pushed_at: 2026-10-30
 first_seen: 2026-10-29
 week: "2026-W44"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-01"
+appearances: 2
+next_review: "2026-11-02"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-29"
-star_history: "2026-10-29:2251"
+star_history: "2026-10-29:2251,2026-10-30:3450"
 tags:
   - github
   - "category/other"
@@ -632,4 +632,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-30|2026-10-30]] — 再次上榜，3.5k stars
 - [[2026-10-29|2026-10-29]] — 首次收錄，2.3k stars

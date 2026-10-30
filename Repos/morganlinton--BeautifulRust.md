@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, and Gemini CLI."
 homepage: "https://www.beautifulrust.dev"
-stars: 1374
-stars_per_day: 229
-forks: 63
+stars: 1430
+stars_per_day: 204
+forks: 71
 open_issues: 4
 created: 2026-10-23
 pushed_at: 2026-10-28
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-01"
+appearances: 2
+next_review: "2026-11-02"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-29"
-star_history: "2026-10-29:1374"
+star_history: "2026-10-29:1374,2026-10-30:1430"
 tags:
   - github
   - "category/other"
@@ -709,4 +709,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-30|2026-10-30]] — 再次上榜，1.4k stars
 - [[2026-10-29|2026-10-29]] — 首次收錄，1.4k stars

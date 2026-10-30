@@ -5041,10 +5041,10 @@
   },
   "JustAResearcher/gpu-unlock-ada": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-29",
-    "times_seen": 4,
+    "last_seen": "2026-10-30",
+    "times_seen": 5,
     "stars_first": 3057,
-    "stars_last": 4449
+    "stars_last": 4538
   },
   "Jakeschincariol/day-trader-skill": {
     "first_seen": "2026-10-26",
@@ -5062,31 +5062,31 @@
   },
   "rddmwmddr/android-ad-cleaner": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-29",
-    "times_seen": 3,
+    "last_seen": "2026-10-30",
+    "times_seen": 4,
     "stars_first": 2279,
-    "stars_last": 4478
+    "stars_last": 4841
   },
   "designfuchen/word-atlas": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-29",
-    "times_seen": 3,
+    "last_seen": "2026-10-30",
+    "times_seen": 4,
     "stars_first": 1917,
-    "stars_last": 3125
+    "stars_last": 3277
   },
   "t3dotgg/tstack": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-29",
-    "times_seen": 3,
+    "last_seen": "2026-10-30",
+    "times_seen": 4,
     "stars_first": 1669,
-    "stars_last": 2296
+    "stars_last": 2417
   },
   "unclebob/ub-mode": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-29",
-    "times_seen": 2,
+    "last_seen": "2026-10-30",
+    "times_seen": 3,
     "stars_first": 2747,
-    "stars_last": 4012
+    "stars_last": 4935
   },
   "DLSS-5-Swaper-New/.github": {
     "first_seen": "2026-10-28",
@@ -5097,17 +5097,17 @@
   },
   "interplains/Zero-Breach-Toolkit": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-29",
-    "times_seen": 1,
+    "last_seen": "2026-10-30",
+    "times_seen": 2,
     "stars_first": 2964,
-    "stars_last": 2964
+    "stars_last": 3676
   },
   "anhao/ai-pose-gallery-zh": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-29",
-    "times_seen": 1,
+    "last_seen": "2026-10-30",
+    "times_seen": 2,
     "stars_first": 2251,
-    "stars_last": 2251
+    "stars_last": 3450
   },
   "oosexgang/hakios-xnu-kernel": {
     "first_seen": "2026-10-29",
@@ -5118,16 +5118,23 @@
   },
   "enesozturk/dimensional-drawing": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-29",
-    "times_seen": 1,
+    "last_seen": "2026-10-30",
+    "times_seen": 2,
     "stars_first": 1453,
-    "stars_last": 1453
+    "stars_last": 1580
   },
   "morganlinton/BeautifulRust": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-29",
-    "times_seen": 1,
+    "last_seen": "2026-10-30",
+    "times_seen": 2,
     "stars_first": 1374,
-    "stars_last": 1374
+    "stars_last": 1430
+  },
+  "andyhuo520/digital-human-koubo": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "times_seen": 1,
+    "stars_first": 1508,
+    "stars_last": 1508
   }
 }
