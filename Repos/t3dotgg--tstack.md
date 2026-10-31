@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "The agent skills I use every day. Works with Claude Code and Codex."
 homepage: ""
-stars: 2417
-stars_per_day: 403
-forks: 149
-open_issues: 11
+stars: 2480
+stars_per_day: 354
+forks: 155
+open_issues: 12
 created: 2026-10-24
 pushed_at: 2026-10-28
 first_seen: 2026-10-27
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-11-02"
+appearances: 5
+next_review: "2026-11-03"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-27"
-star_history: "2026-10-27:1669,2026-10-28:2072,2026-10-29:2296,2026-10-30:2417"
+star_history: "2026-10-27:1669,2026-10-28:2072,2026-10-29:2296,2026-10-30:2417,2026-10-31:2480"
 tags:
   - github
   - "category/other"
@@ -501,6 +501,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-10-31|2026-10-31]] — 再次上榜，2.5k stars
 - [[2026-10-30|2026-10-30]] — 再次上榜，2.4k stars
 - [[2026-10-29|2026-10-29]] — 再次上榜，2.3k stars
 - [[2026-10-28|2026-10-28]] — 再次上榜，2.1k stars
