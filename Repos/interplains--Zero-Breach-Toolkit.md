@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "Free, open-source, offline checks for traces of known mercenary spyware. Works on Windows, macOS and Linux, Android phones and iPhone backups."
 homepage: ""
-stars: 3907
-stars_per_day: 781
-forks: 418
-open_issues: 8
+stars: 4023
+stars_per_day: 671
+forks: 428
+open_issues: 5
 created: 2026-10-25
-pushed_at: 2026-10-30
+pushed_at: 2026-11-01
 first_seen: 2026-10-29
 week: "2026-W44"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-11-03"
+appearances: 4
+next_review: "2026-11-04"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 88
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-29"
-star_history: "2026-10-29:2964,2026-10-30:3676,2026-10-31:3907"
+star_history: "2026-10-29:2964,2026-10-30:3676,2026-10-31:3907,2026-11-01:4023"
 tags:
   - github
   - "category/other"
@@ -630,6 +630,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-01|2026-11-01]] — 再次上榜，4.0k stars
 - [[2026-10-31|2026-10-31]] — 再次上榜，3.9k stars
 - [[2026-10-30|2026-10-30]] — 再次上榜，3.7k stars
 - [[2026-10-29|2026-10-29]] — 首次收錄，3.0k stars

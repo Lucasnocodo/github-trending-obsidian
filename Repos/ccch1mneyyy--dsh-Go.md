@@ -7,12 +7,12 @@ language: Dart
 license: AGPL-3.0
 description: "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。"
 homepage: ""
-stars: 2864
-stars_per_day: 573
-forks: 122
-open_issues: 148
+stars: 3875
+stars_per_day: 646
+forks: 184
+open_issues: 190
 created: 2026-10-25
-pushed_at: 2026-10-30
+pushed_at: 2026-11-01
 first_seen: 2026-10-31
 week: "2026-W44"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-03"
+appearances: 2
+next_review: "2026-11-04"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 9
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-31"
-star_history: "2026-10-31:2864"
+star_history: "2026-10-31:2864,2026-11-01:3875"
 tags:
   - github
   - "category/other"
@@ -737,4 +737,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-01|2026-11-01]] — 再次上榜，3.9k stars
 - [[2026-10-31|2026-10-31]] — 首次收錄，2.9k stars

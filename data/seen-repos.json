@@ -5069,10 +5069,10 @@
   },
   "designfuchen/word-atlas": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-31",
-    "times_seen": 5,
+    "last_seen": "2026-11-01",
+    "times_seen": 6,
     "stars_first": 1917,
-    "stars_last": 3419
+    "stars_last": 3595
   },
   "t3dotgg/tstack": {
     "first_seen": "2026-10-27",
@@ -5083,10 +5083,10 @@
   },
   "unclebob/ub-mode": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-31",
-    "times_seen": 4,
+    "last_seen": "2026-11-01",
+    "times_seen": 5,
     "stars_first": 2747,
-    "stars_last": 5457
+    "stars_last": 5918
   },
   "DLSS-5-Swaper-New/.github": {
     "first_seen": "2026-10-28",
@@ -5097,17 +5097,17 @@
   },
   "interplains/Zero-Breach-Toolkit": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-31",
-    "times_seen": 3,
+    "last_seen": "2026-11-01",
+    "times_seen": 4,
     "stars_first": 2964,
-    "stars_last": 3907
+    "stars_last": 4023
   },
   "anhao/ai-pose-gallery-zh": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-31",
-    "times_seen": 3,
+    "last_seen": "2026-11-01",
+    "times_seen": 4,
     "stars_first": 2251,
-    "stars_last": 4157
+    "stars_last": 4868
   },
   "oosexgang/hakios-xnu-kernel": {
     "first_seen": "2026-10-29",
@@ -5139,30 +5139,44 @@
   },
   "ccch1mneyyy/dsh-Go": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-10-31",
-    "times_seen": 1,
+    "last_seen": "2026-11-01",
+    "times_seen": 2,
     "stars_first": 2864,
-    "stars_last": 2864
+    "stars_last": 3875
   },
   "valentderah/totk-pc-recomp": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-10-31",
-    "times_seen": 1,
+    "last_seen": "2026-11-01",
+    "times_seen": 2,
     "stars_first": 1847,
-    "stars_last": 1847
+    "stars_last": 2756
   },
   "wangzan101/Mika": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-10-31",
-    "times_seen": 1,
+    "last_seen": "2026-11-01",
+    "times_seen": 2,
     "stars_first": 1779,
-    "stars_last": 1779
+    "stars_last": 3043
   },
   "heydamir/unslop": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-10-31",
-    "times_seen": 1,
+    "last_seen": "2026-11-01",
+    "times_seen": 2,
     "stars_first": 1596,
-    "stars_last": 1596
+    "stars_last": 3817
+  },
+  "deepseek-ai/dsh-superagent-prototype": {
+    "first_seen": "2026-11-01",
+    "last_seen": "2026-11-01",
+    "times_seen": 1,
+    "stars_first": 4048,
+    "stars_last": 4048
+  },
+  "paipiange/nvzhuang": {
+    "first_seen": "2026-11-01",
+    "last_seen": "2026-11-01",
+    "times_seen": 1,
+    "stars_first": 1793,
+    "stars_last": 1793
   }
 }

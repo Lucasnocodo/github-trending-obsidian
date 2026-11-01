@@ -7,12 +7,12 @@ language: TypeScript
 license: NOASSERTION
 description: "词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio and FSRS review. Open-source app + CC BY 4.0 dataset."
 homepage: "https://0xlei.tech/words/"
-stars: 3419
-stars_per_day: 684
-forks: 746
+stars: 3595
+stars_per_day: 599
+forks: 782
 open_issues: 28
 created: 2026-10-25
-pushed_at: 2026-10-27
+pushed_at: 2026-10-31
 first_seen: 2026-10-27
 week: "2026-W44"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-11-03"
+appearances: 6
+next_review: "2026-11-04"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 11
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-27"
-star_history: "2026-10-27:1917,2026-10-28:2760,2026-10-29:3125,2026-10-30:3277,2026-10-31:3419"
+star_history: "2026-10-27:1917,2026-10-28:2760,2026-10-29:3125,2026-10-30:3277,2026-10-31:3419,2026-11-01:3595"
 tags:
   - github
   - "category/other"
@@ -632,6 +632,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-01|2026-11-01]] — 再次上榜，3.6k stars
 - [[2026-10-31|2026-10-31]] — 再次上榜，3.4k stars
 - [[2026-10-30|2026-10-30]] — 再次上榜，3.3k stars
 - [[2026-10-29|2026-10-29]] — 再次上榜，3.1k stars
