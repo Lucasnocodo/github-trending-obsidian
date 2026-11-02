@@ -7,9 +7,9 @@ language: Go
 license: MIT
 description: "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang"
 homepage: "https://paipiange.github.io/nvzhuang/"
-stars: 1793
-stars_per_day: 598
-forks: 478
+stars: 1960
+stars_per_day: 490
+forks: 504
 open_issues: 0
 created: 2026-10-29
 pushed_at: 2026-10-31
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-04"
+appearances: 2
+next_review: "2026-11-05"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-01"
-star_history: "2026-11-01:1793"
+star_history: "2026-11-01:1793,2026-11-02:1960"
 tags:
   - github
   - "category/other"
@@ -676,4 +676,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-02|2026-11-02]] — 再次上榜，2.0k stars
 - [[2026-11-01|2026-11-01]] — 首次收錄，1.8k stars
