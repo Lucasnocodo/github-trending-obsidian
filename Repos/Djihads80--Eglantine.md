@@ -7,12 +7,12 @@ language: C++
 license: GPL-3.0
 description: "VERY experimental Nintendo Switch 2 emulator"
 homepage: ""
-stars: 2111
-stars_per_day: 528
-forks: 254
-open_issues: 140
+stars: 2657
+stars_per_day: 531
+forks: 315
+open_issues: 165
 created: 2026-10-29
-pushed_at: 2026-11-02
+pushed_at: 2026-11-03
 first_seen: 2026-11-02
 week: "2026-W45"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-05"
+appearances: 2
+next_review: "2026-11-06"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-02"
-star_history: "2026-11-02:2111"
+star_history: "2026-11-02:2111,2026-11-03:2657"
 tags:
   - github
   - "category/other"
@@ -525,4 +525,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-03|2026-11-03]] — 再次上榜，2.7k stars
 - [[2026-11-02|2026-11-02]] — 首次收錄，2.1k stars

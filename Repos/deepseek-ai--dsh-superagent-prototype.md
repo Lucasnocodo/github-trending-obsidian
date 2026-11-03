@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Towards a More Autonomous Agent System"
 homepage: ""
-stars: 9842
-stars_per_day: 9842
-forks: 1004
+stars: 14631
+stars_per_day: 7316
+forks: 1566
 open_issues: 0
 created: 2026-10-31
 pushed_at: 2026-10-31
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-05"
+appearances: 3
+next_review: "2026-11-06"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-01"
-star_history: "2026-11-01:4048,2026-11-02:9842"
+star_history: "2026-11-01:4048,2026-11-02:9842,2026-11-03:14631"
 tags:
   - github
   - "category/other"
@@ -481,5 +481,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-03|2026-11-03]] — 再次上榜，14.6k stars
 - [[2026-11-02|2026-11-02]] — 再次上榜，9.8k stars
 - [[2026-11-01|2026-11-01]] — 首次收錄，4.0k stars

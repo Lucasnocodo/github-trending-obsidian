@@ -5104,10 +5104,10 @@
   },
   "anhao/ai-pose-gallery-zh": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-11-02",
-    "times_seen": 5,
+    "last_seen": "2026-11-03",
+    "times_seen": 6,
     "stars_first": 2251,
-    "stars_last": 5284
+    "stars_last": 5619
   },
   "oosexgang/hakios-xnu-kernel": {
     "first_seen": "2026-10-29",
@@ -5146,31 +5146,31 @@
   },
   "valentderah/totk-pc-recomp": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-02",
-    "times_seen": 3,
+    "last_seen": "2026-11-03",
+    "times_seen": 4,
     "stars_first": 1847,
-    "stars_last": 3389
+    "stars_last": 4172
   },
   "wangzan101/Mika": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-02",
-    "times_seen": 3,
+    "last_seen": "2026-11-03",
+    "times_seen": 4,
     "stars_first": 1779,
-    "stars_last": 4435
+    "stars_last": 5672
   },
   "heydamir/unslop": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-02",
-    "times_seen": 3,
+    "last_seen": "2026-11-03",
+    "times_seen": 4,
     "stars_first": 1596,
-    "stars_last": 5169
+    "stars_last": 6622
   },
   "deepseek-ai/dsh-superagent-prototype": {
     "first_seen": "2026-11-01",
-    "last_seen": "2026-11-02",
-    "times_seen": 2,
+    "last_seen": "2026-11-03",
+    "times_seen": 3,
     "stars_first": 4048,
-    "stars_last": 9842
+    "stars_last": 14631
   },
   "paipiange/nvzhuang": {
     "first_seen": "2026-11-01",
@@ -5181,30 +5181,37 @@
   },
   "patch-gg/pixelfx": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-02",
-    "times_seen": 1,
+    "last_seen": "2026-11-03",
+    "times_seen": 2,
     "stars_first": 2964,
-    "stars_last": 2964
+    "stars_last": 3697
   },
   "Djihads80/Eglantine": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-02",
-    "times_seen": 1,
+    "last_seen": "2026-11-03",
+    "times_seen": 2,
     "stars_first": 2111,
-    "stars_last": 2111
+    "stars_last": 2657
   },
   "haydenschmitty/floorplan": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-02",
-    "times_seen": 1,
+    "last_seen": "2026-11-03",
+    "times_seen": 2,
     "stars_first": 1920,
-    "stars_last": 1920
+    "stars_last": 2321
   },
   "storytold/craft-anything": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-02",
-    "times_seen": 1,
+    "last_seen": "2026-11-03",
+    "times_seen": 2,
     "stars_first": 1740,
-    "stars_last": 1740
+    "stars_last": 5305
+  },
+  "BryceYuuu/RUN": {
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-03",
+    "times_seen": 1,
+    "stars_first": 2134,
+    "stars_last": 2134
   }
 }
