@@ -7,10 +7,10 @@ language: JavaScript
 license: CC-BY-4.0
 description: "A Claude skill that turns vibecoded, AI-looking UI into a designed interface"
 homepage: ""
-stars: 6622
-stars_per_day: 1656
-forks: 337
-open_issues: 1
+stars: 7768
+stars_per_day: 1554
+forks: 389
+open_issues: 2
 created: 2026-10-29
 pushed_at: 2026-11-01
 first_seen: 2026-10-31
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-11-06"
+appearances: 5
+next_review: "2026-11-07"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-10-31"
-star_history: "2026-10-31:1596,2026-11-01:3817,2026-11-02:5169,2026-11-03:6622"
+star_history: "2026-10-31:1596,2026-11-01:3817,2026-11-02:5169,2026-11-03:6622,2026-11-04:7768"
 tags:
   - github
   - "category/other"
@@ -492,6 +492,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-04|2026-11-04]] — 再次上榜，7.8k stars
 - [[2026-11-03|2026-11-03]] — 再次上榜，6.6k stars
 - [[2026-11-02|2026-11-02]] — 再次上榜，5.2k stars
 - [[2026-11-01|2026-11-01]] — 再次上榜，3.8k stars
