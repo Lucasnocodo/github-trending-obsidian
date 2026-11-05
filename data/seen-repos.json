@@ -5146,31 +5146,31 @@
   },
   "valentderah/totk-pc-recomp": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-04",
-    "times_seen": 5,
+    "last_seen": "2026-11-05",
+    "times_seen": 6,
     "stars_first": 1847,
-    "stars_last": 4616
+    "stars_last": 4937
   },
   "wangzan101/Mika": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-04",
-    "times_seen": 5,
+    "last_seen": "2026-11-05",
+    "times_seen": 6,
     "stars_first": 1779,
-    "stars_last": 6216
+    "stars_last": 6832
   },
   "heydamir/unslop": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-04",
-    "times_seen": 5,
+    "last_seen": "2026-11-05",
+    "times_seen": 6,
     "stars_first": 1596,
-    "stars_last": 7768
+    "stars_last": 8961
   },
   "deepseek-ai/dsh-superagent-prototype": {
     "first_seen": "2026-11-01",
-    "last_seen": "2026-11-04",
-    "times_seen": 4,
+    "last_seen": "2026-11-05",
+    "times_seen": 5,
     "stars_first": 4048,
-    "stars_last": 17603
+    "stars_last": 18944
   },
   "paipiange/nvzhuang": {
     "first_seen": "2026-11-01",
@@ -5181,17 +5181,17 @@
   },
   "patch-gg/pixelfx": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-04",
-    "times_seen": 3,
+    "last_seen": "2026-11-05",
+    "times_seen": 4,
     "stars_first": 2964,
-    "stars_last": 4299
+    "stars_last": 4916
   },
   "Djihads80/Eglantine": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-04",
-    "times_seen": 3,
+    "last_seen": "2026-11-05",
+    "times_seen": 4,
     "stars_first": 2111,
-    "stars_last": 3168
+    "stars_last": 3923
   },
   "haydenschmitty/floorplan": {
     "first_seen": "2026-11-02",
@@ -5202,23 +5202,30 @@
   },
   "storytold/craft-anything": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-04",
-    "times_seen": 3,
+    "last_seen": "2026-11-05",
+    "times_seen": 4,
     "stars_first": 1740,
-    "stars_last": 9265
+    "stars_last": 13098
   },
   "BryceYuuu/RUN": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-04",
-    "times_seen": 2,
+    "last_seen": "2026-11-05",
+    "times_seen": 3,
     "stars_first": 2134,
-    "stars_last": 3310
+    "stars_last": 3810
   },
   "Verlintas/NOIR": {
     "first_seen": "2026-11-04",
-    "last_seen": "2026-11-04",
-    "times_seen": 1,
+    "last_seen": "2026-11-05",
+    "times_seen": 2,
     "stars_first": 1835,
-    "stars_last": 1835
+    "stars_last": 2231
+  },
+  "KKKKhazix/agent-autoloop": {
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "times_seen": 1,
+    "stars_first": 2887,
+    "stars_last": 2887
   }
 }

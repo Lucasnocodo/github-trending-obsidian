@@ -7,10 +7,10 @@ language: Python
 license: CC-BY-SA-4.0
 description: "RUN · 润：海外移居手册（欧洲 36 国 · 110 条路线 · 主要移民地区）"
 homepage: ""
-stars: 3310
-stars_per_day: 662
-forks: 245
-open_issues: 2
+stars: 3810
+stars_per_day: 635
+forks: 273
+open_issues: 3
 created: 2026-10-29
 pushed_at: 2026-11-03
 first_seen: 2026-11-03
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-07"
+appearances: 3
+next_review: "2026-11-08"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-03"
-star_history: "2026-11-03:2134,2026-11-04:3310"
+star_history: "2026-11-03:2134,2026-11-04:3310,2026-11-05:3810"
 tags:
   - github
   - "category/other"
@@ -655,5 +655,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-05|2026-11-05]] — 再次上榜，3.8k stars
 - [[2026-11-04|2026-11-04]] — 再次上榜，3.3k stars
 - [[2026-11-03|2026-11-03]] — 首次收錄，2.1k stars

@@ -7,12 +7,12 @@ language: C
 license: MIT
 description: "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows x86-64, with a Vulkan renderer. Game files not included."
 homepage: ""
-stars: 4616
-stars_per_day: 923
-forks: 370
-open_issues: 268
+stars: 4937
+stars_per_day: 823
+forks: 407
+open_issues: 307
 created: 2026-10-29
-pushed_at: 2026-11-03
+pushed_at: 2026-11-05
 first_seen: 2026-10-31
 week: "2026-W44"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-11-07"
+appearances: 6
+next_review: "2026-11-08"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-31"
-star_history: "2026-10-31:1847,2026-11-01:2756,2026-11-02:3389,2026-11-03:4172,2026-11-04:4616"
+star_history: "2026-10-31:1847,2026-11-01:2756,2026-11-02:3389,2026-11-03:4172,2026-11-04:4616,2026-11-05:4937"
 tags:
   - github
   - "category/other"
@@ -549,6 +549,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-05|2026-11-05]] — 再次上榜，4.9k stars
 - [[2026-11-04|2026-11-04]] — 再次上榜，4.6k stars
 - [[2026-11-03|2026-11-03]] — 再次上榜，4.2k stars
 - [[2026-11-02|2026-11-02]] — 再次上榜，3.4k stars

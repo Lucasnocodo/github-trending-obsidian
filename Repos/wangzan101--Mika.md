@@ -7,12 +7,12 @@ language: Kotlin
 license: Apache-2.0
 description: "Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you."
 homepage: ""
-stars: 6216
-stars_per_day: 1243
-forks: 1207
-open_issues: 112
+stars: 6832
+stars_per_day: 1139
+forks: 1505
+open_issues: 127
 created: 2026-10-29
-pushed_at: 2026-11-03
+pushed_at: 2026-11-05
 first_seen: 2026-10-31
 week: "2026-W44"
 month: "2026-10"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-11-07"
+appearances: 6
+next_review: "2026-11-08"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 9
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-10-31"
-star_history: "2026-10-31:1779,2026-11-01:3043,2026-11-02:4435,2026-11-03:5672,2026-11-04:6216"
+star_history: "2026-10-31:1779,2026-11-01:3043,2026-11-02:4435,2026-11-03:5672,2026-11-04:6216,2026-11-05:6832"
 tags:
   - github
   - "category/other"
@@ -740,6 +740,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-05|2026-11-05]] — 再次上榜，6.8k stars
 - [[2026-11-04|2026-11-04]] — 再次上榜，6.2k stars
 - [[2026-11-03|2026-11-03]] — 再次上榜，5.7k stars
 - [[2026-11-02|2026-11-02]] — 再次上榜，4.4k stars
