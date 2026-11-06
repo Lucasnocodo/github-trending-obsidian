@@ -5167,10 +5167,10 @@
   },
   "deepseek-ai/dsh-superagent-prototype": {
     "first_seen": "2026-11-01",
-    "last_seen": "2026-11-05",
-    "times_seen": 5,
+    "last_seen": "2026-11-06",
+    "times_seen": 6,
     "stars_first": 4048,
-    "stars_last": 18944
+    "stars_last": 19811
   },
   "paipiange/nvzhuang": {
     "first_seen": "2026-11-01",
@@ -5181,10 +5181,10 @@
   },
   "patch-gg/pixelfx": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-05",
-    "times_seen": 4,
+    "last_seen": "2026-11-06",
+    "times_seen": 5,
     "stars_first": 2964,
-    "stars_last": 4916
+    "stars_last": 5404
   },
   "Djihads80/Eglantine": {
     "first_seen": "2026-11-02",
@@ -5202,10 +5202,10 @@
   },
   "storytold/craft-anything": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-05",
-    "times_seen": 4,
+    "last_seen": "2026-11-06",
+    "times_seen": 5,
     "stars_first": 1740,
-    "stars_last": 13098
+    "stars_last": 16015
   },
   "BryceYuuu/RUN": {
     "first_seen": "2026-11-03",
@@ -5216,16 +5216,51 @@
   },
   "Verlintas/NOIR": {
     "first_seen": "2026-11-04",
-    "last_seen": "2026-11-05",
-    "times_seen": 2,
+    "last_seen": "2026-11-06",
+    "times_seen": 3,
     "stars_first": 1835,
-    "stars_last": 2231
+    "stars_last": 2616
   },
   "KKKKhazix/agent-autoloop": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-05",
-    "times_seen": 1,
+    "last_seen": "2026-11-06",
+    "times_seen": 2,
     "stars_first": 2887,
-    "stars_last": 2887
+    "stars_last": 3400
+  },
+  "zortos293/Lichii": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "times_seen": 1,
+    "stars_first": 2701,
+    "stars_last": 2701
+  },
+  "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "times_seen": 1,
+    "stars_first": 2622,
+    "stars_last": 2622
+  },
+  "elvarofficial/teardown": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "times_seen": 1,
+    "stars_first": 2266,
+    "stars_last": 2266
+  },
+  "govijr/terminal-mac": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "times_seen": 1,
+    "stars_first": 2008,
+    "stars_last": 2008
+  },
+  "caru-ini/stack-diagram": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "times_seen": 1,
+    "stars_first": 1889,
+    "stars_last": 1889
   }
 }
