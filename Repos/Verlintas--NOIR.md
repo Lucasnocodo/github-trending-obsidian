@@ -7,9 +7,9 @@ language: Kotlin
 license: MIT
 description: "手机隐私审计：用 adb 扫出 Android 应用的权限、上报端点与数据流向，并给出可回滚的处置。Desktop Android leak audit: permissions, endpoints, data flows, reversible fixes."
 homepage: "https://verlintas.dev/noir/"
-stars: 2616
-stars_per_day: 523
-forks: 243
+stars: 2810
+stars_per_day: 468
+forks: 266
 open_issues: 1
 created: 2026-10-31
 pushed_at: 2026-11-06
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-11-09"
+appearances: 4
+next_review: "2026-11-10"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 80
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-04"
-star_history: "2026-11-04:1835,2026-11-05:2231,2026-11-06:2616"
+star_history: "2026-11-04:1835,2026-11-05:2231,2026-11-06:2616,2026-11-07:2810"
 tags:
   - github
   - "category/other"
@@ -783,6 +783,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-07|2026-11-07]] — 再次上榜，2.8k stars
 - [[2026-11-06|2026-11-06]] — 再次上榜，2.6k stars
 - [[2026-11-05|2026-11-05]] — 再次上榜，2.2k stars
 - [[2026-11-04|2026-11-04]] — 首次收錄，1.8k stars

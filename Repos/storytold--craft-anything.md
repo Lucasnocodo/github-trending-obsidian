@@ -7,12 +7,12 @@ language: Rust
 license: Apache-2.0
 description: "Craft Anything: understand how any software works, and craft your own."
 homepage: ""
-stars: 16015
-stars_per_day: 3203
-forks: 2836
-open_issues: 301
+stars: 18714
+stars_per_day: 3119
+forks: 3496
+open_issues: 215
 created: 2026-10-31
-pushed_at: 2026-11-06
+pushed_at: 2026-11-07
 first_seen: 2026-11-02
 week: "2026-W45"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-11-09"
+appearances: 6
+next_review: "2026-11-10"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 35
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-02"
-star_history: "2026-11-02:1740,2026-11-03:5305,2026-11-04:9265,2026-11-05:13098,2026-11-06:16015"
+star_history: "2026-11-02:1740,2026-11-03:5305,2026-11-04:9265,2026-11-05:13098,2026-11-06:16015,2026-11-07:18714"
 tags:
   - github
   - "category/other"
@@ -678,6 +678,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-07|2026-11-07]] — 再次上榜，18.7k stars
 - [[2026-11-06|2026-11-06]] — 再次上榜，16.0k stars
 - [[2026-11-05|2026-11-05]] — 再次上榜，13.1k stars
 - [[2026-11-04|2026-11-04]] — 再次上榜，9.3k stars

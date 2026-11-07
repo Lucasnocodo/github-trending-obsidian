@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。"
 homepage: ""
-stars: 3400
-stars_per_day: 1700
-forks: 630
-open_issues: 3
+stars: 3767
+stars_per_day: 1256
+forks: 682
+open_issues: 5
 created: 2026-11-03
-pushed_at: 2026-11-06
+pushed_at: 2026-11-07
 first_seen: 2026-11-05
 week: "2026-W45"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-09"
+appearances: 3
+next_review: "2026-11-10"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 69
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-05"
-star_history: "2026-11-05:2887,2026-11-06:3400"
+star_history: "2026-11-05:2887,2026-11-06:3400,2026-11-07:3767"
 tags:
   - github
   - "category/other"
@@ -706,5 +706,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-07|2026-11-07]] — 再次上榜，3.8k stars
 - [[2026-11-06|2026-11-06]] — 再次上榜，3.4k stars
 - [[2026-11-05|2026-11-05]] — 首次收錄，2.9k stars
