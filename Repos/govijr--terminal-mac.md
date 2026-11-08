@@ -7,10 +7,10 @@ language: Swift
 license: MIT
 description: "Entire MacOS running in your terminal."
 homepage: ""
-stars: 2183
-stars_per_day: 546
-forks: 139
-open_issues: 7
+stars: 2292
+stars_per_day: 458
+forks: 151
+open_issues: 11
 created: 2026-11-03
 pushed_at: 2026-11-07
 first_seen: 2026-11-06
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-10"
+appearances: 3
+next_review: "2026-11-11"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-06"
-star_history: "2026-11-06:2008,2026-11-07:2183"
+star_history: "2026-11-06:2008,2026-11-07:2183,2026-11-08:2292"
 tags:
   - github
   - "category/other"
@@ -571,5 +571,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-08|2026-11-08]] — 再次上榜，2.3k stars
 - [[2026-11-07|2026-11-07]] — 再次上榜，2.2k stars
 - [[2026-11-06|2026-11-06]] — 首次收錄，2.0k stars

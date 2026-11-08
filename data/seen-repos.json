@@ -5223,10 +5223,10 @@
   },
   "KKKKhazix/agent-autoloop": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-07",
-    "times_seen": 3,
+    "last_seen": "2026-11-08",
+    "times_seen": 4,
     "stars_first": 2887,
-    "stars_last": 3767
+    "stars_last": 4003
   },
   "zortos293/Lichii": {
     "first_seen": "2026-11-06",
@@ -5237,10 +5237,10 @@
   },
   "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-07",
-    "times_seen": 2,
+    "last_seen": "2026-11-08",
+    "times_seen": 3,
     "stars_first": 2622,
-    "stars_last": 2936
+    "stars_last": 3117
   },
   "elvarofficial/teardown": {
     "first_seen": "2026-11-06",
@@ -5251,30 +5251,58 @@
   },
   "govijr/terminal-mac": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-07",
-    "times_seen": 2,
+    "last_seen": "2026-11-08",
+    "times_seen": 3,
     "stars_first": 2008,
-    "stars_last": 2183
+    "stars_last": 2292
   },
   "caru-ini/stack-diagram": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-07",
-    "times_seen": 2,
+    "last_seen": "2026-11-08",
+    "times_seen": 3,
     "stars_first": 1889,
-    "stars_last": 1992
+    "stars_last": 2083
   },
   "mromidev/claude-animated-shorts": {
     "first_seen": "2026-11-07",
-    "last_seen": "2026-11-07",
-    "times_seen": 1,
+    "last_seen": "2026-11-08",
+    "times_seen": 2,
     "stars_first": 2060,
-    "stars_last": 2060
+    "stars_last": 2284
   },
   "Minireel/HGhub": {
     "first_seen": "2026-11-07",
-    "last_seen": "2026-11-07",
-    "times_seen": 1,
+    "last_seen": "2026-11-08",
+    "times_seen": 2,
     "stars_first": 1836,
-    "stars_last": 1836
+    "stars_last": 2508
+  },
+  "NotRexed/Hookshot": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08",
+    "times_seen": 1,
+    "stars_first": 2087,
+    "stars_last": 2087
+  },
+  "JenkinWoo/sheeridVerify": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08",
+    "times_seen": 1,
+    "stars_first": 1760,
+    "stars_last": 1760
+  },
+  "wquguru/cicada": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08",
+    "times_seen": 1,
+    "stars_first": 1688,
+    "stars_last": 1688
+  },
+  "s1dashu/quiet-md": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08",
+    "times_seen": 1,
+    "stars_first": 1295,
+    "stars_last": 1295
   }
 }

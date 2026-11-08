@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: "Google_AI_Pro_2Year_ZeroCost_Auto"
 homepage: ""
-stars: 2936
-stars_per_day: 1468
-forks: 1144
-open_issues: 22
+stars: 3117
+stars_per_day: 1039
+forks: 1187
+open_issues: 27
 created: 2026-11-04
 pushed_at: 2026-11-06
 first_seen: 2026-11-06
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-10"
+appearances: 3
+next_review: "2026-11-11"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-06"
-star_history: "2026-11-06:2622,2026-11-07:2936"
+star_history: "2026-11-06:2622,2026-11-07:2936,2026-11-08:3117"
 tags:
   - github
   - "category/other"
@@ -509,5 +509,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-08|2026-11-08]] — 再次上榜，3.1k stars
 - [[2026-11-07|2026-11-07]] — 再次上榜，2.9k stars
 - [[2026-11-06|2026-11-06]] — 首次收錄，2.6k stars

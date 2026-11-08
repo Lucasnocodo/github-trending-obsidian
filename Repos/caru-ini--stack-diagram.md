@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos"
 homepage: "stacks.caru.moe"
-stars: 1992
-stars_per_day: 332
-forks: 90
-open_issues: 0
+stars: 2083
+stars_per_day: 298
+forks: 100
+open_issues: 2
 created: 2026-11-01
 pushed_at: 2026-11-03
 first_seen: 2026-11-06
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-10"
+appearances: 3
+next_review: "2026-11-11"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-06"
-star_history: "2026-11-06:1889,2026-11-07:1992"
+star_history: "2026-11-06:1889,2026-11-07:1992,2026-11-08:2083"
 tags:
   - github
   - "category/other"
@@ -571,5 +571,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-08|2026-11-08]] — 再次上榜，2.1k stars
 - [[2026-11-07|2026-11-07]] — 再次上榜，2.0k stars
 - [[2026-11-06|2026-11-06]] — 首次收錄，1.9k stars

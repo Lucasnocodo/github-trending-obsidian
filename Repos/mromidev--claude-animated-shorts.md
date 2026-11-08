@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion"
 homepage: ""
-stars: 2060
-stars_per_day: 343
-forks: 438
-open_issues: 5
+stars: 2284
+stars_per_day: 326
+forks: 493
+open_issues: 9
 created: 2026-11-01
 pushed_at: 2026-11-01
 first_seen: 2026-11-07
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-10"
+appearances: 2
+next_review: "2026-11-11"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-07"
-star_history: "2026-11-07:2060"
+star_history: "2026-11-07:2060,2026-11-08:2284"
 tags:
   - github
   - "category/other"
@@ -487,4 +487,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-08|2026-11-08]] — 再次上榜，2.3k stars
 - [[2026-11-07|2026-11-07]] — 首次收錄，2.1k stars
