@@ -7,9 +7,9 @@ language: JavaScript
 license: ISC
 description: ""
 homepage: ""
-stars: 1760
-stars_per_day: 1760
-forks: 948
+stars: 1889
+stars_per_day: 945
+forks: 1010
 open_issues: 0
 created: 2026-11-06
 pushed_at: 2026-11-06
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-11"
+appearances: 2
+next_review: "2026-11-12"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-08"
-star_history: "2026-11-08:1760"
+star_history: "2026-11-08:1760,2026-11-09:1889"
 tags:
   - github
   - "category/other"
@@ -654,4 +654,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-09|2026-11-09]] — 再次上榜，1.9k stars
 - [[2026-11-08|2026-11-08]] — 首次收錄，1.8k stars

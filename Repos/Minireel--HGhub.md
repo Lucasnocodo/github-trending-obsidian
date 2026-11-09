@@ -7,12 +7,12 @@ language: TypeScript
 license: NOASSERTION
 description: "YellowFruit third-party client"
 homepage: ""
-stars: 2508
-stars_per_day: 627
-forks: 1173
-open_issues: 7
+stars: 4169
+stars_per_day: 834
+forks: 1635
+open_issues: 6
 created: 2026-11-03
-pushed_at: 2026-11-08
+pushed_at: 2026-11-09
 first_seen: 2026-11-07
 week: "2026-W45"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-11"
+appearances: 3
+next_review: "2026-11-12"
 contributor_count: 2
 engagement: "high"
 issue_close_rate: 38
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-07"
-star_history: "2026-11-07:1836,2026-11-08:2508"
+star_history: "2026-11-07:1836,2026-11-08:2508,2026-11-09:4169"
 tags:
   - github
   - "category/other"
@@ -647,5 +647,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-09|2026-11-09]] — 再次上榜，4.2k stars
 - [[2026-11-08|2026-11-08]] — 再次上榜，2.5k stars
 - [[2026-11-07|2026-11-07]] — 首次收錄，1.8k stars

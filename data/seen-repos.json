@@ -5223,10 +5223,10 @@
   },
   "KKKKhazix/agent-autoloop": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-08",
-    "times_seen": 4,
+    "last_seen": "2026-11-09",
+    "times_seen": 5,
     "stars_first": 2887,
-    "stars_last": 4003
+    "stars_last": 4183
   },
   "zortos293/Lichii": {
     "first_seen": "2026-11-06",
@@ -5237,10 +5237,10 @@
   },
   "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-08",
-    "times_seen": 3,
+    "last_seen": "2026-11-09",
+    "times_seen": 4,
     "stars_first": 2622,
-    "stars_last": 3117
+    "stars_last": 3301
   },
   "elvarofficial/teardown": {
     "first_seen": "2026-11-06",
@@ -5251,10 +5251,10 @@
   },
   "govijr/terminal-mac": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-08",
-    "times_seen": 3,
+    "last_seen": "2026-11-09",
+    "times_seen": 4,
     "stars_first": 2008,
-    "stars_last": 2292
+    "stars_last": 2433
   },
   "caru-ini/stack-diagram": {
     "first_seen": "2026-11-06",
@@ -5272,24 +5272,24 @@
   },
   "Minireel/HGhub": {
     "first_seen": "2026-11-07",
-    "last_seen": "2026-11-08",
-    "times_seen": 2,
+    "last_seen": "2026-11-09",
+    "times_seen": 3,
     "stars_first": 1836,
-    "stars_last": 2508
+    "stars_last": 4169
   },
   "NotRexed/Hookshot": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-08",
-    "times_seen": 1,
+    "last_seen": "2026-11-09",
+    "times_seen": 2,
     "stars_first": 2087,
-    "stars_last": 2087
+    "stars_last": 3437
   },
   "JenkinWoo/sheeridVerify": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-08",
-    "times_seen": 1,
+    "last_seen": "2026-11-09",
+    "times_seen": 2,
     "stars_first": 1760,
-    "stars_last": 1760
+    "stars_last": 1889
   },
   "wquguru/cicada": {
     "first_seen": "2026-11-08",
@@ -5304,5 +5304,33 @@
     "times_seen": 1,
     "stars_first": 1295,
     "stars_last": 1295
+  },
+  "sarpstar/cinecode": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "stars_first": 1692,
+    "stars_last": 1692
+  },
+  "tangerineturtle1/NX2navi": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "stars_first": 1590,
+    "stars_last": 1590
+  },
+  "Sandflow-ai/sand3d": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "stars_first": 1491,
+    "stars_last": 1491
+  },
+  "livliv-dev/player": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "stars_first": 1360,
+    "stars_last": 1360
   }
 }
