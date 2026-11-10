@@ -5223,10 +5223,10 @@
   },
   "KKKKhazix/agent-autoloop": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-09",
-    "times_seen": 5,
+    "last_seen": "2026-11-10",
+    "times_seen": 6,
     "stars_first": 2887,
-    "stars_last": 4183
+    "stars_last": 4358
   },
   "zortos293/Lichii": {
     "first_seen": "2026-11-06",
@@ -5251,10 +5251,10 @@
   },
   "govijr/terminal-mac": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-09",
-    "times_seen": 4,
+    "last_seen": "2026-11-10",
+    "times_seen": 5,
     "stars_first": 2008,
-    "stars_last": 2433
+    "stars_last": 2527
   },
   "caru-ini/stack-diagram": {
     "first_seen": "2026-11-06",
@@ -5272,24 +5272,24 @@
   },
   "Minireel/HGhub": {
     "first_seen": "2026-11-07",
-    "last_seen": "2026-11-09",
-    "times_seen": 3,
+    "last_seen": "2026-11-10",
+    "times_seen": 4,
     "stars_first": 1836,
-    "stars_last": 4169
+    "stars_last": 7168
   },
   "NotRexed/Hookshot": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-09",
-    "times_seen": 2,
+    "last_seen": "2026-11-10",
+    "times_seen": 3,
     "stars_first": 2087,
-    "stars_last": 3437
+    "stars_last": 5534
   },
   "JenkinWoo/sheeridVerify": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-09",
-    "times_seen": 2,
+    "last_seen": "2026-11-10",
+    "times_seen": 3,
     "stars_first": 1760,
-    "stars_last": 1889
+    "stars_last": 1981
   },
   "wquguru/cicada": {
     "first_seen": "2026-11-08",
@@ -5307,17 +5307,17 @@
   },
   "sarpstar/cinecode": {
     "first_seen": "2026-11-09",
-    "last_seen": "2026-11-09",
-    "times_seen": 1,
+    "last_seen": "2026-11-10",
+    "times_seen": 2,
     "stars_first": 1692,
-    "stars_last": 1692
+    "stars_last": 1962
   },
   "tangerineturtle1/NX2navi": {
     "first_seen": "2026-11-09",
-    "last_seen": "2026-11-09",
-    "times_seen": 1,
+    "last_seen": "2026-11-10",
+    "times_seen": 2,
     "stars_first": 1590,
-    "stars_last": 1590
+    "stars_last": 2569
   },
   "Sandflow-ai/sand3d": {
     "first_seen": "2026-11-09",
@@ -5332,5 +5332,26 @@
     "times_seen": 1,
     "stars_first": 1360,
     "stars_last": 1360
+  },
+  "huamidev/GestaltX": {
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10",
+    "times_seen": 1,
+    "stars_first": 3278,
+    "stars_last": 3278
+  },
+  "janestreet/agent_skills": {
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10",
+    "times_seen": 1,
+    "stars_first": 2642,
+    "stars_last": 2642
+  },
+  "jhaizhou-ops/S2Arm": {
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10",
+    "times_seen": 1,
+    "stars_first": 2148,
+    "stars_last": 2148
   }
 }

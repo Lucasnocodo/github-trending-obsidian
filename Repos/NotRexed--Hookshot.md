@@ -7,12 +7,12 @@ language: C++
 license: GPL-3.0
 description: "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake"
 homepage: ""
-stars: 3437
-stars_per_day: 1146
-forks: 330
-open_issues: 82
+stars: 5534
+stars_per_day: 1384
+forks: 495
+open_issues: 123
 created: 2026-11-05
-pushed_at: 2026-11-09
+pushed_at: 2026-11-10
 first_seen: 2026-11-08
 week: "2026-W46"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-12"
+appearances: 3
+next_review: "2026-11-13"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 55
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-08"
-star_history: "2026-11-08:2087,2026-11-09:3437"
+star_history: "2026-11-08:2087,2026-11-09:3437,2026-11-10:5534"
 tags:
   - github
   - "category/other"
@@ -638,5 +638,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-10|2026-11-10]] — 再次上榜，5.5k stars
 - [[2026-11-09|2026-11-09]] — 再次上榜，3.4k stars
 - [[2026-11-08|2026-11-08]] — 首次收錄，2.1k stars

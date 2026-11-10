@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4."
 homepage: ""
-stars: 1692
-stars_per_day: 338
-forks: 303
+stars: 1962
+stars_per_day: 327
+forks: 346
 open_issues: 7
 created: 2026-11-03
 pushed_at: 2026-11-03
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-12"
+appearances: 2
+next_review: "2026-11-13"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-09"
-star_history: "2026-11-09:1692"
+star_history: "2026-11-09:1692,2026-11-10:1962"
 tags:
   - github
   - "category/other"
@@ -588,4 +588,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-10|2026-11-10]] — 再次上榜，2.0k stars
 - [[2026-11-09|2026-11-09]] — 首次收錄，1.7k stars
