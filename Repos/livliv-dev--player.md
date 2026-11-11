@@ -7,9 +7,9 @@ language: TypeScript
 license: Apache-2.0
 description: "A lightweight 2.5D character player for the web, with lip sync and webcam face tracking."
 homepage: "https://livliv-dev.github.io/player/"
-stars: 1360
-stars_per_day: 272
-forks: 144
+stars: 1475
+stars_per_day: 211
+forks: 154
 open_issues: 3
 created: 2026-11-04
 pushed_at: 2026-11-09
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-12"
+appearances: 2
+next_review: "2026-11-14"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-09"
-star_history: "2026-11-09:1360"
+star_history: "2026-11-09:1360,2026-11-11:1475"
 tags:
   - github
   - "category/other"
@@ -663,4 +663,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-11|2026-11-11]] — 再次上榜，1.5k stars
 - [[2026-11-09|2026-11-09]] — 首次收錄，1.4k stars

@@ -7,12 +7,12 @@ language: C#
 license: Apache-2.0
 description: "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
 homepage: "https://jhaizhou-ops.github.io/S2Arm/"
-stars: 2148
-stars_per_day: 1074
-forks: 414
-open_issues: 184
+stars: 2481
+stars_per_day: 827
+forks: 460
+open_issues: 243
 created: 2026-11-08
-pushed_at: 2026-11-10
+pushed_at: 2026-11-11
 first_seen: 2026-11-10
 week: "2026-W46"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-13"
+appearances: 2
+next_review: "2026-11-14"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-10"
-star_history: "2026-11-10:2148"
+star_history: "2026-11-10:2148,2026-11-11:2481"
 tags:
   - github
   - "category/other"
@@ -604,4 +604,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-11|2026-11-11]] — 再次上榜，2.5k stars
 - [[2026-11-10|2026-11-10]] — 首次收錄，2.1k stars
