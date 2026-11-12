@@ -5279,17 +5279,17 @@
   },
   "NotRexed/Hookshot": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-11",
-    "times_seen": 4,
+    "last_seen": "2026-11-12",
+    "times_seen": 5,
     "stars_first": 2087,
-    "stars_last": 6876
+    "stars_last": 8106
   },
   "JenkinWoo/sheeridVerify": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-11",
-    "times_seen": 4,
+    "last_seen": "2026-11-12",
+    "times_seen": 5,
     "stars_first": 1760,
-    "stars_last": 2015
+    "stars_last": 2046
   },
   "wquguru/cicada": {
     "first_seen": "2026-11-08",
@@ -5314,10 +5314,10 @@
   },
   "tangerineturtle1/NX2navi": {
     "first_seen": "2026-11-09",
-    "last_seen": "2026-11-11",
-    "times_seen": 3,
+    "last_seen": "2026-11-12",
+    "times_seen": 4,
     "stars_first": 1590,
-    "stars_last": 2975
+    "stars_last": 3339
   },
   "Sandflow-ai/sand3d": {
     "first_seen": "2026-11-09",
@@ -5335,10 +5335,10 @@
   },
   "huamidev/GestaltX": {
     "first_seen": "2026-11-10",
-    "last_seen": "2026-11-11",
-    "times_seen": 2,
+    "last_seen": "2026-11-12",
+    "times_seen": 3,
     "stars_first": 3278,
-    "stars_last": 5478
+    "stars_last": 6615
   },
   "janestreet/agent_skills": {
     "first_seen": "2026-11-10",
@@ -5349,37 +5349,44 @@
   },
   "jhaizhou-ops/S2Arm": {
     "first_seen": "2026-11-10",
-    "last_seen": "2026-11-11",
-    "times_seen": 2,
+    "last_seen": "2026-11-12",
+    "times_seen": 3,
     "stars_first": 2148,
-    "stars_last": 2481
+    "stars_last": 2671
   },
   "IainKay/ram-altman": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-11",
-    "times_seen": 1,
+    "last_seen": "2026-11-12",
+    "times_seen": 2,
     "stars_first": 1844,
-    "stars_last": 1844
+    "stars_last": 1963
   },
   "jamesondh/chimera-vocal-synth": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-11",
-    "times_seen": 1,
+    "last_seen": "2026-11-12",
+    "times_seen": 2,
     "stars_first": 1778,
-    "stars_last": 1778
+    "stars_last": 2036
   },
   "DIYgod/pinky": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-11",
-    "times_seen": 1,
+    "last_seen": "2026-11-12",
+    "times_seen": 2,
     "stars_first": 1767,
-    "stars_last": 1767
+    "stars_last": 1913
   },
   "mmdoctor/google-pro-helper": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-11",
-    "times_seen": 1,
+    "last_seen": "2026-11-12",
+    "times_seen": 2,
     "stars_first": 1675,
-    "stars_last": 1675
+    "stars_last": 1759
+  },
+  "Kianuni/Erosion-CN": {
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12",
+    "times_seen": 1,
+    "stars_first": 1648,
+    "stars_last": 1648
   }
 }

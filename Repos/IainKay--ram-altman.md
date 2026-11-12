@@ -7,10 +7,10 @@ language: Shell
 license: Unlicense
 description: "Monitors your RAM and reports any \"quite terrible\" unused capacity directly to the CEO of OpenAI."
 homepage: "https://ram-altman.lol"
-stars: 1844
-stars_per_day: 369
-forks: 54
-open_issues: 28
+stars: 1963
+stars_per_day: 327
+forks: 59
+open_issues: 30
 created: 2026-11-05
 pushed_at: 2026-11-06
 first_seen: 2026-11-11
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-14"
+appearances: 2
+next_review: "2026-11-15"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-11"
-star_history: "2026-11-11:1844"
+star_history: "2026-11-11:1844,2026-11-12:1963"
 tags:
   - github
   - "category/other"
@@ -633,4 +633,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-12|2026-11-12]] — 再次上榜，2.0k stars
 - [[2026-11-11|2026-11-11]] — 首次收錄，1.8k stars
