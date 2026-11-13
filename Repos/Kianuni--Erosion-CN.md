@@ -7,12 +7,12 @@ language: Swift
 license: GPL-3.0
 description: "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
 homepage: ""
-stars: 1648
-stars_per_day: 824
-forks: 366
-open_issues: 12
+stars: 1762
+stars_per_day: 587
+forks: 379
+open_issues: 15
 created: 2026-11-10
-pushed_at: 2026-11-11
+pushed_at: 2026-11-13
 first_seen: 2026-11-12
 week: "2026-W46"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-15"
+appearances: 2
+next_review: "2026-11-16"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 45
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-12"
-star_history: "2026-11-12:1648"
+star_history: "2026-11-12:1648,2026-11-13:1762"
 tags:
   - github
   - "category/other"
@@ -576,4 +576,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-13|2026-11-13]] — 再次上榜，1.8k stars
 - [[2026-11-12|2026-11-12]] — 首次收錄，1.6k stars

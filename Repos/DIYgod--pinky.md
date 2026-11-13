@@ -7,12 +7,12 @@ language: Go
 license: Apache-2.0
 description: "Let AI agents use your phone, with you in the loop."
 homepage: ""
-stars: 1913
-stars_per_day: 383
-forks: 198
-open_issues: 20
+stars: 2039
+stars_per_day: 340
+forks: 220
+open_issues: 22
 created: 2026-11-06
-pushed_at: 2026-11-12
+pushed_at: 2026-11-13
 first_seen: 2026-11-11
 week: "2026-W46"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-15"
+appearances: 3
+next_review: "2026-11-16"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 59
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-11"
-star_history: "2026-11-11:1767,2026-11-12:1913"
+star_history: "2026-11-11:1767,2026-11-12:1913,2026-11-13:2039"
 tags:
   - github
   - "category/other"
@@ -559,5 +559,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-13|2026-11-13]] — 再次上榜，2.0k stars
 - [[2026-11-12|2026-11-12]] — 再次上榜，1.9k stars
 - [[2026-11-11|2026-11-11]] — 首次收錄，1.8k stars
