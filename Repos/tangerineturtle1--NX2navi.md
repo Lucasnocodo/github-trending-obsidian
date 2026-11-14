@@ -7,10 +7,10 @@ language: C
 license: MIT
 description: ""
 homepage: ""
-stars: 3650
-stars_per_day: 730
-forks: 257
-open_issues: 622
+stars: 3966
+stars_per_day: 661
+forks: 301
+open_issues: 717
 created: 2026-11-07
 pushed_at: 2026-11-13
 first_seen: 2026-11-09
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-11-16"
+appearances: 6
+next_review: "2026-11-17"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 2
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-09"
-star_history: "2026-11-09:1590,2026-11-10:2569,2026-11-11:2975,2026-11-12:3339,2026-11-13:3650"
+star_history: "2026-11-09:1590,2026-11-10:2569,2026-11-11:2975,2026-11-12:3339,2026-11-13:3650,2026-11-14:3966"
 tags:
   - github
   - "category/other"
@@ -565,6 +565,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-14|2026-11-14]] — 再次上榜，4.0k stars
 - [[2026-11-13|2026-11-13]] — 再次上榜，3.6k stars
 - [[2026-11-12|2026-11-12]] — 再次上榜，3.3k stars
 - [[2026-11-11|2026-11-11]] — 再次上榜，3.0k stars
