@@ -7,12 +7,12 @@ language: TypeScript
 license: AGPL-3.0
 description: "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0."
 homepage: "https://agentes.chat"
-stars: 1358
-stars_per_day: 272
-forks: 237
-open_issues: 210
+stars: 1422
+stars_per_day: 237
+forks: 251
+open_issues: 220
 created: 2026-11-09
-pushed_at: 2026-11-14
+pushed_at: 2026-11-15
 first_seen: 2026-11-13
 week: "2026-W46"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-17"
+appearances: 3
+next_review: "2026-11-18"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 9
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-13"
-star_history: "2026-11-13:1247,2026-11-14:1358"
+star_history: "2026-11-13:1247,2026-11-14:1358,2026-11-15:1422"
 tags:
   - github
   - "category/other"
@@ -583,5 +583,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-15|2026-11-15]] — 再次上榜，1.4k stars
 - [[2026-11-14|2026-11-14]] — 再次上榜，1.4k stars
 - [[2026-11-13|2026-11-13]] — 首次收錄，1.2k stars

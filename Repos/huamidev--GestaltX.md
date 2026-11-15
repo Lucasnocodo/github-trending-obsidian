@@ -7,12 +7,12 @@ language: Swift
 license: GPL-3.0
 description: "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages."
 homepage: ""
-stars: 7414
-stars_per_day: 1483
-forks: 2610
-open_issues: 67
+stars: 7632
+stars_per_day: 1272
+forks: 2648
+open_issues: 79
 created: 2026-11-09
-pushed_at: 2026-11-13
+pushed_at: 2026-11-14
 first_seen: 2026-11-10
 week: "2026-W46"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-11-17"
+appearances: 6
+next_review: "2026-11-18"
 contributor_count: 5
 engagement: "high"
 issue_close_rate: 41
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-10"
-star_history: "2026-11-10:3278,2026-11-11:5478,2026-11-12:6615,2026-11-13:7071,2026-11-14:7414"
+star_history: "2026-11-10:3278,2026-11-11:5478,2026-11-12:6615,2026-11-13:7071,2026-11-14:7414,2026-11-15:7632"
 tags:
   - github
   - "category/other"
@@ -582,6 +582,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-15|2026-11-15]] — 再次上榜，7.6k stars
 - [[2026-11-14|2026-11-14]] — 再次上榜，7.4k stars
 - [[2026-11-13|2026-11-13]] — 再次上榜，7.1k stars
 - [[2026-11-12|2026-11-12]] — 再次上榜，6.6k stars
