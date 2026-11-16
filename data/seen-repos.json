@@ -5335,10 +5335,10 @@
   },
   "huamidev/GestaltX": {
     "first_seen": "2026-11-10",
-    "last_seen": "2026-11-15",
-    "times_seen": 6,
+    "last_seen": "2026-11-16",
+    "times_seen": 7,
     "stars_first": 3278,
-    "stars_last": 7632
+    "stars_last": 7786
   },
   "janestreet/agent_skills": {
     "first_seen": "2026-11-10",
@@ -5384,24 +5384,24 @@
   },
   "Kianuni/Erosion-CN": {
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-15",
-    "times_seen": 4,
+    "last_seen": "2026-11-16",
+    "times_seen": 5,
     "stars_first": 1648,
-    "stars_last": 2084
+    "stars_last": 2156
   },
   "HybridRobotics/supermimic": {
     "first_seen": "2026-11-13",
-    "last_seen": "2026-11-15",
-    "times_seen": 3,
+    "last_seen": "2026-11-16",
+    "times_seen": 4,
     "stars_first": 1361,
-    "stars_last": 1515
+    "stars_last": 1608
   },
   "agentes-chat/agentes-chat": {
     "first_seen": "2026-11-13",
-    "last_seen": "2026-11-15",
-    "times_seen": 3,
+    "last_seen": "2026-11-16",
+    "times_seen": 4,
     "stars_first": 1247,
-    "stars_last": 1422
+    "stars_last": 1566
   },
   "mahmoudtawfik1998/secure-pdf-document-processor": {
     "first_seen": "2026-11-13",
@@ -5419,31 +5419,31 @@
   },
   "apex-compute/ANR": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-15",
-    "times_seen": 2,
+    "last_seen": "2026-11-16",
+    "times_seen": 3,
     "stars_first": 1565,
-    "stars_last": 1891
+    "stars_last": 2289
   },
   "FrigadeHQ/yogurt": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-15",
-    "times_seen": 2,
+    "last_seen": "2026-11-16",
+    "times_seen": 3,
     "stars_first": 1326,
-    "stars_last": 1526
+    "stars_last": 1716
   },
   "deepseek-ai/chat-demo": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-15",
-    "times_seen": 2,
+    "last_seen": "2026-11-16",
+    "times_seen": 3,
     "stars_first": 1164,
-    "stars_last": 1909
+    "stars_last": 3589
   },
   "HolyArrs/HolyArrs": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-15",
-    "times_seen": 2,
+    "last_seen": "2026-11-16",
+    "times_seen": 3,
     "stars_first": 1119,
-    "stars_last": 1205
+    "stars_last": 1290
   },
   "DevedevT/FFmpeg-GUI-Editor-Windows": {
     "first_seen": "2026-11-15",
@@ -5451,5 +5451,19 @@
     "times_seen": 1,
     "stars_first": 1051,
     "stars_last": 1051
+  },
+  "hitkeeen/blender-ai-mcp-addon": {
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "stars_first": 1853,
+    "stars_last": 1853
+  },
+  "adriadam10/mkw-recomp": {
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "stars_first": 1278,
+    "stars_last": 1278
   }
 }

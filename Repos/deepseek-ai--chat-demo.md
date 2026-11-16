@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Chat Demo"
 homepage: "https://deepseek-ai.github.io/chat-demo/"
-stars: 1909
-stars_per_day: 955
-forks: 317
+stars: 3589
+stars_per_day: 1196
+forks: 733
 open_issues: 1
 created: 2026-11-12
 pushed_at: 2026-11-13
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-18"
+appearances: 3
+next_review: "2026-11-19"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-14"
-star_history: "2026-11-14:1164,2026-11-15:1909"
+star_history: "2026-11-14:1164,2026-11-15:1909,2026-11-16:3589"
 tags:
   - github
   - "category/other"
@@ -532,5 +532,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-16|2026-11-16]] — 再次上榜，3.6k stars
 - [[2026-11-15|2026-11-15]] — 再次上榜，1.9k stars
 - [[2026-11-14|2026-11-14]] — 首次收錄，1.2k stars
