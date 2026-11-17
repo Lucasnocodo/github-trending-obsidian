@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "Humanoid whole-body motion tracking with one differentiable world model."
 homepage: "https://supermimic.github.io"
-stars: 1608
-stars_per_day: 322
-forks: 114
-open_issues: 23
+stars: 1702
+stars_per_day: 284
+forks: 123
+open_issues: 24
 created: 2026-11-10
-pushed_at: 2026-11-11
+pushed_at: 2026-11-16
 first_seen: 2026-11-13
 week: "2026-W46"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-11-19"
+appearances: 5
+next_review: "2026-11-20"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-13"
-star_history: "2026-11-13:1361,2026-11-14:1460,2026-11-15:1515,2026-11-16:1608"
+star_history: "2026-11-13:1361,2026-11-14:1460,2026-11-15:1515,2026-11-16:1608,2026-11-17:1702"
 tags:
   - github
   - "category/other"
@@ -509,6 +509,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-17|2026-11-17]] — 再次上榜，1.7k stars
 - [[2026-11-16|2026-11-16]] — 再次上榜，1.6k stars
 - [[2026-11-15|2026-11-15]] — 再次上榜，1.5k stars
 - [[2026-11-14|2026-11-14]] — 再次上榜，1.5k stars

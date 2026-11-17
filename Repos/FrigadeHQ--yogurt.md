@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux."
 homepage: "https://yogurt.so"
-stars: 1716
-stars_per_day: 343
-forks: 97
-open_issues: 28
+stars: 1925
+stars_per_day: 321
+forks: 120
+open_issues: 39
 created: 2026-11-10
-pushed_at: 2026-11-16
+pushed_at: 2026-11-17
 first_seen: 2026-11-14
 week: "2026-W46"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-11-19"
+appearances: 4
+next_review: "2026-11-20"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 25
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-14"
-star_history: "2026-11-14:1326,2026-11-15:1526,2026-11-16:1716"
+star_history: "2026-11-14:1326,2026-11-15:1526,2026-11-16:1716,2026-11-17:1925"
 tags:
   - github
   - "category/other"
@@ -594,6 +594,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-17|2026-11-17]] — 再次上榜，1.9k stars
 - [[2026-11-16|2026-11-16]] — 再次上榜，1.7k stars
 - [[2026-11-15|2026-11-15]] — 再次上榜，1.5k stars
 - [[2026-11-14|2026-11-14]] — 首次收錄，1.3k stars

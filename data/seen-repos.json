@@ -5384,17 +5384,17 @@
   },
   "Kianuni/Erosion-CN": {
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-16",
-    "times_seen": 5,
+    "last_seen": "2026-11-17",
+    "times_seen": 6,
     "stars_first": 1648,
-    "stars_last": 2156
+    "stars_last": 2218
   },
   "HybridRobotics/supermimic": {
     "first_seen": "2026-11-13",
-    "last_seen": "2026-11-16",
-    "times_seen": 4,
+    "last_seen": "2026-11-17",
+    "times_seen": 5,
     "stars_first": 1361,
-    "stars_last": 1608
+    "stars_last": 1702
   },
   "agentes-chat/agentes-chat": {
     "first_seen": "2026-11-13",
@@ -5419,24 +5419,24 @@
   },
   "apex-compute/ANR": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-16",
-    "times_seen": 3,
+    "last_seen": "2026-11-17",
+    "times_seen": 4,
     "stars_first": 1565,
-    "stars_last": 2289
+    "stars_last": 2517
   },
   "FrigadeHQ/yogurt": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-16",
-    "times_seen": 3,
+    "last_seen": "2026-11-17",
+    "times_seen": 4,
     "stars_first": 1326,
-    "stars_last": 1716
+    "stars_last": 1925
   },
   "deepseek-ai/chat-demo": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-16",
-    "times_seen": 3,
+    "last_seen": "2026-11-17",
+    "times_seen": 4,
     "stars_first": 1164,
-    "stars_last": 3589
+    "stars_last": 4313
   },
   "HolyArrs/HolyArrs": {
     "first_seen": "2026-11-14",
@@ -5454,10 +5454,10 @@
   },
   "hitkeeen/blender-ai-mcp-addon": {
     "first_seen": "2026-11-16",
-    "last_seen": "2026-11-16",
-    "times_seen": 1,
+    "last_seen": "2026-11-17",
+    "times_seen": 2,
     "stars_first": 1853,
-    "stars_last": 1853
+    "stars_last": 2331
   },
   "adriadam10/mkw-recomp": {
     "first_seen": "2026-11-16",
@@ -5465,5 +5465,33 @@
     "times_seen": 1,
     "stars_first": 1278,
     "stars_last": 1278
+  },
+  "Noniv/abyssal-garden": {
+    "first_seen": "2026-11-17",
+    "last_seen": "2026-11-17",
+    "times_seen": 1,
+    "stars_first": 1893,
+    "stars_last": 1893
+  },
+  "duwqijlk/muse-protocol": {
+    "first_seen": "2026-11-17",
+    "last_seen": "2026-11-17",
+    "times_seen": 1,
+    "stars_first": 1524,
+    "stars_last": 1524
+  },
+  "Eynnzerr/TelemetryCleaner": {
+    "first_seen": "2026-11-17",
+    "last_seen": "2026-11-17",
+    "times_seen": 1,
+    "stars_first": 1394,
+    "stars_last": 1394
+  },
+  "ZiChuanLan/freebie-radar": {
+    "first_seen": "2026-11-17",
+    "last_seen": "2026-11-17",
+    "times_seen": 1,
+    "stars_first": 1282,
+    "stars_last": 1282
   }
 }
