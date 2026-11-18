@@ -7,10 +7,10 @@ language: Kotlin
 license: MIT
 description: "基于 Shizuku 免 Root 清除国产安卓 SystemHelper、RegService 等系统预装隐私数据收集模块"
 homepage: ""
-stars: 1394
-stars_per_day: 232
-forks: 117
-open_issues: 5
+stars: 1572
+stars_per_day: 225
+forks: 128
+open_issues: 9
 created: 2026-11-11
 pushed_at: 2026-11-17
 first_seen: 2026-11-17
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-20"
+appearances: 2
+next_review: "2026-11-21"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 72
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-17"
-star_history: "2026-11-17:1394"
+star_history: "2026-11-17:1394,2026-11-18:1572"
 tags:
   - github
   - "category/other"
@@ -536,4 +536,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-18|2026-11-18]] — 再次上榜，1.6k stars
 - [[2026-11-17|2026-11-17]] — 首次收錄，1.4k stars

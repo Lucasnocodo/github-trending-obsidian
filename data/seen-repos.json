@@ -5419,10 +5419,10 @@
   },
   "apex-compute/ANR": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-17",
-    "times_seen": 4,
+    "last_seen": "2026-11-18",
+    "times_seen": 5,
     "stars_first": 1565,
-    "stars_last": 2517
+    "stars_last": 2614
   },
   "FrigadeHQ/yogurt": {
     "first_seen": "2026-11-14",
@@ -5433,10 +5433,10 @@
   },
   "deepseek-ai/chat-demo": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-17",
-    "times_seen": 4,
+    "last_seen": "2026-11-18",
+    "times_seen": 5,
     "stars_first": 1164,
-    "stars_last": 4313
+    "stars_last": 4645
   },
   "HolyArrs/HolyArrs": {
     "first_seen": "2026-11-14",
@@ -5468,30 +5468,58 @@
   },
   "Noniv/abyssal-garden": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17",
-    "times_seen": 1,
+    "last_seen": "2026-11-18",
+    "times_seen": 2,
     "stars_first": 1893,
-    "stars_last": 1893
+    "stars_last": 2253
   },
   "duwqijlk/muse-protocol": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17",
-    "times_seen": 1,
+    "last_seen": "2026-11-18",
+    "times_seen": 2,
     "stars_first": 1524,
-    "stars_last": 1524
+    "stars_last": 1609
   },
   "Eynnzerr/TelemetryCleaner": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17",
-    "times_seen": 1,
+    "last_seen": "2026-11-18",
+    "times_seen": 2,
     "stars_first": 1394,
-    "stars_last": 1394
+    "stars_last": 1572
   },
   "ZiChuanLan/freebie-radar": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17",
-    "times_seen": 1,
+    "last_seen": "2026-11-18",
+    "times_seen": 2,
     "stars_first": 1282,
-    "stars_last": 1282
+    "stars_last": 1508
+  },
+  "krisgfx9/Wireless-Device-Battery-Monitor": {
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "stars_first": 3227,
+    "stars_last": 3227
+  },
+  "gylive/google-ultra": {
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "stars_first": 2252,
+    "stars_last": 2252
+  },
+  "erkamyaman/rust-anything": {
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "stars_first": 1989,
+    "stars_last": 1989
+  },
+  "Immortal-Protocols/lastbook": {
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "stars_first": 1922,
+    "stars_last": 1922
   }
 }
