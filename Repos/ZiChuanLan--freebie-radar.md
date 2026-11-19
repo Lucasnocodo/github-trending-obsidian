@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送"
 homepage: ""
-stars: 1508
-stars_per_day: 302
-forks: 256
+stars: 1697
+stars_per_day: 283
+forks: 278
 open_issues: 0
 created: 2026-11-12
-pushed_at: 2026-11-18
+pushed_at: 2026-11-19
 first_seen: 2026-11-17
 week: "2026-W47"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-21"
+appearances: 3
+next_review: "2026-11-22"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-17"
-star_history: "2026-11-17:1282,2026-11-18:1508"
+star_history: "2026-11-17:1282,2026-11-18:1508,2026-11-19:1697"
 tags:
   - github
   - "category/other"
@@ -669,5 +669,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-19|2026-11-19]] — 再次上榜，1.7k stars
 - [[2026-11-18|2026-11-18]] — 再次上榜，1.5k stars
 - [[2026-11-17|2026-11-17]] — 首次收錄，1.3k stars

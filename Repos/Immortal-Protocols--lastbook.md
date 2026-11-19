@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Offline knowledge AI, maps and videos for survival and rebuilding"
 homepage: "lastbook.org"
-stars: 1922
-stars_per_day: 384
-forks: 251
-open_issues: 150
+stars: 2232
+stars_per_day: 372
+forks: 292
+open_issues: 159
 created: 2026-11-12
-pushed_at: 2026-11-18
+pushed_at: 2026-11-19
 first_seen: 2026-11-18
 week: "2026-W47"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-21"
+appearances: 2
+next_review: "2026-11-22"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 1
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-18"
-star_history: "2026-11-18:1922"
+star_history: "2026-11-18:1922,2026-11-19:2232"
 tags:
   - github
   - "category/other"
@@ -611,4 +611,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-19|2026-11-19]] — 再次上榜，2.2k stars
 - [[2026-11-18|2026-11-18]] — 首次收錄，1.9k stars
