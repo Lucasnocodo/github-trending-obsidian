@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。"
 homepage: ""
-stars: 1504
-stars_per_day: 501
-forks: 360
-open_issues: 4
+stars: 1857
+stars_per_day: 464
+forks: 428
+open_issues: 6
 created: 2026-11-15
 pushed_at: 2026-11-15
 first_seen: 2026-11-19
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-22"
+appearances: 2
+next_review: "2026-11-23"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-19"
-star_history: "2026-11-19:1504"
+star_history: "2026-11-19:1504,2026-11-20:1857"
 tags:
   - github
   - "category/other"
@@ -547,4 +547,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-20|2026-11-20]] — 再次上榜，1.9k stars
 - [[2026-11-19|2026-11-19]] — 首次收錄，1.5k stars

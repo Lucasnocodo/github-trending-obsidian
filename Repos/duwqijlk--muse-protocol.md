@@ -7,9 +7,9 @@ language: Python
 license: NOASSERTION
 description: "muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）"
 homepage: ""
-stars: 1635
-stars_per_day: 327
-forks: 645
+stars: 1670
+stars_per_day: 278
+forks: 659
 open_issues: 2
 created: 2026-11-14
 pushed_at: 2026-11-15
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-11-22"
+appearances: 4
+next_review: "2026-11-23"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-17"
-star_history: "2026-11-17:1524,2026-11-18:1609,2026-11-19:1635"
+star_history: "2026-11-17:1524,2026-11-18:1609,2026-11-19:1635,2026-11-20:1670"
 tags:
   - github
   - "category/other"
@@ -625,6 +625,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-20|2026-11-20]] — 再次上榜，1.7k stars
 - [[2026-11-19|2026-11-19]] — 再次上榜，1.6k stars
 - [[2026-11-18|2026-11-18]] — 再次上榜，1.6k stars
 - [[2026-11-17|2026-11-17]] — 首次收錄，1.5k stars

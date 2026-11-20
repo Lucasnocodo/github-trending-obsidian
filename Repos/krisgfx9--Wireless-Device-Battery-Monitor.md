@@ -7,12 +7,12 @@ language: C++
 license: GPL-3.0
 description: "Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. Lightweight tray app, no vendor software needed. Supports Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox and Bluetooth devices."
 homepage: ""
-stars: 4203
-stars_per_day: 2102
-forks: 363
-open_issues: 2641
+stars: 4808
+stars_per_day: 1603
+forks: 410
+open_issues: 3394
 created: 2026-11-16
-pushed_at: 2026-11-19
+pushed_at: 2026-11-20
 first_seen: 2026-11-18
 week: "2026-W47"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-22"
+appearances: 3
+next_review: "2026-11-23"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 4
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-18"
-star_history: "2026-11-18:3227,2026-11-19:4203"
+star_history: "2026-11-18:3227,2026-11-19:4203,2026-11-20:4808"
 tags:
   - github
   - "category/other"
@@ -564,5 +564,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-20|2026-11-20]] — 再次上榜，4.8k stars
 - [[2026-11-19|2026-11-19]] — 再次上榜，4.2k stars
 - [[2026-11-18|2026-11-18]] — 首次收錄，3.2k stars

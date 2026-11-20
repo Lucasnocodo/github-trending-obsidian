@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "麦田：自媒体多平台发布中控与数据监控（B站/抖音/小红书/视频号/YouTube/X），飞书卡片通知 + 数据大屏"
 homepage: ""
-stars: 1460
-stars_per_day: 292
-forks: 451
-open_issues: 9
+stars: 1649
+stars_per_day: 275
+forks: 486
+open_issues: 7
 created: 2026-11-14
-pushed_at: 2026-11-18
+pushed_at: 2026-11-20
 first_seen: 2026-11-19
 week: "2026-W47"
 month: "2026-11"
@@ -30,10 +30,10 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-22"
+appearances: 2
+next_review: "2026-11-23"
 contributor_count: 3
-engagement: "high"
+engagement: "medium"
 issue_close_rate: 25
 repo_size_kb: 4607
 readme_length: 8466
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-19"
-star_history: "2026-11-19:1460"
+star_history: "2026-11-19:1460,2026-11-20:1649"
 tags:
   - github
   - "category/other"
@@ -655,4 +655,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-20|2026-11-20]] — 再次上榜，1.6k stars
 - [[2026-11-19|2026-11-19]] — 首次收錄，1.5k stars
