@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization"
 homepage: ""
-stars: 1277
-stars_per_day: 426
-forks: 114
-open_issues: 6
+stars: 1384
+stars_per_day: 346
+forks: 126
+open_issues: 7
 created: 2026-11-16
 pushed_at: 2026-11-16
 first_seen: 2026-11-19
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-23"
+appearances: 3
+next_review: "2026-11-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-19"
-star_history: "2026-11-19:1167,2026-11-20:1277"
+star_history: "2026-11-19:1167,2026-11-20:1277,2026-11-21:1384"
 tags:
   - github
   - "category/other"
@@ -595,5 +595,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-21|2026-11-21]] — 再次上榜，1.4k stars
 - [[2026-11-20|2026-11-20]] — 再次上榜，1.3k stars
 - [[2026-11-19|2026-11-19]] — 首次收錄，1.2k stars

@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "AI clipping for long videos and live streams. Self-hosted, bring your own AI key."
 homepage: ""
-stars: 1400
-stars_per_day: 233
-forks: 469
-open_issues: 51
+stars: 1569
+stars_per_day: 224
+forks: 505
+open_issues: 42
 created: 2026-11-14
-pushed_at: 2026-11-17
+pushed_at: 2026-11-20
 first_seen: 2026-11-20
 week: "2026-W47"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-23"
+appearances: 2
+next_review: "2026-11-24"
 contributor_count: 5
 engagement: "high"
 issue_close_rate: 12
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-20"
-star_history: "2026-11-20:1400"
+star_history: "2026-11-20:1400,2026-11-21:1569"
 tags:
   - github
   - "category/other"
@@ -637,4 +637,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-21|2026-11-21]] — 再次上榜，1.6k stars
 - [[2026-11-20|2026-11-20]] — 首次收錄，1.4k stars

@@ -5475,10 +5475,10 @@
   },
   "duwqijlk/muse-protocol": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-20",
-    "times_seen": 4,
+    "last_seen": "2026-11-21",
+    "times_seen": 5,
     "stars_first": 1524,
-    "stars_last": 1670
+    "stars_last": 1710
   },
   "Eynnzerr/TelemetryCleaner": {
     "first_seen": "2026-11-17",
@@ -5496,24 +5496,24 @@
   },
   "krisgfx9/Wireless-Device-Battery-Monitor": {
     "first_seen": "2026-11-18",
-    "last_seen": "2026-11-20",
-    "times_seen": 3,
+    "last_seen": "2026-11-21",
+    "times_seen": 4,
     "stars_first": 3227,
-    "stars_last": 4808
+    "stars_last": 5461
   },
   "gylive/google-ultra": {
     "first_seen": "2026-11-18",
-    "last_seen": "2026-11-20",
-    "times_seen": 2,
+    "last_seen": "2026-11-21",
+    "times_seen": 3,
     "stars_first": 2252,
-    "stars_last": 2485
+    "stars_last": 2552
   },
   "erkamyaman/rust-anything": {
     "first_seen": "2026-11-18",
-    "last_seen": "2026-11-20",
-    "times_seen": 3,
+    "last_seen": "2026-11-21",
+    "times_seen": 4,
     "stars_first": 1989,
-    "stars_last": 5661
+    "stars_last": 6880
   },
   "Immortal-Protocols/lastbook": {
     "first_seen": "2026-11-18",
@@ -5524,31 +5524,31 @@
   },
   "Hut-hzf/ung220z-tool": {
     "first_seen": "2026-11-19",
-    "last_seen": "2026-11-20",
-    "times_seen": 2,
+    "last_seen": "2026-11-21",
+    "times_seen": 3,
     "stars_first": 1504,
-    "stars_last": 1857
+    "stars_last": 2100
   },
   "CzzzzzzJ/mdldm-maitian": {
     "first_seen": "2026-11-19",
-    "last_seen": "2026-11-20",
-    "times_seen": 2,
+    "last_seen": "2026-11-21",
+    "times_seen": 3,
     "stars_first": 1460,
-    "stars_last": 1649
+    "stars_last": 1744
   },
   "sybil-solutions/inference-optimisation-skill": {
     "first_seen": "2026-11-19",
-    "last_seen": "2026-11-20",
-    "times_seen": 2,
+    "last_seen": "2026-11-21",
+    "times_seen": 3,
     "stars_first": 1167,
-    "stars_last": 1277
+    "stars_last": 1384
   },
   "haziqahmedqasmi/PeakCut": {
     "first_seen": "2026-11-20",
-    "last_seen": "2026-11-20",
-    "times_seen": 1,
+    "last_seen": "2026-11-21",
+    "times_seen": 2,
     "stars_first": 1400,
-    "stars_last": 1400
+    "stars_last": 1569
   },
   "joshpuckett/allo": {
     "first_seen": "2026-11-20",
@@ -5563,5 +5563,19 @@
     "times_seen": 1,
     "stars_first": 1119,
     "stars_last": 1119
+  },
+  "bookwjitchieni1986/blender-ai-mcp-addon": {
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "times_seen": 1,
+    "stars_first": 1873,
+    "stars_last": 1873
+  },
+  "iamajmeena/neonclipping": {
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "times_seen": 1,
+    "stars_first": 1388,
+    "stars_last": 1388
   }
 }

@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: ""
 homepage: ""
-stars: 2485
-stars_per_day: 1243
-forks: 50
+stars: 2552
+stars_per_day: 851
+forks: 69
 open_issues: 26
 created: 2026-11-17
 pushed_at: 2026-11-19
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-23"
+appearances: 3
+next_review: "2026-11-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-18"
-star_history: "2026-11-18:2252,2026-11-20:2485"
+star_history: "2026-11-18:2252,2026-11-20:2485,2026-11-21:2552"
 tags:
   - github
   - "category/other"
@@ -674,5 +674,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-21|2026-11-21]] — 再次上榜，2.6k stars
 - [[2026-11-20|2026-11-20]] — 再次上榜，2.5k stars
 - [[2026-11-18|2026-11-18]] — 首次收錄，2.3k stars
