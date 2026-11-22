@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM)."
 homepage: ""
-stars: 1388
-stars_per_day: 1388
-forks: 66
-open_issues: 17
+stars: 1839
+stars_per_day: 920
+forks: 91
+open_issues: 18
 created: 2026-11-19
 pushed_at: 2026-11-21
 first_seen: 2026-11-21
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-24"
+appearances: 2
+next_review: "2026-11-25"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-21"
-star_history: "2026-11-21:1388"
+star_history: "2026-11-21:1388,2026-11-22:1839"
 tags:
   - github
   - "category/other"
@@ -592,4 +592,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-22|2026-11-22]] — 再次上榜，1.8k stars
 - [[2026-11-21|2026-11-21]] — 首次收錄，1.4k stars

@@ -7,10 +7,10 @@ language: Python
 license: OFL-1.1
 description: "Allo is your friendly neighborhood typeface, free and open source"
 homepage: "https://allo.joshpuckett.me/"
-stars: 1173
-stars_per_day: 293
-forks: 32
-open_issues: 4
+stars: 1390
+stars_per_day: 232
+forks: 38
+open_issues: 6
 created: 2026-11-15
 pushed_at: 2026-11-18
 first_seen: 2026-11-20
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-23"
+appearances: 2
+next_review: "2026-11-25"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 64
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-20"
-star_history: "2026-11-20:1173"
+star_history: "2026-11-20:1173,2026-11-22:1390"
 tags:
   - github
   - "category/other"
@@ -612,4 +612,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-22|2026-11-22]] — 再次上榜，1.4k stars
 - [[2026-11-20|2026-11-20]] — 首次收錄，1.2k stars
