@@ -7,12 +7,12 @@ language: Rust
 license: MIT
 description: "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java."
 homepage: "https://www.npmjs.com/package/rust-anything"
-stars: 7583
-stars_per_day: 1517
-forks: 607
-open_issues: 1
+stars: 8230
+stars_per_day: 1372
+forks: 665
+open_issues: 13
 created: 2026-11-16
-pushed_at: 2026-11-22
+pushed_at: 2026-11-23
 first_seen: 2026-11-18
 week: "2026-W47"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-11-25"
+appearances: 6
+next_review: "2026-11-26"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-18"
-star_history: "2026-11-18:1989,2026-11-19:3910,2026-11-20:5661,2026-11-21:6880,2026-11-22:7583"
+star_history: "2026-11-18:1989,2026-11-19:3910,2026-11-20:5661,2026-11-21:6880,2026-11-22:7583,2026-11-23:8230"
 tags:
   - github
   - "category/other"
@@ -660,6 +660,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-23|2026-11-23]] — 再次上榜，8.2k stars
 - [[2026-11-22|2026-11-22]] — 再次上榜，7.6k stars
 - [[2026-11-21|2026-11-21]] — 再次上榜，6.9k stars
 - [[2026-11-20|2026-11-20]] — 再次上榜，5.7k stars

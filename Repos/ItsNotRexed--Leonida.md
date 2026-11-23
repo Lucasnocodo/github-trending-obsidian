@@ -7,12 +7,12 @@ language: Python
 license: GPL-3.0
 description: "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6"
 homepage: ""
-stars: 7822
-stars_per_day: 7822
-forks: 623
-open_issues: 203
+stars: 17536
+stars_per_day: 8768
+forks: 1496
+open_issues: 1788
 created: 2026-11-20
-pushed_at: 2026-11-22
+pushed_at: 2026-11-23
 first_seen: 2026-11-22
 week: "2026-W48"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-25"
+appearances: 2
+next_review: "2026-11-26"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 19
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-22"
-star_history: "2026-11-22:7822"
+star_history: "2026-11-22:7822,2026-11-23:17536"
 tags:
   - github
   - "category/other"
@@ -569,4 +569,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-23|2026-11-23]] — 再次上榜，17.5k stars
 - [[2026-11-22|2026-11-22]] — 首次收錄，7.8k stars

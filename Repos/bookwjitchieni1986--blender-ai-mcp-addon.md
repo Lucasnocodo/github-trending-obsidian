@@ -7,12 +7,12 @@ language: N/A
 license: MIT
 description: "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration."
 homepage: ""
-stars: 2693
-stars_per_day: 1347
-forks: 36
-open_issues: 60
+stars: 2758
+stars_per_day: 919
+forks: 39
+open_issues: 61
 created: 2026-11-19
-pushed_at: 2026-11-19
+pushed_at: 2026-11-22
 first_seen: 2026-11-21
 week: "2026-W47"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-25"
+appearances: 3
+next_review: "2026-11-26"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-21"
-star_history: "2026-11-21:1873,2026-11-22:2693"
+star_history: "2026-11-21:1873,2026-11-22:2693,2026-11-23:2758"
 tags:
   - github
   - "category/other"
@@ -581,5 +581,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-23|2026-11-23]] — 再次上榜，2.8k stars
 - [[2026-11-22|2026-11-22]] — 再次上榜，2.7k stars
 - [[2026-11-21|2026-11-21]] — 首次收錄，1.9k stars

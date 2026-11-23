@@ -5510,10 +5510,10 @@
   },
   "erkamyaman/rust-anything": {
     "first_seen": "2026-11-18",
-    "last_seen": "2026-11-22",
-    "times_seen": 5,
+    "last_seen": "2026-11-23",
+    "times_seen": 6,
     "stars_first": 1989,
-    "stars_last": 7583
+    "stars_last": 8230
   },
   "Immortal-Protocols/lastbook": {
     "first_seen": "2026-11-18",
@@ -5538,10 +5538,10 @@
   },
   "sybil-solutions/inference-optimisation-skill": {
     "first_seen": "2026-11-19",
-    "last_seen": "2026-11-22",
-    "times_seen": 4,
+    "last_seen": "2026-11-23",
+    "times_seen": 5,
     "stars_first": 1167,
-    "stars_last": 1782
+    "stars_last": 2009
   },
   "haziqahmedqasmi/PeakCut": {
     "first_seen": "2026-11-20",
@@ -5566,24 +5566,24 @@
   },
   "bookwjitchieni1986/blender-ai-mcp-addon": {
     "first_seen": "2026-11-21",
-    "last_seen": "2026-11-22",
-    "times_seen": 2,
+    "last_seen": "2026-11-23",
+    "times_seen": 3,
     "stars_first": 1873,
-    "stars_last": 2693
+    "stars_last": 2758
   },
   "iamajmeena/neonclipping": {
     "first_seen": "2026-11-21",
-    "last_seen": "2026-11-22",
-    "times_seen": 2,
+    "last_seen": "2026-11-23",
+    "times_seen": 3,
     "stars_first": 1388,
-    "stars_last": 1839
+    "stars_last": 2187
   },
   "ItsNotRexed/Leonida": {
     "first_seen": "2026-11-22",
-    "last_seen": "2026-11-22",
-    "times_seen": 1,
+    "last_seen": "2026-11-23",
+    "times_seen": 2,
     "stars_first": 7822,
-    "stars_last": 7822
+    "stars_last": 17536
   },
   "hatsunemiku-ai/google-one-tools": {
     "first_seen": "2026-11-22",
@@ -5591,5 +5591,40 @@
     "times_seen": 1,
     "stars_first": 1152,
     "stars_last": 1152
+  },
+  "EL4CTEO/fast-anything": {
+    "first_seen": "2026-11-23",
+    "last_seen": "2026-11-23",
+    "times_seen": 1,
+    "stars_first": 2399,
+    "stars_last": 2399
+  },
+  "omonkeyz/xbox-emulator": {
+    "first_seen": "2026-11-23",
+    "last_seen": "2026-11-23",
+    "times_seen": 1,
+    "stars_first": 1420,
+    "stars_last": 1420
+  },
+  "R0Y00/Xbox2Windows": {
+    "first_seen": "2026-11-23",
+    "last_seen": "2026-11-23",
+    "times_seen": 1,
+    "stars_first": 1365,
+    "stars_last": 1365
+  },
+  "Lemxy/WinRust": {
+    "first_seen": "2026-11-23",
+    "last_seen": "2026-11-23",
+    "times_seen": 1,
+    "stars_first": 1293,
+    "stars_last": 1293
+  },
+  "chuanqisun/spaceship": {
+    "first_seen": "2026-11-23",
+    "last_seen": "2026-11-23",
+    "times_seen": 1,
+    "stars_first": 1055,
+    "stars_last": 1055
   }
 }
