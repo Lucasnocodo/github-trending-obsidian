@@ -7,12 +7,12 @@ language: Rust
 license: Apache-2.0
 description: "Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe."
 homepage: ""
-stars: 1293
-stars_per_day: 259
-forks: 71
-open_issues: 52
+stars: 1430
+stars_per_day: 238
+forks: 89
+open_issues: 38
 created: 2026-11-17
-pushed_at: 2026-11-22
+pushed_at: 2026-11-23
 first_seen: 2026-11-23
 week: "2026-W48"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-26"
+appearances: 2
+next_review: "2026-11-27"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 56
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-23"
-star_history: "2026-11-23:1293"
+star_history: "2026-11-23:1293,2026-11-24:1430"
 tags:
   - github
   - "category/other"
@@ -536,4 +536,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-24|2026-11-24]] — 再次上榜，1.4k stars
 - [[2026-11-23|2026-11-23]] — 首次收錄，1.3k stars

@@ -5573,10 +5573,10 @@
   },
   "iamajmeena/neonclipping": {
     "first_seen": "2026-11-21",
-    "last_seen": "2026-11-23",
-    "times_seen": 3,
+    "last_seen": "2026-11-24",
+    "times_seen": 4,
     "stars_first": 1388,
-    "stars_last": 2187
+    "stars_last": 2370
   },
   "ItsNotRexed/Leonida": {
     "first_seen": "2026-11-22",
@@ -5594,31 +5594,31 @@
   },
   "EL4CTEO/fast-anything": {
     "first_seen": "2026-11-23",
-    "last_seen": "2026-11-23",
-    "times_seen": 1,
+    "last_seen": "2026-11-24",
+    "times_seen": 2,
     "stars_first": 2399,
-    "stars_last": 2399
+    "stars_last": 3397
   },
   "omonkeyz/xbox-emulator": {
     "first_seen": "2026-11-23",
-    "last_seen": "2026-11-23",
-    "times_seen": 1,
+    "last_seen": "2026-11-24",
+    "times_seen": 2,
     "stars_first": 1420,
-    "stars_last": 1420
+    "stars_last": 1738
   },
   "R0Y00/Xbox2Windows": {
     "first_seen": "2026-11-23",
-    "last_seen": "2026-11-23",
-    "times_seen": 1,
+    "last_seen": "2026-11-24",
+    "times_seen": 2,
     "stars_first": 1365,
-    "stars_last": 1365
+    "stars_last": 1753
   },
   "Lemxy/WinRust": {
     "first_seen": "2026-11-23",
-    "last_seen": "2026-11-23",
-    "times_seen": 1,
+    "last_seen": "2026-11-24",
+    "times_seen": 2,
     "stars_first": 1293,
-    "stars_last": 1293
+    "stars_last": 1430
   },
   "chuanqisun/spaceship": {
     "first_seen": "2026-11-23",
@@ -5626,5 +5626,40 @@
     "times_seen": 1,
     "stars_first": 1055,
     "stars_last": 1055
+  },
+  "Marvisak/VIctory": {
+    "first_seen": "2026-11-24",
+    "last_seen": "2026-11-24",
+    "times_seen": 1,
+    "stars_first": 7487,
+    "stars_last": 7487
+  },
+  "ivall/xcl": {
+    "first_seen": "2026-11-24",
+    "last_seen": "2026-11-24",
+    "times_seen": 1,
+    "stars_first": 5966,
+    "stars_last": 5966
+  },
+  "AFK-surf/xnulinux": {
+    "first_seen": "2026-11-24",
+    "last_seen": "2026-11-24",
+    "times_seen": 1,
+    "stars_first": 2758,
+    "stars_last": 2758
+  },
+  "os6/nospeaker": {
+    "first_seen": "2026-11-24",
+    "last_seen": "2026-11-24",
+    "times_seen": 1,
+    "stars_first": 1605,
+    "stars_last": 1605
+  },
+  "4lwayz/portwatch-vi": {
+    "first_seen": "2026-11-24",
+    "last_seen": "2026-11-24",
+    "times_seen": 1,
+    "stars_first": 1486,
+    "stars_last": 1486
   }
 }
