@@ -7,12 +7,12 @@ language: Objective-C++
 license: NOASSERTION
 description: "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)"
 homepage: ""
-stars: 2758
-stars_per_day: 690
-forks: 111
-open_issues: 3
+stars: 3661
+stars_per_day: 915
+forks: 172
+open_issues: 7
 created: 2026-11-20
-pushed_at: 2026-11-24
+pushed_at: 2026-11-25
 first_seen: 2026-11-24
 week: "2026-W48"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-27"
+appearances: 2
+next_review: "2026-11-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-24"
-star_history: "2026-11-24:2758"
+star_history: "2026-11-24:2758,2026-11-25:3661"
 tags:
   - github
   - "category/other"
@@ -576,4 +576,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-25|2026-11-25]] — 再次上榜，3.7k stars
 - [[2026-11-24|2026-11-24]] — 首次收錄，2.8k stars

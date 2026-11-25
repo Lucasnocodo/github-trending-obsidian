@@ -7,10 +7,10 @@ language: Rust
 license: GPL-3.0
 description: "Progress notes for running Xbox Series X|S builds on PC (TomBox + rage9)"
 homepage: ""
-stars: 1738
-stars_per_day: 579
-forks: 112
-open_issues: 145
+stars: 1832
+stars_per_day: 458
+forks: 121
+open_issues: 163
 created: 2026-11-21
 pushed_at: 2026-11-23
 first_seen: 2026-11-23
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-27"
+appearances: 3
+next_review: "2026-11-28"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 23
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-23"
-star_history: "2026-11-23:1420,2026-11-24:1738"
+star_history: "2026-11-23:1420,2026-11-24:1738,2026-11-25:1832"
 tags:
   - github
   - "category/other"
@@ -520,5 +520,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-25|2026-11-25]] — 再次上榜，1.8k stars
 - [[2026-11-24|2026-11-24]] — 再次上榜，1.7k stars
 - [[2026-11-23|2026-11-23]] — 首次收錄，1.4k stars
