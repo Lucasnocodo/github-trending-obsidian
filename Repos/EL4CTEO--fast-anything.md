@@ -7,12 +7,12 @@ language: Rust
 license: MIT
 description: "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same."
 homepage: "https://www.npmjs.com/package/@el4cteo/fast-anything"
-stars: 3763
-stars_per_day: 1254
-forks: 271
-open_issues: 17
+stars: 4078
+stars_per_day: 1020
+forks: 293
+open_issues: 10
 created: 2026-11-21
-pushed_at: 2026-11-24
+pushed_at: 2026-11-25
 first_seen: 2026-11-23
 week: "2026-W48"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-11-28"
+appearances: 4
+next_review: "2026-11-29"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 72
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-23"
-star_history: "2026-11-23:2399,2026-11-24:3397,2026-11-25:3763"
+star_history: "2026-11-23:2399,2026-11-24:3397,2026-11-25:3763,2026-11-26:4078"
 tags:
   - github
   - "category/other"
@@ -594,6 +594,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-26|2026-11-26]] — 再次上榜，4.1k stars
 - [[2026-11-25|2026-11-25]] — 再次上榜，3.8k stars
 - [[2026-11-24|2026-11-24]] — 再次上榜，3.4k stars
 - [[2026-11-23|2026-11-23]] — 首次收錄，2.4k stars

@@ -7,10 +7,10 @@ language: Swift
 license: MIT
 description: "make your macbook's trackpad talk using its haptic motor"
 homepage: "https://x.com/codycollier"
-stars: 1605
-stars_per_day: 1605
-forks: 81
-open_issues: 13
+stars: 1912
+stars_per_day: 637
+forks: 101
+open_issues: 19
 created: 2026-11-22
 pushed_at: 2026-11-24
 first_seen: 2026-11-24
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-27"
+appearances: 2
+next_review: "2026-11-29"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-24"
-star_history: "2026-11-24:1605"
+star_history: "2026-11-24:1605,2026-11-26:1912"
 tags:
   - github
   - "category/other"
@@ -634,4 +634,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-26|2026-11-26]] — 再次上榜，1.9k stars
 - [[2026-11-24|2026-11-24]] — 首次收錄，1.6k stars

@@ -7,12 +7,12 @@ language: Rust
 license: GPL-3.0
 description: "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files."
 homepage: ""
-stars: 2501
-stars_per_day: 2501
-forks: 658
-open_issues: 762
+stars: 3166
+stars_per_day: 3166
+forks: 936
+open_issues: 1141
 created: 2026-11-24
-pushed_at: 2026-11-25
+pushed_at: 2026-11-26
 first_seen: 2026-11-25
 week: "2026-W48"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-11-28"
+appearances: 2
+next_review: "2026-11-29"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-25"
-star_history: "2026-11-25:2501"
+star_history: "2026-11-25:2501,2026-11-26:3166"
 tags:
   - github
   - "category/other"
@@ -593,4 +593,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-26|2026-11-26]] — 再次上榜，3.2k stars
 - [[2026-11-25|2026-11-25]] — 首次收錄，2.5k stars
