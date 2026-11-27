@@ -7,12 +7,12 @@ language: Rust
 license: GPL-2.0
 description: "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL"
 homepage: "https://discord.gg/xcl"
-stars: 8400
-stars_per_day: 1680
-forks: 1160
-open_issues: 1739
+stars: 8647
+stars_per_day: 1441
+forks: 1207
+open_issues: 1925
 created: 2026-11-20
-pushed_at: 2026-11-26
+pushed_at: 2026-11-27
 first_seen: 2026-11-25
 week: "2026-W48"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-11-29"
+appearances: 3
+next_review: "2026-11-30"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-25"
-star_history: "2026-11-25:8049,2026-11-26:8400"
+star_history: "2026-11-25:8049,2026-11-26:8400,2026-11-27:8647"
 tags:
   - github
   - "category/other"
@@ -613,5 +613,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-27|2026-11-27]] — 再次上榜，8.6k stars
 - [[2026-11-26|2026-11-26]] — 再次上榜，8.4k stars
 - [[2026-11-25|2026-11-25]] — 首次收錄，8.0k stars

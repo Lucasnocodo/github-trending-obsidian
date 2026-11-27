@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "GTA VI static recompilation research for x64 Windows. Source-built EXEs run on Windows, and two translated pixel shaders match reference outputs on hardware and WARP. Full-game startup is unverified."
 homepage: ""
-stars: 1960
-stars_per_day: 392
-forks: 232
-open_issues: 166
+stars: 1983
+stars_per_day: 331
+forks: 239
+open_issues: 236
 created: 2026-11-20
-pushed_at: 2026-11-26
+pushed_at: 2026-11-27
 first_seen: 2026-11-23
 week: "2026-W48"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-11-29"
+appearances: 5
+next_review: "2026-11-30"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 49
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-11-23"
-star_history: "2026-11-23:1365,2026-11-24:1753,2026-11-25:1933,2026-11-26:1960"
+star_history: "2026-11-23:1365,2026-11-24:1753,2026-11-25:1933,2026-11-26:1960,2026-11-27:1983"
 tags:
   - github
   - "category/other"
@@ -559,6 +559,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-27|2026-11-27]] — 再次上榜，2.0k stars
 - [[2026-11-26|2026-11-26]] — 再次上榜，2.0k stars
 - [[2026-11-25|2026-11-25]] — 再次上榜，1.9k stars
 - [[2026-11-24|2026-11-24]] — 再次上榜，1.8k stars

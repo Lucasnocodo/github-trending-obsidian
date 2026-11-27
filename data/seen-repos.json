@@ -5594,10 +5594,10 @@
   },
   "EL4CTEO/fast-anything": {
     "first_seen": "2026-11-23",
-    "last_seen": "2026-11-26",
-    "times_seen": 4,
+    "last_seen": "2026-11-27",
+    "times_seen": 5,
     "stars_first": 2399,
-    "stars_last": 4078
+    "stars_last": 4343
   },
   "omonkeyz/xbox-emulator": {
     "first_seen": "2026-11-23",
@@ -5608,10 +5608,10 @@
   },
   "R0Y00/Xbox2Windows": {
     "first_seen": "2026-11-23",
-    "last_seen": "2026-11-26",
-    "times_seen": 4,
+    "last_seen": "2026-11-27",
+    "times_seen": 5,
     "stars_first": 1365,
-    "stars_last": 1960
+    "stars_last": 1983
   },
   "Lemxy/WinRust": {
     "first_seen": "2026-11-23",
@@ -5629,10 +5629,10 @@
   },
   "Marvisak/VIctory": {
     "first_seen": "2026-11-24",
-    "last_seen": "2026-11-26",
-    "times_seen": 3,
+    "last_seen": "2026-11-27",
+    "times_seen": 4,
     "stars_first": 7487,
-    "stars_last": 12843
+    "stars_last": 13553
   },
   "ivall/xcl": {
     "first_seen": "2026-11-24",
@@ -5643,44 +5643,51 @@
   },
   "AFK-surf/xnulinux": {
     "first_seen": "2026-11-24",
-    "last_seen": "2026-11-26",
-    "times_seen": 3,
+    "last_seen": "2026-11-27",
+    "times_seen": 4,
     "stars_first": 2758,
-    "stars_last": 4070
+    "stars_last": 4296
   },
   "os6/nospeaker": {
     "first_seen": "2026-11-24",
-    "last_seen": "2026-11-26",
-    "times_seen": 2,
+    "last_seen": "2026-11-27",
+    "times_seen": 3,
     "stars_first": 1605,
-    "stars_last": 1912
+    "stars_last": 1969
   },
   "4lwayz/portwatch-vi": {
     "first_seen": "2026-11-24",
-    "last_seen": "2026-11-26",
-    "times_seen": 3,
+    "last_seen": "2026-11-27",
+    "times_seen": 4,
     "stars_first": 1486,
-    "stars_last": 4672
+    "stars_last": 6151
   },
   "xcl-dev/xcl": {
     "first_seen": "2026-11-25",
-    "last_seen": "2026-11-26",
-    "times_seen": 2,
+    "last_seen": "2026-11-27",
+    "times_seen": 3,
     "stars_first": 8049,
-    "stars_last": 8400
+    "stars_last": 8647
   },
   "fxceless/victory-fork": {
     "first_seen": "2026-11-25",
-    "last_seen": "2026-11-26",
-    "times_seen": 2,
+    "last_seen": "2026-11-27",
+    "times_seen": 3,
     "stars_first": 2501,
-    "stars_last": 3166
+    "stars_last": 3312
   },
   "ubiquitarianism/leonida": {
     "first_seen": "2026-11-25",
-    "last_seen": "2026-11-26",
-    "times_seen": 2,
+    "last_seen": "2026-11-27",
+    "times_seen": 3,
     "stars_first": 2062,
-    "stars_last": 2401
+    "stars_last": 2571
+  },
+  "Belobug/VIctory-Belobug-AMD": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "times_seen": 1,
+    "stars_first": 3646,
+    "stars_last": 3646
   }
 }

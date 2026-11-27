@@ -7,12 +7,12 @@ language: JavaScript
 license: N/A
 description: "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily."
 homepage: "portwatch-vi.xyz"
-stars: 4672
-stars_per_day: 1168
-forks: 144
-open_issues: 159
+stars: 6151
+stars_per_day: 1230
+forks: 176
+open_issues: 213
 created: 2026-11-21
-pushed_at: 2026-11-26
+pushed_at: 2026-11-27
 first_seen: 2026-11-24
 week: "2026-W48"
 month: "2026-11"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-11-29"
+appearances: 4
+next_review: "2026-11-30"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 25
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-24"
-star_history: "2026-11-24:1486,2026-11-25:3189,2026-11-26:4672"
+star_history: "2026-11-24:1486,2026-11-25:3189,2026-11-26:4672,2026-11-27:6151"
 tags:
   - github
   - "category/other"
@@ -533,6 +533,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-27|2026-11-27]] — 再次上榜，6.2k stars
 - [[2026-11-26|2026-11-26]] — 再次上榜，4.7k stars
 - [[2026-11-25|2026-11-25]] — 再次上榜，3.2k stars
 - [[2026-11-24|2026-11-24]] — 首次收錄，1.5k stars
