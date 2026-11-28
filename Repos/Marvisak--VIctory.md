@@ -7,10 +7,10 @@ language: Rust
 license: GPL-3.0
 description: "An attempt at running GTA VI on PC"
 homepage: ""
-stars: 13553
-stars_per_day: 4518
-forks: 2294
-open_issues: 2178
+stars: 13907
+stars_per_day: 3477
+forks: 2417
+open_issues: 2363
 created: 2026-11-23
 pushed_at: 2026-11-25
 first_seen: 2026-11-24
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-11-30"
+appearances: 5
+next_review: "2026-12-01"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 5
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-11-24"
-star_history: "2026-11-24:7487,2026-11-25:11847,2026-11-26:12843,2026-11-27:13553"
+star_history: "2026-11-24:7487,2026-11-25:11847,2026-11-26:12843,2026-11-27:13553,2026-11-28:13907"
 tags:
   - github
   - "category/other"
@@ -592,6 +592,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-11-28|2026-11-28]] — 再次上榜，13.9k stars
 - [[2026-11-27|2026-11-27]] — 再次上榜，13.6k stars
 - [[2026-11-26|2026-11-26]] — 再次上榜，12.8k stars
 - [[2026-11-25|2026-11-25]] — 再次上榜，11.8k stars

@@ -5594,10 +5594,10 @@
   },
   "EL4CTEO/fast-anything": {
     "first_seen": "2026-11-23",
-    "last_seen": "2026-11-27",
-    "times_seen": 5,
+    "last_seen": "2026-11-28",
+    "times_seen": 6,
     "stars_first": 2399,
-    "stars_last": 4343
+    "stars_last": 4549
   },
   "omonkeyz/xbox-emulator": {
     "first_seen": "2026-11-23",
@@ -5629,10 +5629,10 @@
   },
   "Marvisak/VIctory": {
     "first_seen": "2026-11-24",
-    "last_seen": "2026-11-27",
-    "times_seen": 4,
+    "last_seen": "2026-11-28",
+    "times_seen": 5,
     "stars_first": 7487,
-    "stars_last": 13553
+    "stars_last": 13907
   },
   "ivall/xcl": {
     "first_seen": "2026-11-24",
@@ -5650,17 +5650,17 @@
   },
   "os6/nospeaker": {
     "first_seen": "2026-11-24",
-    "last_seen": "2026-11-27",
-    "times_seen": 3,
+    "last_seen": "2026-11-28",
+    "times_seen": 4,
     "stars_first": 1605,
-    "stars_last": 1969
+    "stars_last": 2000
   },
   "4lwayz/portwatch-vi": {
     "first_seen": "2026-11-24",
-    "last_seen": "2026-11-27",
-    "times_seen": 4,
+    "last_seen": "2026-11-28",
+    "times_seen": 5,
     "stars_first": 1486,
-    "stars_last": 6151
+    "stars_last": 6916
   },
   "xcl-dev/xcl": {
     "first_seen": "2026-11-25",
@@ -5671,10 +5671,10 @@
   },
   "fxceless/victory-fork": {
     "first_seen": "2026-11-25",
-    "last_seen": "2026-11-27",
-    "times_seen": 3,
+    "last_seen": "2026-11-28",
+    "times_seen": 4,
     "stars_first": 2501,
-    "stars_last": 3312
+    "stars_last": 3369
   },
   "ubiquitarianism/leonida": {
     "first_seen": "2026-11-25",
@@ -5689,5 +5689,40 @@
     "times_seen": 1,
     "stars_first": 3646,
     "stars_last": 3646
+  },
+  "trustno1-coder/VIctory-NVIDIA": {
+    "first_seen": "2026-11-28",
+    "last_seen": "2026-11-28",
+    "times_seen": 1,
+    "stars_first": 4545,
+    "stars_last": 4545
+  },
+  "ProjectLeonida/mandy": {
+    "first_seen": "2026-11-28",
+    "last_seen": "2026-11-28",
+    "times_seen": 1,
+    "stars_first": 3030,
+    "stars_last": 3030
+  },
+  "nexu-io/opengame": {
+    "first_seen": "2026-11-28",
+    "last_seen": "2026-11-28",
+    "times_seen": 1,
+    "stars_first": 2525,
+    "stars_last": 2525
+  },
+  "alesha-pro/llm.asm": {
+    "first_seen": "2026-11-28",
+    "last_seen": "2026-11-28",
+    "times_seen": 1,
+    "stars_first": 2398,
+    "stars_last": 2398
+  },
+  "Reukix/Reloc": {
+    "first_seen": "2026-11-28",
+    "last_seen": "2026-11-28",
+    "times_seen": 1,
+    "stars_first": 1953,
+    "stars_last": 1953
   }
 }
